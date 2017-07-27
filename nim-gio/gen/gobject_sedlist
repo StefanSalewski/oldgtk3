@@ -1,0 +1,179 @@
+s/\bptr ptr GObjectConstructParam\b/gobjectvaaaaarGObjectConstructParam/g
+s/\bptr GObjectConstructParam\b/gobjectptttttrGObjectConstructParam/g
+s/\bGObjectConstructParam\b/gobject.GObjectConstructParamObj/g
+s/\bptr ptr GSignalInvocationHint\b/gobjectvaaaaarGSignalInvocationHint/g
+s/\bptr GSignalInvocationHint\b/gobjectptttttrGSignalInvocationHint/g
+s/\bGSignalInvocationHint\b/gobject.GSignalInvocationHintObj/g
+s/\bptr ptr GParamSpecValueArray\b/gobjectvaaaaarGParamSpecValueArray/g
+s/\bptr GParamSpecValueArray\b/gobjectptttttrGParamSpecValueArray/g
+s/\bGParamSpecValueArray\b/gobject.GParamSpecValueArrayObj/g
+s/\bptr ptr GTypeFundamentalInfo\b/gobjectvaaaaarGTypeFundamentalInfo/g
+s/\bptr GTypeFundamentalInfo\b/gobjectptttttrGTypeFundamentalInfo/g
+s/\bGTypeFundamentalInfo\b/gobject.GTypeFundamentalInfoObj/g
+s/\bptr ptr GClosureNotifyData\b/gobjectvaaaaarGClosureNotifyData/g
+s/\bptr GClosureNotifyData\b/gobjectptttttrGClosureNotifyData/g
+s/\bGClosureNotifyData\b/gobject.GClosureNotifyDataObj/g
+s/\bptr ptr GParamSpecTypeInfo\b/gobjectvaaaaarGParamSpecTypeInfo/g
+s/\bptr GParamSpecTypeInfo\b/gobjectptttttrGParamSpecTypeInfo/g
+s/\bGParamSpecTypeInfo\b/gobject.GParamSpecTypeInfoObj/g
+s/\bptr ptr GParamSpecOverride\b/gobjectvaaaaarGParamSpecOverride/g
+s/\bptr GParamSpecOverride\b/gobjectptttttrGParamSpecOverride/g
+s/\bGParamSpecOverride\b/gobject.GParamSpecOverrideObj/g
+s/\bptr ptr GParamSpecVariant\b/gobjectvaaaaarGParamSpecVariant/g
+s/\bptr GParamSpecVariant\b/gobjectptttttrGParamSpecVariant/g
+s/\bGParamSpecVariant\b/gobject.GParamSpecVariantObj/g
+s/\bptr ptr GParamSpecUnichar\b/gobjectvaaaaarGParamSpecUnichar/g
+s/\bptr GParamSpecUnichar\b/gobjectptttttrGParamSpecUnichar/g
+s/\bGParamSpecUnichar\b/gobject.GParamSpecUnicharObj/g
+s/\bptr ptr GParamSpecPointer\b/gobjectvaaaaarGParamSpecPointer/g
+s/\bptr GParamSpecPointer\b/gobjectptttttrGParamSpecPointer/g
+s/\bGParamSpecPointer\b/gobject.GParamSpecPointerObj/g
+s/\bptr ptr GParamSpecBoolean\b/gobjectvaaaaarGParamSpecBoolean/g
+s/\bptr GParamSpecBoolean\b/gobjectptttttrGParamSpecBoolean/g
+s/\bGParamSpecBoolean\b/gobject.GParamSpecBooleanObj/g
+s/\bptr ptr GTypePluginClass\b/gobjectvaaaaarGTypePluginClass/g
+s/\bptr GTypePluginClass\b/gobjectptttttrGTypePluginClass/g
+s/\bGTypePluginClass\b/gobject.GTypePluginClassObj/g
+s/\bptr ptr GParamSpecDouble\b/gobjectvaaaaarGParamSpecDouble/g
+s/\bptr GParamSpecDouble\b/gobjectptttttrGParamSpecDouble/g
+s/\bGParamSpecDouble\b/gobject.GParamSpecDoubleObj/g
+s/\bptr ptr GParamSpecObject\b/gobjectvaaaaarGParamSpecObject/g
+s/\bptr GParamSpecObject\b/gobjectptttttrGParamSpecObject/g
+s/\bGParamSpecObject\b/gobject.GParamSpecObjectObj/g
+s/\bptr ptr GParamSpecString\b/gobjectvaaaaarGParamSpecString/g
+s/\bptr GParamSpecString\b/gobjectptttttrGParamSpecString/g
+s/\bGParamSpecString\b/gobject.GParamSpecStringObj/g
+s/\bptr ptr GTypeModuleClass\b/gobjectvaaaaarGTypeModuleClass/g
+s/\bptr GTypeModuleClass\b/gobjectptttttrGTypeModuleClass/g
+s/\bGTypeModuleClass\b/gobject.GTypeModuleClassObj/g
+s/\bptr ptr GParamSpecUInt64\b/gobjectvaaaaarGParamSpecUInt64/g
+s/\bptr GParamSpecUInt64\b/gobjectptttttrGParamSpecUInt64/g
+s/\bGParamSpecUInt64\b/gobject.GParamSpecUInt64Obj/g
+s/\bptr ptr GParamSpecClass\b/gobjectvaaaaarGParamSpecClass/g
+s/\bptr GParamSpecClass\b/gobjectptttttrGParamSpecClass/g
+s/\bGParamSpecClass\b/gobject.GParamSpecClassObj/g
+s/\bptr ptr GParamSpecGType\b/gobjectvaaaaarGParamSpecGType/g
+s/\bptr GParamSpecGType\b/gobjectptttttrGParamSpecGType/g
+s/\bGParamSpecGType\b/gobject.GParamSpecGTypeObj/g
+s/\bptr ptr GTypeValueTable\b/gobjectvaaaaarGTypeValueTable/g
+s/\bptr GTypeValueTable\b/gobjectptttttrGTypeValueTable/g
+s/\bGTypeValueTable\b/gobject.GTypeValueTableObj/g
+s/\bptr ptr GParamSpecUChar\b/gobjectvaaaaarGParamSpecUChar/g
+s/\bptr GParamSpecUChar\b/gobjectptttttrGParamSpecUChar/g
+s/\bGParamSpecUChar\b/gobject.GParamSpecUCharObj/g
+s/\bptr ptr GParamSpecULong\b/gobjectvaaaaarGParamSpecULong/g
+s/\bptr GParamSpecULong\b/gobjectptttttrGParamSpecULong/g
+s/\bGParamSpecULong\b/gobject.GParamSpecULongObj/g
+s/\bptr ptr GParamSpecInt64\b/gobjectvaaaaarGParamSpecInt64/g
+s/\bptr GParamSpecInt64\b/gobjectptttttrGParamSpecInt64/g
+s/\bGParamSpecInt64\b/gobject.GParamSpecInt64Obj/g
+s/\bptr ptr GParamSpecFlags\b/gobjectvaaaaarGParamSpecFlags/g
+s/\bptr GParamSpecFlags\b/gobjectptttttrGParamSpecFlags/g
+s/\bGParamSpecFlags\b/gobject.GParamSpecFlagsObj/g
+s/\bptr ptr GParamSpecBoxed\b/gobjectvaaaaarGParamSpecBoxed/g
+s/\bptr GParamSpecBoxed\b/gobjectptttttrGParamSpecBoxed/g
+s/\bGParamSpecBoxed\b/gobject.GParamSpecBoxedObj/g
+s/\bptr ptr GParamSpecParam\b/gobjectvaaaaarGParamSpecParam/g
+s/\bptr GParamSpecParam\b/gobjectptttttrGParamSpecParam/g
+s/\bGParamSpecParam\b/gobject.GParamSpecParamObj/g
+s/\bptr ptr GParamSpecFloat\b/gobjectvaaaaarGParamSpecFloat/g
+s/\bptr GParamSpecFloat\b/gobjectptttttrGParamSpecFloat/g
+s/\bGParamSpecFloat\b/gobject.GParamSpecFloatObj/g
+s/\bptr ptr GParamSpecLong\b/gobjectvaaaaarGParamSpecLong/g
+s/\bptr GParamSpecLong\b/gobjectptttttrGParamSpecLong/g
+s/\bGParamSpecLong\b/gobject.GParamSpecLongObj/g
+s/\bptr ptr GTypeInterface\b/gobjectvaaaaarGTypeInterface/g
+s/\bptr GTypeInterface\b/gobjectptttttrGTypeInterface/g
+s/\bGTypeInterface\b/gobject.GTypeInterfaceObj/g
+s/\bptr ptr GParamSpecEnum\b/gobjectvaaaaarGParamSpecEnum/g
+s/\bptr GParamSpecEnum\b/gobjectptttttrGParamSpecEnum/g
+s/\bGParamSpecEnum\b/gobject.GParamSpecEnumObj/g
+s/\bptr ptr GParamSpecChar\b/gobjectvaaaaarGParamSpecChar/g
+s/\bptr GParamSpecChar\b/gobjectptttttrGParamSpecChar/g
+s/\bGParamSpecChar\b/gobject.GParamSpecCharObj/g
+s/\bptr ptr GInterfaceInfo\b/gobjectvaaaaarGInterfaceInfo/g
+s/\bptr GInterfaceInfo\b/gobjectptttttrGInterfaceInfo/g
+s/\bGInterfaceInfo\b/gobject.GInterfaceInfoObj/g
+s/\bptr ptr GParamSpecUInt\b/gobjectvaaaaarGParamSpecUInt/g
+s/\bptr GParamSpecUInt\b/gobjectptttttrGParamSpecUInt/g
+s/\bGParamSpecUInt\b/gobject.GParamSpecUIntObj/g
+s/\bptr ptr GParamSpecPool\b/gobjectvaaaaarGParamSpecPool/g
+s/\bptr GParamSpecPool\b/gobjectptttttrGParamSpecPool/g
+s/\bGParamSpecPool\b/gobject.GParamSpecPoolObj/g
+s/\bptr ptr GParamSpecInt\b/gobjectvaaaaarGParamSpecInt/g
+s/\bptr GParamSpecInt\b/gobjectptttttrGParamSpecInt/g
+s/\bGParamSpecInt\b/gobject.GParamSpecIntObj/g
+s/\bptr ptr GTypeInstance\b/gobjectvaaaaarGTypeInstance/g
+s/\bptr GTypeInstance\b/gobjectptttttrGTypeInstance/g
+s/\bGTypeInstance\b/gobject.GTypeInstanceObj/g
+s/\bptr ptr GSignalQuery\b/gobjectvaaaaarGSignalQuery/g
+s/\bptr GSignalQuery\b/gobjectptttttrGSignalQuery/g
+s/\bGSignalQuery\b/gobject.GSignalQueryObj/g
+s/\bptr ptr GObjectClass\b/gobjectvaaaaarGObjectClass/g
+s/\bptr GObjectClass\b/gobjectptttttrGObjectClass/g
+s/\bGObjectClass\b/gobject.GObjectClassObj/g
+s/\bptr ptr GFlagsClass\b/gobjectvaaaaarGFlagsClass/g
+s/\bptr GFlagsClass\b/gobjectptttttrGFlagsClass/g
+s/\bGFlagsClass\b/gobject.GFlagsClassObj/g
+s/\bptr ptr GTypeModule\b/gobjectvaaaaarGTypeModule/g
+s/\bptr GTypeModule\b/gobjectptttttrGTypeModule/g
+s/\bGTypeModule\b/gobject.GTypeModuleObj/g
+s/\bptr ptr GFlagsValue\b/gobjectvaaaaarGFlagsValue/g
+s/\bptr GFlagsValue\b/gobjectptttttrGFlagsValue/g
+s/\bGFlagsValue\b/gobject.GFlagsValueObj/g
+s/\bptr ptr GTypePlugin\b/gobjectvaaaaarGTypePlugin/g
+s/\bptr GTypePlugin\b/gobjectptttttrGTypePlugin/g
+s/\bGTypePlugin\b/gobject.GTypePluginObj/g
+s/\bptr ptr GTypeCValue\b/gobjectvaaaaarGTypeCValue/g
+s/\bptr GTypeCValue\b/gobjectptttttrGTypeCValue/g
+s/\bGTypeCValue\b/gobject.GTypeCValueObj/g
+s/\bptr ptr GValueArray\b/gobjectvaaaaarGValueArray/g
+s/\bptr GValueArray\b/gobjectptttttrGValueArray/g
+s/\bGValueArray\b/gobject.GValueArrayObj/g
+s/\bptr ptr GEnumClass\b/gobjectvaaaaarGEnumClass/g
+s/\bptr GEnumClass\b/gobjectptttttrGEnumClass/g
+s/\bGEnumClass\b/gobject.GEnumClassObj/g
+s/\bptr ptr GEnumValue\b/gobjectvaaaaarGEnumValue/g
+s/\bptr GEnumValue\b/gobjectptttttrGEnumValue/g
+s/\bGEnumValue\b/gobject.GEnumValueObj/g
+s/\bptr ptr GTypeClass\b/gobjectvaaaaarGTypeClass/g
+s/\bptr GTypeClass\b/gobjectptttttrGTypeClass/g
+s/\bGTypeClass\b/gobject.GTypeClassObj/g
+s/\bptr ptr GTypeQuery\b/gobjectvaaaaarGTypeQuery/g
+s/\bptr GTypeQuery\b/gobjectptttttrGTypeQuery/g
+s/\bGTypeQuery\b/gobject.GTypeQueryObj/g
+s/\bptr ptr GParamSpec\b/gobjectvaaaaarGParamSpec/g
+s/\bptr GParamSpec\b/gobjectptttttrGParamSpec/g
+s/\bGParamSpec\b/gobject.GParamSpecObj/g
+s/\bptr ptr GParameter\b/gobjectvaaaaarGParameter/g
+s/\bptr GParameter\b/gobjectptttttrGParameter/g
+s/\bGParameter\b/gobject.GParameterObj/g
+s/\bptr ptr GTypeInfo\b/gobjectvaaaaarGTypeInfo/g
+s/\bptr GTypeInfo\b/gobjectptttttrGTypeInfo/g
+s/\bGTypeInfo\b/gobject.GTypeInfoObj/g
+s/\bptr ptr GCClosure\b/gobjectvaaaaarGCClosure/g
+s/\bptr GCClosure\b/gobjectptttttrGCClosure/g
+s/\bGCClosure\b/gobject.GCClosureObj/g
+s/\bptr ptr GClosure\b/gobjectvaaaaarGClosure/g
+s/\bptr GClosure\b/gobjectptttttrGClosure/g
+s/\bGClosure\b/gobject.GClosureObj/g
+s/\bptr ptr GWeakRef\b/gobjectvaaaaarGWeakRef/g
+s/\bptr GWeakRef\b/gobjectptttttrGWeakRef/g
+s/\bGWeakRef\b/gobject.GWeakRefObj/g
+s/\bptr ptr GBinding\b/gobjectvaaaaarGBinding/g
+s/\bptr GBinding\b/gobjectptttttrGBinding/g
+s/\bGBinding\b/gobject.GBindingObj/g
+s/\bptr ptr GObject\b/gobjectvaaaaarGObject/g
+s/\bptr GObject\b/gobjectptttttrGObject/g
+s/\bGObject\b/gobject.GObjectObj/g
+s/\bptr ptr GValue\b/gobjectvaaaaarGValue/g
+s/\bptr GValue\b/gobjectptttttrGValue/g
+s/\bGValue\b/gobject.GValueObj/g
+s/\bptr ptr GInitiallyUnownedClass\b/gobjectvaaaaarGInitiallyUnownedClass/g
+s/\bptr GInitiallyUnownedClass\b/gobjectptttttrGInitiallyUnownedClass/g
+s/\bGInitiallyUnownedClass\b/gobject.GInitiallyUnownedClassObj/g
+s/\bptr ptr GInitiallyUnowned\b/gobjectvaaaaarGInitiallyUnowned/g
+s/\bptr GInitiallyUnowned\b/gobjectptttttrGInitiallyUnowned/g
+s/\bGInitiallyUnowned\b/gobject.GInitiallyUnownedObj/g
+s/gobjectvaaaaar/var gobject./g
+s/gobjectptttttr/gobject./g

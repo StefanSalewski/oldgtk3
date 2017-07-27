@@ -1,0 +1,263 @@
+s/\bptr ptr PangoCoreTextFontMapClass\b/pangovaaaaarCoreTextFontMapClass/g
+s/\bptr PangoCoreTextFontMapClass\b/pangoptttttrCoreTextFontMapClass/g
+s/\bPangoCoreTextFontMapClass\b/pango.CoreTextFontMapClassObj/g
+s/\bptr ptr PangoOTRulesetDescription\b/pangovaaaaarOTRulesetDescription/g
+s/\bptr PangoOTRulesetDescription\b/pangoptttttrOTRulesetDescription/g
+s/\bPangoOTRulesetDescription\b/pango.OTRulesetDescriptionObj/g
+s/\bptr ptr PangoCairoCoreTextFontMap\b/pangovaaaaarCairoCoreTextFontMap/g
+s/\bptr PangoCairoCoreTextFontMap\b/pangoptttttrCairoCoreTextFontMap/g
+s/\bPangoCairoCoreTextFontMap\b/pango.CairoCoreTextFontMapObj/g
+s/\bptr ptr PangoCoreTextFontClass\b/pangovaaaaarCoreTextFontClass/g
+s/\bptr PangoCoreTextFontClass\b/pangoptttttrCoreTextFontClass/g
+s/\bPangoCoreTextFontClass\b/pango.CoreTextFontClassObj/g
+s/\bptr ptr PangoXftRendererClass\b/pangovaaaaarXftRendererClass/g
+s/\bptr PangoXftRendererClass\b/pangoptttttrXftRendererClass/g
+s/\bPangoXftRendererClass\b/pango.XftRendererClassObj/g
+s/\bptr ptr PangoEngineScriptInfo\b/pangovaaaaarEngineScriptInfo/g
+s/\bptr PangoEngineScriptInfo\b/pangoptttttrEngineScriptInfo/g
+s/\bPangoEngineScriptInfo\b/pango.EngineScriptInfoObj/g
+s/\bptr ptr PangoAttrFontFeatures\b/pangovaaaaarAttrFontFeatures/g
+s/\bptr PangoAttrFontFeatures\b/pangoptttttrAttrFontFeatures/g
+s/\bPangoAttrFontFeatures\b/pango.AttrFontFeaturesObj/g
+s/\bptr ptr PangoEngineShapeClass\b/pangovaaaaarEngineShapeClass/g
+s/\bptr PangoEngineShapeClass\b/pangoptttttrEngineShapeClass/g
+s/\bPangoEngineShapeClass\b/pango.EngineShapeClassObj/g
+s/\bptr ptr PangoEngineLangClass\b/pangovaaaaarEngineLangClass/g
+s/\bptr PangoEngineLangClass\b/pangoptttttrEngineLangClass/g
+s/\bPangoEngineLangClass\b/pango.EngineLangClassObj/g
+s/\bptr ptr PangoFontFamilyClass\b/pangovaaaaarFontFamilyClass/g
+s/\bptr PangoFontFamilyClass\b/pangoptttttrFontFamilyClass/g
+s/\bPangoFontFamilyClass\b/pango.FontFamilyClassObj/g
+s/\bptr ptr PangoFontDescription\b/pangovaaaaarFontDescription/g
+s/\bptr PangoFontDescription\b/pangoptttttrFontDescription/g
+s/\bPangoFontDescription\b/pango.FontDescriptionObj/g
+s/\bptr ptr PangoCoreTextFontKey\b/pangovaaaaarCoreTextFontKey/g
+s/\bptr PangoCoreTextFontKey\b/pangoptttttrCoreTextFontKey/g
+s/\bPangoCoreTextFontKey\b/pango.CoreTextFontKeyObj/g
+s/\bptr ptr PangoCoreTextFontMap\b/pangovaaaaarCoreTextFontMap/g
+s/\bptr PangoCoreTextFontMap\b/pangoptttttrCoreTextFontMap/g
+s/\bPangoCoreTextFontMap\b/pango.CoreTextFontMapObj/g
+s/\bptr ptr PangoWin32FontCache\b/pangovaaaaarWin32FontCache/g
+s/\bptr PangoWin32FontCache\b/pangoptttttrWin32FontCache/g
+s/\bPangoWin32FontCache\b/pango.Win32FontCacheObj/g
+s/\bptr ptr PangoFcFontMapClass\b/pangovaaaaarFcFontMapClass/g
+s/\bptr PangoFcFontMapClass\b/pangoptttttrFcFontMapClass/g
+s/\bPangoFcFontMapClass\b/pango.FcFontMapClassObj/g
+s/\bptr ptr PangoIncludedModule\b/pangovaaaaarIncludedModule/g
+s/\bptr PangoIncludedModule\b/pangoptttttrIncludedModule/g
+s/\bPangoIncludedModule\b/pango.IncludedModuleObj/g
+s/\bptr ptr PangoFcDecoderClass\b/pangovaaaaarFcDecoderClass/g
+s/\bptr PangoFcDecoderClass\b/pangoptttttrFcDecoderClass/g
+s/\bPangoFcDecoderClass\b/pango.FcDecoderClassObj/g
+s/\bptr ptr PangoRendererClass\b/pangovaaaaarRendererClass/g
+s/\bptr PangoRendererClass\b/pangoptttttrRendererClass/g
+s/\bPangoRendererClass\b/pango.RendererClassObj/g
+s/\bptr ptr PangoFontFaceClass\b/pangovaaaaarFontFaceClass/g
+s/\bptr PangoFontFaceClass\b/pangoptttttrFontFaceClass/g
+s/\bPangoFontFaceClass\b/pango.FontFaceClassObj/g
+s/\bptr ptr PangoGlyphItemIter\b/pangovaaaaarGlyphItemIter/g
+s/\bptr PangoGlyphItemIter\b/pangoptttttrGlyphItemIter/g
+s/\bPangoGlyphItemIter\b/pango.GlyphItemIterObj/g
+s/\bptr ptr PangoFontsetSimple\b/pangovaaaaarFontsetSimple/g
+s/\bptr PangoFontsetSimple\b/pangoptttttrFontsetSimple/g
+s/\bPangoFontsetSimple\b/pango.FontsetSimpleObj/g
+s/\bptr ptr PangoGlyphGeometry\b/pangovaaaaarGlyphGeometry/g
+s/\bptr PangoGlyphGeometry\b/pangoptttttrGlyphGeometry/g
+s/\bPangoGlyphGeometry\b/pango.GlyphGeometryObj/g
+s/\bptr ptr PangoCoreTextFace\b/pangovaaaaarCoreTextFace/g
+s/\bptr PangoCoreTextFace\b/pangoptttttrCoreTextFace/g
+s/\bPangoCoreTextFace\b/pango.CoreTextFaceObj/g
+s/\bptr ptr PangoAttrLanguage\b/pangovaaaaarAttrLanguage/g
+s/\bptr PangoAttrLanguage\b/pangoptttttrAttrLanguage/g
+s/\bPangoAttrLanguage\b/pango.AttrLanguageObj/g
+s/\bptr ptr PangoFontMapClass\b/pangovaaaaarFontMapClass/g
+s/\bptr PangoFontMapClass\b/pangoptttttrFontMapClass/g
+s/\bPangoFontMapClass\b/pango.FontMapClassObj/g
+s/\bptr ptr PangoGlyphVisAttr\b/pangovaaaaarGlyphVisAttr/g
+s/\bptr PangoGlyphVisAttr\b/pangoptttttrGlyphVisAttr/g
+s/\bPangoGlyphVisAttr\b/pango.GlyphVisAttrObj/g
+s/\bptr ptr PangoAttrFontDesc\b/pangovaaaaarAttrFontDesc/g
+s/\bptr PangoAttrFontDesc\b/pangoptttttrAttrFontDesc/g
+s/\bPangoAttrFontDesc\b/pango.AttrFontDescObj/g
+s/\bptr ptr PangoFontsetClass\b/pangovaaaaarFontsetClass/g
+s/\bptr PangoFontsetClass\b/pangoptttttrFontsetClass/g
+s/\bPangoFontsetClass\b/pango.FontsetClassObj/g
+s/\bptr ptr PangoAttrIterator\b/pangovaaaaarAttrIterator/g
+s/\bptr PangoAttrIterator\b/pangoptttttrAttrIterator/g
+s/\bPangoAttrIterator\b/pango.AttrIteratorObj/g
+s/\bptr ptr PangoFcFontsetKey\b/pangovaaaaarFcFontsetKey/g
+s/\bptr PangoFcFontsetKey\b/pangoptttttrFcFontsetKey/g
+s/\bPangoFcFontsetKey\b/pango.FcFontsetKeyObj/g
+s/\bptr ptr PangoCoreTextFont\b/pangovaaaaarCoreTextFont/g
+s/\bptr PangoCoreTextFont\b/pangoptttttrCoreTextFont/g
+s/\bPangoCoreTextFont\b/pango.CoreTextFontObj/g
+s/\bptr ptr PangoOTFeatureMap\b/pangovaaaaarOTFeatureMap/g
+s/\bptr PangoOTFeatureMap\b/pangoptttttrOTFeatureMap/g
+s/\bPangoOTFeatureMap\b/pango.OTFeatureMapObj/g
+s/\bptr ptr PangoCairoFontMap\b/pangovaaaaarCairoFontMap/g
+s/\bptr PangoCairoFontMap\b/pangoptttttrCairoFontMap/g
+s/\bPangoCairoFontMap\b/pango.CairoFontMapObj/g
+s/\bptr ptr PangoFcFontClass\b/pangovaaaaarFcFontClass/g
+s/\bptr PangoFcFontClass\b/pangoptttttrFcFontClass/g
+s/\bPangoFcFontClass\b/pango.FcFontClassObj/g
+s/\bptr ptr PangoEngineShape\b/pangovaaaaarEngineShape/g
+s/\bptr PangoEngineShape\b/pangoptttttrEngineShape/g
+s/\bPangoEngineShape\b/pango.EngineShapeObj/g
+s/\bptr ptr PangoXftRenderer\b/pangovaaaaarXftRenderer/g
+s/\bptr PangoXftRenderer\b/pangoptttttrXftRenderer/g
+s/\bPangoXftRenderer\b/pango.XftRendererObj/g
+s/\bptr ptr PangoEngineClass\b/pangovaaaaarEngineClass/g
+s/\bptr PangoEngineClass\b/pangoptttttrEngineClass/g
+s/\bPangoEngineClass\b/pango.EngineClassObj/g
+s/\bptr ptr PangoGlyphString\b/pangovaaaaarGlyphString/g
+s/\bptr PangoGlyphString\b/pangoptttttrGlyphString/g
+s/\bPangoGlyphString\b/pango.GlyphStringObj/g
+s/\bptr ptr PangoFontMetrics\b/pangovaaaaarFontMetrics/g
+s/\bptr PangoFontMetrics\b/pangoptttttrFontMetrics/g
+s/\bPangoFontMetrics\b/pango.FontMetricsObj/g
+s/\bptr ptr PangoFT2FontMap\b/pangovaaaaarFT2FontMap/g
+s/\bptr PangoFT2FontMap\b/pangoptttttrFT2FontMap/g
+s/\bPangoFT2FontMap\b/pango.FT2FontMapObj/g
+s/\bptr ptr PangoFontFamily\b/pangovaaaaarFontFamily/g
+s/\bptr PangoFontFamily\b/pangoptttttrFontFamily/g
+s/\bPangoFontFamily\b/pango.FontFamilyObj/g
+s/\bptr ptr PangoLayoutIter\b/pangovaaaaarLayoutIter/g
+s/\bptr PangoLayoutIter\b/pangoptttttrLayoutIter/g
+s/\bPangoLayoutIter\b/pango.LayoutIterObj/g
+s/\bptr ptr PangoScriptIter\b/pangovaaaaarScriptIter/g
+s/\bptr PangoScriptIter\b/pangoptttttrScriptIter/g
+s/\bPangoScriptIter\b/pango.ScriptIterObj/g
+s/\bptr ptr PangoAttrString\b/pangovaaaaarAttrString/g
+s/\bptr PangoAttrString\b/pangoptttttrAttrString/g
+s/\bPangoAttrString\b/pango.AttrStringObj/g
+s/\bptr ptr PangoLayoutLine\b/pangovaaaaarLayoutLine/g
+s/\bptr PangoLayoutLine\b/pangoptttttrLayoutLine/g
+s/\bPangoLayoutLine\b/pango.LayoutLineObj/g
+s/\bptr ptr PangoEngineLang\b/pangovaaaaarEngineLang/g
+s/\bptr PangoEngineLang\b/pangoptttttrEngineLang/g
+s/\bPangoEngineLang\b/pango.EngineLangObj/g
+s/\bptr ptr PangoEngineInfo\b/pangovaaaaarEngineInfo/g
+s/\bptr PangoEngineInfo\b/pangoptttttrEngineInfo/g
+s/\bPangoEngineInfo\b/pango.EngineInfoObj/g
+s/\bptr ptr PangoAttribute\b/pangovaaaaarAttribute/g
+s/\bptr PangoAttribute\b/pangoptttttrAttribute/g
+s/\bPangoAttribute\b/pango.AttributeObj/g
+s/\bptr ptr PangoGlyphItem\b/pangovaaaaarGlyphItem/g
+s/\bptr PangoGlyphItem\b/pangoptttttrGlyphItem/g
+s/\bPangoGlyphItem\b/pango.GlyphItemObj/g
+s/\bptr ptr PangoFontClass\b/pangovaaaaarFontClass/g
+s/\bptr PangoFontClass\b/pangoptttttrFontClass/g
+s/\bPangoFontClass\b/pango.FontClassObj/g
+s/\bptr ptr PangoAttrClass\b/pangovaaaaarAttrClass/g
+s/\bptr PangoAttrClass\b/pangoptttttrAttrClass/g
+s/\bPangoAttrClass\b/pango.AttrClassObj/g
+s/\bptr ptr PangoFcDecoder\b/pangovaaaaarFcDecoder/g
+s/\bptr PangoFcDecoder\b/pangoptttttrFcDecoder/g
+s/\bPangoFcDecoder\b/pango.FcDecoderObj/g
+s/\bptr ptr PangoAttrColor\b/pangovaaaaarAttrColor/g
+s/\bptr PangoAttrColor\b/pangoptttttrAttrColor/g
+s/\bPangoAttrColor\b/pango.AttrColorObj/g
+s/\bptr ptr PangoGlyphInfo\b/pangovaaaaarGlyphInfo/g
+s/\bptr PangoGlyphInfo\b/pangoptttttrGlyphInfo/g
+s/\bPangoGlyphInfo\b/pango.GlyphInfoObj/g
+s/\bptr ptr PangoFcFontKey\b/pangovaaaaarFcFontKey/g
+s/\bptr PangoFcFontKey\b/pangoptttttrFcFontKey/g
+s/\bPangoFcFontKey\b/pango.FcFontKeyObj/g
+s/\bptr ptr PangoAttrFloat\b/pangovaaaaarAttrFloat/g
+s/\bptr PangoAttrFloat\b/pangoptttttrAttrFloat/g
+s/\bPangoAttrFloat\b/pango.AttrFloatObj/g
+s/\bptr ptr PangoAttrShape\b/pangovaaaaarAttrShape/g
+s/\bptr PangoAttrShape\b/pangoptttttrAttrShape/g
+s/\bPangoAttrShape\b/pango.AttrShapeObj/g
+s/\bptr ptr PangoOTRuleset\b/pangovaaaaarOTRuleset/g
+s/\bptr PangoOTRuleset\b/pangoptttttrOTRuleset/g
+s/\bPangoOTRuleset\b/pango.OTRulesetObj/g
+s/\bptr ptr PangoRectangle\b/pangovaaaaarRectangle/g
+s/\bptr PangoRectangle\b/pangoptttttrRectangle/g
+s/\bPangoRectangle\b/pango.RectangleObj/g
+s/\bptr ptr PangoCairoFont\b/pangovaaaaarCairoFont/g
+s/\bptr PangoCairoFont\b/pangoptttttrCairoFont/g
+s/\bPangoCairoFont\b/pango.CairoFontObj/g
+s/\bptr ptr PangoFcFontMap\b/pangovaaaaarFcFontMap/g
+s/\bptr PangoFcFontMap\b/pangoptttttrFcFontMap/g
+s/\bPangoFcFontMap\b/pango.FcFontMapObj/g
+s/\bptr ptr PangoCoverage\b/pangovaaaaarCoverage/g
+s/\bptr PangoCoverage\b/pangoptttttrCoverage/g
+s/\bPangoCoverage\b/pango.CoverageObj/g
+s/\bptr ptr PangoLanguage\b/pangovaaaaarLanguage/g
+s/\bptr PangoLanguage\b/pangoptttttrLanguage/g
+s/\bPangoLanguage\b/pango.LanguageObj/g
+s/\bptr ptr PangoRenderer\b/pangovaaaaarRenderer/g
+s/\bptr PangoRenderer\b/pangoptttttrRenderer/g
+s/\bPangoRenderer\b/pango.RendererObj/g
+s/\bptr ptr PangoFontFace\b/pangovaaaaarFontFace/g
+s/\bptr PangoFontFace\b/pangoptttttrFontFace/g
+s/\bPangoFontFace\b/pango.FontFaceObj/g
+s/\bptr ptr PangoTabArray\b/pangovaaaaarTabArray/g
+s/\bptr PangoTabArray\b/pangoptttttrTabArray/g
+s/\bPangoTabArray\b/pango.TabArrayObj/g
+s/\bptr ptr PangoAttrList\b/pangovaaaaarAttrList/g
+s/\bptr PangoAttrList\b/pangoptttttrAttrList/g
+s/\bPangoAttrList\b/pango.AttrListObj/g
+s/\bptr ptr PangoOTBuffer\b/pangovaaaaarOTBuffer/g
+s/\bptr PangoOTBuffer\b/pangoptttttrOTBuffer/g
+s/\bPangoOTBuffer\b/pango.OTBufferObj/g
+s/\bptr ptr PangoAnalysis\b/pangovaaaaarAnalysis/g
+s/\bptr PangoAnalysis\b/pangoptttttrAnalysis/g
+s/\bPangoAnalysis\b/pango.AnalysisObj/g
+s/\bptr ptr PangoAttrSize\b/pangovaaaaarAttrSize/g
+s/\bptr PangoAttrSize\b/pangoptttttrAttrSize/g
+s/\bPangoAttrSize\b/pango.AttrSizeObj/g
+s/\bptr ptr PangoFontset\b/pangovaaaaarFontset/g
+s/\bptr PangoFontset\b/pangoptttttrFontset/g
+s/\bPangoFontset\b/pango.FontsetObj/g
+s/\bptr ptr PangoAttrInt\b/pangovaaaaarAttrInt/g
+s/\bptr PangoAttrInt\b/pangoptttttrAttrInt/g
+s/\bPangoAttrInt\b/pango.AttrIntObj/g
+s/\bptr ptr PangoOTGlyph\b/pangovaaaaarOTGlyph/g
+s/\bptr PangoOTGlyph\b/pangoptttttrOTGlyph/g
+s/\bPangoOTGlyph\b/pango.OTGlyphObj/g
+s/\bptr ptr PangoXftFont\b/pangovaaaaarXftFont/g
+s/\bptr PangoXftFont\b/pangoptttttrXftFont/g
+s/\bPangoXftFont\b/pango.XftFontObj/g
+s/\bptr ptr PangoFontMap\b/pangovaaaaarFontMap/g
+s/\bptr PangoFontMap\b/pangoptttttrFontMap/g
+s/\bPangoFontMap\b/pango.FontMapObj/g
+s/\bptr ptr PangoContext\b/pangovaaaaarContext/g
+s/\bptr PangoContext\b/pangoptttttrContext/g
+s/\bPangoContext\b/pango.ContextObj/g
+s/\bptr ptr PangoLogAttr\b/pangovaaaaarLogAttr/g
+s/\bptr PangoLogAttr\b/pangoptttttrLogAttr/g
+s/\bPangoLogAttr\b/pango.LogAttrObj/g
+s/\bptr ptr PangoFcFont\b/pangovaaaaarFcFont/g
+s/\bptr PangoFcFont\b/pangoptttttrFcFont/g
+s/\bPangoFcFont\b/pango.FcFontObj/g
+s/\bptr ptr PangoLayout\b/pangovaaaaarLayout/g
+s/\bptr PangoLayout\b/pangoptttttrLayout/g
+s/\bPangoLayout\b/pango.LayoutObj/g
+s/\bptr ptr PangoEngine\b/pangovaaaaarEngine/g
+s/\bptr PangoEngine\b/pangoptttttrEngine/g
+s/\bPangoEngine\b/pango.EngineObj/g
+s/\bptr ptr PangoMatrix\b/pangovaaaaarMatrix/g
+s/\bptr PangoMatrix\b/pangoptttttrMatrix/g
+s/\bPangoMatrix\b/pango.MatrixObj/g
+s/\bptr ptr PangoOTInfo\b/pangovaaaaarOTInfo/g
+s/\bptr PangoOTInfo\b/pangoptttttrOTInfo/g
+s/\bPangoOTInfo\b/pango.OTInfoObj/g
+s/\bptr ptr PangoColor\b/pangovaaaaarColor/g
+s/\bptr PangoColor\b/pangoptttttrColor/g
+s/\bPangoColor\b/pango.ColorObj/g
+s/\bptr ptr PangoFont\b/pangovaaaaarFont/g
+s/\bptr PangoFont\b/pangoptttttrFont/g
+s/\bPangoFont\b/pango.FontObj/g
+s/\bptr ptr PangoItem\b/pangovaaaaarItem/g
+s/\bptr PangoItem\b/pangoptttttrItem/g
+s/\bPangoItem\b/pango.ItemObj/g
+s/\bptr ptr PangoMap\b/pangovaaaaarMap/g
+s/\bptr PangoMap\b/pangoptttttrMap/g
+s/\bPangoMap\b/pango.MapObj/g
+s/\bptr ptr PangoLayoutRun\b/pangovaaaaarLayoutRun/g
+s/\bptr PangoLayoutRun\b/pangoptttttrLayoutRun/g
+s/\bPangoLayoutRun\b/pango.LayoutRunObj/g
+s/pangovaaaaar/var pango./g
+s/pangoptttttr/pango./g

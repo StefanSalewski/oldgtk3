@@ -1,0 +1,1826 @@
+s/\bptr ptr GtkScrolledWindowAccessibleClass\b/gtk3vaaaaarScrolledWindowAccessibleClass/g
+s/\bptr GtkScrolledWindowAccessibleClass\b/gtk3ptttttrScrolledWindowAccessibleClass/g
+s/\bGtkScrolledWindowAccessibleClass\b/gtk3.ScrolledWindowAccessibleClassObj/g
+s/\bptr ptr GtkCheckMenuItemAccessibleClass\b/gtk3vaaaaarCheckMenuItemAccessibleClass/g
+s/\bptr GtkCheckMenuItemAccessibleClass\b/gtk3ptttttrCheckMenuItemAccessibleClass/g
+s/\bGtkCheckMenuItemAccessibleClass\b/gtk3.CheckMenuItemAccessibleClassObj/g
+s/\bptr ptr GtkContainerCellAccessibleClass\b/gtk3vaaaaarContainerCellAccessibleClass/g
+s/\bptr GtkContainerCellAccessibleClass\b/gtk3ptttttrContainerCellAccessibleClass/g
+s/\bGtkContainerCellAccessibleClass\b/gtk3.ContainerCellAccessibleClassObj/g
+s/\bptr ptr GtkRadioMenuItemAccessibleClass\b/gtk3vaaaaarRadioMenuItemAccessibleClass/g
+s/\bptr GtkRadioMenuItemAccessibleClass\b/gtk3ptttttrRadioMenuItemAccessibleClass/g
+s/\bGtkRadioMenuItemAccessibleClass\b/gtk3.RadioMenuItemAccessibleClassObj/g
+s/\bptr ptr GtkRendererCellAccessibleClass\b/gtk3vaaaaarRendererCellAccessibleClass/g
+s/\bptr GtkRendererCellAccessibleClass\b/gtk3ptttttrRendererCellAccessibleClass/g
+s/\bGtkRendererCellAccessibleClass\b/gtk3.RendererCellAccessibleClassObj/g
+s/\bptr ptr GtkNotebookPageAccessibleClass\b/gtk3vaaaaarNotebookPageAccessibleClass/g
+s/\bptr GtkNotebookPageAccessibleClass\b/gtk3ptttttrNotebookPageAccessibleClass/g
+s/\bGtkNotebookPageAccessibleClass\b/gtk3.NotebookPageAccessibleClassObj/g
+s/\bptr ptr GtkFlowBoxChildAccessibleClass\b/gtk3vaaaaarFlowBoxChildAccessibleClass/g
+s/\bptr GtkFlowBoxChildAccessibleClass\b/gtk3ptttttrFlowBoxChildAccessibleClass/g
+s/\bGtkFlowBoxChildAccessibleClass\b/gtk3.FlowBoxChildAccessibleClassObj/g
+s/\bptr ptr GtkToggleButtonAccessibleClass\b/gtk3vaaaaarToggleButtonAccessibleClass/g
+s/\bptr GtkToggleButtonAccessibleClass\b/gtk3ptttttrToggleButtonAccessibleClass/g
+s/\bGtkToggleButtonAccessibleClass\b/gtk3.ToggleButtonAccessibleClassObj/g
+s/\bptr ptr GtkRadioButtonAccessibleClass\b/gtk3vaaaaarRadioButtonAccessibleClass/g
+s/\bptr GtkRadioButtonAccessibleClass\b/gtk3ptttttrRadioButtonAccessibleClass/g
+s/\bGtkRadioButtonAccessibleClass\b/gtk3.RadioButtonAccessibleClassObj/g
+s/\bptr ptr GtkScaleButtonAccessibleClass\b/gtk3vaaaaarScaleButtonAccessibleClass/g
+s/\bptr GtkScaleButtonAccessibleClass\b/gtk3ptttttrScaleButtonAccessibleClass/g
+s/\bGtkScaleButtonAccessibleClass\b/gtk3.ScaleButtonAccessibleClassObj/g
+s/\bptr ptr GtkProgressBarAccessibleClass\b/gtk3vaaaaarProgressBarAccessibleClass/g
+s/\bptr GtkProgressBarAccessibleClass\b/gtk3ptttttrProgressBarAccessibleClass/g
+s/\bGtkProgressBarAccessibleClass\b/gtk3.ProgressBarAccessibleClassObj/g
+s/\bptr ptr GtkBooleanCellAccessibleClass\b/gtk3vaaaaarBooleanCellAccessibleClass/g
+s/\bptr GtkBooleanCellAccessibleClass\b/gtk3ptttttrBooleanCellAccessibleClass/g
+s/\bGtkBooleanCellAccessibleClass\b/gtk3.BooleanCellAccessibleClassObj/g
+s/\bptr ptr GtkPrintOperationPreviewIface\b/gtk3vaaaaarPrintOperationPreviewIface/g
+s/\bptr GtkPrintOperationPreviewIface\b/gtk3ptttttrPrintOperationPreviewIface/g
+s/\bGtkPrintOperationPreviewIface\b/gtk3.PrintOperationPreviewIfaceObj/g
+s/\bptr ptr GtkLinkButtonAccessibleClass\b/gtk3vaaaaarLinkButtonAccessibleClass/g
+s/\bptr GtkLinkButtonAccessibleClass\b/gtk3ptttttrLinkButtonAccessibleClass/g
+s/\bGtkLinkButtonAccessibleClass\b/gtk3.LinkButtonAccessibleClassObj/g
+s/\bptr ptr GtkMenuButtonAccessibleClass\b/gtk3vaaaaarMenuButtonAccessibleClass/g
+s/\bptr GtkMenuButtonAccessibleClass\b/gtk3ptttttrMenuButtonAccessibleClass/g
+s/\bGtkMenuButtonAccessibleClass\b/gtk3.MenuButtonAccessibleClassObj/g
+s/\bptr ptr GtkCellAccessibleParentIface\b/gtk3vaaaaarCellAccessibleParentIface/g
+s/\bptr GtkCellAccessibleParentIface\b/gtk3ptttttrCellAccessibleParentIface/g
+s/\bGtkCellAccessibleParentIface\b/gtk3.CellAccessibleParentIfaceObj/g
+s/\bptr ptr GtkColorSelectionDialogClass\b/gtk3vaaaaarColorSelectionDialogClass/g
+s/\bptr GtkColorSelectionDialogClass\b/gtk3ptttttrColorSelectionDialogClass/g
+s/\bGtkColorSelectionDialogClass\b/gtk3.ColorSelectionDialogClassObj/g
+s/\bptr ptr GtkLockButtonAccessibleClass\b/gtk3vaaaaarLockButtonAccessibleClass/g
+s/\bptr GtkLockButtonAccessibleClass\b/gtk3ptttttrLockButtonAccessibleClass/g
+s/\bGtkLockButtonAccessibleClass\b/gtk3.LockButtonAccessibleClassObj/g
+s/\bptr ptr GtkListBoxRowAccessibleClass\b/gtk3vaaaaarListBoxRowAccessibleClass/g
+s/\bptr GtkListBoxRowAccessibleClass\b/gtk3ptttttrListBoxRowAccessibleClass/g
+s/\bGtkListBoxRowAccessibleClass\b/gtk3.ListBoxRowAccessibleClassObj/g
+s/\bptr ptr GtkSpinButtonAccessibleClass\b/gtk3vaaaaarSpinButtonAccessibleClass/g
+s/\bptr GtkSpinButtonAccessibleClass\b/gtk3ptttttrSpinButtonAccessibleClass/g
+s/\bGtkSpinButtonAccessibleClass\b/gtk3.SpinButtonAccessibleClassObj/g
+s/\bptr ptr GtkCellRendererProgressClass\b/gtk3vaaaaarCellRendererProgressClass/g
+s/\bptr GtkCellRendererProgressClass\b/gtk3ptttttrCellRendererProgressClass/g
+s/\bGtkCellRendererProgressClass\b/gtk3.CellRendererProgressClassObj/g
+s/\bptr ptr GtkStatusbarAccessibleClass\b/gtk3vaaaaarStatusbarAccessibleClass/g
+s/\bptr GtkStatusbarAccessibleClass\b/gtk3ptttttrStatusbarAccessibleClass/g
+s/\bGtkStatusbarAccessibleClass\b/gtk3.StatusbarAccessibleClassObj/g
+s/\bptr ptr GtkScrolledWindowAccessible\b/gtk3vaaaaarScrolledWindowAccessible/g
+s/\bptr GtkScrolledWindowAccessible\b/gtk3ptttttrScrolledWindowAccessible/g
+s/\bGtkScrolledWindowAccessible\b/gtk3.ScrolledWindowAccessibleObj/g
+s/\bptr ptr GtkRecentChooserDialogClass\b/gtk3vaaaaarRecentChooserDialogClass/g
+s/\bptr GtkRecentChooserDialogClass\b/gtk3ptttttrRecentChooserDialogClass/g
+s/\bGtkRecentChooserDialogClass\b/gtk3.RecentChooserDialogClassObj/g
+s/\bptr ptr GtkCellRendererSpinnerClass\b/gtk3vaaaaarCellRendererSpinnerClass/g
+s/\bptr GtkCellRendererSpinnerClass\b/gtk3ptttttrCellRendererSpinnerClass/g
+s/\bGtkCellRendererSpinnerClass\b/gtk3.CellRendererSpinnerClassObj/g
+s/\bptr ptr GtkRecentChooserWidgetClass\b/gtk3vaaaaarRecentChooserWidgetClass/g
+s/\bptr GtkRecentChooserWidgetClass\b/gtk3ptttttrRecentChooserWidgetClass/g
+s/\bGtkRecentChooserWidgetClass\b/gtk3.RecentChooserWidgetClassObj/g
+s/\bptr ptr GtkContainerAccessibleClass\b/gtk3vaaaaarContainerAccessibleClass/g
+s/\bptr GtkContainerAccessibleClass\b/gtk3ptttttrContainerAccessibleClass/g
+s/\bGtkContainerAccessibleClass\b/gtk3.ContainerAccessibleClassObj/g
+s/\bptr ptr GtkFontSelectionDialogClass\b/gtk3vaaaaarFontSelectionDialogClass/g
+s/\bptr GtkFontSelectionDialogClass\b/gtk3ptttttrFontSelectionDialogClass/g
+s/\bGtkFontSelectionDialogClass\b/gtk3.FontSelectionDialogClassObj/g
+s/\bptr ptr GtkImageCellAccessibleClass\b/gtk3vaaaaarImageCellAccessibleClass/g
+s/\bptr GtkImageCellAccessibleClass\b/gtk3ptttttrImageCellAccessibleClass/g
+s/\bGtkImageCellAccessibleClass\b/gtk3.ImageCellAccessibleClassObj/g
+s/\bptr ptr GtkPageSetupUnixDialogClass\b/gtk3vaaaaarPageSetupUnixDialogClass/g
+s/\bptr GtkPageSetupUnixDialogClass\b/gtk3ptttttrPageSetupUnixDialogClass/g
+s/\bGtkPageSetupUnixDialogClass\b/gtk3.PageSetupUnixDialogClassObj/g
+s/\bptr ptr GtkMenuShellAccessibleClass\b/gtk3vaaaaarMenuShellAccessibleClass/g
+s/\bptr GtkMenuShellAccessibleClass\b/gtk3ptttttrMenuShellAccessibleClass/g
+s/\bGtkMenuShellAccessibleClass\b/gtk3.MenuShellAccessibleClassObj/g
+s/\bptr ptr GtkCellRendererPixbufClass\b/gtk3vaaaaarCellRendererPixbufClass/g
+s/\bptr GtkCellRendererPixbufClass\b/gtk3ptttttrCellRendererPixbufClass/g
+s/\bGtkCellRendererPixbufClass\b/gtk3.CellRendererPixbufClassObj/g
+s/\bptr ptr GtkRadioMenuItemAccessible\b/gtk3vaaaaarRadioMenuItemAccessible/g
+s/\bptr GtkRadioMenuItemAccessible\b/gtk3ptttttrRadioMenuItemAccessible/g
+s/\bGtkRadioMenuItemAccessible\b/gtk3.RadioMenuItemAccessibleObj/g
+s/\bptr ptr GtkTextViewAccessibleClass\b/gtk3vaaaaarTextViewAccessibleClass/g
+s/\bptr GtkTextViewAccessibleClass\b/gtk3ptttttrTextViewAccessibleClass/g
+s/\bGtkTextViewAccessibleClass\b/gtk3.TextViewAccessibleClassObj/g
+s/\bptr ptr GtkMenuItemAccessibleClass\b/gtk3vaaaaarMenuItemAccessibleClass/g
+s/\bptr GtkMenuItemAccessibleClass\b/gtk3ptttttrMenuItemAccessibleClass/g
+s/\bGtkMenuItemAccessibleClass\b/gtk3.MenuItemAccessibleClassObj/g
+s/\bptr ptr GtkToplevelAccessibleClass\b/gtk3vaaaaarToplevelAccessibleClass/g
+s/\bptr GtkToplevelAccessibleClass\b/gtk3ptttttrToplevelAccessibleClass/g
+s/\bGtkToplevelAccessibleClass\b/gtk3.ToplevelAccessibleClassObj/g
+s/\bptr ptr GtkExpanderAccessibleClass\b/gtk3vaaaaarExpanderAccessibleClass/g
+s/\bptr GtkExpanderAccessibleClass\b/gtk3ptttttrExpanderAccessibleClass/g
+s/\bGtkExpanderAccessibleClass\b/gtk3.ExpanderAccessibleClassObj/g
+s/\bptr ptr GtkCheckMenuItemAccessible\b/gtk3vaaaaarCheckMenuItemAccessible/g
+s/\bptr GtkCheckMenuItemAccessible\b/gtk3ptttttrCheckMenuItemAccessible/g
+s/\bGtkCheckMenuItemAccessible\b/gtk3.CheckMenuItemAccessibleObj/g
+s/\bptr ptr GtkTextCellAccessibleClass\b/gtk3vaaaaarTextCellAccessibleClass/g
+s/\bptr GtkTextCellAccessibleClass\b/gtk3ptttttrTextCellAccessibleClass/g
+s/\bGtkTextCellAccessibleClass\b/gtk3.TextCellAccessibleClassObj/g
+s/\bptr ptr GtkContainerCellAccessible\b/gtk3vaaaaarContainerCellAccessible/g
+s/\bptr GtkContainerCellAccessible\b/gtk3ptttttrContainerCellAccessible/g
+s/\bGtkContainerCellAccessible\b/gtk3.ContainerCellAccessibleObj/g
+s/\bptr ptr GtkCellRendererToggleClass\b/gtk3vaaaaarCellRendererToggleClass/g
+s/\bptr GtkCellRendererToggleClass\b/gtk3ptttttrCellRendererToggleClass/g
+s/\bGtkCellRendererToggleClass\b/gtk3.CellRendererToggleClassObj/g
+s/\bptr ptr GtkTreeViewAccessibleClass\b/gtk3vaaaaarTreeViewAccessibleClass/g
+s/\bptr GtkTreeViewAccessibleClass\b/gtk3ptttttrTreeViewAccessibleClass/g
+s/\bGtkTreeViewAccessibleClass\b/gtk3.TreeViewAccessibleClassObj/g
+s/\bptr ptr GtkLevelBarAccessibleClass\b/gtk3vaaaaarLevelBarAccessibleClass/g
+s/\bptr GtkLevelBarAccessibleClass\b/gtk3ptttttrLevelBarAccessibleClass/g
+s/\bGtkLevelBarAccessibleClass\b/gtk3.LevelBarAccessibleClassObj/g
+s/\bptr ptr GtkIconViewAccessibleClass\b/gtk3vaaaaarIconViewAccessibleClass/g
+s/\bptr GtkIconViewAccessibleClass\b/gtk3ptttttrIconViewAccessibleClass/g
+s/\bGtkIconViewAccessibleClass\b/gtk3.IconViewAccessibleClassObj/g
+s/\bptr ptr GtkComboBoxAccessibleClass\b/gtk3vaaaaarComboBoxAccessibleClass/g
+s/\bptr GtkComboBoxAccessibleClass\b/gtk3ptttttrComboBoxAccessibleClass/g
+s/\bGtkComboBoxAccessibleClass\b/gtk3.ComboBoxAccessibleClassObj/g
+s/\bptr ptr GtkColorChooserDialogClass\b/gtk3vaaaaarColorChooserDialogClass/g
+s/\bptr GtkColorChooserDialogClass\b/gtk3ptttttrColorChooserDialogClass/g
+s/\bGtkColorChooserDialogClass\b/gtk3.ColorChooserDialogClassObj/g
+s/\bptr ptr GtkNotebookAccessibleClass\b/gtk3vaaaaarNotebookAccessibleClass/g
+s/\bptr GtkNotebookAccessibleClass\b/gtk3ptttttrNotebookAccessibleClass/g
+s/\bGtkNotebookAccessibleClass\b/gtk3.NotebookAccessibleClassObj/g
+s/\bptr ptr GtkColorChooserWidgetClass\b/gtk3vaaaaarColorChooserWidgetClass/g
+s/\bptr GtkColorChooserWidgetClass\b/gtk3ptttttrColorChooserWidgetClass/g
+s/\bGtkColorChooserWidgetClass\b/gtk3.ColorChooserWidgetClassObj/g
+s/\bptr ptr GtkCellRendererComboClass\b/gtk3vaaaaarCellRendererComboClass/g
+s/\bptr GtkCellRendererComboClass\b/gtk3ptttttrCellRendererComboClass/g
+s/\bGtkCellRendererComboClass\b/gtk3.CellRendererComboClassObj/g
+s/\bptr ptr GtkSeparatorToolItemClass\b/gtk3vaaaaarSeparatorToolItemClass/g
+s/\bptr GtkSeparatorToolItemClass\b/gtk3ptttttrSeparatorToolItemClass/g
+s/\bGtkSeparatorToolItemClass\b/gtk3.SeparatorToolItemClassObj/g
+s/\bptr ptr GtkSeparatorMenuItemClass\b/gtk3vaaaaarSeparatorMenuItemClass/g
+s/\bptr GtkSeparatorMenuItemClass\b/gtk3ptttttrSeparatorMenuItemClass/g
+s/\bGtkSeparatorMenuItemClass\b/gtk3.SeparatorMenuItemClassObj/g
+s/\bptr ptr GtkRendererCellAccessible\b/gtk3vaaaaarRendererCellAccessible/g
+s/\bptr GtkRendererCellAccessible\b/gtk3ptttttrRendererCellAccessible/g
+s/\bGtkRendererCellAccessible\b/gtk3.RendererCellAccessibleObj/g
+s/\bptr ptr GtkPopoverAccessibleClass\b/gtk3vaaaaarPopoverAccessibleClass/g
+s/\bptr GtkPopoverAccessibleClass\b/gtk3ptttttrPopoverAccessibleClass/g
+s/\bGtkPopoverAccessibleClass\b/gtk3.PopoverAccessibleClassObj/g
+s/\bptr ptr GtkListBoxAccessibleClass\b/gtk3vaaaaarListBoxAccessibleClass/g
+s/\bptr GtkListBoxAccessibleClass\b/gtk3ptttttrListBoxAccessibleClass/g
+s/\bGtkListBoxAccessibleClass\b/gtk3.ListBoxAccessibleClassObj/g
+s/\bptr ptr GtkShortcutsShortcutClass\b/gtk3vaaaaarShortcutsShortcutClass/g
+s/\bptr GtkShortcutsShortcutClass\b/gtk3ptttttrShortcutsShortcutClass/g
+s/\bGtkShortcutsShortcutClass\b/gtk3.ShortcutsShortcutClassObj/g
+s/\bptr ptr GtkFileChooserButtonClass\b/gtk3vaaaaarFileChooserButtonClass/g
+s/\bptr GtkFileChooserButtonClass\b/gtk3ptttttrFileChooserButtonClass/g
+s/\bGtkFileChooserButtonClass\b/gtk3.FileChooserButtonClassObj/g
+s/\bptr ptr GtkFlowBoxChildAccessible\b/gtk3vaaaaarFlowBoxChildAccessible/g
+s/\bptr GtkFlowBoxChildAccessible\b/gtk3ptttttrFlowBoxChildAccessible/g
+s/\bGtkFlowBoxChildAccessible\b/gtk3.FlowBoxChildAccessibleObj/g
+s/\bptr ptr GtkFileChooserDialogClass\b/gtk3vaaaaarFileChooserDialogClass/g
+s/\bptr GtkFileChooserDialogClass\b/gtk3ptttttrFileChooserDialogClass/g
+s/\bGtkFileChooserDialogClass\b/gtk3.FileChooserDialogClassObj/g
+s/\bptr ptr GtkApplicationWindowClass\b/gtk3vaaaaarApplicationWindowClass/g
+s/\bptr GtkApplicationWindowClass\b/gtk3ptttttrApplicationWindowClass/g
+s/\bGtkApplicationWindowClass\b/gtk3.ApplicationWindowClassObj/g
+s/\bptr ptr GtkFlowBoxAccessibleClass\b/gtk3vaaaaarFlowBoxAccessibleClass/g
+s/\bptr GtkFlowBoxAccessibleClass\b/gtk3ptttttrFlowBoxAccessibleClass/g
+s/\bGtkFlowBoxAccessibleClass\b/gtk3.FlowBoxAccessibleClassObj/g
+s/\bptr ptr GtkToggleButtonAccessible\b/gtk3vaaaaarToggleButtonAccessible/g
+s/\bptr GtkToggleButtonAccessible\b/gtk3ptttttrToggleButtonAccessible/g
+s/\bGtkToggleButtonAccessible\b/gtk3.ToggleButtonAccessibleObj/g
+s/\bptr ptr GtkRecentChooserMenuClass\b/gtk3vaaaaarRecentChooserMenuClass/g
+s/\bptr GtkRecentChooserMenuClass\b/gtk3ptttttrRecentChooserMenuClass/g
+s/\bGtkRecentChooserMenuClass\b/gtk3.RecentChooserMenuClassObj/g
+s/\bptr ptr GtkFileChooserNativeClass\b/gtk3vaaaaarFileChooserNativeClass/g
+s/\bptr GtkFileChooserNativeClass\b/gtk3ptttttrFileChooserNativeClass/g
+s/\bGtkFileChooserNativeClass\b/gtk3.FileChooserNativeClassObj/g
+s/\bptr ptr GtkSpinnerAccessibleClass\b/gtk3vaaaaarSpinnerAccessibleClass/g
+s/\bptr GtkSpinnerAccessibleClass\b/gtk3ptttttrSpinnerAccessibleClass/g
+s/\bGtkSpinnerAccessibleClass\b/gtk3.SpinnerAccessibleClassObj/g
+s/\bptr ptr GtkNotebookPageAccessible\b/gtk3vaaaaarNotebookPageAccessible/g
+s/\bptr GtkNotebookPageAccessible\b/gtk3ptttttrNotebookPageAccessible/g
+s/\bGtkNotebookPageAccessible\b/gtk3.NotebookPageAccessibleObj/g
+s/\bptr ptr GtkFileChooserWidgetClass\b/gtk3vaaaaarFileChooserWidgetClass/g
+s/\bptr GtkFileChooserWidgetClass\b/gtk3ptttttrFileChooserWidgetClass/g
+s/\bGtkFileChooserWidgetClass\b/gtk3.FileChooserWidgetClassObj/g
+s/\bptr ptr GtkCellRendererAccelClass\b/gtk3vaaaaarCellRendererAccelClass/g
+s/\bptr GtkCellRendererAccelClass\b/gtk3ptttttrCellRendererAccelClass/g
+s/\bGtkCellRendererAccelClass\b/gtk3.CellRendererAccelClassObj/g
+s/\bptr ptr GtkGestureMultiPressClass\b/gtk3vaaaaarGestureMultiPressClass/g
+s/\bptr GtkGestureMultiPressClass\b/gtk3ptttttrGestureMultiPressClass/g
+s/\bGtkGestureMultiPressClass\b/gtk3.GestureMultiPressClassObj/g
+s/\bptr ptr GtkFontChooserWidgetClass\b/gtk3vaaaaarFontChooserWidgetClass/g
+s/\bptr GtkFontChooserWidgetClass\b/gtk3ptttttrFontChooserWidgetClass/g
+s/\bGtkFontChooserWidgetClass\b/gtk3.FontChooserWidgetClassObj/g
+s/\bptr ptr GtkFontChooserDialogClass\b/gtk3vaaaaarFontChooserDialogClass/g
+s/\bptr GtkFontChooserDialogClass\b/gtk3ptttttrFontChooserDialogClass/g
+s/\bGtkFontChooserDialogClass\b/gtk3.FontChooserDialogClassObj/g
+s/\bptr ptr GtkGestureLongPressClass\b/gtk3vaaaaarGestureLongPressClass/g
+s/\bptr GtkGestureLongPressClass\b/gtk3ptttttrGestureLongPressClass/g
+s/\bGtkGestureLongPressClass\b/gtk3.GestureLongPressClassObj/g
+s/\bptr ptr GtkCellRendererTextClass\b/gtk3vaaaaarCellRendererTextClass/g
+s/\bptr GtkCellRendererTextClass\b/gtk3ptttttrCellRendererTextClass/g
+s/\bGtkCellRendererTextClass\b/gtk3.CellRendererTextClassObj/g
+s/\bptr ptr GtkScaleButtonAccessible\b/gtk3vaaaaarScaleButtonAccessible/g
+s/\bptr GtkScaleButtonAccessible\b/gtk3ptttttrScaleButtonAccessible/g
+s/\bGtkScaleButtonAccessible\b/gtk3.ScaleButtonAccessibleObj/g
+s/\bptr ptr GtkAppChooserWidgetClass\b/gtk3vaaaaarAppChooserWidgetClass/g
+s/\bptr GtkAppChooserWidgetClass\b/gtk3ptttttrAppChooserWidgetClass/g
+s/\bGtkAppChooserWidgetClass\b/gtk3.AppChooserWidgetClassObj/g
+s/\bptr ptr GtkPrintOperationPreview\b/gtk3vaaaaarPrintOperationPreview/g
+s/\bptr GtkPrintOperationPreview\b/gtk3ptttttrPrintOperationPreview/g
+s/\bGtkPrintOperationPreview\b/gtk3.PrintOperationPreviewObj/g
+s/\bptr ptr GtkSwitchAccessibleClass\b/gtk3vaaaaarSwitchAccessibleClass/g
+s/\bptr GtkSwitchAccessibleClass\b/gtk3ptttttrSwitchAccessibleClass/g
+s/\bGtkSwitchAccessibleClass\b/gtk3.SwitchAccessibleClassObj/g
+s/\bptr ptr GtkToggleToolButtonClass\b/gtk3vaaaaarToggleToolButtonClass/g
+s/\bptr GtkToggleToolButtonClass\b/gtk3ptttttrToggleToolButtonClass/g
+s/\bGtkToggleToolButtonClass\b/gtk3.ToggleToolButtonClassObj/g
+s/\bptr ptr GtkRadioButtonAccessible\b/gtk3vaaaaarRadioButtonAccessible/g
+s/\bptr GtkRadioButtonAccessible\b/gtk3ptttttrRadioButtonAccessible/g
+s/\bGtkRadioButtonAccessible\b/gtk3.RadioButtonAccessibleObj/g
+s/\bptr ptr GtkAppChooserDialogClass\b/gtk3vaaaaarAppChooserDialogClass/g
+s/\bptr GtkAppChooserDialogClass\b/gtk3ptttttrAppChooserDialogClass/g
+s/\bGtkAppChooserDialogClass\b/gtk3.AppChooserDialogClassObj/g
+s/\bptr ptr GtkCellRendererSpinClass\b/gtk3vaaaaarCellRendererSpinClass/g
+s/\bptr GtkCellRendererSpinClass\b/gtk3ptttttrCellRendererSpinClass/g
+s/\bGtkCellRendererSpinClass\b/gtk3.CellRendererSpinClassObj/g
+s/\bptr ptr GtkAppChooserButtonClass\b/gtk3vaaaaarAppChooserButtonClass/g
+s/\bptr GtkAppChooserButtonClass\b/gtk3ptttttrAppChooserButtonClass/g
+s/\bGtkAppChooserButtonClass\b/gtk3.AppChooserButtonClassObj/g
+s/\bptr ptr GtkProgressBarAccessible\b/gtk3vaaaaarProgressBarAccessible/g
+s/\bptr GtkProgressBarAccessible\b/gtk3ptttttrProgressBarAccessible/g
+s/\bGtkProgressBarAccessible\b/gtk3.ProgressBarAccessibleObj/g
+s/\bptr ptr GtkWidgetAccessibleClass\b/gtk3vaaaaarWidgetAccessibleClass/g
+s/\bptr GtkWidgetAccessibleClass\b/gtk3ptttttrWidgetAccessibleClass/g
+s/\bGtkWidgetAccessibleClass\b/gtk3.WidgetAccessibleClassObj/g
+s/\bptr ptr GtkShortcutsSectionClass\b/gtk3vaaaaarShortcutsSectionClass/g
+s/\bptr GtkShortcutsSectionClass\b/gtk3ptttttrShortcutsSectionClass/g
+s/\bGtkShortcutsSectionClass\b/gtk3.ShortcutsSectionClassObj/g
+s/\bptr ptr GtkButtonAccessibleClass\b/gtk3vaaaaarButtonAccessibleClass/g
+s/\bptr GtkButtonAccessibleClass\b/gtk3ptttttrButtonAccessibleClass/g
+s/\bGtkButtonAccessibleClass\b/gtk3.ButtonAccessibleClassObj/g
+s/\bptr ptr GtkColorChooserInterface\b/gtk3vaaaaarColorChooserInterface/g
+s/\bptr GtkColorChooserInterface\b/gtk3ptttttrColorChooserInterface/g
+s/\bGtkColorChooserInterface\b/gtk3.ColorChooserInterfaceObj/g
+s/\bptr ptr GtkBooleanCellAccessible\b/gtk3vaaaaarBooleanCellAccessible/g
+s/\bptr GtkBooleanCellAccessible\b/gtk3ptttttrBooleanCellAccessible/g
+s/\bGtkBooleanCellAccessible\b/gtk3.BooleanCellAccessibleObj/g
+s/\bptr ptr GtkWindowAccessibleClass\b/gtk3vaaaaarWindowAccessibleClass/g
+s/\bptr GtkWindowAccessibleClass\b/gtk3ptttttrWindowAccessibleClass/g
+s/\bGtkWindowAccessibleClass\b/gtk3.WindowAccessibleClassObj/g
+s/\bptr ptr GtkStylePropertiesClass\b/gtk3vaaaaarStylePropertiesClass/g
+s/\bptr GtkStylePropertiesClass\b/gtk3ptttttrStylePropertiesClass/g
+s/\bGtkStylePropertiesClass\b/gtk3.StylePropertiesClassObj/g
+s/\bptr ptr GtkLinkButtonAccessible\b/gtk3vaaaaarLinkButtonAccessible/g
+s/\bptr GtkLinkButtonAccessible\b/gtk3ptttttrLinkButtonAccessible/g
+s/\bGtkLinkButtonAccessible\b/gtk3.LinkButtonAccessibleObj/g
+s/\bptr ptr GtkMenuButtonAccessible\b/gtk3vaaaaarMenuButtonAccessible/g
+s/\bptr GtkMenuButtonAccessible\b/gtk3ptttttrMenuButtonAccessible/g
+s/\bGtkMenuButtonAccessible\b/gtk3.MenuButtonAccessibleObj/g
+s/\bptr ptr GtkLabelAccessibleClass\b/gtk3vaaaaarLabelAccessibleClass/g
+s/\bptr GtkLabelAccessibleClass\b/gtk3ptttttrLabelAccessibleClass/g
+s/\bGtkLabelAccessibleClass\b/gtk3.LabelAccessibleClassObj/g
+s/\bptr ptr GtkCellAccessibleParent\b/gtk3vaaaaarCellAccessibleParent/g
+s/\bptr GtkCellAccessibleParent\b/gtk3ptttttrCellAccessibleParent/g
+s/\bGtkCellAccessibleParent\b/gtk3.CellAccessibleParentObj/g
+s/\bptr ptr GtkPanedAccessibleClass\b/gtk3vaaaaarPanedAccessibleClass/g
+s/\bptr GtkPanedAccessibleClass\b/gtk3ptttttrPanedAccessibleClass/g
+s/\bGtkPanedAccessibleClass\b/gtk3.PanedAccessibleClassObj/g
+s/\bptr ptr GtkCellRendererProgress\b/gtk3vaaaaarCellRendererProgress/g
+s/\bptr GtkCellRendererProgress\b/gtk3ptttttrCellRendererProgress/g
+s/\bGtkCellRendererProgress\b/gtk3.CellRendererProgressObj/g
+s/\bptr ptr GtkArrowAccessibleClass\b/gtk3vaaaaarArrowAccessibleClass/g
+s/\bptr GtkArrowAccessibleClass\b/gtk3ptttttrArrowAccessibleClass/g
+s/\bGtkArrowAccessibleClass\b/gtk3.ArrowAccessibleClassObj/g
+s/\bptr ptr GtkIMContextSimpleClass\b/gtk3vaaaaarIMContextSimpleClass/g
+s/\bptr GtkIMContextSimpleClass\b/gtk3ptttttrIMContextSimpleClass/g
+s/\bGtkIMContextSimpleClass\b/gtk3.IMContextSimpleClassObj/g
+s/\bptr ptr GtkSpinButtonAccessible\b/gtk3vaaaaarSpinButtonAccessible/g
+s/\bptr GtkSpinButtonAccessible\b/gtk3ptttttrSpinButtonAccessible/g
+s/\bGtkSpinButtonAccessible\b/gtk3.SpinButtonAccessibleObj/g
+s/\bptr ptr GtkOffscreenWindowClass\b/gtk3vaaaaarOffscreenWindowClass/g
+s/\bptr GtkOffscreenWindowClass\b/gtk3ptttttrOffscreenWindowClass/g
+s/\bGtkOffscreenWindowClass\b/gtk3.OffscreenWindowClassObj/g
+s/\bptr ptr GtkEventControllerClass\b/gtk3vaaaaarEventControllerClass/g
+s/\bptr GtkEventControllerClass\b/gtk3ptttttrEventControllerClass/g
+s/\bGtkEventControllerClass\b/gtk3.EventControllerClassObj/g
+s/\bptr ptr GtkTreeModelFilterClass\b/gtk3vaaaaarTreeModelFilterClass/g
+s/\bptr GtkTreeModelFilterClass\b/gtk3ptttttrTreeModelFilterClass/g
+s/\bGtkTreeModelFilterClass\b/gtk3.TreeModelFilterClassObj/g
+s/\bptr ptr GtkCellAreaContextClass\b/gtk3vaaaaarCellAreaContextClass/g
+s/\bptr GtkCellAreaContextClass\b/gtk3ptttttrCellAreaContextClass/g
+s/\bGtkCellAreaContextClass\b/gtk3.CellAreaContextClassObj/g
+s/\bptr ptr GtkEntryCompletionClass\b/gtk3vaaaaarEntryCompletionClass/g
+s/\bptr GtkEntryCompletionClass\b/gtk3ptttttrEntryCompletionClass/g
+s/\bGtkEntryCompletionClass\b/gtk3.EntryCompletionClassObj/g
+s/\bptr ptr GtkImageAccessibleClass\b/gtk3vaaaaarImageAccessibleClass/g
+s/\bptr GtkImageAccessibleClass\b/gtk3ptttttrImageAccessibleClass/g
+s/\bGtkImageAccessibleClass\b/gtk3.ImageAccessibleClassObj/g
+s/\bptr ptr GtkScaleAccessibleClass\b/gtk3vaaaaarScaleAccessibleClass/g
+s/\bptr GtkScaleAccessibleClass\b/gtk3ptttttrScaleAccessibleClass/g
+s/\bGtkScaleAccessibleClass\b/gtk3.ScaleAccessibleClassObj/g
+s/\bptr ptr GtkPrintUnixDialogClass\b/gtk3vaaaaarPrintUnixDialogClass/g
+s/\bptr GtkPrintUnixDialogClass\b/gtk3ptttttrPrintUnixDialogClass/g
+s/\bGtkPrintUnixDialogClass\b/gtk3.PrintUnixDialogClassObj/g
+s/\bptr ptr GtkFrameAccessibleClass\b/gtk3vaaaaarFrameAccessibleClass/g
+s/\bptr GtkFrameAccessibleClass\b/gtk3ptttttrFrameAccessibleClass/g
+s/\bGtkFrameAccessibleClass\b/gtk3.FrameAccessibleClassObj/g
+s/\bptr ptr GtkLockButtonAccessible\b/gtk3vaaaaarLockButtonAccessible/g
+s/\bptr GtkLockButtonAccessible\b/gtk3ptttttrLockButtonAccessible/g
+s/\bGtkLockButtonAccessible\b/gtk3.LockButtonAccessibleObj/g
+s/\bptr ptr GtkShortcutsWindowClass\b/gtk3vaaaaarShortcutsWindowClass/g
+s/\bptr GtkShortcutsWindowClass\b/gtk3ptttttrShortcutsWindowClass/g
+s/\bGtkShortcutsWindowClass\b/gtk3.ShortcutsWindowClassObj/g
+s/\bptr ptr GtkRadioToolButtonClass\b/gtk3vaaaaarRadioToolButtonClass/g
+s/\bptr GtkRadioToolButtonClass\b/gtk3ptttttrRadioToolButtonClass/g
+s/\bGtkRadioToolButtonClass\b/gtk3.RadioToolButtonClassObj/g
+s/\bptr ptr GtkRangeAccessibleClass\b/gtk3vaaaaarRangeAccessibleClass/g
+s/\bptr GtkRangeAccessibleClass\b/gtk3ptttttrRangeAccessibleClass/g
+s/\bGtkRangeAccessibleClass\b/gtk3.RangeAccessibleClassObj/g
+s/\bptr ptr GtkTearoffMenuItemClass\b/gtk3vaaaaarTearoffMenuItemClass/g
+s/\bptr GtkTearoffMenuItemClass\b/gtk3ptttttrTearoffMenuItemClass/g
+s/\bGtkTearoffMenuItemClass\b/gtk3.TearoffMenuItemClassObj/g
+s/\bptr ptr GtkListBoxRowAccessible\b/gtk3vaaaaarListBoxRowAccessible/g
+s/\bptr GtkListBoxRowAccessible\b/gtk3ptttttrListBoxRowAccessible/g
+s/\bGtkListBoxRowAccessible\b/gtk3.ListBoxRowAccessibleObj/g
+s/\bptr ptr GtkEntryAccessibleClass\b/gtk3vaaaaarEntryAccessibleClass/g
+s/\bptr GtkEntryAccessibleClass\b/gtk3ptttttrEntryAccessibleClass/g
+s/\bGtkEntryAccessibleClass\b/gtk3.EntryAccessibleClassObj/g
+s/\bptr ptr GtkColorSelectionDialog\b/gtk3vaaaaarColorSelectionDialog/g
+s/\bptr GtkColorSelectionDialog\b/gtk3ptttttrColorSelectionDialog/g
+s/\bGtkColorSelectionDialog\b/gtk3.ColorSelectionDialogObj/g
+s/\bptr ptr GtkTextChildAnchorClass\b/gtk3vaaaaarTextChildAnchorClass/g
+s/\bptr GtkTextChildAnchorClass\b/gtk3ptttttrTextChildAnchorClass/g
+s/\bGtkTextChildAnchorClass\b/gtk3.TextChildAnchorClassObj/g
+s/\bptr ptr GtkTreeViewColumnClass\b/gtk3vaaaaarTreeViewColumnClass/g
+s/\bptr GtkTreeViewColumnClass\b/gtk3ptttttrTreeViewColumnClass/g
+s/\bGtkTreeViewColumnClass\b/gtk3.TreeViewColumnClassObj/g
+s/\bptr ptr GtkContainerAccessible\b/gtk3vaaaaarContainerAccessible/g
+s/\bptr GtkContainerAccessible\b/gtk3ptttttrContainerAccessible/g
+s/\bGtkContainerAccessible\b/gtk3.ContainerAccessibleObj/g
+s/\bptr ptr GtkActionableInterface\b/gtk3vaaaaarActionableInterface/g
+s/\bptr GtkActionableInterface\b/gtk3ptttttrActionableInterface/g
+s/\bGtkActionableInterface\b/gtk3.ActionableInterfaceObj/g
+s/\bptr ptr GtkStatusbarAccessible\b/gtk3vaaaaarStatusbarAccessible/g
+s/\bptr GtkStatusbarAccessible\b/gtk3ptttttrStatusbarAccessible/g
+s/\bGtkStatusbarAccessible\b/gtk3.StatusbarAccessibleObj/g
+s/\bptr ptr GtkRecentChooserWidget\b/gtk3vaaaaarRecentChooserWidget/g
+s/\bptr GtkRecentChooserWidget\b/gtk3ptttttrRecentChooserWidget/g
+s/\bGtkRecentChooserWidget\b/gtk3.RecentChooserWidgetObj/g
+s/\bptr ptr GtkColorSelectionClass\b/gtk3vaaaaarColorSelectionClass/g
+s/\bptr GtkColorSelectionClass\b/gtk3ptttttrColorSelectionClass/g
+s/\bGtkColorSelectionClass\b/gtk3.ColorSelectionClassObj/g
+s/\bptr ptr GtkPrintOperationClass\b/gtk3vaaaaarPrintOperationClass/g
+s/\bptr GtkPrintOperationClass\b/gtk3ptttttrPrintOperationClass/g
+s/\bGtkPrintOperationClass\b/gtk3.PrintOperationClassObj/g
+s/\bptr ptr GtkRecentChooserDialog\b/gtk3vaaaaarRecentChooserDialog/g
+s/\bptr GtkRecentChooserDialog\b/gtk3ptttttrRecentChooserDialog/g
+s/\bGtkRecentChooserDialog\b/gtk3.RecentChooserDialogObj/g
+s/\bptr ptr GtkCellRendererSpinner\b/gtk3vaaaaarCellRendererSpinner/g
+s/\bptr GtkCellRendererSpinner\b/gtk3ptttttrCellRendererSpinner/g
+s/\bGtkCellRendererSpinner\b/gtk3.CellRendererSpinnerObj/g
+s/\bptr ptr GtkCellAccessibleClass\b/gtk3vaaaaarCellAccessibleClass/g
+s/\bptr GtkCellAccessibleClass\b/gtk3ptttttrCellAccessibleClass/g
+s/\bGtkCellAccessibleClass\b/gtk3.CellAccessibleClassObj/g
+s/\bptr ptr GtkTreeDragSourceIface\b/gtk3vaaaaarTreeDragSourceIface/g
+s/\bptr GtkTreeDragSourceIface\b/gtk3ptttttrTreeDragSourceIface/g
+s/\bGtkTreeDragSourceIface\b/gtk3.TreeDragSourceIfaceObj/g
+s/\bptr ptr GtkPageSetupUnixDialog\b/gtk3vaaaaarPageSetupUnixDialog/g
+s/\bptr GtkPageSetupUnixDialog\b/gtk3ptttttrPageSetupUnixDialog/g
+s/\bGtkPageSetupUnixDialog\b/gtk3.PageSetupUnixDialogObj/g
+s/\bptr ptr GtkMenuAccessibleClass\b/gtk3vaaaaarMenuAccessibleClass/g
+s/\bptr GtkMenuAccessibleClass\b/gtk3ptttttrMenuAccessibleClass/g
+s/\bGtkMenuAccessibleClass\b/gtk3.MenuAccessibleClassObj/g
+s/\bptr ptr GtkImageCellAccessible\b/gtk3vaaaaarImageCellAccessible/g
+s/\bptr GtkImageCellAccessible\b/gtk3ptttttrImageCellAccessible/g
+s/\bGtkImageCellAccessible\b/gtk3.ImageCellAccessibleObj/g
+s/\bptr ptr GtkScrolledWindowClass\b/gtk3vaaaaarScrolledWindowClass/g
+s/\bptr GtkScrolledWindowClass\b/gtk3ptttttrScrolledWindowClass/g
+s/\bGtkScrolledWindowClass\b/gtk3.ScrolledWindowClassObj/g
+s/\bptr ptr GtkFontSelectionDialog\b/gtk3vaaaaarFontSelectionDialog/g
+s/\bptr GtkFontSelectionDialog\b/gtk3ptttttrFontSelectionDialog/g
+s/\bGtkFontSelectionDialog\b/gtk3.FontSelectionDialogObj/g
+s/\bptr ptr GtkMenuShellAccessible\b/gtk3vaaaaarMenuShellAccessible/g
+s/\bptr GtkMenuShellAccessible\b/gtk3ptttttrMenuShellAccessible/g
+s/\bGtkMenuShellAccessible\b/gtk3.MenuShellAccessibleObj/g
+s/\bptr ptr GtkShortcutsGroupClass\b/gtk3vaaaaarShortcutsGroupClass/g
+s/\bptr GtkShortcutsGroupClass\b/gtk3ptttttrShortcutsGroupClass/g
+s/\bGtkShortcutsGroupClass\b/gtk3.ShortcutsGroupClassObj/g
+s/\bptr ptr GtkMountOperationClass\b/gtk3vaaaaarMountOperationClass/g
+s/\bptr GtkMountOperationClass\b/gtk3ptttttrMountOperationClass/g
+s/\bGtkMountOperationClass\b/gtk3.MountOperationClassObj/g
+s/\bptr ptr GtkIMMulticontextClass\b/gtk3vaaaaarIMMulticontextClass/g
+s/\bptr GtkIMMulticontextClass\b/gtk3ptttttrIMMulticontextClass/g
+s/\bGtkIMMulticontextClass\b/gtk3.IMMulticontextClassObj/g
+s/\bptr ptr GtkScrollableInterface\b/gtk3vaaaaarScrollableInterface/g
+s/\bptr GtkScrollableInterface\b/gtk3ptttttrScrollableInterface/g
+s/\bGtkScrollableInterface\b/gtk3.ScrollableInterfaceObj/g
+s/\bptr ptr GtkMenuToolButtonClass\b/gtk3vaaaaarMenuToolButtonClass/g
+s/\bptr GtkMenuToolButtonClass\b/gtk3ptttttrMenuToolButtonClass/g
+s/\bGtkMenuToolButtonClass\b/gtk3.MenuToolButtonClassObj/g
+s/\bptr ptr GtkTreeSelectionClass\b/gtk3vaaaaarTreeSelectionClass/g
+s/\bptr GtkTreeSelectionClass\b/gtk3ptttttrTreeSelectionClass/g
+s/\bGtkTreeSelectionClass\b/gtk3.TreeSelectionClassObj/g
+s/\bptr ptr GtkMenuItemAccessible\b/gtk3vaaaaarMenuItemAccessible/g
+s/\bptr GtkMenuItemAccessible\b/gtk3ptttttrMenuItemAccessible/g
+s/\bGtkMenuItemAccessible\b/gtk3.MenuItemAccessibleObj/g
+s/\bptr ptr GtkWindowGeometryInfo\b/gtk3vaaaaarWindowGeometryInfo/g
+s/\bptr GtkWindowGeometryInfo\b/gtk3ptttttrWindowGeometryInfo/g
+s/\bGtkWindowGeometryInfo\b/gtk3.WindowGeometryInfoObj/g
+s/\bptr ptr GtkMessageDialogClass\b/gtk3vaaaaarMessageDialogClass/g
+s/\bptr GtkMessageDialogClass\b/gtk3ptttttrMessageDialogClass/g
+s/\bGtkMessageDialogClass\b/gtk3.MessageDialogClassObj/g
+s/\bptr ptr GtkRadioMenuItemClass\b/gtk3vaaaaarRadioMenuItemClass/g
+s/\bptr GtkRadioMenuItemClass\b/gtk3ptttttrRadioMenuItemClass/g
+s/\bGtkRadioMenuItemClass\b/gtk3.RadioMenuItemClassObj/g
+s/\bptr ptr GtkIconViewAccessible\b/gtk3vaaaaarIconViewAccessible/g
+s/\bptr GtkIconViewAccessible\b/gtk3ptttttrIconViewAccessible/g
+s/\bGtkIconViewAccessible\b/gtk3.IconViewAccessibleObj/g
+s/\bptr ptr GtkNotebookAccessible\b/gtk3vaaaaarNotebookAccessible/g
+s/\bptr GtkNotebookAccessible\b/gtk3ptttttrNotebookAccessible/g
+s/\bGtkNotebookAccessible\b/gtk3.NotebookAccessibleObj/g
+s/\bptr ptr GtkGestureSingleClass\b/gtk3vaaaaarGestureSingleClass/g
+s/\bptr GtkGestureSingleClass\b/gtk3ptttttrGestureSingleClass/g
+s/\bGtkGestureSingleClass\b/gtk3.GestureSingleClassObj/g
+s/\bptr ptr GtkComboBoxAccessible\b/gtk3vaaaaarComboBoxAccessible/g
+s/\bptr GtkComboBoxAccessible\b/gtk3ptttttrComboBoxAccessible/g
+s/\bGtkComboBoxAccessible\b/gtk3.ComboBoxAccessibleObj/g
+s/\bptr ptr GtkTreeViewAccessible\b/gtk3vaaaaarTreeViewAccessible/g
+s/\bptr GtkTreeViewAccessible\b/gtk3ptttttrTreeViewAccessible/g
+s/\bGtkTreeViewAccessible\b/gtk3.TreeViewAccessibleObj/g
+s/\bptr ptr GtkTreeModelSortClass\b/gtk3vaaaaarTreeModelSortClass/g
+s/\bptr GtkTreeModelSortClass\b/gtk3ptttttrTreeModelSortClass/g
+s/\bGtkTreeModelSortClass\b/gtk3.TreeModelSortClassObj/g
+s/\bptr ptr GtkStackSwitcherClass\b/gtk3vaaaaarStackSwitcherClass/g
+s/\bptr GtkStackSwitcherClass\b/gtk3ptttttrStackSwitcherClass/g
+s/\bGtkStackSwitcherClass\b/gtk3.StackSwitcherClassObj/g
+s/\bptr ptr GtkCellRendererPixbuf\b/gtk3vaaaaarCellRendererPixbuf/g
+s/\bptr GtkCellRendererPixbuf\b/gtk3ptttttrCellRendererPixbuf/g
+s/\bGtkCellRendererPixbuf\b/gtk3.CellRendererPixbufObj/g
+s/\bptr ptr GtkGestureRotateClass\b/gtk3vaaaaarGestureRotateClass/g
+s/\bptr GtkGestureRotateClass\b/gtk3ptttttrGestureRotateClass/g
+s/\bGtkGestureRotateClass\b/gtk3.GestureRotateClassObj/g
+s/\bptr ptr GtkRecentManagerClass\b/gtk3vaaaaarRecentManagerClass/g
+s/\bptr GtkRecentManagerClass\b/gtk3ptttttrRecentManagerClass/g
+s/\bGtkRecentManagerClass\b/gtk3.RecentManagerClassObj/g
+s/\bptr ptr GtkThemingEngineClass\b/gtk3vaaaaarThemingEngineClass/g
+s/\bptr GtkThemingEngineClass\b/gtk3ptttttrThemingEngineClass/g
+s/\bGtkThemingEngineClass\b/gtk3.ThemingEngineClassObj/g
+s/\bptr ptr GtkRecentChooserIface\b/gtk3vaaaaarRecentChooserIface/g
+s/\bptr GtkRecentChooserIface\b/gtk3ptttttrRecentChooserIface/g
+s/\bGtkRecentChooserIface\b/gtk3.RecentChooserIfaceObj/g
+s/\bptr ptr GtkTextViewAccessible\b/gtk3vaaaaarTextViewAccessible/g
+s/\bptr GtkTextViewAccessible\b/gtk3ptttttrTextViewAccessible/g
+s/\bGtkTextViewAccessible\b/gtk3.TextViewAccessibleObj/g
+s/\bptr ptr GtkNumerableIconClass\b/gtk3vaaaaarNumerableIconClass/g
+s/\bptr GtkNumerableIconClass\b/gtk3ptttttrNumerableIconClass/g
+s/\bGtkNumerableIconClass\b/gtk3.NumerableIconClassObj/g
+s/\bptr ptr GtkCellRendererToggle\b/gtk3vaaaaarCellRendererToggle/g
+s/\bptr GtkCellRendererToggle\b/gtk3ptttttrCellRendererToggle/g
+s/\bGtkCellRendererToggle\b/gtk3.CellRendererToggleObj/g
+s/\bptr ptr GtkExpanderAccessible\b/gtk3vaaaaarExpanderAccessible/g
+s/\bptr GtkExpanderAccessible\b/gtk3ptttttrExpanderAccessible/g
+s/\bGtkExpanderAccessible\b/gtk3.ExpanderAccessibleObj/g
+s/\bptr ptr GtkStyleProviderIface\b/gtk3vaaaaarStyleProviderIface/g
+s/\bptr GtkStyleProviderIface\b/gtk3ptttttrStyleProviderIface/g
+s/\bGtkStyleProviderIface\b/gtk3.StyleProviderIfaceObj/g
+s/\bptr ptr GtkTextCellAccessible\b/gtk3vaaaaarTextCellAccessible/g
+s/\bptr GtkTextCellAccessible\b/gtk3ptttttrTextCellAccessible/g
+s/\bGtkTextCellAccessible\b/gtk3.TextCellAccessibleObj/g
+s/\bptr ptr GtkToplevelAccessible\b/gtk3vaaaaarToplevelAccessible/g
+s/\bptr GtkToplevelAccessible\b/gtk3ptttttrToplevelAccessible/g
+s/\bGtkToplevelAccessible\b/gtk3.ToplevelAccessibleObj/g
+s/\bptr ptr GtkLabelSelectionInfo\b/gtk3vaaaaarLabelSelectionInfo/g
+s/\bptr GtkLabelSelectionInfo\b/gtk3ptttttrLabelSelectionInfo/g
+s/\bGtkLabelSelectionInfo\b/gtk3.LabelSelectionInfoObj/g
+s/\bptr ptr GtkColorChooserWidget\b/gtk3vaaaaarColorChooserWidget/g
+s/\bptr GtkColorChooserWidget\b/gtk3ptttttrColorChooserWidget/g
+s/\bGtkColorChooserWidget\b/gtk3.ColorChooserWidgetObj/g
+s/\bptr ptr GtkColorChooserDialog\b/gtk3vaaaaarColorChooserDialog/g
+s/\bptr GtkColorChooserDialog\b/gtk3ptttttrColorChooserDialog/g
+s/\bGtkColorChooserDialog\b/gtk3.ColorChooserDialogObj/g
+s/\bptr ptr GtkFontSelectionClass\b/gtk3vaaaaarFontSelectionClass/g
+s/\bptr GtkFontSelectionClass\b/gtk3ptttttrFontSelectionClass/g
+s/\bGtkFontSelectionClass\b/gtk3.FontSelectionClassObj/g
+s/\bptr ptr GtkPlacesSidebarClass\b/gtk3vaaaaarPlacesSidebarClass/g
+s/\bptr GtkPlacesSidebarClass\b/gtk3ptttttrPlacesSidebarClass/g
+s/\bGtkPlacesSidebarClass\b/gtk3.PlacesSidebarClassObj/g
+s/\bptr ptr GtkToolItemGroupClass\b/gtk3vaaaaarToolItemGroupClass/g
+s/\bptr GtkToolItemGroupClass\b/gtk3ptttttrToolItemGroupClass/g
+s/\bGtkToolItemGroupClass\b/gtk3.ToolItemGroupClassObj/g
+s/\bptr ptr GtkCheckMenuItemClass\b/gtk3vaaaaarCheckMenuItemClass/g
+s/\bptr GtkCheckMenuItemClass\b/gtk3ptttttrCheckMenuItemClass/g
+s/\bGtkCheckMenuItemClass\b/gtk3.CheckMenuItemClassObj/g
+s/\bptr ptr GtkImageMenuItemClass\b/gtk3vaaaaarImageMenuItemClass/g
+s/\bptr GtkImageMenuItemClass\b/gtk3ptttttrImageMenuItemClass/g
+s/\bGtkImageMenuItemClass\b/gtk3.ImageMenuItemClassObj/g
+s/\bptr ptr GtkLevelBarAccessible\b/gtk3vaaaaarLevelBarAccessible/g
+s/\bptr GtkLevelBarAccessible\b/gtk3ptttttrLevelBarAccessible/g
+s/\bGtkLevelBarAccessible\b/gtk3.LevelBarAccessibleObj/g
+s/\bptr ptr GtkComboBoxTextClass\b/gtk3vaaaaarComboBoxTextClass/g
+s/\bptr GtkComboBoxTextClass\b/gtk3ptttttrComboBoxTextClass/g
+s/\bGtkComboBoxTextClass\b/gtk3.ComboBoxTextClassObj/g
+s/\bptr ptr GtkSeparatorToolItem\b/gtk3vaaaaarSeparatorToolItem/g
+s/\bptr GtkSeparatorToolItem\b/gtk3ptttttrSeparatorToolItem/g
+s/\bGtkSeparatorToolItem\b/gtk3.SeparatorToolItemObj/g
+s/\bptr ptr GtkEditableInterface\b/gtk3vaaaaarEditableInterface/g
+s/\bptr GtkEditableInterface\b/gtk3ptttttrEditableInterface/g
+s/\bGtkEditableInterface\b/gtk3.EditableInterfaceObj/g
+s/\bptr ptr GtkListBoxAccessible\b/gtk3vaaaaarListBoxAccessible/g
+s/\bptr GtkListBoxAccessible\b/gtk3ptttttrListBoxAccessible/g
+s/\bGtkListBoxAccessible\b/gtk3.ListBoxAccessibleObj/g
+s/\bptr ptr GtkToggleActionClass\b/gtk3vaaaaarToggleActionClass/g
+s/\bptr GtkToggleActionClass\b/gtk3ptttttrToggleActionClass/g
+s/\bGtkToggleActionClass\b/gtk3.ToggleActionClassObj/g
+s/\bptr ptr GtkGestureSwipeClass\b/gtk3vaaaaarGestureSwipeClass/g
+s/\bptr GtkGestureSwipeClass\b/gtk3ptttttrGestureSwipeClass/g
+s/\bGtkGestureSwipeClass\b/gtk3.GestureSwipeClassObj/g
+s/\bptr ptr GtkRecentActionClass\b/gtk3vaaaaarRecentActionClass/g
+s/\bptr GtkRecentActionClass\b/gtk3ptttttrRecentActionClass/g
+s/\bGtkRecentActionClass\b/gtk3.RecentActionClassObj/g
+s/\bptr ptr GtkToggleButtonClass\b/gtk3vaaaaarToggleButtonClass/g
+s/\bptr GtkToggleButtonClass\b/gtk3ptttttrToggleButtonClass/g
+s/\bGtkToggleButtonClass\b/gtk3.ToggleButtonClassObj/g
+s/\bptr ptr GtkPopoverAccessible\b/gtk3vaaaaarPopoverAccessible/g
+s/\bptr GtkPopoverAccessible\b/gtk3ptttttrPopoverAccessible/g
+s/\bGtkPopoverAccessible\b/gtk3.PopoverAccessibleObj/g
+s/\bptr ptr GtkSeparatorMenuItem\b/gtk3vaaaaarSeparatorMenuItem/g
+s/\bptr GtkSeparatorMenuItem\b/gtk3ptttttrSeparatorMenuItem/g
+s/\bGtkSeparatorMenuItem\b/gtk3.SeparatorMenuItemObj/g
+s/\bptr ptr GtkStyleContextClass\b/gtk3vaaaaarStyleContextClass/g
+s/\bptr GtkStyleContextClass\b/gtk3ptttttrStyleContextClass/g
+s/\bGtkStyleContextClass\b/gtk3.StyleContextClassObj/g
+s/\bptr ptr GtkGestureMultiPress\b/gtk3vaaaaarGestureMultiPress/g
+s/\bptr GtkGestureMultiPress\b/gtk3ptttttrGestureMultiPress/g
+s/\bGtkGestureMultiPress\b/gtk3.GestureMultiPressObj/g
+s/\bptr ptr GtkShortcutsShortcut\b/gtk3vaaaaarShortcutsShortcut/g
+s/\bptr GtkShortcutsShortcut\b/gtk3ptttttrShortcutsShortcut/g
+s/\bGtkShortcutsShortcut\b/gtk3.ShortcutsShortcutObj/g
+s/\bptr ptr GtkStackSidebarClass\b/gtk3vaaaaarStackSidebarClass/g
+s/\bptr GtkStackSidebarClass\b/gtk3ptttttrStackSidebarClass/g
+s/\bGtkStackSidebarClass\b/gtk3.StackSidebarClassObj/g
+s/\bptr ptr GtkTreeDragDestIface\b/gtk3vaaaaarTreeDragDestIface/g
+s/\bptr GtkTreeDragDestIface\b/gtk3ptttttrTreeDragDestIface/g
+s/\bGtkTreeDragDestIface\b/gtk3.TreeDragDestIfaceObj/g
+s/\bptr ptr GtkSpinnerAccessible\b/gtk3vaaaaarSpinnerAccessible/g
+s/\bptr GtkSpinnerAccessible\b/gtk3ptttttrSpinnerAccessible/g
+s/\bGtkSpinnerAccessible\b/gtk3.SpinnerAccessibleObj/g
+s/\bptr ptr GtkTextTagTableClass\b/gtk3vaaaaarTextTagTableClass/g
+s/\bptr GtkTextTagTableClass\b/gtk3ptttttrTextTagTableClass/g
+s/\bGtkTextTagTableClass\b/gtk3.TextTagTableClassObj/g
+s/\bptr ptr GtkCellRendererCombo\b/gtk3vaaaaarCellRendererCombo/g
+s/\bptr GtkCellRendererCombo\b/gtk3ptttttrCellRendererCombo/g
+s/\bGtkCellRendererCombo\b/gtk3.CellRendererComboObj/g
+s/\bptr ptr GtkCellRendererAccel\b/gtk3vaaaaarCellRendererAccel/g
+s/\bptr GtkCellRendererAccel\b/gtk3ptttttrCellRendererAccel/g
+s/\bGtkCellRendererAccel\b/gtk3.CellRendererAccelObj/g
+s/\bptr ptr GtkApplicationWindow\b/gtk3vaaaaarApplicationWindow/g
+s/\bptr GtkApplicationWindow\b/gtk3ptttttrApplicationWindow/g
+s/\bGtkApplicationWindow\b/gtk3.ApplicationWindowObj/g
+s/\bptr ptr GtkRecentChooserMenu\b/gtk3vaaaaarRecentChooserMenu/g
+s/\bptr GtkRecentChooserMenu\b/gtk3ptttttrRecentChooserMenu/g
+s/\bGtkRecentChooserMenu\b/gtk3.RecentChooserMenuObj/g
+s/\bptr ptr GtkFontChooserWidget\b/gtk3vaaaaarFontChooserWidget/g
+s/\bptr GtkFontChooserWidget\b/gtk3ptttttrFontChooserWidget/g
+s/\bGtkFontChooserWidget\b/gtk3.FontChooserWidgetObj/g
+s/\bptr ptr GtkFlowBoxAccessible\b/gtk3vaaaaarFlowBoxAccessible/g
+s/\bptr GtkFlowBoxAccessible\b/gtk3ptttttrFlowBoxAccessible/g
+s/\bGtkFlowBoxAccessible\b/gtk3.FlowBoxAccessibleObj/g
+s/\bptr ptr GtkFontChooserDialog\b/gtk3vaaaaarFontChooserDialog/g
+s/\bptr GtkFontChooserDialog\b/gtk3ptttttrFontChooserDialog/g
+s/\bGtkFontChooserDialog\b/gtk3.FontChooserDialogObj/g
+s/\bptr ptr GtkToggleActionEntry\b/gtk3vaaaaarToggleActionEntry/g
+s/\bptr GtkToggleActionEntry\b/gtk3ptttttrToggleActionEntry/g
+s/\bGtkToggleActionEntry\b/gtk3.ToggleActionEntryObj/g
+s/\bptr ptr GtkFileChooserButton\b/gtk3vaaaaarFileChooserButton/g
+s/\bptr GtkFileChooserButton\b/gtk3ptttttrFileChooserButton/g
+s/\bGtkFileChooserButton\b/gtk3.FileChooserButtonObj/g
+s/\bptr ptr GtkVolumeButtonClass\b/gtk3vaaaaarVolumeButtonClass/g
+s/\bptr GtkVolumeButtonClass\b/gtk3ptttttrVolumeButtonClass/g
+s/\bGtkVolumeButtonClass\b/gtk3.VolumeButtonClassObj/g
+s/\bptr ptr GtkFlowBoxChildClass\b/gtk3vaaaaarFlowBoxChildClass/g
+s/\bptr GtkFlowBoxChildClass\b/gtk3ptttttrFlowBoxChildClass/g
+s/\bGtkFlowBoxChildClass\b/gtk3.FlowBoxChildClassObj/g
+s/\bptr ptr GtkFileChooserDialog\b/gtk3vaaaaarFileChooserDialog/g
+s/\bptr GtkFileChooserDialog\b/gtk3ptttttrFileChooserDialog/g
+s/\bGtkFileChooserDialog\b/gtk3.FileChooserDialogObj/g
+s/\bptr ptr GtkTreeSortableIface\b/gtk3vaaaaarTreeSortableIface/g
+s/\bptr GtkTreeSortableIface\b/gtk3ptttttrTreeSortableIface/g
+s/\bGtkTreeSortableIface\b/gtk3.TreeSortableIfaceObj/g
+s/\bptr ptr GtkNativeDialogClass\b/gtk3vaaaaarNativeDialogClass/g
+s/\bptr GtkNativeDialogClass\b/gtk3ptttttrNativeDialogClass/g
+s/\bGtkNativeDialogClass\b/gtk3.NativeDialogClassObj/g
+s/\bptr ptr GtkFileChooserNative\b/gtk3vaaaaarFileChooserNative/g
+s/\bptr GtkFileChooserNative\b/gtk3ptttttrFileChooserNative/g
+s/\bGtkFileChooserNative\b/gtk3.FileChooserNativeObj/g
+s/\bptr ptr GtkCellEditableIface\b/gtk3vaaaaarCellEditableIface/g
+s/\bptr GtkCellEditableIface\b/gtk3ptttttrCellEditableIface/g
+s/\bGtkCellEditableIface\b/gtk3.CellEditableIfaceObj/g
+s/\bptr ptr GtkFileChooserWidget\b/gtk3vaaaaarFileChooserWidget/g
+s/\bptr GtkFileChooserWidget\b/gtk3ptttttrFileChooserWidget/g
+s/\bGtkFileChooserWidget\b/gtk3.FileChooserWidgetObj/g
+s/\bptr ptr GtkCellRendererClass\b/gtk3vaaaaarCellRendererClass/g
+s/\bptr GtkCellRendererClass\b/gtk3ptttttrCellRendererClass/g
+s/\bGtkCellRendererClass\b/gtk3.CellRendererClassObj/g
+s/\bptr ptr GtkScaleButtonClass\b/gtk3vaaaaarScaleButtonClass/g
+s/\bptr GtkScaleButtonClass\b/gtk3ptttttrScaleButtonClass/g
+s/\bGtkScaleButtonClass\b/gtk3.ScaleButtonClassObj/g
+s/\bptr ptr GtkRecentFilterInfo\b/gtk3vaaaaarRecentFilterInfo/g
+s/\bptr GtkRecentFilterInfo\b/gtk3ptttttrRecentFilterInfo/g
+s/\bGtkRecentFilterInfo\b/gtk3.RecentFilterInfoObj/g
+s/\bptr ptr GtkActionGroupClass\b/gtk3vaaaaarActionGroupClass/g
+s/\bptr GtkActionGroupClass\b/gtk3ptttttrActionGroupClass/g
+s/\bGtkActionGroupClass\b/gtk3.ActionGroupClassObj/g
+s/\bptr ptr GtkAboutDialogClass\b/gtk3vaaaaarAboutDialogClass/g
+s/\bptr GtkAboutDialogClass\b/gtk3ptttttrAboutDialogClass/g
+s/\bGtkAboutDialogClass\b/gtk3.AboutDialogClassObj/g
+s/\bptr ptr GtkToggleToolButton\b/gtk3vaaaaarToggleToolButton/g
+s/\bptr GtkToggleToolButton\b/gtk3ptttttrToggleToolButton/g
+s/\bGtkToggleToolButton\b/gtk3.ToggleToolButtonObj/g
+s/\bptr ptr GtkRadioActionEntry\b/gtk3vaaaaarRadioActionEntry/g
+s/\bptr GtkRadioActionEntry\b/gtk3ptttttrRadioActionEntry/g
+s/\bGtkRadioActionEntry\b/gtk3.RadioActionEntryObj/g
+s/\bptr ptr GtkAspectFrameClass\b/gtk3vaaaaarAspectFrameClass/g
+s/\bptr GtkAspectFrameClass\b/gtk3ptttttrAspectFrameClass/g
+s/\bGtkAspectFrameClass\b/gtk3.AspectFrameClassObj/g
+s/\bptr ptr GtkFontChooserIface\b/gtk3vaaaaarFontChooserIface/g
+s/\bptr GtkFontChooserIface\b/gtk3ptttttrFontChooserIface/g
+s/\bGtkFontChooserIface\b/gtk3.FontChooserIfaceObj/g
+s/\bptr ptr GtkCellAreaBoxClass\b/gtk3vaaaaarCellAreaBoxClass/g
+s/\bptr GtkCellAreaBoxClass\b/gtk3ptttttrCellAreaBoxClass/g
+s/\bGtkCellAreaBoxClass\b/gtk3.CellAreaBoxClassObj/g
+s/\bptr ptr GtkTreeRowReference\b/gtk3vaaaaarTreeRowReference/g
+s/\bptr GtkTreeRowReference\b/gtk3ptttttrTreeRowReference/g
+s/\bGtkTreeRowReference\b/gtk3.TreeRowReferenceObj/g
+s/\bptr ptr GtkWidgetAccessible\b/gtk3vaaaaarWidgetAccessible/g
+s/\bptr GtkWidgetAccessible\b/gtk3ptttttrWidgetAccessible/g
+s/\bGtkWidgetAccessible\b/gtk3.WidgetAccessibleObj/g
+s/\bptr ptr GtkCellRendererText\b/gtk3vaaaaarCellRendererText/g
+s/\bptr GtkCellRendererText\b/gtk3ptttttrCellRendererText/g
+s/\bGtkCellRendererText\b/gtk3.CellRendererTextObj/g
+s/\bptr ptr GtkRadioButtonClass\b/gtk3vaaaaarRadioButtonClass/g
+s/\bptr GtkRadioButtonClass\b/gtk3ptttttrRadioButtonClass/g
+s/\bGtkRadioButtonClass\b/gtk3.RadioButtonClassObj/g
+s/\bptr ptr GtkAppChooserButton\b/gtk3vaaaaarAppChooserButton/g
+s/\bptr GtkAppChooserButton\b/gtk3ptttttrAppChooserButton/g
+s/\bGtkAppChooserButton\b/gtk3.AppChooserButtonObj/g
+s/\bptr ptr GtkAppChooserWidget\b/gtk3vaaaaarAppChooserWidget/g
+s/\bptr GtkAppChooserWidget\b/gtk3ptttttrAppChooserWidget/g
+s/\bGtkAppChooserWidget\b/gtk3.AppChooserWidgetObj/g
+s/\bptr ptr GtkAppChooserDialog\b/gtk3vaaaaarAppChooserDialog/g
+s/\bptr GtkAppChooserDialog\b/gtk3ptttttrAppChooserDialog/g
+s/\bGtkAppChooserDialog\b/gtk3.AppChooserDialogObj/g
+s/\bptr ptr GtkCellRendererSpin\b/gtk3vaaaaarCellRendererSpin/g
+s/\bptr GtkCellRendererSpin\b/gtk3ptttttrCellRendererSpin/g
+s/\bGtkCellRendererSpin\b/gtk3.CellRendererSpinObj/g
+s/\bptr ptr GtkWindowAccessible\b/gtk3vaaaaarWindowAccessible/g
+s/\bptr GtkWindowAccessible\b/gtk3ptttttrWindowAccessible/g
+s/\bGtkWindowAccessible\b/gtk3.WindowAccessibleObj/g
+s/\bptr ptr GtkGestureDragClass\b/gtk3vaaaaarGestureDragClass/g
+s/\bptr GtkGestureDragClass\b/gtk3ptttttrGestureDragClass/g
+s/\bGtkGestureDragClass\b/gtk3.GestureDragClassObj/g
+s/\bptr ptr GtkWindowGroupClass\b/gtk3vaaaaarWindowGroupClass/g
+s/\bptr GtkWindowGroupClass\b/gtk3ptttttrWindowGroupClass/g
+s/\bGtkWindowGroupClass\b/gtk3.WindowGroupClassObj/g
+s/\bptr ptr GtkShortcutsSection\b/gtk3vaaaaarShortcutsSection/g
+s/\bptr GtkShortcutsSection\b/gtk3ptttttrShortcutsSection/g
+s/\bGtkShortcutsSection\b/gtk3.ShortcutsSectionObj/g
+s/\bptr ptr GtkGestureLongPress\b/gtk3vaaaaarGestureLongPress/g
+s/\bptr GtkGestureLongPress\b/gtk3ptttttrGestureLongPress/g
+s/\bGtkGestureLongPress\b/gtk3.GestureLongPressObj/g
+s/\bptr ptr GtkDrawingAreaClass\b/gtk3vaaaaarDrawingAreaClass/g
+s/\bptr GtkDrawingAreaClass\b/gtk3ptttttrDrawingAreaClass/g
+s/\bGtkDrawingAreaClass\b/gtk3.DrawingAreaClassObj/g
+s/\bptr ptr GtkApplicationClass\b/gtk3vaaaaarApplicationClass/g
+s/\bptr GtkApplicationClass\b/gtk3ptttttrApplicationClass/g
+s/\bGtkApplicationClass\b/gtk3.ApplicationClassObj/g
+s/\bptr ptr GtkSearchEntryClass\b/gtk3vaaaaarSearchEntryClass/g
+s/\bptr GtkSearchEntryClass\b/gtk3ptttttrSearchEntryClass/g
+s/\bGtkSearchEntryClass\b/gtk3.SearchEntryClassObj/g
+s/\bptr ptr GtkEntryBufferClass\b/gtk3vaaaaarEntryBufferClass/g
+s/\bptr GtkEntryBufferClass\b/gtk3ptttttrEntryBufferClass/g
+s/\bGtkEntryBufferClass\b/gtk3.EntryBufferClassObj/g
+s/\bptr ptr GtkCssProviderClass\b/gtk3vaaaaarCssProviderClass/g
+s/\bptr GtkCssProviderClass\b/gtk3ptttttrCssProviderClass/g
+s/\bGtkCssProviderClass\b/gtk3.CssProviderClassObj/g
+s/\bptr ptr GtkProgressBarClass\b/gtk3vaaaaarProgressBarClass/g
+s/\bptr GtkProgressBarClass\b/gtk3ptttttrProgressBarClass/g
+s/\bGtkProgressBarClass\b/gtk3.ProgressBarClassObj/g
+s/\bptr ptr GtkPopoverMenuClass\b/gtk3vaaaaarPopoverMenuClass/g
+s/\bptr GtkPopoverMenuClass\b/gtk3ptttttrPopoverMenuClass/g
+s/\bGtkPopoverMenuClass\b/gtk3.PopoverMenuClassObj/g
+s/\bptr ptr GtkButtonAccessible\b/gtk3vaaaaarButtonAccessible/g
+s/\bptr GtkButtonAccessible\b/gtk3ptttttrButtonAccessible/g
+s/\bGtkButtonAccessible\b/gtk3.ButtonAccessibleObj/g
+s/\bptr ptr GtkGestureZoomClass\b/gtk3vaaaaarGestureZoomClass/g
+s/\bptr GtkGestureZoomClass\b/gtk3ptttttrGestureZoomClass/g
+s/\bGtkGestureZoomClass\b/gtk3.GestureZoomClassObj/g
+s/\bptr ptr GtkRadioActionClass\b/gtk3vaaaaarRadioActionClass/g
+s/\bptr GtkRadioActionClass\b/gtk3ptttttrRadioActionClass/g
+s/\bGtkRadioActionClass\b/gtk3.RadioActionClassObj/g
+s/\bptr ptr GtkToolPaletteClass\b/gtk3vaaaaarToolPaletteClass/g
+s/\bptr GtkToolPaletteClass\b/gtk3ptttttrToolPaletteClass/g
+s/\bGtkToolPaletteClass\b/gtk3.ToolPaletteClassObj/g
+s/\bptr ptr GtkCheckButtonClass\b/gtk3vaaaaarCheckButtonClass/g
+s/\bptr GtkCheckButtonClass\b/gtk3ptttttrCheckButtonClass/g
+s/\bGtkCheckButtonClass\b/gtk3.CheckButtonClassObj/g
+s/\bptr ptr GtkSwitchAccessible\b/gtk3vaaaaarSwitchAccessible/g
+s/\bptr GtkSwitchAccessible\b/gtk3ptttttrSwitchAccessible/g
+s/\bGtkSwitchAccessible\b/gtk3.SwitchAccessibleObj/g
+s/\bptr ptr GtkColorButtonClass\b/gtk3vaaaaarColorButtonClass/g
+s/\bptr GtkColorButtonClass\b/gtk3ptttttrColorButtonClass/g
+s/\bGtkColorButtonClass\b/gtk3.ColorButtonClassObj/g
+s/\bptr ptr GtkIconFactoryClass\b/gtk3vaaaaarIconFactoryClass/g
+s/\bptr GtkIconFactoryClass\b/gtk3ptttttrIconFactoryClass/g
+s/\bGtkIconFactoryClass\b/gtk3.IconFactoryClassObj/g
+s/\bptr ptr GtkActivatableIface\b/gtk3vaaaaarActivatableIface/g
+s/\bptr GtkActivatableIface\b/gtk3ptttttrActivatableIface/g
+s/\bGtkActivatableIface\b/gtk3.ActivatableIfaceObj/g
+s/\bptr ptr GtkOffscreenWindow\b/gtk3vaaaaarOffscreenWindow/g
+s/\bptr GtkOffscreenWindow\b/gtk3ptttttrOffscreenWindow/g
+s/\bGtkOffscreenWindow\b/gtk3.OffscreenWindowObj/g
+s/\bptr ptr GtkStatusIconClass\b/gtk3vaaaaarStatusIconClass/g
+s/\bptr GtkStatusIconClass\b/gtk3ptttttrStatusIconClass/g
+s/\bGtkStatusIconClass\b/gtk3.StatusIconClassObj/g
+s/\bptr ptr GtkLabelAccessible\b/gtk3vaaaaarLabelAccessible/g
+s/\bptr GtkLabelAccessible\b/gtk3ptttttrLabelAccessible/g
+s/\bGtkLabelAccessible\b/gtk3.LabelAccessibleObj/g
+s/\bptr ptr GtkAccelGroupClass\b/gtk3vaaaaarAccelGroupClass/g
+s/\bptr GtkAccelGroupClass\b/gtk3ptttttrAccelGroupClass/g
+s/\bGtkAccelGroupClass\b/gtk3.AccelGroupClassObj/g
+s/\bptr ptr GtkImageAccessible\b/gtk3vaaaaarImageAccessible/g
+s/\bptr GtkImageAccessible\b/gtk3ptttttrImageAccessible/g
+s/\bGtkImageAccessible\b/gtk3.ImageAccessibleObj/g
+s/\bptr ptr GtkTreeModelFilter\b/gtk3vaaaaarTreeModelFilter/g
+s/\bptr GtkTreeModelFilter\b/gtk3ptttttrTreeModelFilter/g
+s/\bGtkTreeModelFilter\b/gtk3.TreeModelFilterObj/g
+s/\bptr ptr GtkEntryCompletion\b/gtk3vaaaaarEntryCompletion/g
+s/\bptr GtkEntryCompletion\b/gtk3ptttttrEntryCompletion/g
+s/\bGtkEntryCompletion\b/gtk3.EntryCompletionObj/g
+s/\bptr ptr GtkTextChildAnchor\b/gtk3vaaaaarTextChildAnchor/g
+s/\bptr GtkTextChildAnchor\b/gtk3ptttttrTextChildAnchor/g
+s/\bGtkTextChildAnchor\b/gtk3.TextChildAnchorObj/g
+s/\bptr ptr GtkFrameAccessible\b/gtk3vaaaaarFrameAccessible/g
+s/\bptr GtkFrameAccessible\b/gtk3ptttttrFrameAccessible/g
+s/\bGtkFrameAccessible\b/gtk3.FrameAccessibleObj/g
+s/\bptr ptr GtkHSeparatorClass\b/gtk3vaaaaarHSeparatorClass/g
+s/\bptr GtkHSeparatorClass\b/gtk3ptttttrHSeparatorClass/g
+s/\bGtkHSeparatorClass\b/gtk3.HSeparatorClassObj/g
+s/\bptr ptr GtkHScrollbarClass\b/gtk3vaaaaarHScrollbarClass/g
+s/\bptr GtkHScrollbarClass\b/gtk3ptttttrHScrollbarClass/g
+s/\bGtkHScrollbarClass\b/gtk3.HScrollbarClassObj/g
+s/\bptr ptr GtkAccelGroupEntry\b/gtk3vaaaaarAccelGroupEntry/g
+s/\bptr GtkAccelGroupEntry\b/gtk3ptttttrAccelGroupEntry/g
+s/\bGtkAccelGroupEntry\b/gtk3.AccelGroupEntryObj/g
+s/\bptr ptr GtkShortcutsWindow\b/gtk3vaaaaarShortcutsWindow/g
+s/\bptr GtkShortcutsWindow\b/gtk3ptttttrShortcutsWindow/g
+s/\bGtkShortcutsWindow\b/gtk3.ShortcutsWindowObj/g
+s/\bptr ptr GtkIMContextSimple\b/gtk3vaaaaarIMContextSimple/g
+s/\bptr GtkIMContextSimple\b/gtk3ptttttrIMContextSimple/g
+s/\bGtkIMContextSimple\b/gtk3.IMContextSimpleObj/g
+s/\bptr ptr GtkGesturePanClass\b/gtk3vaaaaarGesturePanClass/g
+s/\bptr GtkGesturePanClass\b/gtk3ptttttrGesturePanClass/g
+s/\bGtkGesturePanClass\b/gtk3.GesturePanClassObj/g
+s/\bptr ptr GtkEntryAccessible\b/gtk3vaaaaarEntryAccessible/g
+s/\bptr GtkEntryAccessible\b/gtk3ptttttrEntryAccessible/g
+s/\bGtkEntryAccessible\b/gtk3.EntryAccessibleObj/g
+s/\bptr ptr GtkTearoffMenuItem\b/gtk3vaaaaarTearoffMenuItem/g
+s/\bptr GtkTearoffMenuItem\b/gtk3ptttttrTearoffMenuItem/g
+s/\bGtkTearoffMenuItem\b/gtk3.TearoffMenuItemObj/g
+s/\bptr ptr GtkHButtonBoxClass\b/gtk3vaaaaarHButtonBoxClass/g
+s/\bptr GtkHButtonBoxClass\b/gtk3ptttttrHButtonBoxClass/g
+s/\bGtkHButtonBoxClass\b/gtk3.HButtonBoxClassObj/g
+s/\bptr ptr GtkSpinButtonClass\b/gtk3vaaaaarSpinButtonClass/g
+s/\bptr GtkSpinButtonClass\b/gtk3ptttttrSpinButtonClass/g
+s/\bGtkSpinButtonClass\b/gtk3.SpinButtonClassObj/g
+s/\bptr ptr GtkCellAreaContext\b/gtk3vaaaaarCellAreaContext/g
+s/\bptr GtkCellAreaContext\b/gtk3ptttttrCellAreaContext/g
+s/\bGtkCellAreaContext\b/gtk3.CellAreaContextObj/g
+s/\bptr ptr GtkRadioToolButton\b/gtk3vaaaaarRadioToolButton/g
+s/\bptr GtkRadioToolButton\b/gtk3ptttttrRadioToolButton/g
+s/\bGtkRadioToolButton\b/gtk3.RadioToolButtonObj/g
+s/\bptr ptr GtkCellLayoutIface\b/gtk3vaaaaarCellLayoutIface/g
+s/\bptr GtkCellLayoutIface\b/gtk3ptttttrCellLayoutIface/g
+s/\bGtkCellLayoutIface\b/gtk3.CellLayoutIfaceObj/g
+s/\bptr ptr GtkAdjustmentClass\b/gtk3vaaaaarAdjustmentClass/g
+s/\bptr GtkAdjustmentClass\b/gtk3ptttttrAdjustmentClass/g
+s/\bGtkAdjustmentClass\b/gtk3.AdjustmentClassObj/g
+s/\bptr ptr GtkTextBufferClass\b/gtk3vaaaaarTextBufferClass/g
+s/\bptr GtkTextBufferClass\b/gtk3ptttttrTextBufferClass/g
+s/\bGtkTextBufferClass\b/gtk3.TextBufferClassObj/g
+s/\bptr ptr GtkAccessibleClass\b/gtk3vaaaaarAccessibleClass/g
+s/\bptr GtkAccessibleClass\b/gtk3ptttttrAccessibleClass/g
+s/\bGtkAccessibleClass\b/gtk3.AccessibleClassObj/g
+s/\bptr ptr GtkAccelLabelClass\b/gtk3vaaaaarAccelLabelClass/g
+s/\bptr GtkAccelLabelClass\b/gtk3ptttttrAccelLabelClass/g
+s/\bGtkAccelLabelClass\b/gtk3.AccelLabelClassObj/g
+s/\bptr ptr GtkLinkButtonClass\b/gtk3vaaaaarLinkButtonClass/g
+s/\bptr GtkLinkButtonClass\b/gtk3ptttttrLinkButtonClass/g
+s/\bGtkLinkButtonClass\b/gtk3.LinkButtonClassObj/g
+s/\bptr ptr GtkScaleAccessible\b/gtk3vaaaaarScaleAccessible/g
+s/\bptr GtkScaleAccessible\b/gtk3ptttttrScaleAccessible/g
+s/\bGtkScaleAccessible\b/gtk3.ScaleAccessibleObj/g
+s/\bptr ptr GtkVButtonBoxClass\b/gtk3vaaaaarVButtonBoxClass/g
+s/\bptr GtkVButtonBoxClass\b/gtk3ptttttrVButtonBoxClass/g
+s/\bGtkVButtonBoxClass\b/gtk3.VButtonBoxClassObj/g
+s/\bptr ptr GtkOrientableIface\b/gtk3vaaaaarOrientableIface/g
+s/\bptr GtkOrientableIface\b/gtk3ptttttrOrientableIface/g
+s/\bGtkOrientableIface\b/gtk3.OrientableIfaceObj/g
+s/\bptr ptr GtkListBoxRowClass\b/gtk3vaaaaarListBoxRowClass/g
+s/\bptr GtkListBoxRowClass\b/gtk3ptttttrListBoxRowClass/g
+s/\bGtkListBoxRowClass\b/gtk3.ListBoxRowClassObj/g
+s/\bptr ptr GtkEventController\b/gtk3vaaaaarEventController/g
+s/\bptr GtkEventController\b/gtk3ptttttrEventController/g
+s/\bGtkEventController\b/gtk3.EventControllerObj/g
+s/\bptr ptr GtkToolButtonClass\b/gtk3vaaaaarToolButtonClass/g
+s/\bptr GtkToolButtonClass\b/gtk3ptttttrToolButtonClass/g
+s/\bGtkToolButtonClass\b/gtk3.ToolButtonClassObj/g
+s/\bptr ptr GtkFontButtonClass\b/gtk3vaaaaarFontButtonClass/g
+s/\bptr GtkFontButtonClass\b/gtk3ptttttrFontButtonClass/g
+s/\bGtkFontButtonClass\b/gtk3.FontButtonClassObj/g
+s/\bptr ptr GtkVScrollbarClass\b/gtk3vaaaaarVScrollbarClass/g
+s/\bptr GtkVScrollbarClass\b/gtk3ptttttrVScrollbarClass/g
+s/\bGtkVScrollbarClass\b/gtk3.VScrollbarClassObj/g
+s/\bptr ptr GtkVSeparatorClass\b/gtk3vaaaaarVSeparatorClass/g
+s/\bptr GtkVSeparatorClass\b/gtk3ptttttrVSeparatorClass/g
+s/\bGtkVSeparatorClass\b/gtk3.VSeparatorClassObj/g
+s/\bptr ptr GtkRangeAccessible\b/gtk3vaaaaarRangeAccessible/g
+s/\bptr GtkRangeAccessible\b/gtk3ptttttrRangeAccessible/g
+s/\bGtkRangeAccessible\b/gtk3.RangeAccessibleObj/g
+s/\bptr ptr GtkMenuButtonClass\b/gtk3vaaaaarMenuButtonClass/g
+s/\bptr GtkMenuButtonClass\b/gtk3ptttttrMenuButtonClass/g
+s/\bGtkMenuButtonClass\b/gtk3.MenuButtonClassObj/g
+s/\bptr ptr GtkStyleProperties\b/gtk3vaaaaarStyleProperties/g
+s/\bptr GtkStyleProperties\b/gtk3ptttttrStyleProperties/g
+s/\bGtkStyleProperties\b/gtk3.StylePropertiesObj/g
+s/\bptr ptr GtkPanedAccessible\b/gtk3vaaaaarPanedAccessible/g
+s/\bptr GtkPanedAccessible\b/gtk3ptttttrPanedAccessible/g
+s/\bGtkPanedAccessible\b/gtk3.PanedAccessibleObj/g
+s/\bptr ptr GtkArrowAccessible\b/gtk3vaaaaarArrowAccessible/g
+s/\bptr GtkArrowAccessible\b/gtk3ptttttrArrowAccessible/g
+s/\bGtkArrowAccessible\b/gtk3.ArrowAccessibleObj/g
+s/\bptr ptr GtkPrintUnixDialog\b/gtk3vaaaaarPrintUnixDialog/g
+s/\bptr GtkPrintUnixDialog\b/gtk3ptttttrPrintUnixDialog/g
+s/\bGtkPrintUnixDialog\b/gtk3.PrintUnixDialogObj/g
+s/\bptr ptr GtkLockButtonClass\b/gtk3vaaaaarLockButtonClass/g
+s/\bptr GtkLockButtonClass\b/gtk3ptttttrLockButtonClass/g
+s/\bGtkLockButtonClass\b/gtk3.LockButtonClassObj/g
+s/\bptr ptr GtkTreeStoreClass\b/gtk3vaaaaarTreeStoreClass/g
+s/\bptr GtkTreeStoreClass\b/gtk3ptttttrTreeStoreClass/g
+s/\bGtkTreeStoreClass\b/gtk3.TreeStoreClassObj/g
+s/\bptr ptr GtkIMContextClass\b/gtk3vaaaaarIMContextClass/g
+s/\bptr GtkIMContextClass\b/gtk3ptttttrIMContextClass/g
+s/\bGtkIMContextClass\b/gtk3.IMContextClassObj/g
+s/\bptr ptr GtkMenuToolButton\b/gtk3vaaaaarMenuToolButton/g
+s/\bptr GtkMenuToolButton\b/gtk3ptttttrMenuToolButton/g
+s/\bGtkMenuToolButton\b/gtk3.MenuToolButtonObj/g
+s/\bptr ptr GtkFileFilterInfo\b/gtk3vaaaaarFileFilterInfo/g
+s/\bptr GtkFileFilterInfo\b/gtk3ptttttrFileFilterInfo/g
+s/\bGtkFileFilterInfo\b/gtk3.FileFilterInfoObj/g
+s/\bptr ptr GtkSeparatorClass\b/gtk3vaaaaarSeparatorClass/g
+s/\bptr GtkSeparatorClass\b/gtk3ptttttrSeparatorClass/g
+s/\bGtkSeparatorClass\b/gtk3.SeparatorClassObj/g
+s/\bptr ptr GtkListStoreClass\b/gtk3vaaaaarListStoreClass/g
+s/\bptr GtkListStoreClass\b/gtk3ptttttrListStoreClass/g
+s/\bGtkListStoreClass\b/gtk3.ListStoreClassObj/g
+s/\bptr ptr GtkMenuShellClass\b/gtk3vaaaaarMenuShellClass/g
+s/\bptr GtkMenuShellClass\b/gtk3ptttttrMenuShellClass/g
+s/\bGtkMenuShellClass\b/gtk3.MenuShellClassObj/g
+s/\bptr ptr GtkMountOperation\b/gtk3vaaaaarMountOperation/g
+s/\bptr GtkMountOperation\b/gtk3ptttttrMountOperation/g
+s/\bGtkMountOperation\b/gtk3.MountOperationObj/g
+s/\bptr ptr GtkSizeGroupClass\b/gtk3vaaaaarSizeGroupClass/g
+s/\bptr GtkSizeGroupClass\b/gtk3ptttttrSizeGroupClass/g
+s/\bGtkSizeGroupClass\b/gtk3.SizeGroupClassObj/g
+s/\bptr ptr GtkShortcutsGroup\b/gtk3vaaaaarShortcutsGroup/g
+s/\bptr GtkShortcutsGroup\b/gtk3ptttttrShortcutsGroup/g
+s/\bGtkShortcutsGroup\b/gtk3.ShortcutsGroupObj/g
+s/\bptr ptr GtkSearchBarClass\b/gtk3vaaaaarSearchBarClass/g
+s/\bptr GtkSearchBarClass\b/gtk3ptttttrSearchBarClass/g
+s/\bGtkSearchBarClass\b/gtk3.SearchBarClassObj/g
+s/\bptr ptr GtkHeaderBarClass\b/gtk3vaaaaarHeaderBarClass/g
+s/\bptr GtkHeaderBarClass\b/gtk3ptttttrHeaderBarClass/g
+s/\bGtkHeaderBarClass\b/gtk3.HeaderBarClassObj/g
+s/\bptr ptr GtkAlignmentClass\b/gtk3vaaaaarAlignmentClass/g
+s/\bptr GtkAlignmentClass\b/gtk3ptttttrAlignmentClass/g
+s/\bGtkAlignmentClass\b/gtk3.AlignmentClassObj/g
+s/\bptr ptr GtkColorSelection\b/gtk3vaaaaarColorSelection/g
+s/\bptr GtkColorSelection\b/gtk3ptttttrColorSelection/g
+s/\bGtkColorSelection\b/gtk3.ColorSelectionObj/g
+s/\bptr ptr GtkScrolledWindow\b/gtk3vaaaaarScrolledWindow/g
+s/\bptr GtkScrolledWindow\b/gtk3ptttttrScrolledWindow/g
+s/\bGtkScrolledWindow\b/gtk3.ScrolledWindowObj/g
+s/\bptr ptr GtkCellAccessible\b/gtk3vaaaaarCellAccessible/g
+s/\bptr GtkCellAccessible\b/gtk3ptttttrCellAccessible/g
+s/\bGtkCellAccessible\b/gtk3.CellAccessibleObj/g
+s/\bptr ptr GtkScrollbarClass\b/gtk3vaaaaarScrollbarClass/g
+s/\bptr GtkScrollbarClass\b/gtk3ptttttrScrollbarClass/g
+s/\bGtkScrollbarClass\b/gtk3.ScrollbarClassObj/g
+s/\bptr ptr GtkIconThemeClass\b/gtk3vaaaaarIconThemeClass/g
+s/\bptr GtkIconThemeClass\b/gtk3ptttttrIconThemeClass/g
+s/\bGtkIconThemeClass\b/gtk3.IconThemeClassObj/g
+s/\bptr ptr GtkPadActionEntry\b/gtk3vaaaaarPadActionEntry/g
+s/\bptr GtkPadActionEntry\b/gtk3ptttttrPadActionEntry/g
+s/\bGtkPadActionEntry\b/gtk3.PadActionEntryObj/g
+s/\bptr ptr GtkTreeDragSource\b/gtk3vaaaaarTreeDragSource/g
+s/\bptr GtkTreeDragSource\b/gtk3ptttttrTreeDragSource/g
+s/\bGtkTreeDragSource\b/gtk3.TreeDragSourceObj/g
+s/\bptr ptr GtkToolShellIface\b/gtk3vaaaaarToolShellIface/g
+s/\bptr GtkToolShellIface\b/gtk3ptttttrToolShellIface/g
+s/\bGtkToolShellIface\b/gtk3.ToolShellIfaceObj/g
+s/\bptr ptr GtkContainerClass\b/gtk3vaaaaarContainerClass/g
+s/\bptr GtkContainerClass\b/gtk3ptttttrContainerClass/g
+s/\bGtkContainerClass\b/gtk3.ContainerClassObj/g
+s/\bptr ptr GtkTextAttributes\b/gtk3vaaaaarTextAttributes/g
+s/\bptr GtkTextAttributes\b/gtk3ptttttrTextAttributes/g
+s/\bGtkTextAttributes\b/gtk3.TextAttributesObj/g
+s/\bptr ptr GtkTextAppearance\b/gtk3vaaaaarTextAppearance/g
+s/\bptr GtkTextAppearance\b/gtk3ptttttrTextAppearance/g
+s/\bGtkTextAppearance\b/gtk3.TextAppearanceObj/g
+s/\bptr ptr GtkTreeViewColumn\b/gtk3vaaaaarTreeViewColumn/g
+s/\bptr GtkTreeViewColumn\b/gtk3ptttttrTreeViewColumn/g
+s/\bGtkTreeViewColumn\b/gtk3.TreeViewColumnObj/g
+s/\bptr ptr GtkAssistantClass\b/gtk3vaaaaarAssistantClass/g
+s/\bptr GtkAssistantClass\b/gtk3ptttttrAssistantClass/g
+s/\bGtkAssistantClass\b/gtk3.AssistantClassObj/g
+s/\bptr ptr GtkButtonBoxClass\b/gtk3vaaaaarButtonBoxClass/g
+s/\bptr GtkButtonBoxClass\b/gtk3ptttttrButtonBoxClass/g
+s/\bGtkButtonBoxClass\b/gtk3.ButtonBoxClassObj/g
+s/\bptr ptr GtkIMMulticontext\b/gtk3vaaaaarIMMulticontext/g
+s/\bptr GtkIMMulticontext\b/gtk3ptttttrIMMulticontext/g
+s/\bGtkIMMulticontext\b/gtk3.IMMulticontextObj/g
+s/\bptr ptr GtkHandleBoxClass\b/gtk3vaaaaarHandleBoxClass/g
+s/\bptr GtkHandleBoxClass\b/gtk3ptttttrHandleBoxClass/g
+s/\bGtkHandleBoxClass\b/gtk3.HandleBoxClassObj/g
+s/\bptr ptr GtkStatusbarClass\b/gtk3vaaaaarStatusbarClass/g
+s/\bptr GtkStatusbarClass\b/gtk3ptttttrStatusbarClass/g
+s/\bGtkStatusbarClass\b/gtk3.StatusbarClassObj/g
+s/\bptr ptr GtkInvisibleClass\b/gtk3vaaaaarInvisibleClass/g
+s/\bptr GtkInvisibleClass\b/gtk3ptttttrInvisibleClass/g
+s/\bGtkInvisibleClass\b/gtk3.InvisibleClassObj/g
+s/\bptr ptr GtkBuildableIface\b/gtk3vaaaaarBuildableIface/g
+s/\bptr GtkBuildableIface\b/gtk3ptttttrBuildableIface/g
+s/\bGtkBuildableIface\b/gtk3.BuildableIfaceObj/g
+s/\bptr ptr GtkPrintOperation\b/gtk3vaaaaarPrintOperation/g
+s/\bptr GtkPrintOperation\b/gtk3ptttttrPrintOperation/g
+s/\bGtkPrintOperation\b/gtk3.PrintOperationObj/g
+s/\bptr ptr GtkActionBarClass\b/gtk3vaaaaarActionBarClass/g
+s/\bptr GtkActionBarClass\b/gtk3ptttttrActionBarClass/g
+s/\bGtkActionBarClass\b/gtk3.ActionBarClassObj/g
+s/\bptr ptr GtkUIManagerClass\b/gtk3vaaaaarUIManagerClass/g
+s/\bptr GtkUIManagerClass\b/gtk3ptttttrUIManagerClass/g
+s/\bGtkUIManagerClass\b/gtk3.UIManagerClassObj/g
+s/\bptr ptr GtkTreeModelIface\b/gtk3vaaaaarTreeModelIface/g
+s/\bptr GtkTreeModelIface\b/gtk3ptttttrTreeModelIface/g
+s/\bGtkTreeModelIface\b/gtk3.TreeModelIfaceObj/g
+s/\bptr ptr GtkMenuAccessible\b/gtk3vaaaaarMenuAccessible/g
+s/\bptr GtkMenuAccessible\b/gtk3ptttttrMenuAccessible/g
+s/\bGtkMenuAccessible\b/gtk3.MenuAccessibleObj/g
+s/\bptr ptr GtkRevealerClass\b/gtk3vaaaaarRevealerClass/g
+s/\bptr GtkRevealerClass\b/gtk3ptttttrRevealerClass/g
+s/\bGtkRevealerClass\b/gtk3.RevealerClassObj/g
+s/\bptr ptr GtkRadioMenuItem\b/gtk3vaaaaarRadioMenuItem/g
+s/\bptr GtkRadioMenuItem\b/gtk3ptttttrRadioMenuItem/g
+s/\bGtkRadioMenuItem\b/gtk3.RadioMenuItemObj/g
+s/\bptr ptr GtkThemingEngine\b/gtk3vaaaaarThemingEngine/g
+s/\bptr GtkThemingEngine\b/gtk3ptttttrThemingEngine/g
+s/\bGtkThemingEngine\b/gtk3.ThemingEngineObj/g
+s/\bptr ptr GtkCalendarClass\b/gtk3vaaaaarCalendarClass/g
+s/\bptr GtkCalendarClass\b/gtk3ptttttrCalendarClass/g
+s/\bGtkCalendarClass\b/gtk3.CalendarClassObj/g
+s/\bptr ptr GtkSelectionData\b/gtk3vaaaaarSelectionData/g
+s/\bptr GtkSelectionData\b/gtk3ptttttrSelectionData/g
+s/\bGtkSelectionData\b/gtk3.SelectionDataObj/g
+s/\bptr ptr GtkCellViewClass\b/gtk3vaaaaarCellViewClass/g
+s/\bptr GtkCellViewClass\b/gtk3ptttttrCellViewClass/g
+s/\bGtkCellViewClass\b/gtk3.CellViewClassObj/g
+s/\bptr ptr GtkMenuItemClass\b/gtk3vaaaaarMenuItemClass/g
+s/\bptr GtkMenuItemClass\b/gtk3ptttttrMenuItemClass/g
+s/\bGtkMenuItemClass\b/gtk3.MenuItemClassObj/g
+s/\bptr ptr GtkFontSelection\b/gtk3vaaaaarFontSelection/g
+s/\bptr GtkFontSelection\b/gtk3ptttttrFontSelection/g
+s/\bGtkFontSelection\b/gtk3.FontSelectionObj/g
+s/\bptr ptr GtkGestureSingle\b/gtk3vaaaaarGestureSingle/g
+s/\bptr GtkGestureSingle\b/gtk3ptttttrGestureSingle/g
+s/\bGtkGestureSingle\b/gtk3.GestureSingleObj/g
+s/\bptr ptr GtkRecentManager\b/gtk3vaaaaarRecentManager/g
+s/\bptr GtkRecentManager\b/gtk3ptttttrRecentManager/g
+s/\bGtkRecentManager\b/gtk3.RecentManagerObj/g
+s/\bptr ptr GtkBindingSignal\b/gtk3vaaaaarBindingSignal/g
+s/\bptr GtkBindingSignal\b/gtk3ptttttrBindingSignal/g
+s/\bGtkBindingSignal\b/gtk3.BindingSignalObj/g
+s/\bptr ptr GtkStackSwitcher\b/gtk3vaaaaarStackSwitcher/g
+s/\bptr GtkStackSwitcher\b/gtk3ptttttrStackSwitcher/g
+s/\bGtkStackSwitcher\b/gtk3.StackSwitcherObj/g
+s/\bptr ptr GtkPrintSettings\b/gtk3vaaaaarPrintSettings/g
+s/\bptr GtkPrintSettings\b/gtk3ptttttrPrintSettings/g
+s/\bGtkPrintSettings\b/gtk3.PrintSettingsObj/g
+s/\bptr ptr GtkRequestedSize\b/gtk3vaaaaarRequestedSize/g
+s/\bptr GtkRequestedSize\b/gtk3ptttttrRequestedSize/g
+s/\bGtkRequestedSize\b/gtk3.RequestedSizeObj/g
+s/\bptr ptr GtkTextViewClass\b/gtk3vaaaaarTextViewClass/g
+s/\bptr GtkTextViewClass\b/gtk3ptttttrTextViewClass/g
+s/\bGtkTextViewClass\b/gtk3.TextViewClassObj/g
+s/\bptr ptr GtkRecentChooser\b/gtk3vaaaaarRecentChooser/g
+s/\bptr GtkRecentChooser\b/gtk3ptttttrRecentChooser/g
+s/\bGtkRecentChooser\b/gtk3.RecentChooserObj/g
+s/\bptr ptr GtkCheckMenuItem\b/gtk3vaaaaarCheckMenuItem/g
+s/\bptr GtkCheckMenuItem\b/gtk3ptttttrCheckMenuItem/g
+s/\bGtkCheckMenuItem\b/gtk3.CheckMenuItemObj/g
+s/\bptr ptr GtkAccelMapClass\b/gtk3vaaaaarAccelMapClass/g
+s/\bptr GtkAccelMapClass\b/gtk3ptttttrAccelMapClass/g
+s/\bGtkAccelMapClass\b/gtk3.AccelMapClassObj/g
+s/\bptr ptr GtkCellAreaClass\b/gtk3vaaaaarCellAreaClass/g
+s/\bptr GtkCellAreaClass\b/gtk3ptttttrCellAreaClass/g
+s/\bGtkCellAreaClass\b/gtk3.CellAreaClassObj/g
+s/\bptr ptr GtkPlacesSidebar\b/gtk3vaaaaarPlacesSidebar/g
+s/\bptr GtkPlacesSidebar\b/gtk3ptttttrPlacesSidebar/g
+s/\bGtkPlacesSidebar\b/gtk3.PlacesSidebarObj/g
+s/\bptr ptr GtkIMContextInfo\b/gtk3vaaaaarIMContextInfo/g
+s/\bptr GtkIMContextInfo\b/gtk3ptttttrIMContextInfo/g
+s/\bGtkIMContextInfo\b/gtk3.IMContextInfoObj/g
+s/\bptr ptr GtkLevelBarClass\b/gtk3vaaaaarLevelBarClass/g
+s/\bptr GtkLevelBarClass\b/gtk3ptttttrLevelBarClass/g
+s/\bGtkLevelBarClass\b/gtk3.LevelBarClassObj/g
+s/\bptr ptr GtkTreeSelection\b/gtk3vaaaaarTreeSelection/g
+s/\bptr GtkTreeSelection\b/gtk3ptttttrTreeSelection/g
+s/\bGtkTreeSelection\b/gtk3.TreeSelectionObj/g
+s/\bptr ptr GtkComboBoxClass\b/gtk3vaaaaarComboBoxClass/g
+s/\bptr GtkComboBoxClass\b/gtk3ptttttrComboBoxClass/g
+s/\bGtkComboBoxClass\b/gtk3.ComboBoxClassObj/g
+s/\bptr ptr GtkTextMarkClass\b/gtk3vaaaaarTextMarkClass/g
+s/\bptr GtkTextMarkClass\b/gtk3ptttttrTextMarkClass/g
+s/\bGtkTextMarkClass\b/gtk3.TextMarkClassObj/g
+s/\bptr ptr GtkIconViewClass\b/gtk3vaaaaarIconViewClass/g
+s/\bptr GtkIconViewClass\b/gtk3ptttttrIconViewClass/g
+s/\bGtkIconViewClass\b/gtk3.IconViewClassObj/g
+s/\bptr ptr GtkToolItemGroup\b/gtk3vaaaaarToolItemGroup/g
+s/\bptr GtkToolItemGroup\b/gtk3ptttttrToolItemGroup/g
+s/\bGtkToolItemGroup\b/gtk3.ToolItemGroupObj/g
+s/\bptr ptr GtkTreeViewClass\b/gtk3vaaaaarTreeViewClass/g
+s/\bptr GtkTreeViewClass\b/gtk3ptttttrTreeViewClass/g
+s/\bGtkTreeViewClass\b/gtk3.TreeViewClassObj/g
+s/\bptr ptr GtkIconInfoClass\b/gtk3vaaaaarIconInfoClass/g
+s/\bptr GtkIconInfoClass\b/gtk3ptttttrIconInfoClass/g
+s/\bGtkIconInfoClass\b/gtk3.IconInfoClassObj/g
+s/\bptr ptr GtkSettingsClass\b/gtk3vaaaaarSettingsClass/g
+s/\bptr GtkSettingsClass\b/gtk3ptttttrSettingsClass/g
+s/\bGtkSettingsClass\b/gtk3.SettingsClassObj/g
+s/\bptr ptr GtkImageMenuItem\b/gtk3vaaaaarImageMenuItem/g
+s/\bptr GtkImageMenuItem\b/gtk3ptttttrImageMenuItem/g
+s/\bGtkImageMenuItem\b/gtk3.ImageMenuItemObj/g
+s/\bptr ptr GtkEventBoxClass\b/gtk3vaaaaarEventBoxClass/g
+s/\bptr GtkEventBoxClass\b/gtk3ptttttrEventBoxClass/g
+s/\bGtkEventBoxClass\b/gtk3.EventBoxClassObj/g
+s/\bptr ptr GtkGestureRotate\b/gtk3vaaaaarGestureRotate/g
+s/\bptr GtkGestureRotate\b/gtk3ptttttrGestureRotate/g
+s/\bGtkGestureRotate\b/gtk3.GestureRotateObj/g
+s/\bptr ptr GtkExpanderClass\b/gtk3vaaaaarExpanderClass/g
+s/\bptr GtkExpanderClass\b/gtk3ptttttrExpanderClass/g
+s/\bGtkExpanderClass\b/gtk3.ExpanderClassObj/g
+s/\bptr ptr GtkPrintJobClass\b/gtk3vaaaaarPrintJobClass/g
+s/\bptr GtkPrintJobClass\b/gtk3ptttttrPrintJobClass/g
+s/\bGtkPrintJobClass\b/gtk3.PrintJobClassObj/g
+s/\bptr ptr GtkNotebookClass\b/gtk3vaaaaarNotebookClass/g
+s/\bptr GtkNotebookClass\b/gtk3ptttttrNotebookClass/g
+s/\bGtkNotebookClass\b/gtk3.NotebookClassObj/g
+s/\bptr ptr GtkTreeModelSort\b/gtk3vaaaaarTreeModelSort/g
+s/\bptr GtkTreeModelSort\b/gtk3ptttttrTreeModelSort/g
+s/\bGtkTreeModelSort\b/gtk3.TreeModelSortObj/g
+s/\bptr ptr GtkShortcutLabel\b/gtk3vaaaaarShortcutLabel/g
+s/\bptr GtkShortcutLabel\b/gtk3ptttttrShortcutLabel/g
+s/\bGtkShortcutLabel\b/gtk3.ShortcutLabelObj/g
+s/\bptr ptr GtkViewportClass\b/gtk3vaaaaarViewportClass/g
+s/\bptr GtkViewportClass\b/gtk3ptttttrViewportClass/g
+s/\bGtkViewportClass\b/gtk3.ViewportClassObj/g
+s/\bptr ptr GtkMessageDialog\b/gtk3vaaaaarMessageDialog/g
+s/\bptr GtkMessageDialog\b/gtk3ptttttrMessageDialog/g
+s/\bGtkMessageDialog\b/gtk3.MessageDialogObj/g
+s/\bptr ptr GtkSettingsValue\b/gtk3vaaaaarSettingsValue/g
+s/\bptr GtkSettingsValue\b/gtk3ptttttrSettingsValue/g
+s/\bGtkSettingsValue\b/gtk3.SettingsValueObj/g
+s/\bptr ptr GtkStyleProvider\b/gtk3vaaaaarStyleProvider/g
+s/\bptr GtkStyleProvider\b/gtk3ptttttrStyleProvider/g
+s/\bGtkStyleProvider\b/gtk3.StyleProviderObj/g
+s/\bptr ptr GtkToolItemClass\b/gtk3vaaaaarToolItemClass/g
+s/\bptr GtkToolItemClass\b/gtk3ptttttrToolItemClass/g
+s/\bGtkToolItemClass\b/gtk3.ToolItemClassObj/g
+s/\bptr ptr GtkNumerableIcon\b/gtk3vaaaaarNumerableIcon/g
+s/\bptr GtkNumerableIcon\b/gtk3ptttttrNumerableIcon/g
+s/\bGtkNumerableIcon\b/gtk3.NumerableIconObj/g
+s/\bptr ptr GtkSymbolicColor\b/gtk3vaaaaarSymbolicColor/g
+s/\bptr GtkSymbolicColor\b/gtk3ptttttrSymbolicColor/g
+s/\bGtkSymbolicColor\b/gtk3.SymbolicColorObj/g
+s/\bptr ptr GtkPadController\b/gtk3vaaaaarPadController/g
+s/\bptr GtkPadController\b/gtk3ptttttrPadController/g
+s/\bGtkPadController\b/gtk3.PadControllerObj/g
+s/\bptr ptr GtkInfoBarClass\b/gtk3vaaaaarInfoBarClass/g
+s/\bptr GtkInfoBarClass\b/gtk3ptttttrInfoBarClass/g
+s/\bGtkInfoBarClass\b/gtk3.InfoBarClassObj/g
+s/\bptr ptr GtkBindingEntry\b/gtk3vaaaaarBindingEntry/g
+s/\bptr GtkBindingEntry\b/gtk3ptttttrBindingEntry/g
+s/\bGtkBindingEntry\b/gtk3.BindingEntryObj/g
+s/\bptr ptr GtkBuilderClass\b/gtk3vaaaaarBuilderClass/g
+s/\bptr GtkBuilderClass\b/gtk3ptttttrBuilderClass/g
+s/\bGtkBuilderClass\b/gtk3.BuilderClassObj/g
+s/\bptr ptr GtkToggleButton\b/gtk3vaaaaarToggleButton/g
+s/\bptr GtkToggleButton\b/gtk3ptttttrToggleButton/g
+s/\bGtkToggleButton\b/gtk3.ToggleButtonObj/g
+s/\bptr ptr GtkFlowBoxClass\b/gtk3vaaaaarFlowBoxClass/g
+s/\bptr GtkFlowBoxClass\b/gtk3ptttttrFlowBoxClass/g
+s/\bGtkFlowBoxClass\b/gtk3.FlowBoxClassObj/g
+s/\bptr ptr GtkListBoxClass\b/gtk3vaaaaarListBoxClass/g
+s/\bptr GtkListBoxClass\b/gtk3ptttttrListBoxClass/g
+s/\bGtkListBoxClass\b/gtk3.ListBoxClassObj/g
+s/\bptr ptr GtkFlowBoxChild\b/gtk3vaaaaarFlowBoxChild/g
+s/\bptr GtkFlowBoxChild\b/gtk3ptttttrFlowBoxChild/g
+s/\bGtkFlowBoxChild\b/gtk3.FlowBoxChildObj/g
+s/\bptr ptr GtkPrinterClass\b/gtk3vaaaaarPrinterClass/g
+s/\bptr GtkPrinterClass\b/gtk3ptttttrPrinterClass/g
+s/\bGtkPrinterClass\b/gtk3.PrinterClassObj/g
+s/\bptr ptr GtkMenuBarClass\b/gtk3vaaaaarMenuBarClass/g
+s/\bptr GtkMenuBarClass\b/gtk3ptttttrMenuBarClass/g
+s/\bGtkMenuBarClass\b/gtk3.MenuBarClassObj/g
+s/\bptr ptr GtkPopoverClass\b/gtk3vaaaaarPopoverClass/g
+s/\bptr GtkPopoverClass\b/gtk3ptttttrPopoverClass/g
+s/\bGtkPopoverClass\b/gtk3.PopoverClassObj/g
+s/\bptr ptr GtkStackSidebar\b/gtk3vaaaaarStackSidebar/g
+s/\bptr GtkStackSidebar\b/gtk3ptttttrStackSidebar/g
+s/\bGtkStackSidebar\b/gtk3.StackSidebarObj/g
+s/\bptr ptr GtkColorChooser\b/gtk3vaaaaarColorChooser/g
+s/\bptr GtkColorChooser\b/gtk3ptttttrColorChooser/g
+s/\bGtkColorChooser\b/gtk3.ColorChooserObj/g
+s/\bptr ptr GtkRecentFilter\b/gtk3vaaaaarRecentFilter/g
+s/\bptr GtkRecentFilter\b/gtk3ptttttrRecentFilter/g
+s/\bGtkRecentFilter\b/gtk3.RecentFilterObj/g
+s/\bptr ptr GtkPrintBackend\b/gtk3vaaaaarPrintBackend/g
+s/\bptr GtkPrintBackend\b/gtk3ptttttrPrintBackend/g
+s/\bGtkPrintBackend\b/gtk3.PrintBackendObj/g
+s/\bptr ptr GtkNativeDialog\b/gtk3vaaaaarNativeDialog/g
+s/\bptr GtkNativeDialog\b/gtk3ptttttrNativeDialog/g
+s/\bGtkNativeDialog\b/gtk3.NativeDialogObj/g
+s/\bptr ptr GtkSpinnerClass\b/gtk3vaaaaarSpinnerClass/g
+s/\bptr GtkSpinnerClass\b/gtk3ptttttrSpinnerClass/g
+s/\bGtkSpinnerClass\b/gtk3.SpinnerClassObj/g
+s/\bptr ptr GtkComboBoxText\b/gtk3vaaaaarComboBoxText/g
+s/\bptr GtkComboBoxText\b/gtk3ptttttrComboBoxText/g
+s/\bGtkComboBoxText\b/gtk3.ComboBoxTextObj/g
+s/\bptr ptr GtkGestureClass\b/gtk3vaaaaarGestureClass/g
+s/\bptr GtkGestureClass\b/gtk3ptttttrGestureClass/g
+s/\bGtkGestureClass\b/gtk3.GestureClassObj/g
+s/\bptr ptr GtkVolumeButton\b/gtk3vaaaaarVolumeButton/g
+s/\bptr GtkVolumeButton\b/gtk3ptttttrVolumeButton/g
+s/\bGtkVolumeButton\b/gtk3.VolumeButtonObj/g
+s/\bptr ptr GtkToggleAction\b/gtk3vaaaaarToggleAction/g
+s/\bptr GtkToggleAction\b/gtk3ptttttrToggleAction/g
+s/\bGtkToggleAction\b/gtk3.ToggleActionObj/g
+s/\bptr ptr GtkStyleContext\b/gtk3vaaaaarStyleContext/g
+s/\bptr GtkStyleContext\b/gtk3ptttttrStyleContext/g
+s/\bGtkStyleContext\b/gtk3.StyleContextObj/g
+s/\bptr ptr GtkTextTagClass\b/gtk3vaaaaarTextTagClass/g
+s/\bptr GtkTextTagClass\b/gtk3ptttttrTextTagClass/g
+s/\bGtkTextTagClass\b/gtk3.TextTagClassObj/g
+s/\bptr ptr GtkTextTagTable\b/gtk3vaaaaarTextTagTable/g
+s/\bptr GtkTextTagTable\b/gtk3ptttttrTextTagTable/g
+s/\bGtkTextTagTable\b/gtk3.TextTagTableObj/g
+s/\bptr ptr GtkTreeSortable\b/gtk3vaaaaarTreeSortable/g
+s/\bptr GtkTreeSortable\b/gtk3ptttttrTreeSortable/g
+s/\bGtkTreeSortable\b/gtk3.TreeSortableObj/g
+s/\bptr ptr GtkCellRenderer\b/gtk3vaaaaarCellRenderer/g
+s/\bptr GtkCellRenderer\b/gtk3ptttttrCellRenderer/g
+s/\bGtkCellRenderer\b/gtk3.CellRendererObj/g
+s/\bptr ptr GtkCellEditable\b/gtk3vaaaaarCellEditable/g
+s/\bptr GtkCellEditable\b/gtk3ptttttrCellEditable/g
+s/\bGtkCellEditable\b/gtk3.CellEditableObj/g
+s/\bptr ptr GtkRcStyleClass\b/gtk3vaaaaarRcStyleClass/g
+s/\bptr GtkRcStyleClass\b/gtk3ptttttrRcStyleClass/g
+s/\bGtkRcStyleClass\b/gtk3.RcStyleClassObj/g
+s/\bptr ptr GtkTreeDragDest\b/gtk3vaaaaarTreeDragDest/g
+s/\bptr GtkTreeDragDest\b/gtk3ptttttrTreeDragDest/g
+s/\bGtkTreeDragDest\b/gtk3.TreeDragDestObj/g
+s/\bptr ptr GtkOverlayClass\b/gtk3vaaaaarOverlayClass/g
+s/\bptr GtkOverlayClass\b/gtk3ptttttrOverlayClass/g
+s/\bGtkOverlayClass\b/gtk3.OverlayClassObj/g
+s/\bptr ptr GtkPrintContext\b/gtk3vaaaaarPrintContext/g
+s/\bptr GtkPrintContext\b/gtk3ptttttrPrintContext/g
+s/\bGtkPrintContext\b/gtk3.PrintContextObj/g
+s/\bptr ptr GtkRecentAction\b/gtk3vaaaaarRecentAction/g
+s/\bptr GtkRecentAction\b/gtk3ptttttrRecentAction/g
+s/\bGtkRecentAction\b/gtk3.RecentActionObj/g
+s/\bptr ptr GtkToolbarClass\b/gtk3vaaaaarToolbarClass/g
+s/\bptr GtkToolbarClass\b/gtk3ptttttrToolbarClass/g
+s/\bGtkToolbarClass\b/gtk3.ToolbarClassObj/g
+s/\bptr ptr GtkGestureSwipe\b/gtk3vaaaaarGestureSwipe/g
+s/\bptr GtkGestureSwipe\b/gtk3ptttttrGestureSwipe/g
+s/\bGtkGestureSwipe\b/gtk3.GestureSwipeObj/g
+s/\bptr ptr GtkActionClass\b/gtk3vaaaaarActionClass/g
+s/\bptr GtkActionClass\b/gtk3ptttttrActionClass/g
+s/\bGtkActionClass\b/gtk3.ActionClassObj/g
+s/\bptr ptr GtkToolPalette\b/gtk3vaaaaarToolPalette/g
+s/\bptr GtkToolPalette\b/gtk3ptttttrToolPalette/g
+s/\bGtkToolPalette\b/gtk3.ToolPaletteObj/g
+s/\bptr ptr GtkTableRowCol\b/gtk3vaaaaarTableRowCol/g
+s/\bptr GtkTableRowCol\b/gtk3ptttttrTableRowCol/g
+s/\bGtkTableRowCol\b/gtk3.TableRowColObj/g
+s/\bptr ptr GtkThemeEngine\b/gtk3vaaaaarThemeEngine/g
+s/\bptr GtkThemeEngine\b/gtk3ptttttrThemeEngine/g
+s/\bGtkThemeEngine\b/gtk3.ThemeEngineObj/g
+s/\bptr ptr GtkPopoverMenu\b/gtk3vaaaaarPopoverMenu/g
+s/\bptr GtkPopoverMenu\b/gtk3ptttttrPopoverMenu/g
+s/\bGtkPopoverMenu\b/gtk3.PopoverMenuObj/g
+s/\bptr ptr GtkAboutDialog\b/gtk3vaaaaarAboutDialog/g
+s/\bptr GtkAboutDialog\b/gtk3ptttttrAboutDialog/g
+s/\bGtkAboutDialog\b/gtk3.AboutDialogObj/g
+s/\bptr ptr GtkDialogClass\b/gtk3vaaaaarDialogClass/g
+s/\bptr GtkDialogClass\b/gtk3ptttttrDialogClass/g
+s/\bGtkDialogClass\b/gtk3.DialogClassObj/g
+s/\bptr ptr GtkWindowGroup\b/gtk3vaaaaarWindowGroup/g
+s/\bptr GtkWindowGroup\b/gtk3ptttttrWindowGroup/g
+s/\bGtkWindowGroup\b/gtk3.WindowGroupObj/g
+s/\bptr ptr GtkWindowClass\b/gtk3vaaaaarWindowClass/g
+s/\bptr GtkWindowClass\b/gtk3ptttttrWindowClass/g
+s/\bGtkWindowClass\b/gtk3.WindowClassObj/g
+s/\bptr ptr GtkGestureZoom\b/gtk3vaaaaarGestureZoom/g
+s/\bptr GtkGestureZoom\b/gtk3ptttttrGestureZoom/g
+s/\bGtkGestureZoom\b/gtk3.GestureZoomObj/g
+s/\bptr ptr GtkProgressBar\b/gtk3vaaaaarProgressBar/g
+s/\bptr GtkProgressBar\b/gtk3ptttttrProgressBar/g
+s/\bGtkProgressBar\b/gtk3.ProgressBarObj/g
+s/\bptr ptr GtkModelButton\b/gtk3vaaaaarModelButton/g
+s/\bptr GtkModelButton\b/gtk3ptttttrModelButton/g
+s/\bGtkModelButton\b/gtk3.ModelButtonObj/g
+s/\bptr ptr GtkFileChooser\b/gtk3vaaaaarFileChooser/g
+s/\bptr GtkFileChooser\b/gtk3ptttttrFileChooser/g
+s/\bGtkFileChooser\b/gtk3.FileChooserObj/g
+s/\bptr ptr GtkRadioAction\b/gtk3vaaaaarRadioAction/g
+s/\bptr GtkRadioAction\b/gtk3ptttttrRadioAction/g
+s/\bGtkRadioAction\b/gtk3.RadioActionObj/g
+s/\bptr ptr GtkRadioButton\b/gtk3vaaaaarRadioButton/g
+s/\bptr GtkRadioButton\b/gtk3ptttttrRadioButton/g
+s/\bGtkRadioButton\b/gtk3.RadioButtonObj/g
+s/\bptr ptr GtkSwitchClass\b/gtk3vaaaaarSwitchClass/g
+s/\bptr GtkSwitchClass\b/gtk3ptttttrSwitchClass/g
+s/\bGtkSwitchClass\b/gtk3.SwitchClassObj/g
+s/\bptr ptr GtkApplication\b/gtk3vaaaaarApplication/g
+s/\bptr GtkApplication\b/gtk3ptttttrApplication/g
+s/\bGtkApplication\b/gtk3.ApplicationObj/g
+s/\bptr ptr GtkRequisition\b/gtk3vaaaaarRequisition/g
+s/\bptr GtkRequisition\b/gtk3ptttttrRequisition/g
+s/\bGtkRequisition\b/gtk3.RequisitionObj/g
+s/\bptr ptr GtkDrawingArea\b/gtk3vaaaaarDrawingArea/g
+s/\bptr GtkDrawingArea\b/gtk3ptttttrDrawingArea/g
+s/\bGtkDrawingArea\b/gtk3.DrawingAreaObj/g
+s/\bptr ptr GtkCssProvider\b/gtk3vaaaaarCssProvider/g
+s/\bptr GtkCssProvider\b/gtk3ptttttrCssProvider/g
+s/\bGtkCssProvider\b/gtk3.CssProviderObj/g
+s/\bptr ptr GtkGLAreaClass\b/gtk3vaaaaarGLAreaClass/g
+s/\bptr GtkGLAreaClass\b/gtk3ptttttrGLAreaClass/g
+s/\bGtkGLAreaClass\b/gtk3.GLAreaClassObj/g
+s/\bptr ptr GtkWidgetClass\b/gtk3vaaaaarWidgetClass/g
+s/\bptr GtkWidgetClass\b/gtk3ptttttrWidgetClass/g
+s/\bGtkWidgetClass\b/gtk3.WidgetClassObj/g
+s/\bptr ptr GtkGestureDrag\b/gtk3vaaaaarGestureDrag/g
+s/\bptr GtkGestureDrag\b/gtk3ptttttrGestureDrag/g
+s/\bGtkGestureDrag\b/gtk3.GestureDragObj/g
+s/\bptr ptr GtkFontChooser\b/gtk3vaaaaarFontChooser/g
+s/\bptr GtkFontChooser\b/gtk3ptttttrFontChooser/g
+s/\bGtkFontChooser\b/gtk3.FontChooserObj/g
+s/\bptr ptr GtkTargetEntry\b/gtk3vaaaaarTargetEntry/g
+s/\bptr GtkTargetEntry\b/gtk3ptttttrTargetEntry/g
+s/\bGtkTargetEntry\b/gtk3.TargetEntryObj/g
+s/\bptr ptr GtkActionGroup\b/gtk3vaaaaarActionGroup/g
+s/\bptr GtkActionGroup\b/gtk3ptttttrActionGroup/g
+s/\bGtkActionGroup\b/gtk3.ActionGroupObj/g
+s/\bptr ptr GtkEntryBuffer\b/gtk3vaaaaarEntryBuffer/g
+s/\bptr GtkEntryBuffer\b/gtk3ptttttrEntryBuffer/g
+s/\bGtkEntryBuffer\b/gtk3.EntryBufferObj/g
+s/\bptr ptr GtkActionEntry\b/gtk3vaaaaarActionEntry/g
+s/\bptr GtkActionEntry\b/gtk3ptttttrActionEntry/g
+s/\bGtkActionEntry\b/gtk3.ActionEntryObj/g
+s/\bptr ptr GtkColorButton\b/gtk3vaaaaarColorButton/g
+s/\bptr GtkColorButton\b/gtk3ptttttrColorButton/g
+s/\bGtkColorButton\b/gtk3.ColorButtonObj/g
+s/\bptr ptr GtkIconFactory\b/gtk3vaaaaarIconFactory/g
+s/\bptr GtkIconFactory\b/gtk3ptttttrIconFactory/g
+s/\bGtkIconFactory\b/gtk3.IconFactoryObj/g
+s/\bptr ptr GtkHScaleClass\b/gtk3vaaaaarHScaleClass/g
+s/\bptr GtkHScaleClass\b/gtk3ptttttrHScaleClass/g
+s/\bGtkHScaleClass\b/gtk3.HScaleClassObj/g
+s/\bptr ptr GtkCheckButton\b/gtk3vaaaaarCheckButton/g
+s/\bptr GtkCheckButton\b/gtk3ptttttrCheckButton/g
+s/\bGtkCheckButton\b/gtk3.CheckButtonObj/g
+s/\bptr ptr GtkScaleButton\b/gtk3vaaaaarScaleButton/g
+s/\bptr GtkScaleButton\b/gtk3ptttttrScaleButton/g
+s/\bGtkScaleButton\b/gtk3.ScaleButtonObj/g
+s/\bptr ptr GtkVPanedClass\b/gtk3vaaaaarVPanedClass/g
+s/\bptr GtkVPanedClass\b/gtk3ptttttrVPanedClass/g
+s/\bGtkVPanedClass\b/gtk3.VPanedClassObj/g
+s/\bptr ptr GtkCellAreaBox\b/gtk3vaaaaarCellAreaBox/g
+s/\bptr GtkCellAreaBox\b/gtk3ptttttrCellAreaBox/g
+s/\bGtkCellAreaBox\b/gtk3.CellAreaBoxObj/g
+s/\bptr ptr GtkHPanedClass\b/gtk3vaaaaarHPanedClass/g
+s/\bptr GtkHPanedClass\b/gtk3ptttttrHPanedClass/g
+s/\bGtkHPanedClass\b/gtk3.HPanedClassObj/g
+s/\bptr ptr GtkButtonClass\b/gtk3vaaaaarButtonClass/g
+s/\bptr GtkButtonClass\b/gtk3ptttttrButtonClass/g
+s/\bGtkButtonClass\b/gtk3.ButtonClassObj/g
+s/\bptr ptr GtkAspectFrame\b/gtk3vaaaaarAspectFrame/g
+s/\bptr GtkAspectFrame\b/gtk3ptttttrAspectFrame/g
+s/\bGtkAspectFrame\b/gtk3.AspectFrameObj/g
+s/\bptr ptr GtkLayoutClass\b/gtk3vaaaaarLayoutClass/g
+s/\bptr GtkLayoutClass\b/gtk3ptttttrLayoutClass/g
+s/\bGtkLayoutClass\b/gtk3.LayoutClassObj/g
+s/\bptr ptr GtkActivatable\b/gtk3vaaaaarActivatable/g
+s/\bptr GtkActivatable\b/gtk3ptttttrActivatable/g
+s/\bGtkActivatable\b/gtk3.ActivatableObj/g
+s/\bptr ptr GtkVScaleClass\b/gtk3vaaaaarVScaleClass/g
+s/\bptr GtkVScaleClass\b/gtk3ptttttrVScaleClass/g
+s/\bGtkVScaleClass\b/gtk3.VScaleClassObj/g
+s/\bptr ptr GtkSearchEntry\b/gtk3vaaaaarSearchEntry/g
+s/\bptr GtkSearchEntry\b/gtk3ptttttrSearchEntry/g
+s/\bGtkSearchEntry\b/gtk3.SearchEntryObj/g
+s/\bptr ptr GtkFixedClass\b/gtk3vaaaaarFixedClass/g
+s/\bptr GtkFixedClass\b/gtk3ptttttrFixedClass/g
+s/\bGtkFixedClass\b/gtk3.FixedClassObj/g
+s/\bptr ptr GtkHButtonBox\b/gtk3vaaaaarHButtonBox/g
+s/\bptr GtkHButtonBox\b/gtk3ptttttrHButtonBox/g
+s/\bGtkHButtonBox\b/gtk3.HButtonBoxObj/g
+s/\bptr ptr GtkBindingArg\b/gtk3vaaaaarBindingArg/g
+s/\bptr GtkBindingArg\b/gtk3ptttttrBindingArg/g
+s/\bGtkBindingArg\b/gtk3.BindingArgObj/g
+s/\bptr ptr GtkFrameClass\b/gtk3vaaaaarFrameClass/g
+s/\bptr GtkFrameClass\b/gtk3ptttttrFrameClass/g
+s/\bGtkFrameClass\b/gtk3.FrameClassObj/g
+s/\bptr ptr GtkLinkButton\b/gtk3vaaaaarLinkButton/g
+s/\bptr GtkLinkButton\b/gtk3ptttttrLinkButton/g
+s/\bGtkLinkButton\b/gtk3.LinkButtonObj/g
+s/\bptr ptr GtkEntryClass\b/gtk3vaaaaarEntryClass/g
+s/\bptr GtkEntryClass\b/gtk3ptttttrEntryClass/g
+s/\bGtkEntryClass\b/gtk3.EntryClassObj/g
+s/\bptr ptr GtkCellLayout\b/gtk3vaaaaarCellLayout/g
+s/\bptr GtkCellLayout\b/gtk3ptttttrCellLayout/g
+s/\bGtkCellLayout\b/gtk3.CellLayoutObj/g
+s/\bptr ptr GtkListBoxRow\b/gtk3vaaaaarListBoxRow/g
+s/\bptr GtkListBoxRow\b/gtk3ptttttrListBoxRow/g
+s/\bGtkListBoxRow\b/gtk3.ListBoxRowObj/g
+s/\bptr ptr GtkLockButton\b/gtk3vaaaaarLockButton/g
+s/\bptr GtkLockButton\b/gtk3ptttttrLockButton/g
+s/\bGtkLockButton\b/gtk3.LockButtonObj/g
+s/\bptr ptr GtkSpinButton\b/gtk3vaaaaarSpinButton/g
+s/\bptr GtkSpinButton\b/gtk3ptttttrSpinButton/g
+s/\bGtkSpinButton\b/gtk3.SpinButtonObj/g
+s/\bptr ptr GtkImageClass\b/gtk3vaaaaarImageClass/g
+s/\bptr GtkImageClass\b/gtk3ptttttrImageClass/g
+s/\bGtkImageClass\b/gtk3.ImageClassObj/g
+s/\bptr ptr GtkHScrollbar\b/gtk3vaaaaarHScrollbar/g
+s/\bptr GtkHScrollbar\b/gtk3ptttttrHScrollbar/g
+s/\bGtkHScrollbar\b/gtk3.HScrollbarObj/g
+s/\bptr ptr GtkHSeparator\b/gtk3vaaaaarHSeparator/g
+s/\bptr GtkHSeparator\b/gtk3ptttttrHSeparator/g
+s/\bGtkHSeparator\b/gtk3.HSeparatorObj/g
+s/\bptr ptr GtkTargetList\b/gtk3vaaaaarTargetList/g
+s/\bptr GtkTargetList\b/gtk3ptttttrTargetList/g
+s/\bGtkTargetList\b/gtk3.TargetListObj/g
+s/\bptr ptr GtkTargetPair\b/gtk3vaaaaarTargetPair/g
+s/\bptr GtkTargetPair\b/gtk3ptttttrTargetPair/g
+s/\bGtkTargetPair\b/gtk3.TargetPairObj/g
+s/\bptr ptr GtkArrowClass\b/gtk3vaaaaarArrowClass/g
+s/\bptr GtkArrowClass\b/gtk3ptttttrArrowClass/g
+s/\bGtkArrowClass\b/gtk3.ArrowClassObj/g
+s/\bptr ptr GtkCssSection\b/gtk3vaaaaarCssSection/g
+s/\bptr GtkCssSection\b/gtk3ptttttrCssSection/g
+s/\bGtkCssSection\b/gtk3.CssSectionObj/g
+s/\bptr ptr GtkMenuButton\b/gtk3vaaaaarMenuButton/g
+s/\bptr GtkMenuButton\b/gtk3ptttttrMenuButton/g
+s/\bGtkMenuButton\b/gtk3.MenuButtonObj/g
+s/\bptr ptr GtkTextBuffer\b/gtk3vaaaaarTextBuffer/g
+s/\bptr GtkTextBuffer\b/gtk3ptttttrTextBuffer/g
+s/\bGtkTextBuffer\b/gtk3.TextBufferObj/g
+s/\bptr ptr GtkBindingSet\b/gtk3vaaaaarBindingSet/g
+s/\bptr GtkBindingSet\b/gtk3ptttttrBindingSet/g
+s/\bGtkBindingSet\b/gtk3.BindingSetObj/g
+s/\bptr ptr GtkToolButton\b/gtk3vaaaaarToolButton/g
+s/\bptr GtkToolButton\b/gtk3ptttttrToolButton/g
+s/\bGtkToolButton\b/gtk3.ToolButtonObj/g
+s/\bptr ptr GtkOrientable\b/gtk3vaaaaarOrientable/g
+s/\bptr GtkOrientable\b/gtk3ptttttrOrientable/g
+s/\bGtkOrientable\b/gtk3.OrientableObj/g
+s/\bptr ptr GtkAppChooser\b/gtk3vaaaaarAppChooser/g
+s/\bptr GtkAppChooser\b/gtk3ptttttrAppChooser/g
+s/\bGtkAppChooser\b/gtk3.AppChooserObj/g
+s/\bptr ptr GtkFixedChild\b/gtk3vaaaaarFixedChild/g
+s/\bptr GtkFixedChild\b/gtk3ptttttrFixedChild/g
+s/\bGtkFixedChild\b/gtk3.FixedChildObj/g
+s/\bptr ptr GtkRcProperty\b/gtk3vaaaaarRcProperty/g
+s/\bptr GtkRcProperty\b/gtk3ptttttrRcProperty/g
+s/\bGtkRcProperty\b/gtk3.RcPropertyObj/g
+s/\bptr ptr GtkActionable\b/gtk3vaaaaarActionable/g
+s/\bptr GtkActionable\b/gtk3ptttttrActionable/g
+s/\bGtkActionable\b/gtk3.ActionableObj/g
+s/\bptr ptr GtkPanedClass\b/gtk3vaaaaarPanedClass/g
+s/\bptr GtkPanedClass\b/gtk3ptttttrPanedClass/g
+s/\bGtkPanedClass\b/gtk3.PanedClassObj/g
+s/\bptr ptr GtkStatusIcon\b/gtk3vaaaaarStatusIcon/g
+s/\bptr GtkStatusIcon\b/gtk3ptttttrStatusIcon/g
+s/\bGtkStatusIcon\b/gtk3.StatusIconObj/g
+s/\bptr ptr GtkGesturePan\b/gtk3vaaaaarGesturePan/g
+s/\bptr GtkGesturePan\b/gtk3ptttttrGesturePan/g
+s/\bGtkGesturePan\b/gtk3.GesturePanObj/g
+s/\bptr ptr GtkStyleClass\b/gtk3vaaaaarStyleClass/g
+s/\bptr GtkStyleClass\b/gtk3ptttttrStyleClass/g
+s/\bGtkStyleClass\b/gtk3.StyleClassObj/g
+s/\bptr ptr GtkAccessible\b/gtk3vaaaaarAccessible/g
+s/\bptr GtkAccessible\b/gtk3ptttttrAccessible/g
+s/\bGtkAccessible\b/gtk3.AccessibleObj/g
+s/\bptr ptr GtkFileFilter\b/gtk3vaaaaarFileFilter/g
+s/\bptr GtkFileFilter\b/gtk3ptttttrFileFilter/g
+s/\bGtkFileFilter\b/gtk3.FileFilterObj/g
+s/\bptr ptr GtkTableClass\b/gtk3vaaaaarTableClass/g
+s/\bptr GtkTableClass\b/gtk3ptttttrTableClass/g
+s/\bGtkTableClass\b/gtk3.TableClassObj/g
+s/\bptr ptr GtkTableChild\b/gtk3vaaaaarTableChild/g
+s/\bptr GtkTableChild\b/gtk3ptttttrTableChild/g
+s/\bGtkTableChild\b/gtk3.TableChildObj/g
+s/\bptr ptr GtkAccelLabel\b/gtk3vaaaaarAccelLabel/g
+s/\bptr GtkAccelLabel\b/gtk3ptttttrAccelLabel/g
+s/\bGtkAccelLabel\b/gtk3.AccelLabelObj/g
+s/\bptr ptr GtkLabelClass\b/gtk3vaaaaarLabelClass/g
+s/\bptr GtkLabelClass\b/gtk3ptttttrLabelClass/g
+s/\bGtkLabelClass\b/gtk3.LabelClassObj/g
+s/\bptr ptr GtkAdjustment\b/gtk3vaaaaarAdjustment/g
+s/\bptr GtkAdjustment\b/gtk3ptttttrAdjustment/g
+s/\bGtkAdjustment\b/gtk3.AdjustmentObj/g
+s/\bptr ptr GtkRangeClass\b/gtk3vaaaaarRangeClass/g
+s/\bptr GtkRangeClass\b/gtk3ptttttrRangeClass/g
+s/\bGtkRangeClass\b/gtk3.RangeClassObj/g
+s/\bptr ptr GtkRecentInfo\b/gtk3vaaaaarRecentInfo/g
+s/\bptr GtkRecentInfo\b/gtk3ptttttrRecentInfo/g
+s/\bGtkRecentInfo\b/gtk3.RecentInfoObj/g
+s/\bptr ptr GtkAllocation\b/gtk3vaaaaarAllocation/g
+s/\bptr GtkAllocation\b/gtk3ptttttrAllocation/g
+s/\bGtkAllocation\b/gtk3.AllocationObj/g
+s/\bptr ptr GtkRecentData\b/gtk3vaaaaarRecentData/g
+s/\bptr GtkRecentData\b/gtk3ptttttrRecentData/g
+s/\bGtkRecentData\b/gtk3.RecentDataObj/g
+s/\bptr ptr GtkVButtonBox\b/gtk3vaaaaarVButtonBox/g
+s/\bptr GtkVButtonBox\b/gtk3ptttttrVButtonBox/g
+s/\bGtkVButtonBox\b/gtk3.VButtonBoxObj/g
+s/\bptr ptr GtkStackClass\b/gtk3vaaaaarStackClass/g
+s/\bptr GtkStackClass\b/gtk3ptttttrStackClass/g
+s/\bGtkStackClass\b/gtk3.StackClassObj/g
+s/\bptr ptr GtkWidgetPath\b/gtk3vaaaaarWidgetPath/g
+s/\bptr GtkWidgetPath\b/gtk3ptttttrWidgetPath/g
+s/\bGtkWidgetPath\b/gtk3.WidgetPathObj/g
+s/\bptr ptr GtkScaleClass\b/gtk3vaaaaarScaleClass/g
+s/\bptr GtkScaleClass\b/gtk3ptttttrScaleClass/g
+s/\bGtkScaleClass\b/gtk3.ScaleClassObj/g
+s/\bptr ptr GtkScrollable\b/gtk3vaaaaarScrollable/g
+s/\bptr GtkScrollable\b/gtk3ptttttrScrollable/g
+s/\bGtkScrollable\b/gtk3.ScrollableObj/g
+s/\bptr ptr GtkIconSource\b/gtk3vaaaaarIconSource/g
+s/\bptr GtkIconSource\b/gtk3ptttttrIconSource/g
+s/\bGtkIconSource\b/gtk3.IconSourceObj/g
+s/\bptr ptr GtkVSeparator\b/gtk3vaaaaarVSeparator/g
+s/\bptr GtkVSeparator\b/gtk3ptttttrVSeparator/g
+s/\bGtkVSeparator\b/gtk3.VSeparatorObj/g
+s/\bptr ptr GtkAccelGroup\b/gtk3vaaaaarAccelGroup/g
+s/\bptr GtkAccelGroup\b/gtk3ptttttrAccelGroup/g
+s/\bGtkAccelGroup\b/gtk3.AccelGroupObj/g
+s/\bptr ptr GtkVScrollbar\b/gtk3vaaaaarVScrollbar/g
+s/\bptr GtkVScrollbar\b/gtk3ptttttrVScrollbar/g
+s/\bGtkVScrollbar\b/gtk3.VScrollbarObj/g
+s/\bptr ptr GtkFontButton\b/gtk3vaaaaarFontButton/g
+s/\bptr GtkFontButton\b/gtk3ptttttrFontButton/g
+s/\bGtkFontButton\b/gtk3.FontButtonObj/g
+s/\bptr ptr GtkMiscClass\b/gtk3vaaaaarMiscClass/g
+s/\bptr GtkMiscClass\b/gtk3ptttttrMiscClass/g
+s/\bGtkMiscClass\b/gtk3.MiscClassObj/g
+s/\bptr ptr GtkSeparator\b/gtk3vaaaaarSeparator/g
+s/\bptr GtkSeparator\b/gtk3ptttttrSeparator/g
+s/\bGtkSeparator\b/gtk3.SeparatorObj/g
+s/\bptr ptr GtkVBoxClass\b/gtk3vaaaaarVBoxClass/g
+s/\bptr GtkVBoxClass\b/gtk3ptttttrVBoxClass/g
+s/\bGtkVBoxClass\b/gtk3.VBoxClassObj/g
+s/\bptr ptr GtkSizeGroup\b/gtk3vaaaaarSizeGroup/g
+s/\bptr GtkSizeGroup\b/gtk3ptttttrSizeGroup/g
+s/\bGtkSizeGroup\b/gtk3.SizeGroupObj/g
+s/\bptr ptr GtkSearchBar\b/gtk3vaaaaarSearchBar/g
+s/\bptr GtkSearchBar\b/gtk3ptttttrSearchBar/g
+s/\bGtkSearchBar\b/gtk3.SearchBarObj/g
+s/\bptr ptr GtkClipboard\b/gtk3vaaaaarClipboard/g
+s/\bptr GtkClipboard\b/gtk3ptttttrClipboard/g
+s/\bGtkClipboard\b/gtk3.ClipboardObj/g
+s/\bptr ptr GtkScrollbar\b/gtk3vaaaaarScrollbar/g
+s/\bptr GtkScrollbar\b/gtk3ptttttrScrollbar/g
+s/\bGtkScrollbar\b/gtk3.ScrollbarObj/g
+s/\bptr ptr GtkTreeModel\b/gtk3vaaaaarTreeModel/g
+s/\bptr GtkTreeModel\b/gtk3ptttttrTreeModel/g
+s/\bGtkTreeModel\b/gtk3.TreeModelObj/g
+s/\bptr ptr GtkUIManager\b/gtk3vaaaaarUIManager/g
+s/\bptr GtkUIManager\b/gtk3ptttttrUIManager/g
+s/\bGtkUIManager\b/gtk3.UIManagerObj/g
+s/\bptr ptr GtkStockItem\b/gtk3vaaaaarStockItem/g
+s/\bptr GtkStockItem\b/gtk3ptttttrStockItem/g
+s/\bGtkStockItem\b/gtk3.StockItemObj/g
+s/\bptr ptr GtkStatusbar\b/gtk3vaaaaarStatusbar/g
+s/\bptr GtkStatusbar\b/gtk3ptttttrStatusbar/g
+s/\bGtkStatusbar\b/gtk3.StatusbarObj/g
+s/\bptr ptr GtkIMContext\b/gtk3vaaaaarIMContext/g
+s/\bptr GtkIMContext\b/gtk3ptttttrIMContext/g
+s/\bGtkIMContext\b/gtk3.IMContextObj/g
+s/\bptr ptr GtkRcContext\b/gtk3vaaaaarRcContext/g
+s/\bptr GtkRcContext\b/gtk3ptttttrRcContext/g
+s/\bGtkRcContext\b/gtk3.RcContextObj/g
+s/\bptr ptr GtkContainer\b/gtk3vaaaaarContainer/g
+s/\bptr GtkContainer\b/gtk3ptttttrContainer/g
+s/\bGtkContainer\b/gtk3.ContainerObj/g
+s/\bptr ptr GtkListStore\b/gtk3vaaaaarListStore/g
+s/\bptr GtkListStore\b/gtk3ptttttrListStore/g
+s/\bGtkListStore\b/gtk3.ListStoreObj/g
+s/\bptr ptr GtkActionBar\b/gtk3vaaaaarActionBar/g
+s/\bptr GtkActionBar\b/gtk3ptttttrActionBar/g
+s/\bGtkActionBar\b/gtk3.ActionBarObj/g
+s/\bptr ptr GtkAlignment\b/gtk3vaaaaarAlignment/g
+s/\bptr GtkAlignment\b/gtk3ptttttrAlignment/g
+s/\bGtkAlignment\b/gtk3.AlignmentObj/g
+s/\bptr ptr GtkGridClass\b/gtk3vaaaaarGridClass/g
+s/\bptr GtkGridClass\b/gtk3ptttttrGridClass/g
+s/\bGtkGridClass\b/gtk3.GridClassObj/g
+s/\bptr ptr GtkHeaderBar\b/gtk3vaaaaarHeaderBar/g
+s/\bptr GtkHeaderBar\b/gtk3ptttttrHeaderBar/g
+s/\bGtkHeaderBar\b/gtk3.HeaderBarObj/g
+s/\bptr ptr GtkToolShell\b/gtk3vaaaaarToolShell/g
+s/\bptr GtkToolShell\b/gtk3ptttttrToolShell/g
+s/\bGtkToolShell\b/gtk3.ToolShellObj/g
+s/\bptr ptr GtkIconTheme\b/gtk3vaaaaarIconTheme/g
+s/\bptr GtkIconTheme\b/gtk3ptttttrIconTheme/g
+s/\bGtkIconTheme\b/gtk3.IconThemeObj/g
+s/\bptr ptr GtkPaperSize\b/gtk3vaaaaarPaperSize/g
+s/\bptr GtkPaperSize\b/gtk3ptttttrPaperSize/g
+s/\bGtkPaperSize\b/gtk3.PaperSizeObj/g
+s/\bptr ptr GtkPageSetup\b/gtk3vaaaaarPageSetup/g
+s/\bptr GtkPageSetup\b/gtk3ptttttrPageSetup/g
+s/\bGtkPageSetup\b/gtk3.PageSetupObj/g
+s/\bptr ptr GtkAssistant\b/gtk3vaaaaarAssistant/g
+s/\bptr GtkAssistant\b/gtk3ptttttrAssistant/g
+s/\bGtkAssistant\b/gtk3.AssistantObj/g
+s/\bptr ptr GtkButtonBox\b/gtk3vaaaaarButtonBox/g
+s/\bptr GtkButtonBox\b/gtk3ptttttrButtonBox/g
+s/\bGtkButtonBox\b/gtk3.ButtonBoxObj/g
+s/\bptr ptr GtkInvisible\b/gtk3vaaaaarInvisible/g
+s/\bptr GtkInvisible\b/gtk3ptttttrInvisible/g
+s/\bGtkInvisible\b/gtk3.InvisibleObj/g
+s/\bptr ptr GtkHandleBox\b/gtk3vaaaaarHandleBox/g
+s/\bptr GtkHandleBox\b/gtk3ptttttrHandleBox/g
+s/\bGtkHandleBox\b/gtk3.HandleBoxObj/g
+s/\bptr ptr GtkPageRange\b/gtk3vaaaaarPageRange/g
+s/\bptr GtkPageRange\b/gtk3ptttttrPageRange/g
+s/\bGtkPageRange\b/gtk3.PageRangeObj/g
+s/\bptr ptr GtkTextBTree\b/gtk3vaaaaarTextBTree/g
+s/\bptr GtkTextBTree\b/gtk3ptttttrTextBTree/g
+s/\bGtkTextBTree\b/gtk3.TextBTreeObj/g
+s/\bptr ptr GtkMenuClass\b/gtk3vaaaaarMenuClass/g
+s/\bptr GtkMenuClass\b/gtk3ptttttrMenuClass/g
+s/\bGtkMenuClass\b/gtk3.MenuClassObj/g
+s/\bptr ptr GtkHBoxClass\b/gtk3vaaaaarHBoxClass/g
+s/\bptr GtkHBoxClass\b/gtk3ptttttrHBoxClass/g
+s/\bGtkHBoxClass\b/gtk3.HBoxClassObj/g
+s/\bptr ptr GtkTreeStore\b/gtk3vaaaaarTreeStore/g
+s/\bptr GtkTreeStore\b/gtk3ptttttrTreeStore/g
+s/\bGtkTreeStore\b/gtk3.TreeStoreObj/g
+s/\bptr ptr GtkBuildable\b/gtk3vaaaaarBuildable/g
+s/\bptr GtkBuildable\b/gtk3ptttttrBuildable/g
+s/\bGtkBuildable\b/gtk3.BuildableObj/g
+s/\bptr ptr GtkMenuShell\b/gtk3vaaaaarMenuShell/g
+s/\bptr GtkMenuShell\b/gtk3ptttttrMenuShell/g
+s/\bGtkMenuShell\b/gtk3.MenuShellObj/g
+s/\bptr ptr GtkAccelMap\b/gtk3vaaaaarAccelMap/g
+s/\bptr GtkAccelMap\b/gtk3ptttttrAccelMap/g
+s/\bGtkAccelMap\b/gtk3.AccelMapObj/g
+s/\bptr ptr GtkCellView\b/gtk3vaaaaarCellView/g
+s/\bptr GtkCellView\b/gtk3ptttttrCellView/g
+s/\bGtkCellView\b/gtk3.CellViewObj/g
+s/\bptr ptr GtkHSVClass\b/gtk3vaaaaarHSVClass/g
+s/\bptr GtkHSVClass\b/gtk3ptttttrHSVClass/g
+s/\bGtkHSVClass\b/gtk3.HSVClassObj/g
+s/\bptr ptr GtkBinClass\b/gtk3vaaaaarBinClass/g
+s/\bptr GtkBinClass\b/gtk3ptttttrBinClass/g
+s/\bGtkBinClass\b/gtk3.BinClassObj/g
+s/\bptr ptr GtkMenuItem\b/gtk3vaaaaarMenuItem/g
+s/\bptr GtkMenuItem\b/gtk3ptttttrMenuItem/g
+s/\bGtkMenuItem\b/gtk3.MenuItemObj/g
+s/\bptr ptr GtkIconView\b/gtk3vaaaaarIconView/g
+s/\bptr GtkIconView\b/gtk3ptttttrIconView/g
+s/\bGtkIconView\b/gtk3.IconViewObj/g
+s/\bptr ptr GtkLevelBar\b/gtk3vaaaaarLevelBar/g
+s/\bptr GtkLevelBar\b/gtk3ptttttrLevelBar/g
+s/\bGtkLevelBar\b/gtk3.LevelBarObj/g
+s/\bptr ptr GtkIconInfo\b/gtk3vaaaaarIconInfo/g
+s/\bptr GtkIconInfo\b/gtk3ptttttrIconInfo/g
+s/\bGtkIconInfo\b/gtk3.IconInfoObj/g
+s/\bptr ptr GtkComboBox\b/gtk3vaaaaarComboBox/g
+s/\bptr GtkComboBox\b/gtk3ptttttrComboBox/g
+s/\bGtkComboBox\b/gtk3.ComboBoxObj/g
+s/\bptr ptr GtkTreeView\b/gtk3vaaaaarTreeView/g
+s/\bptr GtkTreeView\b/gtk3ptttttrTreeView/g
+s/\bGtkTreeView\b/gtk3.TreeViewObj/g
+s/\bptr ptr GtkGradient\b/gtk3vaaaaarGradient/g
+s/\bptr GtkGradient\b/gtk3ptttttrGradient/g
+s/\bGtkGradient\b/gtk3.GradientObj/g
+s/\bptr ptr GtkEventBox\b/gtk3vaaaaarEventBox/g
+s/\bptr GtkEventBox\b/gtk3ptttttrEventBox/g
+s/\bGtkEventBox\b/gtk3.EventBoxObj/g
+s/\bptr ptr GtkCalendar\b/gtk3vaaaaarCalendar/g
+s/\bptr GtkCalendar\b/gtk3ptttttrCalendar/g
+s/\bGtkCalendar\b/gtk3.CalendarObj/g
+s/\bptr ptr GtkExpander\b/gtk3vaaaaarExpander/g
+s/\bptr GtkExpander\b/gtk3ptttttrExpander/g
+s/\bGtkExpander\b/gtk3.ExpanderObj/g
+s/\bptr ptr GtkBoxClass\b/gtk3vaaaaarBoxClass/g
+s/\bptr GtkBoxClass\b/gtk3ptttttrBoxClass/g
+s/\bGtkBoxClass\b/gtk3.BoxClassObj/g
+s/\bptr ptr GtkTextMark\b/gtk3vaaaaarTextMark/g
+s/\bptr GtkTextMark\b/gtk3ptttttrTextMark/g
+s/\bGtkTextMark\b/gtk3.TextMarkObj/g
+s/\bptr ptr GtkTreeIter\b/gtk3vaaaaarTreeIter/g
+s/\bptr GtkTreeIter\b/gtk3ptttttrTreeIter/g
+s/\bGtkTreeIter\b/gtk3.TreeIterObj/g
+s/\bptr ptr GtkSettings\b/gtk3vaaaaarSettings/g
+s/\bptr GtkSettings\b/gtk3ptttttrSettings/g
+s/\bGtkSettings\b/gtk3.SettingsObj/g
+s/\bptr ptr GtkEditable\b/gtk3vaaaaarEditable/g
+s/\bptr GtkEditable\b/gtk3ptttttrEditable/g
+s/\bGtkEditable\b/gtk3.EditableObj/g
+s/\bptr ptr GtkRevealer\b/gtk3vaaaaarRevealer/g
+s/\bptr GtkRevealer\b/gtk3ptttttrRevealer/g
+s/\bGtkRevealer\b/gtk3.RevealerObj/g
+s/\bptr ptr GtkTreePath\b/gtk3vaaaaarTreePath/g
+s/\bptr GtkTreePath\b/gtk3ptttttrTreePath/g
+s/\bGtkTreePath\b/gtk3.TreePathObj/g
+s/\bptr ptr GtkPrintJob\b/gtk3vaaaaarPrintJob/g
+s/\bptr GtkPrintJob\b/gtk3ptttttrPrintJob/g
+s/\bGtkPrintJob\b/gtk3.PrintJobObj/g
+s/\bptr ptr GtkAccelKey\b/gtk3vaaaaarAccelKey/g
+s/\bptr GtkAccelKey\b/gtk3ptttttrAccelKey/g
+s/\bGtkAccelKey\b/gtk3.AccelKeyObj/g
+s/\bptr ptr GtkToolItem\b/gtk3vaaaaarToolItem/g
+s/\bptr GtkToolItem\b/gtk3ptttttrToolItem/g
+s/\bGtkToolItem\b/gtk3.ToolItemObj/g
+s/\bptr ptr GtkTextIter\b/gtk3vaaaaarTextIter/g
+s/\bptr GtkTextIter\b/gtk3ptttttrTextIter/g
+s/\bGtkTextIter\b/gtk3.TextIterObj/g
+s/\bptr ptr GtkNotebook\b/gtk3vaaaaarNotebook/g
+s/\bptr GtkNotebook\b/gtk3ptttttrNotebook/g
+s/\bGtkNotebook\b/gtk3.NotebookObj/g
+s/\bptr ptr GtkCellArea\b/gtk3vaaaaarCellArea/g
+s/\bptr GtkCellArea\b/gtk3ptttttrCellArea/g
+s/\bGtkCellArea\b/gtk3.CellAreaObj/g
+s/\bptr ptr GtkViewport\b/gtk3vaaaaarViewport/g
+s/\bptr GtkViewport\b/gtk3ptttttrViewport/g
+s/\bGtkViewport\b/gtk3.ViewportObj/g
+s/\bptr ptr GtkTextView\b/gtk3vaaaaarTextView/g
+s/\bptr GtkTextView\b/gtk3ptttttrTextView/g
+s/\bGtkTextView\b/gtk3.TextViewObj/g
+s/\bptr ptr GtkTextTag\b/gtk3vaaaaarTextTag/g
+s/\bptr GtkTextTag\b/gtk3ptttttrTextTag/g
+s/\bGtkTextTag\b/gtk3.TextTagObj/g
+s/\bptr ptr GtkFlowBox\b/gtk3vaaaaarFlowBox/g
+s/\bptr GtkFlowBox\b/gtk3ptttttrFlowBox/g
+s/\bGtkFlowBox\b/gtk3.FlowBoxObj/g
+s/\bptr ptr GtkPrinter\b/gtk3vaaaaarPrinter/g
+s/\bptr GtkPrinter\b/gtk3ptttttrPrinter/g
+s/\bGtkPrinter\b/gtk3.PrinterObj/g
+s/\bptr ptr GtkPopover\b/gtk3vaaaaarPopover/g
+s/\bptr GtkPopover\b/gtk3ptttttrPopover/g
+s/\bGtkPopover\b/gtk3.PopoverObj/g
+s/\bptr ptr GtkBuilder\b/gtk3vaaaaarBuilder/g
+s/\bptr GtkBuilder\b/gtk3ptttttrBuilder/g
+s/\bGtkBuilder\b/gtk3.BuilderObj/g
+s/\bptr ptr GtkMenuBar\b/gtk3vaaaaarMenuBar/g
+s/\bptr GtkMenuBar\b/gtk3ptttttrMenuBar/g
+s/\bGtkMenuBar\b/gtk3.MenuBarObj/g
+s/\bptr ptr GtkOverlay\b/gtk3vaaaaarOverlay/g
+s/\bptr GtkOverlay\b/gtk3ptttttrOverlay/g
+s/\bGtkOverlay\b/gtk3.OverlayObj/g
+s/\bptr ptr GtkIconSet\b/gtk3vaaaaarIconSet/g
+s/\bptr GtkIconSet\b/gtk3ptttttrIconSet/g
+s/\bGtkIconSet\b/gtk3.IconSetObj/g
+s/\bptr ptr GtkTooltip\b/gtk3vaaaaarTooltip/g
+s/\bptr GtkTooltip\b/gtk3ptttttrTooltip/g
+s/\bGtkTooltip\b/gtk3.TooltipObj/g
+s/\bptr ptr GtkRcStyle\b/gtk3vaaaaarRcStyle/g
+s/\bptr GtkRcStyle\b/gtk3ptttttrRcStyle/g
+s/\bGtkRcStyle\b/gtk3.RcStyleObj/g
+s/\bptr ptr GtkListBox\b/gtk3vaaaaarListBox/g
+s/\bptr GtkListBox\b/gtk3ptttttrListBox/g
+s/\bGtkListBox\b/gtk3.ListBoxObj/g
+s/\bptr ptr GtkPrinter\b/gtk3vaaaaarPrinter/g
+s/\bptr GtkPrinter\b/gtk3ptttttrPrinter/g
+s/\bGtkPrinter\b/gtk3.PrinterObj/g
+s/\bptr ptr GtkSpinner\b/gtk3vaaaaarSpinner/g
+s/\bptr GtkSpinner\b/gtk3ptttttrSpinner/g
+s/\bGtkSpinner\b/gtk3.SpinnerObj/g
+s/\bptr ptr GtkGesture\b/gtk3vaaaaarGesture/g
+s/\bptr GtkGesture\b/gtk3ptttttrGesture/g
+s/\bGtkGesture\b/gtk3.GestureObj/g
+s/\bptr ptr GtkToolbar\b/gtk3vaaaaarToolbar/g
+s/\bptr GtkToolbar\b/gtk3ptttttrToolbar/g
+s/\bGtkToolbar\b/gtk3.ToolbarObj/g
+s/\bptr ptr GtkInfoBar\b/gtk3vaaaaarInfoBar/g
+s/\bptr GtkInfoBar\b/gtk3ptttttrInfoBar/g
+s/\bGtkInfoBar\b/gtk3.InfoBarObj/g
+s/\bptr ptr GtkHScale\b/gtk3vaaaaarHScale/g
+s/\bptr GtkHScale\b/gtk3ptttttrHScale/g
+s/\bGtkHScale\b/gtk3.HScaleObj/g
+s/\bptr ptr GtkVScale\b/gtk3vaaaaarVScale/g
+s/\bptr GtkVScale\b/gtk3ptttttrVScale/g
+s/\bGtkVScale\b/gtk3.VScaleObj/g
+s/\bptr ptr GtkVPaned\b/gtk3vaaaaarVPaned/g
+s/\bptr GtkVPaned\b/gtk3ptttttrVPaned/g
+s/\bGtkVPaned\b/gtk3.VPanedObj/g
+s/\bptr ptr GtkAction\b/gtk3vaaaaarAction/g
+s/\bptr GtkAction\b/gtk3ptttttrAction/g
+s/\bGtkAction\b/gtk3.ActionObj/g
+s/\bptr ptr GtkButton\b/gtk3vaaaaarButton/g
+s/\bptr GtkButton\b/gtk3ptttttrButton/g
+s/\bGtkButton\b/gtk3.ButtonObj/g
+s/\bptr ptr GtkDialog\b/gtk3vaaaaarDialog/g
+s/\bptr GtkDialog\b/gtk3ptttttrDialog/g
+s/\bGtkDialog\b/gtk3.DialogObj/g
+s/\bptr ptr GtkHPaned\b/gtk3vaaaaarHPaned/g
+s/\bptr GtkHPaned\b/gtk3ptttttrHPaned/g
+s/\bGtkHPaned\b/gtk3.HPanedObj/g
+s/\bptr ptr GtkBorder\b/gtk3vaaaaarBorder/g
+s/\bptr GtkBorder\b/gtk3ptttttrBorder/g
+s/\bGtkBorder\b/gtk3.BorderObj/g
+s/\bptr ptr GtkGLArea\b/gtk3vaaaaarGLArea/g
+s/\bptr GtkGLArea\b/gtk3ptttttrGLArea/g
+s/\bGtkGLArea\b/gtk3.GLAreaObj/g
+s/\bptr ptr GtkWidget\b/gtk3vaaaaarWidget/g
+s/\bptr GtkWidget\b/gtk3ptttttrWidget/g
+s/\bGtkWidget\b/gtk3.WidgetObj/g
+s/\bptr ptr GtkSwitch\b/gtk3vaaaaarSwitch/g
+s/\bptr GtkSwitch\b/gtk3ptttttrSwitch/g
+s/\bGtkSwitch\b/gtk3.SwitchObj/g
+s/\bptr ptr GtkWindow\b/gtk3vaaaaarWindow/g
+s/\bptr GtkWindow\b/gtk3ptttttrWindow/g
+s/\bGtkWindow\b/gtk3.WindowObj/g
+s/\bptr ptr GtkLayout\b/gtk3vaaaaarLayout/g
+s/\bptr GtkLayout\b/gtk3ptttttrLayout/g
+s/\bGtkLayout\b/gtk3.LayoutObj/g
+s/\bptr ptr GtkScale\b/gtk3vaaaaarScale/g
+s/\bptr GtkScale\b/gtk3ptttttrScale/g
+s/\bGtkScale\b/gtk3.ScaleObj/g
+s/\bptr ptr GtkRange\b/gtk3vaaaaarRange/g
+s/\bptr GtkRange\b/gtk3ptttttrRange/g
+s/\bGtkRange\b/gtk3.RangeObj/g
+s/\bptr ptr GtkTable\b/gtk3vaaaaarTable/g
+s/\bptr GtkTable\b/gtk3ptttttrTable/g
+s/\bGtkTable\b/gtk3.TableObj/g
+s/\bptr ptr GtkLabel\b/gtk3vaaaaarLabel/g
+s/\bptr GtkLabel\b/gtk3ptttttrLabel/g
+s/\bGtkLabel\b/gtk3.LabelObj/g
+s/\bptr ptr GtkArrow\b/gtk3vaaaaarArrow/g
+s/\bptr GtkArrow\b/gtk3ptttttrArrow/g
+s/\bGtkArrow\b/gtk3.ArrowObj/g
+s/\bptr ptr GtkFrame\b/gtk3vaaaaarFrame/g
+s/\bptr GtkFrame\b/gtk3ptttttrFrame/g
+s/\bGtkFrame\b/gtk3.FrameObj/g
+s/\bptr ptr GtkStyle\b/gtk3vaaaaarStyle/g
+s/\bptr GtkStyle\b/gtk3ptttttrStyle/g
+s/\bGtkStyle\b/gtk3.StyleObj/g
+s/\bptr ptr GtkEntry\b/gtk3vaaaaarEntry/g
+s/\bptr GtkEntry\b/gtk3ptttttrEntry/g
+s/\bGtkEntry\b/gtk3.EntryObj/g
+s/\bptr ptr GtkStack\b/gtk3vaaaaarStack/g
+s/\bptr GtkStack\b/gtk3ptttttrStack/g
+s/\bGtkStack\b/gtk3.StackObj/g
+s/\bptr ptr GtkFixed\b/gtk3vaaaaarFixed/g
+s/\bptr GtkFixed\b/gtk3ptttttrFixed/g
+s/\bGtkFixed\b/gtk3.FixedObj/g
+s/\bptr ptr GtkImage\b/gtk3vaaaaarImage/g
+s/\bptr GtkImage\b/gtk3ptttttrImage/g
+s/\bGtkImage\b/gtk3.ImageObj/g
+s/\bptr ptr GtkPaned\b/gtk3vaaaaarPaned/g
+s/\bptr GtkPaned\b/gtk3ptttttrPaned/g
+s/\bGtkPaned\b/gtk3.PanedObj/g
+s/\bptr ptr GtkGrid\b/gtk3vaaaaarGrid/g
+s/\bptr GtkGrid\b/gtk3ptttttrGrid/g
+s/\bGtkGrid\b/gtk3.GridObj/g
+s/\bptr ptr GtkHBox\b/gtk3vaaaaarHBox/g
+s/\bptr GtkHBox\b/gtk3ptttttrHBox/g
+s/\bGtkHBox\b/gtk3.HBoxObj/g
+s/\bptr ptr GtkVBox\b/gtk3vaaaaarVBox/g
+s/\bptr GtkVBox\b/gtk3ptttttrVBox/g
+s/\bGtkVBox\b/gtk3.VBoxObj/g
+s/\bptr ptr GtkMenu\b/gtk3vaaaaarMenu/g
+s/\bptr GtkMenu\b/gtk3ptttttrMenu/g
+s/\bGtkMenu\b/gtk3.MenuObj/g
+s/\bptr ptr GtkMisc\b/gtk3vaaaaarMisc/g
+s/\bptr GtkMisc\b/gtk3ptttttrMisc/g
+s/\bGtkMisc\b/gtk3.MiscObj/g
+s/\bptr ptr GtkBox\b/gtk3vaaaaarBox/g
+s/\bptr GtkBox\b/gtk3ptttttrBox/g
+s/\bGtkBox\b/gtk3.BoxObj/g
+s/\bptr ptr GtkBin\b/gtk3vaaaaarBin/g
+s/\bptr GtkBin\b/gtk3ptttttrBin/g
+s/\bGtkBin\b/gtk3.BinObj/g
+s/\bptr ptr GtkHSV\b/gtk3vaaaaarHSV/g
+s/\bptr GtkHSV\b/gtk3ptttttrHSV/g
+s/\bGtkHSV\b/gtk3.HSVObj/g
+s/gtk3vaaaaar/var gtk3./g
+s/gtk3ptttttr/gtk3./g

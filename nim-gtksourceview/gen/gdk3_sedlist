@@ -1,0 +1,389 @@
+s/\bptr ptr BroadwayInputScreenResizeNotify\b/gdk3vaaaaarBroadwayInputScreenResizeNotify/g
+s/\bptr BroadwayInputScreenResizeNotify\b/gdk3ptttttrBroadwayInputScreenResizeNotify/g
+s/\bBroadwayInputScreenResizeNotify\b/gdk3.BroadwayInputScreenResizeNotifyObj/g
+s/\bptr ptr BroadwayRequestSetShowKeyboard\b/gdk3vaaaaarBroadwayRequestSetShowKeyboard/g
+s/\bptr BroadwayRequestSetShowKeyboard\b/gdk3ptttttrBroadwayRequestSetShowKeyboard/g
+s/\bBroadwayRequestSetShowKeyboard\b/gdk3.BroadwayRequestSetShowKeyboardObj/g
+s/\bptr ptr BroadwayRequestSetTransientFor\b/gdk3vaaaaarBroadwayRequestSetTransientFor/g
+s/\bptr BroadwayRequestSetTransientFor\b/gdk3ptttttrBroadwayRequestSetTransientFor/g
+s/\bBroadwayRequestSetTransientFor\b/gdk3.BroadwayRequestSetTransientForObj/g
+s/\bptr ptr GdkX11DeviceManagerCoreClass\b/gdk3vaaaaarX11DeviceManagerCoreClass/g
+s/\bptr GdkX11DeviceManagerCoreClass\b/gdk3ptttttrX11DeviceManagerCoreClass/g
+s/\bGdkX11DeviceManagerCoreClass\b/gdk3.X11DeviceManagerCoreClassObj/g
+s/\bptr ptr BroadwayRequestUngrabPointer\b/gdk3vaaaaarBroadwayRequestUngrabPointer/g
+s/\bptr BroadwayRequestUngrabPointer\b/gdk3ptttttrBroadwayRequestUngrabPointer/g
+s/\bBroadwayRequestUngrabPointer\b/gdk3.BroadwayRequestUngrabPointerObj/g
+s/\bptr ptr BroadwayRequestDestroyWindow\b/gdk3vaaaaarBroadwayRequestDestroyWindow/g
+s/\bptr BroadwayRequestDestroyWindow\b/gdk3ptttttrBroadwayRequestDestroyWindow/g
+s/\bBroadwayRequestDestroyWindow\b/gdk3.BroadwayRequestDestroyWindowObj/g
+s/\bptr ptr BroadwayInputConfigureNotify\b/gdk3vaaaaarBroadwayInputConfigureNotify/g
+s/\bptr BroadwayInputConfigureNotify\b/gdk3ptttttrBroadwayInputConfigureNotify/g
+s/\bBroadwayInputConfigureNotify\b/gdk3.BroadwayInputConfigureNotifyObj/g
+s/\bptr ptr GdkX11DeviceManagerXI2Class\b/gdk3vaaaaarX11DeviceManagerXI2Class/g
+s/\bptr GdkX11DeviceManagerXI2Class\b/gdk3ptttttrX11DeviceManagerXI2Class/g
+s/\bGdkX11DeviceManagerXI2Class\b/gdk3.X11DeviceManagerXI2ClassObj/g
+s/\bptr ptr BroadwayRequestGrabPointer\b/gdk3vaaaaarBroadwayRequestGrabPointer/g
+s/\bptr BroadwayRequestGrabPointer\b/gdk3ptttttrBroadwayRequestGrabPointer/g
+s/\bBroadwayRequestGrabPointer\b/gdk3.BroadwayRequestGrabPointerObj/g
+s/\bptr ptr BroadwayRequestMoveResize\b/gdk3vaaaaarBroadwayRequestMoveResize/g
+s/\bptr BroadwayRequestMoveResize\b/gdk3ptttttrBroadwayRequestMoveResize/g
+s/\bBroadwayRequestMoveResize\b/gdk3.BroadwayRequestMoveResizeObj/g
+s/\bptr ptr BroadwayInputDeleteNotify\b/gdk3vaaaaarBroadwayInputDeleteNotify/g
+s/\bptr BroadwayInputDeleteNotify\b/gdk3ptttttrBroadwayInputDeleteNotify/g
+s/\bBroadwayInputDeleteNotify\b/gdk3.BroadwayInputDeleteNotifyObj/g
+s/\bptr ptr BroadwayReplyGrabPointer\b/gdk3vaaaaarBroadwayReplyGrabPointer/g
+s/\bptr BroadwayReplyGrabPointer\b/gdk3ptttttrBroadwayReplyGrabPointer/g
+s/\bBroadwayReplyGrabPointer\b/gdk3.BroadwayReplyGrabPointerObj/g
+s/\bptr ptr BroadwayInputCrossingMsg\b/gdk3vaaaaarBroadwayInputCrossingMsg/g
+s/\bptr BroadwayInputCrossingMsg\b/gdk3ptttttrBroadwayInputCrossingMsg/g
+s/\bBroadwayInputCrossingMsg\b/gdk3.BroadwayInputCrossingMsgObj/g
+s/\bptr ptr BroadwayRequestTranslate\b/gdk3vaaaaarBroadwayRequestTranslate/g
+s/\bptr BroadwayRequestTranslate\b/gdk3ptttttrBroadwayRequestTranslate/g
+s/\bBroadwayRequestTranslate\b/gdk3.BroadwayRequestTranslateObj/g
+s/\bptr ptr BroadwayRequestNewWindow\b/gdk3vaaaaarBroadwayRequestNewWindow/g
+s/\bptr BroadwayRequestNewWindow\b/gdk3ptttttrBroadwayRequestNewWindow/g
+s/\bBroadwayRequestNewWindow\b/gdk3.BroadwayRequestNewWindowObj/g
+s/\bptr ptr BroadwayReplyQueryMouse\b/gdk3vaaaaarBroadwayReplyQueryMouse/g
+s/\bptr BroadwayReplyQueryMouse\b/gdk3ptttttrBroadwayReplyQueryMouse/g
+s/\bBroadwayReplyQueryMouse\b/gdk3.BroadwayReplyQueryMouseObj/g
+s/\bptr ptr GdkX11DeviceManagerCore\b/gdk3vaaaaarX11DeviceManagerCore/g
+s/\bptr GdkX11DeviceManagerCore\b/gdk3ptttttrX11DeviceManagerCore/g
+s/\bGdkX11DeviceManagerCore\b/gdk3.X11DeviceManagerCoreObj/g
+s/\bptr ptr BroadwayInputPointerMsg\b/gdk3vaaaaarBroadwayInputPointerMsg/g
+s/\bptr BroadwayInputPointerMsg\b/gdk3ptttttrBroadwayInputPointerMsg/g
+s/\bBroadwayInputPointerMsg\b/gdk3.BroadwayInputPointerMsgObj/g
+s/\bptr ptr BroadwayInputScrollMsg\b/gdk3vaaaaarBroadwayInputScrollMsg/g
+s/\bptr BroadwayInputScrollMsg\b/gdk3ptttttrBroadwayInputScrollMsg/g
+s/\bBroadwayInputScrollMsg\b/gdk3.BroadwayInputScrollMsgObj/g
+s/\bptr ptr BroadwayReplyNewWindow\b/gdk3vaaaaarBroadwayReplyNewWindow/g
+s/\bptr BroadwayReplyNewWindow\b/gdk3ptttttrBroadwayReplyNewWindow/g
+s/\bBroadwayReplyNewWindow\b/gdk3.BroadwayReplyNewWindowObj/g
+s/\bptr ptr GdkX11DeviceManagerXI2\b/gdk3vaaaaarX11DeviceManagerXI2/g
+s/\bptr GdkX11DeviceManagerXI2\b/gdk3ptttttrX11DeviceManagerXI2/g
+s/\bGdkX11DeviceManagerXI2\b/gdk3.X11DeviceManagerXI2Obj/g
+s/\bptr ptr BroadwayInputButtonMsg\b/gdk3vaaaaarBroadwayInputButtonMsg/g
+s/\bptr BroadwayInputButtonMsg\b/gdk3ptttttrBroadwayInputButtonMsg/g
+s/\bBroadwayInputButtonMsg\b/gdk3.BroadwayInputButtonMsgObj/g
+s/\bptr ptr BroadwayInputGrabReply\b/gdk3vaaaaarBroadwayInputGrabReply/g
+s/\bptr BroadwayInputGrabReply\b/gdk3ptttttrBroadwayInputGrabReply/g
+s/\bBroadwayInputGrabReply\b/gdk3.BroadwayInputGrabReplyObj/g
+s/\bptr ptr GdkEventTouchpadSwipe\b/gdk3vaaaaarEventTouchpadSwipe/g
+s/\bptr GdkEventTouchpadSwipe\b/gdk3ptttttrEventTouchpadSwipe/g
+s/\bGdkEventTouchpadSwipe\b/gdk3.EventTouchpadSwipeObj/g
+s/\bptr ptr GdkEventTouchpadPinch\b/gdk3vaaaaarEventTouchpadPinch/g
+s/\bptr GdkEventTouchpadPinch\b/gdk3ptttttrEventTouchpadPinch/g
+s/\bGdkEventTouchpadPinch\b/gdk3.EventTouchpadPinchObj/g
+s/\bptr ptr BroadwayInputFocusMsg\b/gdk3vaaaaarBroadwayInputFocusMsg/g
+s/\bptr BroadwayInputFocusMsg\b/gdk3ptttttrBroadwayInputFocusMsg/g
+s/\bBroadwayInputFocusMsg\b/gdk3.BroadwayInputFocusMsgObj/g
+s/\bptr ptr BroadwayInputTouchMsg\b/gdk3vaaaaarBroadwayInputTouchMsg/g
+s/\bptr BroadwayInputTouchMsg\b/gdk3ptttttrBroadwayInputTouchMsg/g
+s/\bBroadwayInputTouchMsg\b/gdk3.BroadwayInputTouchMsgObj/g
+s/\bptr ptr BroadwayRequestUpdate\b/gdk3vaaaaarBroadwayRequestUpdate/g
+s/\bptr BroadwayRequestUpdate\b/gdk3ptttttrBroadwayRequestUpdate/g
+s/\bBroadwayRequestUpdate\b/gdk3.BroadwayRequestUpdateObj/g
+s/\bptr ptr BroadwayInputBaseMsg\b/gdk3vaaaaarBroadwayInputBaseMsg/g
+s/\bptr BroadwayInputBaseMsg\b/gdk3ptttttrBroadwayInputBaseMsg/g
+s/\bBroadwayInputBaseMsg\b/gdk3.BroadwayInputBaseMsgObj/g
+s/\bptr ptr GdkEventPadGroupMode\b/gdk3vaaaaarEventPadGroupMode/g
+s/\bptr GdkEventPadGroupMode\b/gdk3ptttttrEventPadGroupMode/g
+s/\bGdkEventPadGroupMode\b/gdk3.EventPadGroupModeObj/g
+s/\bptr ptr BroadwayRequestBase\b/gdk3vaaaaarBroadwayRequestBase/g
+s/\bptr BroadwayRequestBase\b/gdk3ptttttrBroadwayRequestBase/g
+s/\bBroadwayRequestBase\b/gdk3.BroadwayRequestBaseObj/g
+s/\bptr ptr BroadwayInputKeyMsg\b/gdk3vaaaaarBroadwayInputKeyMsg/g
+s/\bptr BroadwayInputKeyMsg\b/gdk3ptttttrBroadwayInputKeyMsg/g
+s/\bBroadwayInputKeyMsg\b/gdk3.BroadwayInputKeyMsgObj/g
+s/\bptr ptr GdkAppLaunchContext\b/gdk3vaaaaarAppLaunchContext/g
+s/\bptr GdkAppLaunchContext\b/gdk3ptttttrAppLaunchContext/g
+s/\bGdkAppLaunchContext\b/gdk3.AppLaunchContextObj/g
+s/\bptr ptr GdkEventWindowState\b/gdk3vaaaaarEventWindowState/g
+s/\bptr GdkEventWindowState\b/gdk3ptttttrEventWindowState/g
+s/\bGdkEventWindowState\b/gdk3.EventWindowStateObj/g
+s/\bptr ptr GdkEventOwnerChange\b/gdk3vaaaaarEventOwnerChange/g
+s/\bptr GdkEventOwnerChange\b/gdk3ptttttrEventOwnerChange/g
+s/\bGdkEventOwnerChange\b/gdk3.EventOwnerChangeObj/g
+s/\bptr ptr GdkEventGrabBroken\b/gdk3vaaaaarEventGrabBroken/g
+s/\bptr GdkEventGrabBroken\b/gdk3ptttttrEventGrabBroken/g
+s/\bGdkEventGrabBroken\b/gdk3.EventGrabBrokenObj/g
+s/\bptr ptr BroadwayReplyEvent\b/gdk3vaaaaarBroadwayReplyEvent/g
+s/\bptr BroadwayReplyEvent\b/gdk3ptttttrBroadwayReplyEvent/g
+s/\bBroadwayReplyEvent\b/gdk3.BroadwayReplyEventObj/g
+s/\bptr ptr GdkEventVisibility\b/gdk3vaaaaarEventVisibility/g
+s/\bptr GdkEventVisibility\b/gdk3ptttttrEventVisibility/g
+s/\bGdkEventVisibility\b/gdk3.EventVisibilityObj/g
+s/\bptr ptr GdkEventProximity\b/gdk3vaaaaarEventProximity/g
+s/\bptr GdkEventProximity\b/gdk3ptttttrEventProximity/g
+s/\bGdkEventProximity\b/gdk3.EventProximityObj/g
+s/\bptr ptr GdkDisplayManager\b/gdk3vaaaaarDisplayManager/g
+s/\bptr GdkDisplayManager\b/gdk3ptttttrDisplayManager/g
+s/\bGdkDisplayManager\b/gdk3.DisplayManagerObj/g
+s/\bptr ptr GdkEventSelection\b/gdk3vaaaaarEventSelection/g
+s/\bptr GdkEventSelection\b/gdk3ptttttrEventSelection/g
+s/\bGdkEventSelection\b/gdk3.EventSelectionObj/g
+s/\bptr ptr GdkEventConfigure\b/gdk3vaaaaarEventConfigure/g
+s/\bptr GdkEventConfigure\b/gdk3ptttttrEventConfigure/g
+s/\bGdkEventConfigure\b/gdk3.EventConfigureObj/g
+s/\bptr ptr GdkDrawingContext\b/gdk3vaaaaarDrawingContext/g
+s/\bptr GdkDrawingContext\b/gdk3ptttttrDrawingContext/g
+s/\bGdkDrawingContext\b/gdk3.DrawingContextObj/g
+s/\bptr ptr BroadwayReplyBase\b/gdk3vaaaaarBroadwayReplyBase/g
+s/\bptr BroadwayReplyBase\b/gdk3ptttttrBroadwayReplyBase/g
+s/\bBroadwayReplyBase\b/gdk3.BroadwayReplyBaseObj/g
+s/\bptr ptr GdkEventPadButton\b/gdk3vaaaaarEventPadButton/g
+s/\bptr GdkEventPadButton\b/gdk3ptttttrEventPadButton/g
+s/\bGdkEventPadButton\b/gdk3.EventPadButtonObj/g
+s/\bptr ptr GdkDeviceManager\b/gdk3vaaaaarDeviceManager/g
+s/\bptr GdkDeviceManager\b/gdk3ptttttrDeviceManager/g
+s/\bGdkDeviceManager\b/gdk3.DeviceManagerObj/g
+s/\bptr ptr BroadwayInputMsg\b/gdk3vaaaaarBroadwayInputMsg/g
+s/\bptr BroadwayInputMsg\b/gdk3ptttttrBroadwayInputMsg/g
+s/\bBroadwayInputMsg\b/gdk3.BroadwayInputMsgObj/g
+s/\bptr ptr GdkEventCrossing\b/gdk3vaaaaarEventCrossing/g
+s/\bptr GdkEventCrossing\b/gdk3ptttttrEventCrossing/g
+s/\bGdkEventCrossing\b/gdk3.EventCrossingObj/g
+s/\bptr ptr GdkEventProperty\b/gdk3vaaaaarEventProperty/g
+s/\bptr GdkEventProperty\b/gdk3ptttttrEventProperty/g
+s/\bGdkEventProperty\b/gdk3.EventPropertyObj/g
+s/\bptr ptr GdkEventSequence\b/gdk3vaaaaarEventSequence/g
+s/\bptr GdkEventSequence\b/gdk3ptttttrEventSequence/g
+s/\bGdkEventSequence\b/gdk3.EventSequenceObj/g
+s/\bptr ptr BroadwayRequest\b/gdk3vaaaaarBroadwayRequest/g
+s/\bptr BroadwayRequest\b/gdk3ptttttrBroadwayRequest/g
+s/\bBroadwayRequest\b/gdk3.BroadwayRequestObj/g
+s/\bptr ptr GdkEventSetting\b/gdk3vaaaaarEventSetting/g
+s/\bptr GdkEventSetting\b/gdk3ptttttrEventSetting/g
+s/\bGdkEventSetting\b/gdk3.EventSettingObj/g
+s/\bptr ptr GdkFrameTimings\b/gdk3vaaaaarFrameTimings/g
+s/\bptr GdkFrameTimings\b/gdk3ptttttrFrameTimings/g
+s/\bGdkFrameTimings\b/gdk3.FrameTimingsObj/g
+s/\bptr ptr GdkEventPadAxis\b/gdk3vaaaaarEventPadAxis/g
+s/\bptr GdkEventPadAxis\b/gdk3ptttttrEventPadAxis/g
+s/\bGdkEventPadAxis\b/gdk3.EventPadAxisObj/g
+s/\bptr ptr GdkWindowClass\b/gdk3vaaaaarWindowClass/g
+s/\bptr GdkWindowClass\b/gdk3ptttttrWindowClass/g
+s/\bGdkWindowClass\b/gdk3.WindowClassObj/g
+s/\bptr ptr GdkDragContext\b/gdk3vaaaaarDragContext/g
+s/\bptr GdkDragContext\b/gdk3ptttttrDragContext/g
+s/\bGdkDragContext\b/gdk3.DragContextObj/g
+s/\bptr ptr GdkEventScroll\b/gdk3vaaaaarEventScroll/g
+s/\bptr GdkEventScroll\b/gdk3ptttttrEventScroll/g
+s/\bGdkEventScroll\b/gdk3.EventScrollObj/g
+s/\bptr ptr GdkEventExpose\b/gdk3vaaaaarEventExpose/g
+s/\bptr GdkEventExpose\b/gdk3ptttttrEventExpose/g
+s/\bGdkEventExpose\b/gdk3.EventExposeObj/g
+s/\bptr ptr GdkEventButton\b/gdk3vaaaaarEventButton/g
+s/\bptr GdkEventButton\b/gdk3ptttttrEventButton/g
+s/\bGdkEventButton\b/gdk3.EventButtonObj/g
+s/\bptr ptr GdkEventMotion\b/gdk3vaaaaarEventMotion/g
+s/\bptr GdkEventMotion\b/gdk3ptttttrEventMotion/g
+s/\bGdkEventMotion\b/gdk3.EventMotionObj/g
+s/\bptr ptr GdkEventTouch\b/gdk3vaaaaarEventTouch/g
+s/\bptr GdkEventTouch\b/gdk3ptttttrEventTouch/g
+s/\bGdkEventTouch\b/gdk3.EventTouchObj/g
+s/\bptr ptr GdkDeviceTool\b/gdk3vaaaaarDeviceTool/g
+s/\bptr GdkDeviceTool\b/gdk3ptttttrDeviceTool/g
+s/\bGdkDeviceTool\b/gdk3.DeviceToolObj/g
+s/\bptr ptr GdkEventFocus\b/gdk3vaaaaarEventFocus/g
+s/\bptr GdkEventFocus\b/gdk3ptttttrEventFocus/g
+s/\bGdkEventFocus\b/gdk3.EventFocusObj/g
+s/\bptr ptr GdkWindowAttr\b/gdk3vaaaaarWindowAttr/g
+s/\bptr GdkWindowAttr\b/gdk3ptttttrWindowAttr/g
+s/\bGdkWindowAttr\b/gdk3.WindowAttrObj/g
+s/\bptr ptr BroadwayReply\b/gdk3vaaaaarBroadwayReply/g
+s/\bptr BroadwayReply\b/gdk3ptttttrBroadwayReply/g
+s/\bBroadwayReply\b/gdk3.BroadwayReplyObj/g
+s/\bptr ptr GdkFrameClock\b/gdk3vaaaaarFrameClock/g
+s/\bptr GdkFrameClock\b/gdk3ptttttrFrameClock/g
+s/\bGdkFrameClock\b/gdk3.FrameClockObj/g
+s/\bptr ptr BroadwayRect\b/gdk3vaaaaarBroadwayRect/g
+s/\bptr BroadwayRect\b/gdk3ptttttrBroadwayRect/g
+s/\bBroadwayRect\b/gdk3.BroadwayRectObj/g
+s/\bptr ptr GdkKeymapKey\b/gdk3vaaaaarKeymapKey/g
+s/\bptr GdkKeymapKey\b/gdk3ptttttrKeymapKey/g
+s/\bGdkKeymapKey\b/gdk3.KeymapKeyObj/g
+s/\bptr ptr GdkDevicePad\b/gdk3vaaaaarDevicePad/g
+s/\bptr GdkDevicePad\b/gdk3ptttttrDevicePad/g
+s/\bGdkDevicePad\b/gdk3.DevicePadObj/g
+s/\bptr ptr GdkGLContext\b/gdk3vaaaaarGLContext/g
+s/\bptr GdkGLContext\b/gdk3ptttttrGLContext/g
+s/\bGdkGLContext\b/gdk3.GLContextObj/g
+s/\bptr ptr GdkTimeCoord\b/gdk3vaaaaarTimeCoord/g
+s/\bptr GdkTimeCoord\b/gdk3ptttttrTimeCoord/g
+s/\bGdkTimeCoord\b/gdk3.TimeCoordObj/g
+s/\bptr ptr GdkRectangle\b/gdk3vaaaaarRectangle/g
+s/\bptr GdkRectangle\b/gdk3ptttttrRectangle/g
+s/\bGdkRectangle\b/gdk3.RectangleObj/g
+s/\bptr ptr GdkEventAny\b/gdk3vaaaaarEventAny/g
+s/\bptr GdkEventAny\b/gdk3ptttttrEventAny/g
+s/\bGdkEventAny\b/gdk3.EventAnyObj/g
+s/\bptr ptr GdkGeometry\b/gdk3vaaaaarGeometry/g
+s/\bptr GdkGeometry\b/gdk3ptttttrGeometry/g
+s/\bGdkGeometry\b/gdk3.GeometryObj/g
+s/\bptr ptr GdkEventDND\b/gdk3vaaaaarEventDND/g
+s/\bptr GdkEventDND\b/gdk3ptttttrEventDND/g
+s/\bGdkEventDND\b/gdk3.EventDNDObj/g
+s/\bptr ptr GdkEventKey\b/gdk3vaaaaarEventKey/g
+s/\bptr GdkEventKey\b/gdk3ptttttrEventKey/g
+s/\bGdkEventKey\b/gdk3.EventKeyObj/g
+s/\bptr ptr GdkDisplay\b/gdk3vaaaaarDisplay/g
+s/\bptr GdkDisplay\b/gdk3ptttttrDisplay/g
+s/\bGdkDisplay\b/gdk3.DisplayObj/g
+s/\bptr ptr GdkMonitor\b/gdk3vaaaaarMonitor/g
+s/\bptr GdkMonitor\b/gdk3ptttttrMonitor/g
+s/\bGdkMonitor\b/gdk3.MonitorObj/g
+s/\bptr ptr GdkDevice\b/gdk3vaaaaarDevice/g
+s/\bptr GdkDevice\b/gdk3ptttttrDevice/g
+s/\bGdkDevice\b/gdk3.DeviceObj/g
+s/\bptr ptr GdkScreen\b/gdk3vaaaaarScreen/g
+s/\bptr GdkScreen\b/gdk3ptttttrScreen/g
+s/\bGdkScreen\b/gdk3.ScreenObj/g
+s/\bptr ptr GdkCursor\b/gdk3vaaaaarCursor/g
+s/\bptr GdkCursor\b/gdk3ptttttrCursor/g
+s/\bGdkCursor\b/gdk3.CursorObj/g
+s/\bptr ptr GdkKeymap\b/gdk3vaaaaarKeymap/g
+s/\bptr GdkKeymap\b/gdk3ptttttrKeymap/g
+s/\bGdkKeymap\b/gdk3.KeymapObj/g
+s/\bptr ptr GdkWindow\b/gdk3vaaaaarWindow/g
+s/\bptr GdkWindow\b/gdk3ptttttrWindow/g
+s/\bGdkWindow\b/gdk3.WindowObj/g
+s/\bptr ptr GdkVisual\b/gdk3vaaaaarVisual/g
+s/\bptr GdkVisual\b/gdk3ptttttrVisual/g
+s/\bGdkVisual\b/gdk3.VisualObj/g
+s/\bptr ptr GdkColor\b/gdk3vaaaaarColor/g
+s/\bptr GdkColor\b/gdk3ptttttrColor/g
+s/\bGdkColor\b/gdk3.ColorObj/g
+s/\bptr ptr GdkEvent\b/gdk3vaaaaarEvent/g
+s/\bptr GdkEvent\b/gdk3ptttttrEvent/g
+s/\bGdkEvent\b/gdk3.EventObj/g
+s/\bptr ptr GdkPoint\b/gdk3vaaaaarPoint/g
+s/\bptr GdkPoint\b/gdk3ptttttrPoint/g
+s/\bGdkPoint\b/gdk3.PointObj/g
+s/\bptr ptr GdkRGBA\b/gdk3vaaaaarRGBA/g
+s/\bptr GdkRGBA\b/gdk3ptttttrRGBA/g
+s/\bGdkRGBA\b/gdk3.RGBAObj/g
+s/\bptr ptr GdkSeat\b/gdk3vaaaaarSeat/g
+s/\bptr GdkSeat\b/gdk3ptttttrSeat/g
+s/\bGdkSeat\b/gdk3.SeatObj/g
+s/\bptr ptr BroadwayReplyUngrabPointer\b/gdk3vaaaaarBroadwayReplyUngrabPointer/g
+s/\bptr BroadwayReplyUngrabPointer\b/gdk3ptttttrBroadwayReplyUngrabPointer/g
+s/\bBroadwayReplyUngrabPointer\b/gdk3.BroadwayReplyUngrabPointerObj/g
+s/\bptr ptr BroadwayRequestFocusWindow\b/gdk3vaaaaarBroadwayRequestFocusWindow/g
+s/\bptr BroadwayRequestFocusWindow\b/gdk3ptttttrBroadwayRequestFocusWindow/g
+s/\bBroadwayRequestFocusWindow\b/gdk3.BroadwayRequestFocusWindowObj/g
+s/\bptr ptr BroadwayRequestHideWindow\b/gdk3vaaaaarBroadwayRequestHideWindow/g
+s/\bptr BroadwayRequestHideWindow\b/gdk3ptttttrBroadwayRequestHideWindow/g
+s/\bBroadwayRequestHideWindow\b/gdk3.BroadwayRequestHideWindowObj/g
+s/\bptr ptr BroadwayRequestQueryMouse\b/gdk3vaaaaarBroadwayRequestQueryMouse/g
+s/\bptr BroadwayRequestQueryMouse\b/gdk3ptttttrBroadwayRequestQueryMouse/g
+s/\bBroadwayRequestQueryMouse\b/gdk3.BroadwayRequestQueryMouseObj/g
+s/\bptr ptr BroadwayRequestShowWindow\b/gdk3vaaaaarBroadwayRequestShowWindow/g
+s/\bptr BroadwayRequestShowWindow\b/gdk3ptttttrBroadwayRequestShowWindow/g
+s/\bBroadwayRequestShowWindow\b/gdk3.BroadwayRequestShowWindowObj/g
+s/\bptr ptr GdkQuartzDisplayManager\b/gdk3vaaaaarQuartzDisplayManager/g
+s/\bptr GdkQuartzDisplayManager\b/gdk3ptttttrQuartzDisplayManager/g
+s/\bGdkQuartzDisplayManager\b/gdk3.QuartzDisplayManagerObj/g
+s/\bptr ptr GdkWin32DisplayManager\b/gdk3vaaaaarWin32DisplayManager/g
+s/\bptr GdkWin32DisplayManager\b/gdk3ptttttrWin32DisplayManager/g
+s/\bGdkWin32DisplayManager\b/gdk3.Win32DisplayManagerObj/g
+s/\bptr ptr GdkX11AppLaunchContext\b/gdk3vaaaaarX11AppLaunchContext/g
+s/\bptr GdkX11AppLaunchContext\b/gdk3ptttttrX11AppLaunchContext/g
+s/\bGdkX11AppLaunchContext\b/gdk3.X11AppLaunchContextObj/g
+s/\bptr ptr GdkX11DisplayManager\b/gdk3vaaaaarX11DisplayManager/g
+s/\bptr GdkX11DisplayManager\b/gdk3ptttttrX11DisplayManager/g
+s/\bGdkX11DisplayManager\b/gdk3.X11DisplayManagerObj/g
+s/\bptr ptr GdkQuartzDragContext\b/gdk3vaaaaarQuartzDragContext/g
+s/\bptr GdkQuartzDragContext\b/gdk3ptttttrQuartzDragContext/g
+s/\bGdkQuartzDragContext\b/gdk3.QuartzDragContextObj/g
+s/\bptr ptr BroadwayRequestFlush\b/gdk3vaaaaarBroadwayRequestFlush/g
+s/\bptr BroadwayRequestFlush\b/gdk3ptttttrBroadwayRequestFlush/g
+s/\bBroadwayRequestFlush\b/gdk3.BroadwayRequestFlushObj/g
+s/\bptr ptr GdkWin32DragContext\b/gdk3vaaaaarWin32DragContext/g
+s/\bptr GdkWin32DragContext\b/gdk3ptttttrWin32DragContext/g
+s/\bGdkWin32DragContext\b/gdk3.Win32DragContextObj/g
+s/\bptr ptr BroadwayRequestSync\b/gdk3vaaaaarBroadwayRequestSync/g
+s/\bptr BroadwayRequestSync\b/gdk3ptttttrBroadwayRequestSync/g
+s/\bBroadwayRequestSync\b/gdk3.BroadwayRequestSyncObj/g
+s/\bptr ptr GdkBroadwayDisplay\b/gdk3vaaaaarBroadwayDisplay/g
+s/\bptr GdkBroadwayDisplay\b/gdk3ptttttrBroadwayDisplay/g
+s/\bGdkBroadwayDisplay\b/gdk3.BroadwayDisplayObj/g
+s/\bptr ptr GdkX11DragContext\b/gdk3vaaaaarX11DragContext/g
+s/\bptr GdkX11DragContext\b/gdk3ptttttrX11DragContext/g
+s/\bGdkX11DragContext\b/gdk3.X11DragContextObj/g
+s/\bptr ptr GdkBroadwayWindow\b/gdk3vaaaaarBroadwayWindow/g
+s/\bptr GdkBroadwayWindow\b/gdk3ptttttrBroadwayWindow/g
+s/\bGdkBroadwayWindow\b/gdk3.BroadwayWindowObj/g
+s/\bptr ptr BroadwayReplySync\b/gdk3vaaaaarBroadwayReplySync/g
+s/\bptr BroadwayReplySync\b/gdk3ptttttrBroadwayReplySync/g
+s/\bBroadwayReplySync\b/gdk3.BroadwayReplySyncObj/g
+s/\bptr ptr GdkBroadwayCursor\b/gdk3vaaaaarBroadwayCursor/g
+s/\bptr GdkBroadwayCursor\b/gdk3ptttttrBroadwayCursor/g
+s/\bGdkBroadwayCursor\b/gdk3.BroadwayCursorObj/g
+s/\bptr ptr GdkBroadwayVisual\b/gdk3vaaaaarBroadwayVisual/g
+s/\bptr GdkBroadwayVisual\b/gdk3ptttttrBroadwayVisual/g
+s/\bGdkBroadwayVisual\b/gdk3.BroadwayVisualObj/g
+s/\bptr ptr GdkWaylandDisplay\b/gdk3vaaaaarWaylandDisplay/g
+s/\bptr GdkWaylandDisplay\b/gdk3ptttttrWaylandDisplay/g
+s/\bGdkWaylandDisplay\b/gdk3.WaylandDisplayObj/g
+s/\bptr ptr GdkWaylandWindow\b/gdk3vaaaaarWaylandWindow/g
+s/\bptr GdkWaylandWindow\b/gdk3ptttttrWaylandWindow/g
+s/\bGdkWaylandWindow\b/gdk3.WaylandWindowObj/g
+s/\bptr ptr GdkQuartzDisplay\b/gdk3vaaaaarQuartzDisplay/g
+s/\bptr GdkQuartzDisplay\b/gdk3ptttttrQuartzDisplay/g
+s/\bGdkQuartzDisplay\b/gdk3.QuartzDisplayObj/g
+s/\bptr ptr GdkWaylandDevice\b/gdk3vaaaaarWaylandDevice/g
+s/\bptr GdkWaylandDevice\b/gdk3ptttttrWaylandDevice/g
+s/\bGdkWaylandDevice\b/gdk3.WaylandDeviceObj/g
+s/\bptr ptr GdkWin32Display\b/gdk3vaaaaarWin32Display/g
+s/\bptr GdkWin32Display\b/gdk3ptttttrWin32Display/g
+s/\bGdkWin32Display\b/gdk3.Win32DisplayObj/g
+s/\bptr ptr GdkWin32Monitor\b/gdk3vaaaaarWin32Monitor/g
+s/\bptr GdkWin32Monitor\b/gdk3ptttttrWin32Monitor/g
+s/\bGdkWin32Monitor\b/gdk3.Win32MonitorObj/g
+s/\bptr ptr GdkQuartzScreen\b/gdk3vaaaaarQuartzScreen/g
+s/\bptr GdkQuartzScreen\b/gdk3ptttttrQuartzScreen/g
+s/\bGdkQuartzScreen\b/gdk3.QuartzScreenObj/g
+s/\bptr ptr GdkQuartzVisual\b/gdk3vaaaaarQuartzVisual/g
+s/\bptr GdkQuartzVisual\b/gdk3ptttttrQuartzVisual/g
+s/\bGdkQuartzVisual\b/gdk3.QuartzVisualObj/g
+s/\bptr ptr GdkQuartzWindow\b/gdk3vaaaaarQuartzWindow/g
+s/\bptr GdkQuartzWindow\b/gdk3ptttttrQuartzWindow/g
+s/\bGdkQuartzWindow\b/gdk3.QuartzWindowObj/g
+s/\bptr ptr GdkQuartzCursor\b/gdk3vaaaaarQuartzCursor/g
+s/\bptr GdkQuartzCursor\b/gdk3ptttttrQuartzCursor/g
+s/\bGdkQuartzCursor\b/gdk3.QuartzCursorObj/g
+s/\bptr ptr GdkQuartzKeymap\b/gdk3vaaaaarQuartzKeymap/g
+s/\bptr GdkQuartzKeymap\b/gdk3ptttttrQuartzKeymap/g
+s/\bGdkQuartzKeymap\b/gdk3.QuartzKeymapObj/g
+s/\bptr ptr GdkWin32Window\b/gdk3vaaaaarWin32Window/g
+s/\bptr GdkWin32Window\b/gdk3ptttttrWin32Window/g
+s/\bGdkWin32Window\b/gdk3.Win32WindowObj/g
+s/\bptr ptr GdkWin32Cursor\b/gdk3vaaaaarWin32Cursor/g
+s/\bptr GdkWin32Cursor\b/gdk3ptttttrWin32Cursor/g
+s/\bGdkWin32Cursor\b/gdk3.Win32CursorObj/g
+s/\bptr ptr GdkWin32Screen\b/gdk3vaaaaarWin32Screen/g
+s/\bptr GdkWin32Screen\b/gdk3ptttttrWin32Screen/g
+s/\bGdkWin32Screen\b/gdk3.Win32ScreenObj/g
+s/\bptr ptr GdkWin32Keymap\b/gdk3vaaaaarWin32Keymap/g
+s/\bptr GdkWin32Keymap\b/gdk3ptttttrWin32Keymap/g
+s/\bGdkWin32Keymap\b/gdk3.Win32KeymapObj/g
+s/\bptr ptr GdkX11Display\b/gdk3vaaaaarX11Display/g
+s/\bptr GdkX11Display\b/gdk3ptttttrX11Display/g
+s/\bGdkX11Display\b/gdk3.X11DisplayObj/g
+s/\bptr ptr GdkX11Visual\b/gdk3vaaaaarX11Visual/g
+s/\bptr GdkX11Visual\b/gdk3ptttttrX11Visual/g
+s/\bGdkX11Visual\b/gdk3.X11VisualObj/g
+s/\bptr ptr GdkX11Keymap\b/gdk3vaaaaarX11Keymap/g
+s/\bptr GdkX11Keymap\b/gdk3ptttttrX11Keymap/g
+s/\bGdkX11Keymap\b/gdk3.X11KeymapObj/g
+s/\bptr ptr GdkX11Cursor\b/gdk3vaaaaarX11Cursor/g
+s/\bptr GdkX11Cursor\b/gdk3ptttttrX11Cursor/g
+s/\bGdkX11Cursor\b/gdk3.X11CursorObj/g
+s/\bptr ptr GdkX11Screen\b/gdk3vaaaaarX11Screen/g
+s/\bptr GdkX11Screen\b/gdk3ptttttrX11Screen/g
+s/\bGdkX11Screen\b/gdk3.X11ScreenObj/g
+s/\bptr ptr GdkX11Window\b/gdk3vaaaaarX11Window/g
+s/\bptr GdkX11Window\b/gdk3ptttttrX11Window/g
+s/\bGdkX11Window\b/gdk3.X11WindowObj/g
+s/gdk3vaaaaar/var gdk3./g
+s/gdk3ptttttr/gdk3./g

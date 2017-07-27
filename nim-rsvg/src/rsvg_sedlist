@@ -1,0 +1,14 @@
+s/\bptr ptr RsvgDimensionData\b/rsvgvaaaaarDimensionData/g
+s/\bptr RsvgDimensionData\b/rsvgptttttrDimensionData/g
+s/\bRsvgDimensionData\b/rsvg.DimensionDataObj/g
+s/\bptr ptr RsvgPositionData\b/rsvgvaaaaarPositionData/g
+s/\bptr RsvgPositionData\b/rsvgptttttrPositionData/g
+s/\bRsvgPositionData\b/rsvg.PositionDataObj/g
+s/\bptr ptr RsvgHandleClass\b/rsvgvaaaaarHandleClass/g
+s/\bptr RsvgHandleClass\b/rsvgptttttrHandleClass/g
+s/\bRsvgHandleClass\b/rsvg.HandleClassObj/g
+s/\bptr ptr RsvgHandle\b/rsvgvaaaaarHandle/g
+s/\bptr RsvgHandle\b/rsvgptttttrHandle/g
+s/\bRsvgHandle\b/rsvg.HandleObj/g
+s/rsvgvaaaaar/var rsvg./g
+s/rsvgptttttr/rsvg./g

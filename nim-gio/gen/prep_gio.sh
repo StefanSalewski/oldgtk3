@@ -1,0 +1,1707 @@
+#!/bin/bash
+# S. Salewski, 25-JUL-2017
+# Generate gio bindings for Nim
+#
+glib_dir="/home/stefan/Downloads/glib-2.53.3"
+final="final.h" # the input file for c2nim
+list="list.txt"
+wdir="tmp"
+
+targets=''
+all_t=". ${targets}"
+
+rm -rf $wdir # start from scratch
+mkdir $wdir
+cd $wdir
+cp -r $glib_dir/gio .
+cd gio
+
+# check already done...
+#echo 'we may miss these headers -- please check:'
+#for i in $all_t ; do
+#  grep -c DECL ${i}/*.h | grep h:0
+#done
+
+# we insert in each header a marker with the filename
+# may fail if G_BEGIN_DECLS macro is missing in a header
+for j in $all_t ; do
+  for i in ${j}/*.h; do
+    sed -i "/^G_BEGIN_DECLS/a${i}_ssalewski;" $i
+  done
+done
+
+cat gio.h > all.h
+
+cd ..
+
+# cpp run with all headers to determine order
+echo "cat \\" > $list
+
+cpp -I. `pkg-config --cflags gtk+-3.0` gio/all.h $final
+
+# extract file names and push names to list
+grep ssalewski $final | sed 's/_ssalewski;/ \\/' >> $list
+
+# maybe add remaining missing headers
+
+i=`sort $list | uniq -d | wc -l`
+if [ $i != 0 ]; then echo 'list contains duplicates!'; exit; fi;
+
+# now we work again with original headers
+rm -rf gio
+cp -r $glib_dir/gio . 
+
+# insert for each header file its name as first line
+for j in $all_t ; do
+  for i in gio/${j}/*.h; do
+    sed -i "1i/* file: $i */" $i
+    sed -i "1i#define headerfilename \"$i\"" $i # marker for splitting
+  done
+done
+cd gio
+  bash ../$list > ../$final
+cd ..
+
+# delete strange macros (define these as empty ones for c2nim)
+sed -i "1i#def G_BEGIN_DECLS" $final
+sed -i "1i#def G_END_DECLS" $final
+sed -i "1i#def G_GNUC_CONST" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_ALL" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_26" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_28" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_30" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_32" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_34" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_36" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_38" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_40" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_42" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_44" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_46" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_48" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_50" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_52" $final
+sed -i "1i#def GLIB_AVAILABLE_IN_2_54" $final
+sed -i "1i#def GLIB_DEPRECATED" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_36" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_40" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_46" $final
+sed -i "1i#def GLIB_DEPRECATED_FOR(x)" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_36_FOR(x)" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_38_FOR(x)" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_40_FOR(x)" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_42_FOR(x)" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_46_FOR(x)" $final
+sed -i "1i#def GLIB_DEPRECATED_IN_2_54_FOR(x)" $final
+sed -i "1i#def G_GNUC_PRINTF(i, j)" $final
+sed -i "1i#def G_GNUC_NULL_TERMINATED" $final
+
+# Now they start using macros in header files -- for now only two, so we expand them manually
+i='GLIB_AVAILABLE_IN_2_44
+G_DECLARE_INTERFACE(GListModel, g_list_model, G, LIST_MODEL, GObject)
+
+struct _GListModelInterface
+{
+  GTypeInterface g_iface;
+
+  GType     (* get_item_type)   (GListModel *list);
+
+  guint     (* get_n_items)     (GListModel *list);
+
+  gpointer  (* get_item)        (GListModel *list,
+                                 guint       position);
+};
+'
+j='GType g_list_model_get_type (void);
+
+typedef struct _GListModel{} GListModel;
+
+typedef struct _GListModelInterface GListModelInterface;
+
+#define G_IS_LIST_MODEL(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), G_TYPE_LIST_MODEL))
+
+#define G_LIST_MODEL_GET_IFACE(obj) (G_TYPE_INSTANCE_GET_INTERFACE ((obj), G_TYPE_LIST_MODEL, GListModelIface))
+
+struct _GListModelInterface
+{
+  GTypeInterface g_iface;
+
+  GType     (* get_item_type)   (GListModel *list);
+
+  guint     (* get_n_items)     (GListModel *list);
+
+  gpointer  (* get_item)        (GListModel *list,
+                                 guint       position);
+};
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" $final
+
+i='G_DECLARE_FINAL_TYPE(GListStore, g_list_store, G, LIST_STORE, GObject)
+'
+j='typedef struct _GListStore{} GListStore;
+
+struct GListStoreClass
+{
+	GObjectClass parent_class;
+};
+
+GType g_list_store_get_type (void);
+
+#define G_IS_LIST_STORE(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), G_TYPE_LIST_STORE))
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" $final
+
+i='#if 0
+/**
+ * GFile:
+ *
+ * A handle to an object implementing the #GFileIface interface.
+ * Generally stores a location within the file system. Handles do not
+ * necessarily represent files or directories that currently exist.
+ **/
+typedef struct _GFile         		GFile; /* Dummy typedef */
+#endif
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" $final
+
+i='#ifdef G_OS_UNIX
+/* To get the uid_t type */
+#include <unistd.h>
+#include <sys/types.h>
+#endif
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" $final
+
+# this is generated by find_opaque_structs.rb
+sed -i 's/typedef struct _GAppInfo                      GAppInfo;/typedef struct _GAppInfo{} GAppInfo;/' final.h
+sed -i 's/typedef struct _GAsyncResult                  GAsyncResult;/typedef struct _GAsyncResult{} GAsyncResult;/' final.h
+sed -i 's/typedef struct _GAsyncInitable                GAsyncInitable;/typedef struct _GAsyncInitable{} GAsyncInitable;/' final.h
+sed -i 's/typedef struct _GCharsetConverter             GCharsetConverter;/typedef struct _GCharsetConverter{} GCharsetConverter;/' final.h
+sed -i 's/typedef struct _GConverter                    GConverter;/typedef struct _GConverter{} GConverter;/' final.h
+sed -i 's/typedef struct _GSimplePermission             GSimplePermission;/typedef struct _GSimplePermission{} GSimplePermission;/' final.h
+sed -i 's/typedef struct _GZlibCompressor               GZlibCompressor;/typedef struct _GZlibCompressor{} GZlibCompressor;/' final.h
+sed -i 's/typedef struct _GZlibDecompressor             GZlibDecompressor;/typedef struct _GZlibDecompressor{} GZlibDecompressor;/' final.h
+sed -i 's/typedef struct _GRemoteActionGroup            GRemoteActionGroup;/typedef struct _GRemoteActionGroup{} GRemoteActionGroup;/' final.h
+sed -i 's/typedef struct _GDBusActionGroup              GDBusActionGroup;/typedef struct _GDBusActionGroup{} GDBusActionGroup;/' final.h
+sed -i 's/typedef struct _GActionMap                    GActionMap;/typedef struct _GActionMap{} GActionMap;/' final.h
+sed -i 's/typedef struct _GActionGroup                  GActionGroup;/typedef struct _GActionGroup{} GActionGroup;/' final.h
+sed -i 's/typedef struct _GPropertyAction               GPropertyAction;/typedef struct _GPropertyAction{} GPropertyAction;/' final.h
+sed -i 's/typedef struct _GSimpleAction                 GSimpleAction;/typedef struct _GSimpleAction{} GSimpleAction;/' final.h
+sed -i 's/typedef struct _GAction                       GAction;/typedef struct _GAction{} GAction;/' final.h
+sed -i 's/typedef struct _GSettingsBackend              GSettingsBackend;/typedef struct _GSettingsBackend{} GSettingsBackend;/' final.h
+sed -i 's/typedef struct _GNotification                 GNotification;/typedef struct _GNotification{} GNotification;/' final.h
+sed -i 's/typedef struct _GListModel                    GListModel;/typedef struct _GListModel{} GListModel;/' final.h
+sed -i 's/typedef struct _GListStore                    GListStore;/typedef struct _GListStore{} GListStore;/' final.h
+sed -i 's/typedef struct _GDrive                        GDrive;/typedef struct _GDrive{} GDrive;/' final.h
+sed -i 's/typedef struct _GFile                         GFile;/typedef struct _GFile{} GFile;/' final.h
+sed -i 's/typedef struct _GFileInfo                     GFileInfo;/typedef struct _GFileInfo{} GFileInfo;/' final.h
+sed -i 's/typedef struct _GFileAttributeMatcher         GFileAttributeMatcher;/typedef struct _GFileAttributeMatcher{} GFileAttributeMatcher;/' final.h
+sed -i 's/typedef struct _GFileDescriptorBased          GFileDescriptorBased;/typedef struct _GFileDescriptorBased{} GFileDescriptorBased;/' final.h
+sed -i 's/typedef struct _GFileIcon                     GFileIcon;/typedef struct _GFileIcon{} GFileIcon;/' final.h
+sed -i 's/typedef struct _GFilenameCompleter            GFilenameCompleter;/typedef struct _GFilenameCompleter{} GFilenameCompleter;/' final.h
+sed -i 's/typedef struct _GIcon                         GIcon;/typedef struct _GIcon{} GIcon;/' final.h
+sed -i 's/typedef struct _GInitable                     GInitable;/typedef struct _GInitable{} GInitable;/' final.h
+sed -i 's/typedef struct _GIOModule                     GIOModule;/typedef struct _GIOModule{} GIOModule;/' final.h
+sed -i 's/typedef struct _GIOExtensionPoint             GIOExtensionPoint;/typedef struct _GIOExtensionPoint{} GIOExtensionPoint;/' final.h
+sed -i 's/typedef struct _GIOExtension                  GIOExtension;/typedef struct _GIOExtension{} GIOExtension;/' final.h
+sed -i 's/typedef struct _GIOSchedulerJob               GIOSchedulerJob;/typedef struct _GIOSchedulerJob{} GIOSchedulerJob;/' final.h
+sed -i 's/typedef struct _GIOStreamAdapter              GIOStreamAdapter;/typedef struct _GIOStreamAdapter{} GIOStreamAdapter;/' final.h
+sed -i 's/typedef struct _GLoadableIcon                 GLoadableIcon;/typedef struct _GLoadableIcon{} GLoadableIcon;/' final.h
+sed -i 's/typedef struct _GBytesIcon                    GBytesIcon;/typedef struct _GBytesIcon{} GBytesIcon;/' final.h
+sed -i 's/typedef struct _GMount                        GMount;/typedef struct _GMount{} GMount;/' final.h
+sed -i 's/typedef struct _GNetworkMonitor               GNetworkMonitor;/typedef struct _GNetworkMonitor{} GNetworkMonitor;/' final.h
+sed -i 's/typedef struct _GSimpleIOStream               GSimpleIOStream;/typedef struct _GSimpleIOStream{} GSimpleIOStream;/' final.h
+sed -i 's/typedef struct _GPollableInputStream          GPollableInputStream;/typedef struct _GPollableInputStream{} GPollableInputStream;/' final.h
+sed -i 's/typedef struct _GPollableOutputStream         GPollableOutputStream;/typedef struct _GPollableOutputStream{} GPollableOutputStream;/' final.h
+sed -i 's/typedef struct _GResource                     GResource;/typedef struct _GResource{} GResource;/' final.h
+sed -i 's/typedef struct _GSeekable                     GSeekable;/typedef struct _GSeekable{} GSeekable;/' final.h
+sed -i 's/typedef struct _GSimpleAsyncResult            GSimpleAsyncResult;/typedef struct _GSimpleAsyncResult{} GSimpleAsyncResult;/' final.h
+sed -i 's/typedef struct _GSocketConnectable            GSocketConnectable;/typedef struct _GSocketConnectable{} GSocketConnectable;/' final.h
+sed -i 's/typedef struct _GSrvTarget                    GSrvTarget;/typedef struct _GSrvTarget{} GSrvTarget;/' final.h
+sed -i 's/typedef struct _GTask                         GTask;/typedef struct _GTask{} GTask;/' final.h
+sed -i 's/typedef struct _GThemedIcon                   GThemedIcon;/typedef struct _GThemedIcon{} GThemedIcon;/' final.h
+sed -i 's/typedef struct _GTlsClientConnection          GTlsClientConnection;/typedef struct _GTlsClientConnection{} GTlsClientConnection;/' final.h
+sed -i 's/typedef struct _GTlsFileDatabase              GTlsFileDatabase;/typedef struct _GTlsFileDatabase{} GTlsFileDatabase;/' final.h
+sed -i 's/typedef struct _GTlsServerConnection          GTlsServerConnection;/typedef struct _GTlsServerConnection{} GTlsServerConnection;/' final.h
+sed -i 's/typedef struct _GProxyResolver                GProxyResolver;/typedef struct _GProxyResolver{} GProxyResolver;/' final.h
+sed -i 's/typedef struct _GProxy			      GProxy;/typedef struct _GProxy{} GProxy;/' final.h
+sed -i 's/typedef struct _GVolume                       GVolume;/typedef struct _GVolume{} GVolume;/' final.h
+sed -i 's/typedef struct _GCredentials                  GCredentials;/typedef struct _GCredentials{} GCredentials;/' final.h
+sed -i 's/typedef struct _GUnixCredentialsMessage       GUnixCredentialsMessage;/typedef struct _GUnixCredentialsMessage{} GUnixCredentialsMessage;/' final.h
+sed -i 's/typedef struct _GUnixFDList                   GUnixFDList;/typedef struct _GUnixFDList{} GUnixFDList;/' final.h
+sed -i 's/typedef struct _GDBusMessage                  GDBusMessage;/typedef struct _GDBusMessage{} GDBusMessage;/' final.h
+sed -i 's/typedef struct _GDBusConnection               GDBusConnection;/typedef struct _GDBusConnection{} GDBusConnection;/' final.h
+sed -i 's/typedef struct _GDBusMethodInvocation         GDBusMethodInvocation;/typedef struct _GDBusMethodInvocation{} GDBusMethodInvocation;/' final.h
+sed -i 's/typedef struct _GDBusServer                   GDBusServer;/typedef struct _GDBusServer{} GDBusServer;/' final.h
+sed -i 's/typedef struct _GDBusAuthObserver             GDBusAuthObserver;/typedef struct _GDBusAuthObserver{} GDBusAuthObserver;/' final.h
+sed -i 's/typedef struct _GDBusInterface              GDBusInterface;/typedef struct _GDBusInterface{} GDBusInterface;/' final.h
+sed -i 's/typedef struct _GDBusObject                 GDBusObject;/typedef struct _GDBusObject{} GDBusObject;/' final.h
+sed -i 's/typedef struct _GDBusObjectManager          GDBusObjectManager;/typedef struct _GDBusObjectManager{} GDBusObjectManager;/' final.h
+sed -i 's/typedef struct _GTestDBus GTestDBus;/typedef struct _GTestDBus{} GTestDBus;/' final.h
+sed -i 's/typedef struct _GSubprocess                   GSubprocess;/typedef struct _GSubprocess{} GSubprocess;/' final.h
+sed -i 's/typedef struct _GSubprocessLauncher           GSubprocessLauncher;/typedef struct _GSubprocessLauncher{} GSubprocessLauncher;/' final.h
+sed -i 's/typedef struct _GAppLaunchContextPrivate GAppLaunchContextPrivate;/typedef struct _GAppLaunchContextPrivate{} GAppLaunchContextPrivate;/' final.h
+sed -i 's/typedef struct _GAppInfoMonitor                             GAppInfoMonitor;/typedef struct _GAppInfoMonitor{} GAppInfoMonitor;/' final.h
+sed -i 's/typedef struct _GApplicationPrivate                         GApplicationPrivate;/typedef struct _GApplicationPrivate{} GApplicationPrivate;/' final.h
+sed -i 's/typedef struct _GApplicationCommandLinePrivate               GApplicationCommandLinePrivate;/typedef struct _GApplicationCommandLinePrivate{} GApplicationCommandLinePrivate;/' final.h
+sed -i 's/typedef struct _GInputStreamPrivate  GInputStreamPrivate;/typedef struct _GInputStreamPrivate{} GInputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GBufferedInputStreamPrivate  GBufferedInputStreamPrivate;/typedef struct _GBufferedInputStreamPrivate{} GBufferedInputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GOutputStreamPrivate  GOutputStreamPrivate;/typedef struct _GOutputStreamPrivate{} GOutputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GBufferedOutputStreamPrivate  GBufferedOutputStreamPrivate;/typedef struct _GBufferedOutputStreamPrivate{} GBufferedOutputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GCancellablePrivate GCancellablePrivate;/typedef struct _GCancellablePrivate{} GCancellablePrivate;/' final.h
+sed -i 's/typedef struct _GConverterInputStreamPrivate  GConverterInputStreamPrivate;/typedef struct _GConverterInputStreamPrivate{} GConverterInputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GConverterOutputStreamPrivate  GConverterOutputStreamPrivate;/typedef struct _GConverterOutputStreamPrivate{} GConverterOutputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GCredentialsClass   GCredentialsClass;/typedef struct _GCredentialsClass{} GCredentialsClass;/' final.h
+sed -i 's/typedef struct _GDataInputStreamPrivate  GDataInputStreamPrivate;/typedef struct _GDataInputStreamPrivate{} GDataInputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GDataOutputStreamPrivate  GDataOutputStreamPrivate;/typedef struct _GDataOutputStreamPrivate{} GDataOutputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GDBusProxyPrivate GDBusProxyPrivate;/typedef struct _GDBusProxyPrivate{} GDBusProxyPrivate;/' final.h
+sed -i 's/typedef struct _GEmblem        GEmblem;/typedef struct _GEmblem{} GEmblem;/' final.h
+sed -i 's/typedef struct _GEmblemClass   GEmblemClass;/typedef struct _GEmblemClass{} GEmblemClass;/' final.h
+sed -i 's/typedef struct _GEmblemedIconPrivate GEmblemedIconPrivate;/typedef struct _GEmblemedIconPrivate{} GEmblemedIconPrivate;/' final.h
+sed -i 's/typedef struct _GFileEnumeratorPrivate  GFileEnumeratorPrivate;/typedef struct _GFileEnumeratorPrivate{} GFileEnumeratorPrivate;/' final.h
+sed -i 's/typedef struct _GFileIconClass   GFileIconClass;/typedef struct _GFileIconClass{} GFileIconClass;/' final.h
+sed -i 's/typedef struct _GFileInfoClass   GFileInfoClass;/typedef struct _GFileInfoClass{} GFileInfoClass;/' final.h
+sed -i 's/typedef struct _GFileInputStreamPrivate  GFileInputStreamPrivate;/typedef struct _GFileInputStreamPrivate{} GFileInputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GIOStreamPrivate                            GIOStreamPrivate;/typedef struct _GIOStreamPrivate{} GIOStreamPrivate;/' final.h
+sed -i 's/typedef struct _GFileIOStreamPrivate  GFileIOStreamPrivate;/typedef struct _GFileIOStreamPrivate{} GFileIOStreamPrivate;/' final.h
+sed -i 's/typedef struct _GFileMonitorPrivate	GFileMonitorPrivate;/typedef struct _GFileMonitorPrivate{} GFileMonitorPrivate;/' final.h
+sed -i 's/typedef struct _GFileOutputStreamPrivate  GFileOutputStreamPrivate;/typedef struct _GFileOutputStreamPrivate{} GFileOutputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GInetAddressPrivate GInetAddressPrivate;/typedef struct _GInetAddressPrivate{} GInetAddressPrivate;/' final.h
+sed -i 's/typedef struct _GInetAddressMaskPrivate GInetAddressMaskPrivate;/typedef struct _GInetAddressMaskPrivate{} GInetAddressMaskPrivate;/' final.h
+sed -i 's/typedef struct _GInetSocketAddressPrivate GInetSocketAddressPrivate;/typedef struct _GInetSocketAddressPrivate{} GInetSocketAddressPrivate;/' final.h
+sed -i 's/typedef struct _GIOModuleScope GIOModuleScope;/typedef struct _GIOModuleScope{} GIOModuleScope;/' final.h
+sed -i 's/typedef struct _GIOModuleClass GIOModuleClass;/typedef struct _GIOModuleClass{} GIOModuleClass;/' final.h
+sed -i 's/typedef struct _GMemoryInputStreamPrivate  GMemoryInputStreamPrivate;/typedef struct _GMemoryInputStreamPrivate{} GMemoryInputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GMemoryOutputStreamPrivate  GMemoryOutputStreamPrivate;/typedef struct _GMemoryOutputStreamPrivate{} GMemoryOutputStreamPrivate;/' final.h
+sed -i 's/typedef struct _GMountOperationPrivate GMountOperationPrivate;/typedef struct _GMountOperationPrivate{} GMountOperationPrivate;/' final.h
+sed -i 's/typedef struct _GNetworkAddressPrivate GNetworkAddressPrivate;/typedef struct _GNetworkAddressPrivate{} GNetworkAddressPrivate;/' final.h
+sed -i 's/typedef struct _GNetworkServicePrivate GNetworkServicePrivate;/typedef struct _GNetworkServicePrivate{} GNetworkServicePrivate;/' final.h
+sed -i 's/typedef struct _GPermissionPrivate    GPermissionPrivate;/typedef struct _GPermissionPrivate{} GPermissionPrivate;/' final.h
+sed -i 's/typedef struct _GProxyAddressPrivate GProxyAddressPrivate;/typedef struct _GProxyAddressPrivate{} GProxyAddressPrivate;/' final.h
+sed -i 's/typedef struct _GProxyAddressEnumeratorPrivate GProxyAddressEnumeratorPrivate;/typedef struct _GProxyAddressEnumeratorPrivate{} GProxyAddressEnumeratorPrivate;/' final.h
+sed -i 's/typedef struct _GResolverPrivate GResolverPrivate;/typedef struct _GResolverPrivate{} GResolverPrivate;/' final.h
+sed -i 's/typedef struct _GSettingsSchemaSource                       GSettingsSchemaSource;/typedef struct _GSettingsSchemaSource{} GSettingsSchemaSource;/' final.h
+sed -i 's/typedef struct _GSettingsSchema                             GSettingsSchema;/typedef struct _GSettingsSchema{} GSettingsSchema;/' final.h
+sed -i 's/typedef struct _GSettingsSchemaKey                          GSettingsSchemaKey;/typedef struct _GSettingsSchemaKey{} GSettingsSchemaKey;/' final.h
+sed -i 's/typedef struct _GSettingsPrivate                            GSettingsPrivate;/typedef struct _GSettingsPrivate{} GSettingsPrivate;/' final.h
+sed -i 's/typedef struct _GSimpleActionGroupPrivate                   GSimpleActionGroupPrivate;/typedef struct _GSimpleActionGroupPrivate{} GSimpleActionGroupPrivate;/' final.h
+sed -i 's/typedef struct _GSimpleAsyncResultClass   GSimpleAsyncResultClass;/typedef struct _GSimpleAsyncResultClass{} GSimpleAsyncResultClass;/' final.h
+sed -i 's/typedef struct _GSocketClientPrivate                        GSocketClientPrivate;/typedef struct _GSocketClientPrivate{} GSocketClientPrivate;/' final.h
+sed -i 's/typedef struct _GSocketPrivate                              GSocketPrivate;/typedef struct _GSocketPrivate{} GSocketPrivate;/' final.h
+sed -i 's/typedef struct _GSocketConnectionPrivate                    GSocketConnectionPrivate;/typedef struct _GSocketConnectionPrivate{} GSocketConnectionPrivate;/' final.h
+sed -i 's/typedef struct _GSocketControlMessagePrivate                GSocketControlMessagePrivate;/typedef struct _GSocketControlMessagePrivate{} GSocketControlMessagePrivate;/' final.h
+sed -i 's/typedef struct _GSocketListenerPrivate                      GSocketListenerPrivate;/typedef struct _GSocketListenerPrivate{} GSocketListenerPrivate;/' final.h
+sed -i 's/typedef struct _GSocketServicePrivate                       GSocketServicePrivate;/typedef struct _GSocketServicePrivate{} GSocketServicePrivate;/' final.h
+sed -i 's/typedef struct _GSimpleProxyResolverPrivate GSimpleProxyResolverPrivate;/typedef struct _GSimpleProxyResolverPrivate{} GSimpleProxyResolverPrivate;/' final.h
+sed -i 's/typedef struct _GTaskClass   GTaskClass;/typedef struct _GTaskClass{} GTaskClass;/' final.h
+sed -i 's/typedef struct _GTcpConnectionPrivate                       GTcpConnectionPrivate;/typedef struct _GTcpConnectionPrivate{} GTcpConnectionPrivate;/' final.h
+sed -i 's/typedef struct _GTcpWrapperConnectionPrivate GTcpWrapperConnectionPrivate;/typedef struct _GTcpWrapperConnectionPrivate{} GTcpWrapperConnectionPrivate;/' final.h
+sed -i 's/typedef struct _GThemedIconClass   GThemedIconClass;/typedef struct _GThemedIconClass{} GThemedIconClass;/' final.h
+sed -i 's/typedef struct _GThreadedSocketServicePrivate               GThreadedSocketServicePrivate;/typedef struct _GThreadedSocketServicePrivate{} GThreadedSocketServicePrivate;/' final.h
+sed -i 's/typedef struct _GTlsBackend          GTlsBackend;/typedef struct _GTlsBackend{} GTlsBackend;/' final.h
+sed -i 's/typedef struct _GTlsCertificatePrivate GTlsCertificatePrivate;/typedef struct _GTlsCertificatePrivate{} GTlsCertificatePrivate;/' final.h
+sed -i 's/typedef struct _GTlsConnectionPrivate GTlsConnectionPrivate;/typedef struct _GTlsConnectionPrivate{} GTlsConnectionPrivate;/' final.h
+sed -i 's/typedef struct _GTlsDatabasePrivate GTlsDatabasePrivate;/typedef struct _GTlsDatabasePrivate{} GTlsDatabasePrivate;/' final.h
+sed -i 's/typedef struct _GTlsInteractionPrivate GTlsInteractionPrivate;/typedef struct _GTlsInteractionPrivate{} GTlsInteractionPrivate;/' final.h
+sed -i 's/typedef struct _GTlsPasswordPrivate GTlsPasswordPrivate;/typedef struct _GTlsPasswordPrivate{} GTlsPasswordPrivate;/' final.h
+sed -i 's/typedef struct _GDBusInterfaceSkeletonPrivate GDBusInterfaceSkeletonPrivate;/typedef struct _GDBusInterfaceSkeletonPrivate{} GDBusInterfaceSkeletonPrivate;/' final.h
+sed -i 's/typedef struct _GDBusObjectSkeletonPrivate GDBusObjectSkeletonPrivate;/typedef struct _GDBusObjectSkeletonPrivate{} GDBusObjectSkeletonPrivate;/' final.h
+sed -i 's/typedef struct _GDBusObjectProxyPrivate GDBusObjectProxyPrivate;/typedef struct _GDBusObjectProxyPrivate{} GDBusObjectProxyPrivate;/' final.h
+sed -i 's/typedef struct _GDBusObjectManagerClientPrivate GDBusObjectManagerClientPrivate;/typedef struct _GDBusObjectManagerClientPrivate{} GDBusObjectManagerClientPrivate;/' final.h
+sed -i 's/typedef struct _GDBusObjectManagerServerPrivate GDBusObjectManagerServerPrivate;/typedef struct _GDBusObjectManagerServerPrivate{} GDBusObjectManagerServerPrivate;/' final.h
+sed -i 's/typedef struct _GMenuModelPrivate                           GMenuModelPrivate;/typedef struct _GMenuModelPrivate{} GMenuModelPrivate;/' final.h
+sed -i 's/typedef struct _GMenuAttributeIterPrivate                   GMenuAttributeIterPrivate;/typedef struct _GMenuAttributeIterPrivate{} GMenuAttributeIterPrivate;/' final.h
+sed -i 's/typedef struct _GMenuLinkIterPrivate                        GMenuLinkIterPrivate;/typedef struct _GMenuLinkIterPrivate{} GMenuLinkIterPrivate;/' final.h
+sed -i 's/typedef struct _GMenuItem GMenuItem;/typedef struct _GMenuItem{} GMenuItem;/' final.h
+sed -i 's/typedef struct _GMenu     GMenu;/typedef struct _GMenu{} GMenu;/' final.h
+sed -i 's/typedef struct _GDBusMenuModel GDBusMenuModel;/typedef struct _GDBusMenuModel{} GDBusMenuModel;/' final.h
+sed -i 's/typedef struct _GDatagramBased                GDatagramBased;/typedef struct _GDatagramBased{} GDatagramBased;/' final.h
+sed -i 's/typedef struct _GDtlsConnection               GDtlsConnection;/typedef struct _GDtlsConnection{} GDtlsConnection;/' final.h
+sed -i 's/typedef struct _GDtlsClientConnection         GDtlsClientConnection;/typedef struct _GDtlsClientConnection{} GDtlsClientConnection;/' final.h
+
+ruby ../fix_.rb $final
+
+# header for Nim module
+i='#ifdef C2NIM
+#  dynlib lib
+#endif
+'
+perl -0777 -p -i -e "s/^/$i/" $final
+
+i='#define G_TYPE_TEST_DBUS \
+    (g_test_dbus_get_type ())
+'
+j='#define G_TYPE_TEST_DBUS (g_test_dbus_get_type ())
+'
+perl -0777 -p -i -e "s~\Q$i\E~$j~s" $final
+
+sed -i 's/#define G_DBUS_ERROR g_dbus_error_quark()/#define G_DBUS_ERROR() g_dbus_error_quark()/' $final
+sed -i 's/#define G_IO_ERROR g_io_error_quark()/#define G_IO_ERROR() g_io_error_quark()/' $final
+sed -i 's/#define G_RESOLVER_ERROR (g_resolver_error_quark ())/#define G_RESOLVER_ERROR() (g_resolver_error_quark ())/' $final
+sed -i 's/#define G_RESOURCE_ERROR (g_resource_error_quark ())/#define G_RESOURCE_ERROR() (g_resource_error_quark ())/' $final
+sed -i 's/#define G_TLS_ERROR (g_tls_error_quark ())/#define G_TLS_ERROR() (g_tls_error_quark ())/' $final
+
+i='GType
+g_datagram_based_get_type             (void);
+'
+j='GType g_datagram_based_get_type (void);
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" $final
+
+sed -i "s/#define G_TYPE_LIST_MODEL g_list_model_get_type ()/#define G_TYPE_LIST_MODEL (g_list_model_get_type ())/g" $final
+
+sed -i 's/#define G_IO_TYPE_MODULE         (g_io_module_get_type ())/#define G_IO_TYPE_MODULE() (g_io_module_get_type ())/g' $final
+sed -i 's/#define                 G_TYPE_SETTINGS_SCHEMA_SOURCE                   (g_settings_schema_source_get_type ())/#define G_TYPE_SETTINGS_SCHEMA_SOURCE() (g_settings_schema_source_get_type ())/g' $final
+sed -i 's/#define                 G_TYPE_SETTINGS_SCHEMA                          (g_settings_schema_get_type ())/#define G_TYPE_SETTINGS_SCHEMA() (g_settings_schema_get_type ())/g' $final
+sed -i 's/#define                 G_TYPE_SETTINGS_SCHEMA_KEY                      (g_settings_schema_key_get_type ())/#define G_TYPE_SETTINGS_SCHEMA_KEY() (g_settings_schema_key_get_type ())/g' $final
+
+sed -i 's/\(#define G_TYPE_\w\+\)\(\s\+(\?\w\+_get_g\?type\s*()\s*)\?\)/\1()\2/g' $final
+#ruby ../func_alias_reorder.rb final.h G
+
+sed -i 's/\bgchar\b/char/g' $final
+c2nim --nep1 --skipcomments --skipinclude $final
+sed -i 's/ {\.bycopy\.}//g' final.nim
+echo -e "\n\n\n\n"  >> final.nim
+
+i='type
+  GIOErrorEnum* {.size: sizeof(cint).} = enum
+    G_IO_ERROR_FAILED, G_IO_ERROR_NOT_FOUND, G_IO_ERROR_EXISTS,
+    G_IO_ERROR_IS_DIRECTORY, G_IO_ERROR_NOT_DIRECTORY, G_IO_ERROR_NOT_EMPTY,
+    G_IO_ERROR_NOT_REGULAR_FILE, G_IO_ERROR_NOT_SYMBOLIC_LINK,
+    G_IO_ERROR_NOT_MOUNTABLE_FILE, G_IO_ERROR_FILENAME_TOO_LONG,
+    G_IO_ERROR_INVALID_FILENAME, G_IO_ERROR_TOO_MANY_LINKS, G_IO_ERROR_NO_SPACE,
+    G_IO_ERROR_INVALID_ARGUMENT, G_IO_ERROR_PERMISSION_DENIED,
+    G_IO_ERROR_NOT_SUPPORTED, G_IO_ERROR_NOT_MOUNTED, G_IO_ERROR_ALREADY_MOUNTED,
+    G_IO_ERROR_CLOSED, G_IO_ERROR_CANCELLED, G_IO_ERROR_PENDING,
+    G_IO_ERROR_READ_ONLY, G_IO_ERROR_CANT_CREATE_BACKUP, G_IO_ERROR_WRONG_ETAG,
+    G_IO_ERROR_TIMED_OUT, G_IO_ERROR_WOULD_RECURSE, G_IO_ERROR_BUSY,
+    G_IO_ERROR_WOULD_BLOCK, G_IO_ERROR_HOST_NOT_FOUND, G_IO_ERROR_WOULD_MERGE,
+    G_IO_ERROR_FAILED_HANDLED, G_IO_ERROR_TOO_MANY_OPEN_FILES,
+    G_IO_ERROR_NOT_INITIALIZED, G_IO_ERROR_ADDRESS_IN_USE,
+    G_IO_ERROR_PARTIAL_INPUT, G_IO_ERROR_INVALID_DATA, G_IO_ERROR_DBUS_ERROR,
+    G_IO_ERROR_HOST_UNREACHABLE, G_IO_ERROR_NETWORK_UNREACHABLE,
+    G_IO_ERROR_CONNECTION_REFUSED, G_IO_ERROR_PROXY_FAILED,
+    G_IO_ERROR_PROXY_AUTH_FAILED, G_IO_ERROR_PROXY_NEED_AUTH,
+    G_IO_ERROR_PROXY_NOT_ALLOWED, G_IO_ERROR_BROKEN_PIPE,
+    G_IO_ERROR_CONNECTION_CLOSED = g_Io_Error_Broken_Pipe,
+    G_IO_ERROR_NOT_CONNECTED, G_IO_ERROR_MESSAGE_TOO_LARGE
+'
+j='type
+  GIOErrorEnum* {.size: sizeof(cint).} = enum
+    G_IO_ERROR_FAILED, G_IO_ERROR_NOT_FOUND, G_IO_ERROR_EXISTS,
+    G_IO_ERROR_IS_DIRECTORY, G_IO_ERROR_NOT_DIRECTORY, G_IO_ERROR_NOT_EMPTY,
+    G_IO_ERROR_NOT_REGULAR_FILE, G_IO_ERROR_NOT_SYMBOLIC_LINK,
+    G_IO_ERROR_NOT_MOUNTABLE_FILE, G_IO_ERROR_FILENAME_TOO_LONG,
+    G_IO_ERROR_INVALID_FILENAME, G_IO_ERROR_TOO_MANY_LINKS, G_IO_ERROR_NO_SPACE,
+    G_IO_ERROR_INVALID_ARGUMENT, G_IO_ERROR_PERMISSION_DENIED,
+    G_IO_ERROR_NOT_SUPPORTED, G_IO_ERROR_NOT_MOUNTED, G_IO_ERROR_ALREADY_MOUNTED,
+    G_IO_ERROR_CLOSED, G_IO_ERROR_CANCELLED, G_IO_ERROR_PENDING,
+    G_IO_ERROR_READ_ONLY, G_IO_ERROR_CANT_CREATE_BACKUP, G_IO_ERROR_WRONG_ETAG,
+    G_IO_ERROR_TIMED_OUT, G_IO_ERROR_WOULD_RECURSE, G_IO_ERROR_BUSY,
+    G_IO_ERROR_WOULD_BLOCK, G_IO_ERROR_HOST_NOT_FOUND, G_IO_ERROR_WOULD_MERGE,
+    G_IO_ERROR_FAILED_HANDLED, G_IO_ERROR_TOO_MANY_OPEN_FILES,
+    G_IO_ERROR_NOT_INITIALIZED, G_IO_ERROR_ADDRESS_IN_USE,
+    G_IO_ERROR_PARTIAL_INPUT, G_IO_ERROR_INVALID_DATA, G_IO_ERROR_DBUS_ERROR,
+    G_IO_ERROR_HOST_UNREACHABLE, G_IO_ERROR_NETWORK_UNREACHABLE,
+    G_IO_ERROR_CONNECTION_REFUSED, G_IO_ERROR_PROXY_FAILED,
+    G_IO_ERROR_PROXY_AUTH_FAILED, G_IO_ERROR_PROXY_NEED_AUTH,
+    G_IO_ERROR_PROXY_NOT_ALLOWED, G_IO_ERROR_BROKEN_PIPE,
+    G_IO_ERROR_NOT_CONNECTED, G_IO_ERROR_MESSAGE_TOO_LARGE
+const
+    G_IO_ERROR_CONNECTION_CLOSED = GIOErrorEnum.BROKEN_PIPE
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+i='type
+  GCancellablePrivate* = object
+  
+  GCancellable* = object
+    parentInstance*: GObject
+    priv*: ptr GCancellablePrivate
+
+  GCancellableClass* = object
+    parentClass*: GObjectClass
+    cancelled*: proc (cancellable: ptr GCancellable)
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GVolume* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GSocketPrivate* = object
+  
+  GSocketClass* = object
+    parentClass*: GObjectClass
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+    gReserved6*: proc ()
+    gReserved7*: proc ()
+    gReserved8*: proc ()
+    gReserved9*: proc ()
+    gReserved10*: proc ()
+
+  GSocket* = object
+    parentInstance*: GObject
+    priv*: ptr GSocketPrivate
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GVolume* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GSocketAddress* = object
+    parentInstance*: GObject
+
+  GSocketAddressClass* = object
+    parentClass*: GObjectClass
+    getFamily*: proc (address: ptr GSocketAddress): GSocketFamily
+    getNativeSize*: proc (address: ptr GSocketAddress): Gssize
+    toNative*: proc (address: ptr GSocketAddress; dest: Gpointer; destlen: Gsize;
+                   error: ptr ptr GError): Gboolean
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GInputMessage* = object
+    address*: ptr ptr GSocketAddress
+    vectors*: ptr GInputVector
+    numVectors*: Guint
+    bytesReceived*: Gsize
+    flags*: Gint
+    controlMessages*: ptr ptr ptr GSocketControlMessage
+    numControlMessages*: ptr Guint
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GSocketControlMessagePrivate* = object
+  
+
+
+type
+  GSocketControlMessageClass* = object
+    parentClass*: GObjectClass
+    getSize*: proc (message: ptr GSocketControlMessage): Gsize
+    getLevel*: proc (message: ptr GSocketControlMessage): cint
+    getType*: proc (message: ptr GSocketControlMessage): cint
+    serialize*: proc (message: ptr GSocketControlMessage; data: Gpointer)
+    deserialize*: proc (level: cint; `type`: cint; size: Gsize; data: Gpointer): ptr GSocketControlMessage
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+
+  GSocketControlMessage* = object
+    parentInstance*: GObject
+    priv*: ptr GSocketControlMessagePrivate
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GInputVector* = object
+    buffer*: Gpointer
+    size*: Gsize
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GDBusObjectManagerClientPrivate* = object
+  
+
+
+type
+  GDBusObjectManagerClient* = object
+    parentInstance*: GObject
+    priv*: ptr GDBusObjectManagerClientPrivate
+
+
+
+type
+  GDBusObjectManagerClientClass* = object
+    parentClass*: GObjectClass
+    interfaceProxySignal*: proc (manager: ptr GDBusObjectManagerClient;
+                               objectProxy: ptr GDBusObjectProxy;
+                               interfaceProxy: ptr GDBusProxy; senderName: cstring;
+                               signalName: cstring; parameters: ptr GVariant)
+    interfaceProxyPropertiesChanged*: proc (manager: ptr GDBusObjectManagerClient;
+        objectProxy: ptr GDBusObjectProxy; interfaceProxy: ptr GDBusProxy;
+        changedProperties: ptr GVariant; invalidatedProperties: cstringArray)
+    padding*: array[8, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+k='type
+  GDBusObjectProxyPrivate* = object
+  
+
+
+type
+  GDBusObjectProxy* = object
+    parentInstance*: GObject
+    priv*: ptr GDBusObjectProxyPrivate
+
+
+
+type
+  GDBusObjectProxyClass* = object
+    parentClass*: GObjectClass
+    padding*: array[8, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$k\E%%s" final.nim
+l='type
+  GDBusProxyPrivate* = object
+  
+
+
+type
+  GDBusProxy* = object
+    parentInstance*: GObject
+    priv*: ptr GDBusProxyPrivate
+
+
+
+type
+  GDBusProxyClass* = object
+    parentClass*: GObjectClass
+    gPropertiesChanged*: proc (proxy: ptr GDBusProxy;
+                             changedProperties: ptr GVariant;
+                             invalidatedProperties: cstringArray)
+    gSignal*: proc (proxy: ptr GDBusProxy; senderName: cstring; signalName: cstring;
+                  parameters: ptr GVariant)
+    padding*: array[32, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$l\E%%s" final.nim
+j='type
+  GDBusObjectManager* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$l$k$i%s" final.nim
+
+i='type
+  GAppLaunchContext* = object
+    parentInstance*: GObject
+    priv*: ptr GAppLaunchContextPrivate
+
+  GAppLaunchContextClass* = object
+    parentClass*: GObjectClass
+    getDisplay*: proc (context: ptr GAppLaunchContext; info: ptr GAppInfo;
+                     files: ptr GList): cstring
+    getStartupNotifyId*: proc (context: ptr GAppLaunchContext; info: ptr GAppInfo;
+                             files: ptr GList): cstring
+    launchFailed*: proc (context: ptr GAppLaunchContext; startupNotifyId: cstring)
+    launched*: proc (context: ptr GAppLaunchContext; info: ptr GAppInfo;
+                   platformData: ptr GVariant)
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GAppLaunchContextPrivate* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GApplicationCommandLinePrivate* = object
+  
+  GApplicationCommandLine* = object
+    parentInstance*: GObject
+    priv*: ptr GApplicationCommandLinePrivate
+
+  GApplicationCommandLineClass* = object
+    parentClass*: GObjectClass
+    printLiteral*: proc (cmdline: ptr GApplicationCommandLine; message: cstring)
+    printerrLiteral*: proc (cmdline: ptr GApplicationCommandLine; message: cstring)
+    getStdin*: proc (cmdline: ptr GApplicationCommandLine): ptr GInputStream
+    padding*: array[11, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GApplicationPrivate* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GInputStreamPrivate* = object
+  
+  GInputStream* = object
+    parentInstance*: GObject
+    priv*: ptr GInputStreamPrivate
+
+  GInputStreamClass* = object
+    parentClass*: GObjectClass
+    readFn*: proc (stream: ptr GInputStream; buffer: pointer; count: Gsize;
+                 cancellable: ptr GCancellable; error: ptr ptr GError): Gssize
+    skip*: proc (stream: ptr GInputStream; count: Gsize; cancellable: ptr GCancellable;
+               error: ptr ptr GError): Gssize
+    closeFn*: proc (stream: ptr GInputStream; cancellable: ptr GCancellable;
+                  error: ptr ptr GError): Gboolean
+    readAsync*: proc (stream: ptr GInputStream; buffer: pointer; count: Gsize;
+                    ioPriority: cint; cancellable: ptr GCancellable;
+                    callback: GAsyncReadyCallback; userData: Gpointer)
+    readFinish*: proc (stream: ptr GInputStream; result: ptr GAsyncResult;
+                     error: ptr ptr GError): Gssize
+    skipAsync*: proc (stream: ptr GInputStream; count: Gsize; ioPriority: cint;
+                    cancellable: ptr GCancellable; callback: GAsyncReadyCallback;
+                    userData: Gpointer)
+    skipFinish*: proc (stream: ptr GInputStream; result: ptr GAsyncResult;
+                     error: ptr ptr GError): Gssize
+    closeAsync*: proc (stream: ptr GInputStream; ioPriority: cint;
+                     cancellable: ptr GCancellable; callback: GAsyncReadyCallback;
+                     userData: Gpointer)
+    closeFinish*: proc (stream: ptr GInputStream; result: ptr GAsyncResult;
+                      error: ptr ptr GError): Gboolean
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GApplicationCommandLinePrivate* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GIOStreamPrivate* = object
+  
+
+
+type
+  GIOStream* = object
+    parentInstance*: GObject
+    priv*: ptr GIOStreamPrivate
+
+  GIOStreamClass* = object
+    parentClass*: GObjectClass
+    getInputStream*: proc (stream: ptr GIOStream): ptr GInputStream
+    getOutputStream*: proc (stream: ptr GIOStream): ptr GOutputStream
+    closeFn*: proc (stream: ptr GIOStream; cancellable: ptr GCancellable;
+                  error: ptr ptr GError): Gboolean
+    closeAsync*: proc (stream: ptr GIOStream; ioPriority: cint;
+                     cancellable: ptr GCancellable; callback: GAsyncReadyCallback;
+                     userData: Gpointer)
+    closeFinish*: proc (stream: ptr GIOStream; result: ptr GAsyncResult;
+                      error: ptr ptr GError): Gboolean
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+    gReserved6*: proc ()
+    gReserved7*: proc ()
+    gReserved8*: proc ()
+    gReserved9*: proc ()
+    gReserved10*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='proc gDbusAddressEscapeValue*(string: cstring): cstring {.
+    importc: "g_dbus_address_escape_value", dynlib: lib.}
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GDBusAnnotationInfo* = object
+    refCount*: Gint
+    key*: cstring
+    value*: cstring
+    annotations*: ptr ptr GDBusAnnotationInfo
+
+
+
+type
+  GDBusArgInfo* = object
+    refCount*: Gint
+    name*: cstring
+    signature*: cstring
+    annotations*: ptr ptr GDBusAnnotationInfo
+
+
+
+type
+  GDBusMethodInfo* = object
+    refCount*: Gint
+    name*: cstring
+    inArgs*: ptr ptr GDBusArgInfo
+    outArgs*: ptr ptr GDBusArgInfo
+    annotations*: ptr ptr GDBusAnnotationInfo
+
+
+
+type
+  GDBusSignalInfo* = object
+    refCount*: Gint
+    name*: cstring
+    args*: ptr ptr GDBusArgInfo
+    annotations*: ptr ptr GDBusAnnotationInfo
+
+
+
+type
+  GDBusPropertyInfo* = object
+    refCount*: Gint
+    name*: cstring
+    signature*: cstring
+    flags*: GDBusPropertyInfoFlags
+    annotations*: ptr ptr GDBusAnnotationInfo
+
+
+
+type
+  GDBusInterfaceInfo* = object
+    refCount*: Gint
+    name*: cstring
+    methods*: ptr ptr GDBusMethodInfo
+    signals*: ptr ptr GDBusSignalInfo
+    properties*: ptr ptr GDBusPropertyInfo
+    annotations*: ptr ptr GDBusAnnotationInfo
+
+
+
+type
+  GDBusNodeInfo* = object
+    refCount*: Gint
+    path*: cstring
+    interfaces*: ptr ptr GDBusInterfaceInfo
+    nodes*: ptr ptr GDBusNodeInfo
+    annotations*: ptr ptr GDBusAnnotationInfo
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GDBusInterfaceVTable* = object
+    methodCall*: GDBusInterfaceMethodCallFunc
+    getProperty*: GDBusInterfaceGetPropertyFunc
+    setProperty*: GDBusInterfaceSetPropertyFunc
+    padding*: array[8, Gpointer]
+
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GMountOperationPrivate* = object
+  
+  GMountOperation* = object
+    parentInstance*: GObject
+    priv*: ptr GMountOperationPrivate
+
+  GMountOperationClass* = object
+    parentClass*: GObjectClass
+    askPassword*: proc (op: ptr GMountOperation; message: cstring;
+                      defaultUser: cstring; defaultDomain: cstring;
+                      flags: GAskPasswordFlags)
+    askQuestion*: proc (op: ptr GMountOperation; message: cstring; choices: ptr cstring)
+    reply*: proc (op: ptr GMountOperation; result: GMountOperationResult)
+    aborted*: proc (op: ptr GMountOperation)
+    showProcesses*: proc (op: ptr GMountOperation; message: cstring;
+                        processes: ptr GArray; choices: ptr cstring)
+    showUnmountProgress*: proc (op: ptr GMountOperation; message: cstring;
+                              timeLeft: Gint64; bytesLeft: Gint64)
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+    gReserved6*: proc ()
+    gReserved7*: proc ()
+    gReserved8*: proc ()
+    gReserved9*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GDriveIface* = object
+    gIface*: GTypeInterface
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GTlsCertificatePrivate* = object
+  
+  GTlsCertificate* = object
+    parentInstance*: GObject
+    priv*: ptr GTlsCertificatePrivate
+
+  GTlsCertificateClass* = object
+    parentClass*: GObjectClass
+    verify*: proc (cert: ptr GTlsCertificate; identity: ptr GSocketConnectable;
+                 trustedCa: ptr GTlsCertificate): GTlsCertificateFlags
+    padding*: array[8, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GDtlsConnectionInterface* = object
+    gIface*: GTypeInterface
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GTlsDatabasePrivate* = object
+  
+  GTlsDatabase* = object
+    parentInstance*: GObject
+    priv*: ptr GTlsDatabasePrivate
+
+  GTlsDatabaseClass* = object
+    parentClass*: GObjectClass
+    verifyChain*: proc (self: ptr GTlsDatabase; chain: ptr GTlsCertificate;
+                      purpose: cstring; identity: ptr GSocketConnectable;
+                      interaction: ptr GTlsInteraction;
+                      flags: GTlsDatabaseVerifyFlags;
+                      cancellable: ptr GCancellable; error: ptr ptr GError): GTlsCertificateFlags
+    verifyChainAsync*: proc (self: ptr GTlsDatabase; chain: ptr GTlsCertificate;
+                           purpose: cstring; identity: ptr GSocketConnectable;
+                           interaction: ptr GTlsInteraction;
+                           flags: GTlsDatabaseVerifyFlags;
+                           cancellable: ptr GCancellable;
+                           callback: GAsyncReadyCallback; userData: Gpointer)
+    verifyChainFinish*: proc (self: ptr GTlsDatabase; result: ptr GAsyncResult;
+                            error: ptr ptr GError): GTlsCertificateFlags
+    createCertificateHandle*: proc (self: ptr GTlsDatabase;
+                                  certificate: ptr GTlsCertificate): cstring
+    lookupCertificateForHandle*: proc (self: ptr GTlsDatabase; handle: cstring;
+                                     interaction: ptr GTlsInteraction;
+                                     flags: GTlsDatabaseLookupFlags;
+                                     cancellable: ptr GCancellable;
+                                     error: ptr ptr GError): ptr GTlsCertificate
+    lookupCertificateForHandleAsync*: proc (self: ptr GTlsDatabase; handle: cstring;
+        interaction: ptr GTlsInteraction; flags: GTlsDatabaseLookupFlags;
+        cancellable: ptr GCancellable; callback: GAsyncReadyCallback;
+        userData: Gpointer)
+    lookupCertificateForHandleFinish*: proc (self: ptr GTlsDatabase;
+        result: ptr GAsyncResult; error: ptr ptr GError): ptr GTlsCertificate
+    lookupCertificateIssuer*: proc (self: ptr GTlsDatabase;
+                                  certificate: ptr GTlsCertificate;
+                                  interaction: ptr GTlsInteraction;
+                                  flags: GTlsDatabaseLookupFlags;
+                                  cancellable: ptr GCancellable;
+                                  error: ptr ptr GError): ptr GTlsCertificate
+    lookupCertificateIssuerAsync*: proc (self: ptr GTlsDatabase;
+                                       certificate: ptr GTlsCertificate;
+                                       interaction: ptr GTlsInteraction;
+                                       flags: GTlsDatabaseLookupFlags;
+                                       cancellable: ptr GCancellable;
+                                       callback: GAsyncReadyCallback;
+                                       userData: Gpointer)
+    lookupCertificateIssuerFinish*: proc (self: ptr GTlsDatabase;
+                                        result: ptr GAsyncResult;
+                                        error: ptr ptr GError): ptr GTlsCertificate
+    lookupCertificatesIssuedBy*: proc (self: ptr GTlsDatabase;
+                                     issuerRawDn: ptr GByteArray;
+                                     interaction: ptr GTlsInteraction;
+                                     flags: GTlsDatabaseLookupFlags;
+                                     cancellable: ptr GCancellable;
+                                     error: ptr ptr GError): ptr GList
+    lookupCertificatesIssuedByAsync*: proc (self: ptr GTlsDatabase;
+        issuerRawDn: ptr GByteArray; interaction: ptr GTlsInteraction;
+        flags: GTlsDatabaseLookupFlags; cancellable: ptr GCancellable;
+        callback: GAsyncReadyCallback; userData: Gpointer)
+    lookupCertificatesIssuedByFinish*: proc (self: ptr GTlsDatabase;
+        result: ptr GAsyncResult; error: ptr ptr GError): ptr GList
+    padding*: array[16, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GDtlsConnectionInterface* = object
+    gIface*: GTypeInterface
+    acceptCertificate*: proc (connection: ptr GDtlsConnection;
+                            peerCert: ptr GTlsCertificate;
+                            errors: GTlsCertificateFlags): Gboolean
+    handshake*: proc (conn: ptr GDtlsConnection; cancellable: ptr GCancellable;
+                    error: ptr ptr GError): Gboolean
+    handshakeAsync*: proc (conn: ptr GDtlsConnection; ioPriority: cint;
+                         cancellable: ptr GCancellable;
+                         callback: GAsyncReadyCallback; userData: Gpointer)
+    handshakeFinish*: proc (conn: ptr GDtlsConnection; result: ptr GAsyncResult;
+                          error: ptr ptr GError): Gboolean
+    shutdown*: proc (conn: ptr GDtlsConnection; shutdownRead: Gboolean;
+                   shutdownWrite: Gboolean; cancellable: ptr GCancellable;
+                   error: ptr ptr GError): Gboolean
+    shutdownAsync*: proc (conn: ptr GDtlsConnection; shutdownRead: Gboolean;
+                        shutdownWrite: Gboolean; ioPriority: cint;
+                        cancellable: ptr GCancellable;
+                        callback: GAsyncReadyCallback; userData: Gpointer)
+    shutdownFinish*: proc (conn: ptr GDtlsConnection; result: ptr GAsyncResult;
+                         error: ptr ptr GError): Gboolean
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GTlsInteractionPrivate* = object
+  
+  GTlsInteraction* = object
+    parentInstance*: GObject
+    priv*: ptr GTlsInteractionPrivate
+
+  GTlsInteractionClass* = object
+    parentClass*: GObjectClass
+    askPassword*: proc (interaction: ptr GTlsInteraction; password: ptr GTlsPassword;
+                      cancellable: ptr GCancellable; error: ptr ptr GError): GTlsInteractionResult
+    askPasswordAsync*: proc (interaction: ptr GTlsInteraction;
+                           password: ptr GTlsPassword;
+                           cancellable: ptr GCancellable;
+                           callback: GAsyncReadyCallback; userData: Gpointer)
+    askPasswordFinish*: proc (interaction: ptr GTlsInteraction;
+                            result: ptr GAsyncResult; error: ptr ptr GError): GTlsInteractionResult
+    requestCertificate*: proc (interaction: ptr GTlsInteraction;
+                             connection: ptr GTlsConnection;
+                             flags: GTlsCertificateRequestFlags;
+                             cancellable: ptr GCancellable; error: ptr ptr GError): GTlsInteractionResult
+    requestCertificateAsync*: proc (interaction: ptr GTlsInteraction;
+                                  connection: ptr GTlsConnection;
+                                  flags: GTlsCertificateRequestFlags;
+                                  cancellable: ptr GCancellable;
+                                  callback: GAsyncReadyCallback;
+                                  userData: Gpointer)
+    requestCertificateFinish*: proc (interaction: ptr GTlsInteraction;
+                                   result: ptr GAsyncResult; error: ptr ptr GError): GTlsInteractionResult
+    padding*: array[21, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GDtlsConnectionInterface* = object
+    gIface*: GTypeInterface
+    acceptCertificate*: proc (connection: ptr GDtlsConnection;
+                            peerCert: ptr GTlsCertificate;
+                            errors: GTlsCertificateFlags): Gboolean
+    handshake*: proc (conn: ptr GDtlsConnection; cancellable: ptr GCancellable;
+                    error: ptr ptr GError): Gboolean
+    handshakeAsync*: proc (conn: ptr GDtlsConnection; ioPriority: cint;
+                         cancellable: ptr GCancellable;
+                         callback: GAsyncReadyCallback; userData: Gpointer)
+    handshakeFinish*: proc (conn: ptr GDtlsConnection; result: ptr GAsyncResult;
+                          error: ptr ptr GError): Gboolean
+    shutdown*: proc (conn: ptr GDtlsConnection; shutdownRead: Gboolean;
+                   shutdownWrite: Gboolean; cancellable: ptr GCancellable;
+                   error: ptr ptr GError): Gboolean
+    shutdownAsync*: proc (conn: ptr GDtlsConnection; shutdownRead: Gboolean;
+                        shutdownWrite: Gboolean; ioPriority: cint;
+                        cancellable: ptr GCancellable;
+                        callback: GAsyncReadyCallback; userData: Gpointer)
+    shutdownFinish*: proc (conn: ptr GDtlsConnection; result: ptr GAsyncResult;
+                         error: ptr ptr GError): Gboolean
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GTlsPasswordPrivate* = object
+  
+  GTlsPassword* = object
+    parentInstance*: GObject
+    priv*: ptr GTlsPasswordPrivate
+
+
+
+type
+  GTlsPasswordClass* = object
+    parentClass*: GObjectClass
+    getValue*: proc (password: ptr GTlsPassword; length: ptr Gsize): ptr Guchar
+    setValue*: proc (password: ptr GTlsPassword; value: ptr Guchar; length: Gssize;
+                   destroy: GDestroyNotify)
+    getDefaultWarning*: proc (password: ptr GTlsPassword): cstring
+    padding*: array[4, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GTlsInteractionPrivate* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GTlsConnectionPrivate* = object
+  
+  GTlsConnection* = object
+    parentInstance*: GIOStream
+    priv*: ptr GTlsConnectionPrivate
+
+  GTlsConnectionClass* = object
+    parentClass*: GIOStreamClass
+    acceptCertificate*: proc (connection: ptr GTlsConnection;
+                            peerCert: ptr GTlsCertificate;
+                            errors: GTlsCertificateFlags): Gboolean
+    handshake*: proc (conn: ptr GTlsConnection; cancellable: ptr GCancellable;
+                    error: ptr ptr GError): Gboolean
+    handshakeAsync*: proc (conn: ptr GTlsConnection; ioPriority: cint;
+                         cancellable: ptr GCancellable;
+                         callback: GAsyncReadyCallback; userData: Gpointer)
+    handshakeFinish*: proc (conn: ptr GTlsConnection; result: ptr GAsyncResult;
+                          error: ptr ptr GError): Gboolean
+    padding*: array[8, Gpointer]
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GTlsPasswordPrivate* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GFileInputStreamPrivate* = object
+  
+  GFileInputStream* = object
+    parentInstance*: GInputStream
+    priv*: ptr GFileInputStreamPrivate
+
+  GFileInputStreamClass* = object
+    parentClass*: GInputStreamClass
+    tell*: proc (stream: ptr GFileInputStream): Goffset
+    canSeek*: proc (stream: ptr GFileInputStream): Gboolean
+    seek*: proc (stream: ptr GFileInputStream; offset: Goffset; `type`: GSeekType;
+               cancellable: ptr GCancellable; error: ptr ptr GError): Gboolean
+    queryInfo*: proc (stream: ptr GFileInputStream; attributes: cstring;
+                    cancellable: ptr GCancellable; error: ptr ptr GError): ptr GFileInfo
+    queryInfoAsync*: proc (stream: ptr GFileInputStream; attributes: cstring;
+                         ioPriority: cint; cancellable: ptr GCancellable;
+                         callback: GAsyncReadyCallback; userData: Gpointer)
+    queryInfoFinish*: proc (stream: ptr GFileInputStream; result: ptr GAsyncResult;
+                          error: ptr ptr GError): ptr GFileInfo
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GFileIface* = object
+    gIface*: GTypeInterface
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GFileOutputStreamPrivate* = object
+  
+  GFileOutputStream* = object
+    parentInstance*: GOutputStream
+    priv*: ptr GFileOutputStreamPrivate
+
+  GFileOutputStreamClass* = object
+    parentClass*: GOutputStreamClass
+    tell*: proc (stream: ptr GFileOutputStream): Goffset
+    canSeek*: proc (stream: ptr GFileOutputStream): Gboolean
+    seek*: proc (stream: ptr GFileOutputStream; offset: Goffset; `type`: GSeekType;
+               cancellable: ptr GCancellable; error: ptr ptr GError): Gboolean
+    canTruncate*: proc (stream: ptr GFileOutputStream): Gboolean
+    truncateFn*: proc (stream: ptr GFileOutputStream; size: Goffset;
+                     cancellable: ptr GCancellable; error: ptr ptr GError): Gboolean
+    queryInfo*: proc (stream: ptr GFileOutputStream; attributes: cstring;
+                    cancellable: ptr GCancellable; error: ptr ptr GError): ptr GFileInfo
+    queryInfoAsync*: proc (stream: ptr GFileOutputStream; attributes: cstring;
+                         ioPriority: cint; cancellable: ptr GCancellable;
+                         callback: GAsyncReadyCallback; userData: Gpointer)
+    queryInfoFinish*: proc (stream: ptr GFileOutputStream; result: ptr GAsyncResult;
+                          error: ptr ptr GError): ptr GFileInfo
+    getEtag*: proc (stream: ptr GFileOutputStream): cstring
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GFileIface* = object
+    gIface*: GTypeInterface
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GFileMonitorPrivate* = object
+  
+
+
+type
+  GFileMonitor* = object
+    parentInstance*: GObject
+    priv*: ptr GFileMonitorPrivate
+
+  GFileMonitorClass* = object
+    parentClass*: GObjectClass
+    changed*: proc (monitor: ptr GFileMonitor; file: ptr GFile; otherFile: ptr GFile;
+                  eventType: GFileMonitorEvent)
+    cancel*: proc (monitor: ptr GFileMonitor): Gboolean
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GFileIface* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GFileIOStreamPrivate* = object
+  
+  GFileIOStream* = object
+    parentInstance*: GIOStream
+    priv*: ptr GFileIOStreamPrivate
+
+  GFileIOStreamClass* = object
+    parentClass*: GIOStreamClass
+    tell*: proc (stream: ptr GFileIOStream): Goffset
+    canSeek*: proc (stream: ptr GFileIOStream): Gboolean
+    seek*: proc (stream: ptr GFileIOStream; offset: Goffset; `type`: GSeekType;
+               cancellable: ptr GCancellable; error: ptr ptr GError): Gboolean
+    canTruncate*: proc (stream: ptr GFileIOStream): Gboolean
+    truncateFn*: proc (stream: ptr GFileIOStream; size: Goffset;
+                     cancellable: ptr GCancellable; error: ptr ptr GError): Gboolean
+    queryInfo*: proc (stream: ptr GFileIOStream; attributes: cstring;
+                    cancellable: ptr GCancellable; error: ptr ptr GError): ptr GFileInfo
+    queryInfoAsync*: proc (stream: ptr GFileIOStream; attributes: cstring;
+                         ioPriority: cint; cancellable: ptr GCancellable;
+                         callback: GAsyncReadyCallback; userData: Gpointer)
+    queryInfoFinish*: proc (stream: ptr GFileIOStream; result: ptr GAsyncResult;
+                          error: ptr ptr GError): ptr GFileInfo
+    getEtag*: proc (stream: ptr GFileIOStream): cstring
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GFileIface* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GProxyAddressPrivate* = object
+  
+  GProxyAddress* = object
+    parentInstance*: GInetSocketAddress
+    priv*: ptr GProxyAddressPrivate
+
+  GProxyAddressClass* = object
+    parentClass*: GInetSocketAddressClass
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GProxyInterface* = object
+    gIface*: GTypeInterface
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GSocketConnectionPrivate* = object
+  
+  GSocketConnectionClass* = object
+    parentClass*: GIOStreamClass
+    gReserved1*: proc ()
+    gReserved2*: proc ()
+    gReserved3*: proc ()
+    gReserved4*: proc ()
+    gReserved5*: proc ()
+    gReserved6*: proc ()
+
+  GSocketConnection* = object
+    parentInstance*: GIOStream
+    priv*: ptr GSocketConnectionPrivate
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GSocketClientPrivate* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$i$j%s" final.nim
+
+i='type
+  GMenuAttributeIter* = object
+    parentInstance*: GObject
+    priv*: ptr GMenuAttributeIterPrivate
+
+  GMenuAttributeIterClass* = object
+    parentClass*: GObjectClass
+    getNext*: proc (iter: ptr GMenuAttributeIter; outName: cstringArray;
+                  value: ptr ptr GVariant): Gboolean
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='type
+  GMenuModelPrivate* = object
+  
+  GMenuAttributeIterPrivate* = object
+  
+  GMenuLinkIterPrivate* = object
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+i='type
+  GMenuLinkIter* = object
+    parentInstance*: GObject
+    priv*: ptr GMenuLinkIterPrivate
+
+  GMenuLinkIterClass* = object
+    parentClass*: GObjectClass
+    getNext*: proc (iter: ptr GMenuLinkIter; outLink: cstringArray;
+                  value: ptr ptr GMenuModel): Gboolean
+'
+perl -0777 -p -i -e "s%\Q$i\E%%s" final.nim
+j='  GMenuModel* = object
+    parentInstance*: GObject
+    priv*: ptr GMenuModelPrivate
+'
+perl -0777 -p -i -e "s%\Q$j\E%$j$i%s" final.nim
+
+#exit
+i='type
+  GVfsFileLookupFunc* = proc (vfs: ptr GVfs; identifier: cstring; userData: Gpointer): ptr GFile
+
+
+const
+  G_VFS_EXTENSION_POINT_NAME* = "gio-vfs"
+
+
+type
+  GVfs* = object
+    parentInstance*: GObject
+'
+j='const
+  G_VFS_EXTENSION_POINT_NAME* = "gio-vfs"
+
+type
+  GVfsFileLookupFunc* = proc (vfs: ptr GVfs; identifier: cstring; userData: Gpointer): ptr GFile
+
+  GVfs* = object
+    parentInstance*: GObject
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+for i in glib_Sysdef_Af_Unix glib_Sysdef_Af_Inet glib_Sysdef_Af_Inet6 glib_Sysdef_Msg_Oob glib_Sysdef_Msg_Peek glib_Sysdef_Msg_Dontroute ; do
+  sed -i "s/\b${i}\b/\U&/g" final.nim
+done
+
+perl -0777 -p -i -e "s~([=:] proc \(.*?\)(?:: (?:ptr ){0,2}\w+)?)~\1 {.cdecl.}~sg" final.nim
+
+# we use our own defined pragma
+sed -i "s/\bdynlib: lib\b/libgio/g" final.nim
+
+sed -i '/when not defined(gio_Gio_H_Inside) and not defined(gio_Compilation):/d'  final.nim
+
+i='const
+  headerfilename* = '
+perl -0777 -p -i -e "s~\Q$i\E~  ### ~sg" final.nim
+
+i=' {.deadCodeElim: on.}'
+j='{.deadCodeElim: on.}
+
+when defined(windows):
+  const LIB_GIO = "libgio-2.0-0.dll"
+elif defined(macosx):
+  const LIB_GIO = "libgio-2.0(|-0).dylib"
+else:
+  const LIB_GIO = "libgio-2.0.so(|.0)"
+
+{.pragma: libgio, cdecl, dynlib: LIB_GIO.}
+
+IMPORTLIST
+
+# from glibconfig.h.win32
+const
+  GLIB_SYSDEF_AF_UNIX = 1
+  GLIB_SYSDEF_AF_INET = 2
+  GLIB_SYSDEF_AF_INET6 = 23
+  GLIB_SYSDEF_MSG_OOB = 1
+  GLIB_SYSDEF_MSG_PEEK = 2
+  GLIB_SYSDEF_MSG_DONTROUTE = 4
+'
+perl -0777 -p -i -e "s~\Q$i\E~$j~s" final.nim
+
+# fix c2nim --nep1 mess. We need this before glib_fix_T.rb call!
+sed -i 's/[(][(]\(`\{0,1\}\w\+`\{0,1\}\)[)]/(\1/g' final.nim
+sed -i 's/, [(]\(`\{0,1\}\w\+`\{0,1\}\)[)]/, \1/g' final.nim
+perl -0777 -p -i -e 's/(  \(.*,)\n/\1/g' final.nim
+sed -i 's/\(, \) \+/\1/g' final.nim
+sed -i 's/\(g_Type_Check_Instance_Cast\)(\(`\?\w\+`\?, \)\(g_Type_\w\+, \)\(\w\+\))/\1(\2\3\u\4)/g' final.nim
+sed -i 's/\(g_Type_Instance_Get_Interface\)(\(`\?\w\+`\?, \)\(g_Type_\w\+, \)\(\w\+\))/\1(\2\3\u\4)/g' final.nim
+sed -i 's/\(g_Type_Check_Class_Cast\)(\(`\?\w\+`\?, \)\(g_Type_\w\+, \)\(\w\+\))/\1(\2\3\u\4)/g' final.nim
+sed -i 's/\(g_Type_Instance_Get_Class\)(\(`\?\w\+`\?, \)\(g_Type_\w\+, \)\(\w\+\))/\1(\2\3\u\4)/g' final.nim
+sed -i 's/\(g_Type_Check_Instance_Type\)(\(`\?\w\+`\?, \)\(g_Type_\w\+\))/\1(\2\3)/g' final.nim
+sed -i 's/\(g_Type_Check_Class_Type\)(\(`\?\w\+`\?, \)\(g_Type_\w\+\))/\1(\2\3)/g' final.nim
+sed -i 's/\(g_Type_Check_Value_Type\)(\(`\?\w\+`\?, \)\(g_Type_\w\+\))/\1(\2\3)/g' final.nim
+sed -i 's/\(g_Type_Check_Instance_Fundamental_Type\)(\(`\?\w\+`\?, \)\(g_Type_\w\+\))/\1(\2\3)/g' final.nim
+sed -i 's/\(gTypeIsA\)(\(`\?\w\+`\?, \)\(g_Type_\w\+\))/\1(\2\3)/g' final.nim
+
+sed -i 's/\bg\([A-Z]\w\+GetType()\)/\l\1/g' final.nim
+
+ruby ../glib_fix_T.rb final.nim gio thereisnoremfix
+
+sed -i 's/\*: var /*: ptr /g' final.nim
+sed -i 's/): var /): ptr /g' final.nim
+
+ruby ../glib_fix_proc.rb final.nim
+
+perl -0777 -p -i -e "s/(\n\s*)(proc )(\w+)(\*\([^}]*VaList[^}]*\)[^}]*{[^}]*})/\ndiscard \"\"\"\$&\n\"\"\"/sg" final.nim
+
+sed -i 's/\bproc ref\b/proc `ref`/g' final.nim
+sed -i 's/\bproc bind\b/proc `bind`/g' final.nim
+
+ruby ../glib_fix_enum_prefix.rb final.nim
+
+i='type
+  GIOStreamSpliceFlags* {.size: sizeof(cint), pure.} = enum
+    NONE = 0, CLOSE_STREAM1 = (1 shl
+        0), G_IO_STREAM_SPLICE_CLOSE_STREAM2 = (1 shl 1), 
+    G_IO_STREAM_SPLICE_WAIT_FOR_BOTH = (1 shl 2)
+'
+j='type
+  GIOStreamSpliceFlags* {.size: sizeof(cint), pure.} = enum
+    NONE = 0, CLOSE_STREAM1 = (1 shl
+        0), CLOSE_STREAM2 = (1 shl 1), 
+    WAIT_FOR_BOTH = (1 shl 2)
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+i='type
+  GFileCopyFlags* {.size: sizeof(cint), pure.} = enum
+    NONE = 0, OVERWRITE = (1 shl 0), 
+    BACKUP = (1 shl 1), NOFOLLOW_SYMLINKS = (1 shl
+        2), G_FILE_COPY_ALL_METADATA = (1 shl 3), 
+    G_FILE_COPY_NO_FALLBACK_FOR_MOVE = (1 shl 4), 
+    G_FILE_COPY_TARGET_DEFAULT_PERMS = (1 shl 5)
+'
+j='type
+  GFileCopyFlags* {.size: sizeof(cint), pure.} = enum
+    NONE = 0, OVERWRITE = (1 shl 0), 
+    BACKUP = (1 shl 1), NOFOLLOW_SYMLINKS = (1 shl
+        2), ALL_METADATA = (1 shl 3), 
+    NO_FALLBACK_FOR_MOVE = (1 shl 4), 
+    TARGET_DEFAULT_PERMS = (1 shl 5)
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+i='type
+  GApplicationFlags* {.size: sizeof(cint), pure.} = enum
+    NONE, G_APPLICATION_IS_SERVICE = (1 shl 0), 
+    G_APPLICATION_IS_LAUNCHER = (1 shl 1), 
+    G_APPLICATION_HANDLES_OPEN = (1 shl 2), 
+    G_APPLICATION_HANDLES_COMMAND_LINE = (1 shl 3), 
+    G_APPLICATION_SEND_ENVIRONMENT = (1 shl 4), 
+    G_APPLICATION_NON_UNIQUE = (1 shl 5)
+'
+j='type
+  GApplicationFlags* {.size: sizeof(cint), pure.} = enum
+    NONE, IS_SERVICE = (1 shl 0), 
+    IS_LAUNCHER = (1 shl 1), 
+    HANDLES_OPEN = (1 shl 2), 
+    HANDLES_COMMAND_LINE = (1 shl 3), 
+    SEND_ENVIRONMENT = (1 shl 4), 
+    NON_UNIQUE = (1 shl 5)
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+i='    PROXY_AUTH_FAILED, PROXY_NEED_AUTH, 
+    PROXY_NOT_ALLOWED, BROKEN_PIPE, 
+    CONNECTION_CLOSED = BROKEN_PIPE, 
+    NOT_CONNECTED
+'
+j='    PROXY_AUTH_FAILED, PROXY_NEED_AUTH, 
+    PROXY_NOT_ALLOWED, BROKEN_PIPE, 
+    NOT_CONNECTED
+const
+ CONNECTION_CLOSED = GIOErrorEnum.BROKEN_PIPE
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+sed -i -f ../glib_sedlist final.nim
+sed -i -f ../gobject_sedlist final.nim
+
+ruby ../fix_object_of.rb final.nim
+
+i='from gobject import GObject, GType, GTypeInterface, GTypeInterfaceObj, GObjectClass, GCallback, GObjectObj, GObjectClassObj, GValue, GValueObj, GClosure,
+  gTypeCheckInstanceCast, gTypeCheckInstanceType, gTypeInstanceGetInterface, gTypeCheckClassCast, gTypeCheckClassType, gTypeInstanceGetClass, isA
+
+from glib import Gpointer, Gboolean, Goffset, Gsize, Gssize, Gconstpointer, GList, GBytes,
+  GDestroyNotify, GVariantType, GVariant, GError, GOptionGroup,
+  GIOCondition, GOptionFlags, GOptionArg, GQuark, GSeekType, GSourceFunc, GCompareDataFunc, GSpawnChildSetupFunc
+
+when defined(unix):
+  from posix import Pid, Uid
+
+'
+perl -0777 -p -i -e "s%IMPORTLIST%$i%s" final.nim
+
+sed -i 's/  GInputStreamObj\*{\.final\.} = object of gobject\.GObjectObj/  GInputStreamObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GInputStreamClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GInputStreamClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GFilterInputStreamObj\*{\.final\.} = object of GInputStreamObj/  GFilterInputStreamObj* = object of GInputStreamObj/' final.nim
+sed -i 's/  GOutputStreamClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GOutputStreamClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GFilterInputStreamClassObj\*{\.final\.} = object of GInputStreamClassObj/  GFilterInputStreamClassObj* = object of GInputStreamClassObj/' final.nim
+sed -i 's/  GOutputStreamObj\*{\.final\.} = object of gobject\.GObjectObj/  GOutputStreamObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GFilterOutputStreamObj\*{\.final\.} = object of GOutputStreamObj/  GFilterOutputStreamObj* = object of GOutputStreamObj/' final.nim
+sed -i 's/  GFilterOutputStreamClassObj\*{\.final\.} = object of GOutputStreamClassObj/  GFilterOutputStreamClassObj* = object of GOutputStreamClassObj/' final.nim
+sed -i 's/  GBufferedInputStreamObj\*{\.final\.} = object of GFilterInputStreamObj/  GBufferedInputStreamObj* = object of GFilterInputStreamObj/' final.nim
+sed -i 's/  GBufferedInputStreamClassObj\*{\.final\.} = object of GFilterInputStreamClassObj/  GBufferedInputStreamClassObj* = object of GFilterInputStreamClassObj/' final.nim
+sed -i 's/  GIOStreamObj\*{\.final\.} = object of gobject\.GObjectObj/  GIOStreamObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GIOStreamClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GIOStreamClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GSocketAddressObj\*{\.final\.} = object of gobject\.GObjectObj/  GSocketAddressObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GSocketAddressClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GSocketAddressClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GVolumeMonitorObj\*{\.final\.} = object of gobject\.GObjectObj/  GVolumeMonitorObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GVolumeMonitorClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GVolumeMonitorClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GInetSocketAddressClassObj\*{\.final\.} = object of GSocketAddressClassObj/  GInetSocketAddressClassObj* = object of GSocketAddressClassObj/' final.nim
+sed -i 's/  GInetSocketAddressObj\*{\.final\.} = object of GSocketAddressObj/  GInetSocketAddressObj* = object of GSocketAddressObj/' final.nim
+sed -i 's/  GSocketAddressEnumeratorObj\*{\.final\.} = object of gobject\.GObjectObj/  GSocketAddressEnumeratorObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GSocketAddressEnumeratorClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GSocketAddressEnumeratorClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GSocketListenerClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GSocketListenerClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GSocketListenerObj\*{\.final\.} = object of gobject\.GObjectObj/  GSocketListenerObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GSocketConnectionObj\*{\.final\.} = object of GIOStreamObj/  GSocketConnectionObj* = object of GIOStreamObj/' final.nim
+sed -i 's/  GSocketConnectionClassObj\*{\.final\.} = object of GIOStreamClassObj/  GSocketConnectionClassObj* = object of GIOStreamClassObj/' final.nim
+sed -i 's/  GTcpConnectionClassObj\*{\.final\.} = object of GSocketConnectionClassObj/  GTcpConnectionClassObj* = object of GSocketConnectionClassObj/' final.nim
+sed -i 's/  GTcpConnectionObj\*{\.final\.} = object of GSocketConnectionObj/  GTcpConnectionObj* = object of GSocketConnectionObj/' final.nim
+sed -i 's/  GSocketServiceClassObj\*{\.final\.} = object of GSocketListenerClassObj/  GSocketServiceClassObj* = object of GSocketListenerClassObj/' final.nim
+sed -i 's/  GSocketServiceObj\*{\.final\.} = object of GSocketListenerObj/  GSocketServiceObj* = object of GSocketListenerObj/' final.nim
+sed -i 's/  GApplicationObj\*{\.final\.} = object of gobject\.GObjectObj/  GApplicationObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GApplicationClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GApplicationClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GMountOperationObj\*{\.final\.} = object of gobject\.GObjectObj/  GMountOperationObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GMountOperationClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GMountOperationClassObj* = object of gobject.GObjectClassObj/' final.nim
+sed -i 's/  GEmblemedIconObj\*{\.final\.} = object of gobject\.GObjectObj/  GEmblemedIconObj* = object of gobject.GObjectObj/' final.nim
+sed -i 's/  GEmblemedIconClassObj\*{\.final\.} = object of gobject\.GObjectClassObj/  GEmblemedIconClassObj* = object of gobject.GObjectClassObj/' final.nim
+
+# do not export priv and reserved
+sed -i "s/\( priv[0-9]\?[0-9]\?[0-9]\?\)\*: /\1: /g" final.nim
+sed -i "s/\(reserved[0-9]\?[0-9]\?[0-9]\?\)\*: /\1: /g" final.nim
+
+sed -i 's/\(dummy[0-9]\{0,2\}\)\*/\1/g' final.nim
+sed -i 's/\(reserved[0-9]\{0,2\}\)\*/\1/g' final.nim
+
+sed -i 's/[(][(]\(`\{0,1\}\w\+`\{0,1\}\)[)]/(\1/g' final.nim
+sed -i 's/, [(]\(`\{0,1\}\w\+`\{0,1\}\)[)]/, \1/g' final.nim
+
+sed -i 's/\([,=(<>] \{0,1\}\)[(]\(`\{0,1\}\w\+`\{0,1\}\)[)]/\1\2/g' final.nim
+sed -i '/^ \? \?#type $/d' final.nim
+sed -i 's/\bgobject\.\(GObjectObj\)\b/\1/g' final.nim
+sed -i 's/\bgobject\.\(GObject\)\b/\1/g' final.nim
+sed -i 's/\bgobject\.\(GObjectClassObj\)\b/\1/g' final.nim
+
+sed -i 's/ ptr var / var ptr /g' final.nim
+
+# the gobject lower case templates
+sed -i 's/\bg_Type_Check_Instance_Cast\b/gTypeCheckInstanceCast/g' final.nim
+sed -i 's/\bg_Type_Check_Instance_Type\b/gTypeCheckInstanceType/g' final.nim
+sed -i 's/\bg_Type_Instance_Get_Interface\b/gTypeInstanceGetInterface/g' final.nim
+sed -i 's/\bg_Type_Check_Class_Cast\b/gTypeCheckClassCast/g' final.nim
+sed -i 's/\bg_Type_Check_Class_Type\b/gTypeCheckClassType/g' final.nim
+sed -i 's/\bg_Type_Instance_Get_Class\b/gTypeInstanceGetClass/g' final.nim
+sed -i 's/\bgTypeIsA\b/isA/g' final.nim
+
+# yes, call multiple times!
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gu?int\d?\d?)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gu?int\d?\d?)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gu?int\d?\d?)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gu?int\d?\d?)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gdouble)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gdouble)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gfloat)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gfloat)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( cint)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gboolean)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gsize)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gsize)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Guchar)/\1\2\3\4var\6/sg' final.nim
+perl -0777 -p -i -e 's/(proc )(`?\w+=?`?\*)?([(])([^)]* )(ptr)( Gpointer)/\1\2\3\4var\6/sg' final.nim
+
+sed -i 's/: ptr var /: var ptr /g' final.nim
+sed -i 's/\(0x\)0*\([0123456789ABCDEF]\)/\1\2/g' final.nim
+
+# some procs with get_ prefix do not return something but need var objects instead of pointers:
+i='proc getModificationTime*(info: GFileInfo; result: glib.GTimeVal) {.
+    importc: "g_file_info_get_modification_time", libgio.}
+'
+j='proc getModificationTime*(info: GFileInfo; result: var glib.GTimeValObj) {.
+    importc: "g_file_info_get_modification_time", libgio.}
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+sed -i 's/ $//g' final.nim
+sed -i '/### "gio/d' final.nim
+
+sed -i 's/\bglib\.\(GError\)\b/\1/g' final.nim
+sed -i 's/\bglib\.\(GVariantType\)\b/\1/g' final.nim
+sed -i 's/\bglib\.\(GVariant\)\b/\1/g' final.nim
+sed -i 's/\bglib\.\(GList\)\b/\1/g' final.nim
+sed -i 's/\bgobject\.\(GTypeInterfaceObj\)\b/\1/g' final.nim
+sed -i 's/\bgobject\.\(GValue\)\b/\1/g' final.nim
+sed -i 's/\bgobject\.\(GClosure\)\b/\1/g' final.nim
+
+sed -i 's/when defined(G_OS_UNIX):/when defined(unix):/g' final.nim
+sed -i 's/when defined(G_OS_WIN32):/when defined(windows):/g' final.nim
+
+sed -i 's/\bPidT\b/Pid/g' final.nim
+sed -i 's/\bUidT\b/Uid/g' final.nim
+
+sed -i   's/\* = g\([A-Z]\)/* = \L\1/g' final.nim
+
+ruby ../fix_template.rb final.nim ""
+
+for i in uint8 uint16 uint32 uint64 int8 int16 int32 int64 ; do
+  sed -i "s/\bG${i}\b/${i}/g" final.nim
+done
+
+sed -i "s/ $//g" final.nim
+
+sed -i "s/\bGint\b/cint/g" final.nim
+sed -i "s/\bGuint\b/cuint/g" final.nim
+sed -i "s/\bGfloat\b/cfloat/g" final.nim
+sed -i "s/\bGdouble\b/cdouble/g" final.nim
+sed -i "s/\bGshort\b/cshort/g" final.nim
+sed -i "s/\bGushort\b/cushort/g" final.nim
+sed -i "s/\bGlong\b/clong/g" final.nim
+sed -i "s/\bGulong\b/culong/g" final.nim
+sed -i "s/\bGuchar\b/cuchar/g" final.nim
+
+ruby ../fix_reserved.rb final.nim
+
+# generate procs without get_ and set_ prefix
+perl -0777 -p -i -e "s/(\n\s*)(proc set)([A-Z]\w+)(\*\([^}]*\) \{[^}]*})/\$&\1proc \`\l\3=\`\4/sg" final.nim
+perl -0777 -p -i -e "s/(\n\s*)(proc get)([A-Z]\w+)(\*\([^}]*\): \w[^}]*})/\$&\1proc \l\3\4/sg" final.nim
+
+# these proc names generate trouble
+for i in int uint int64 uint64 int32 uint32 string enum boolean double flags ; do
+  #perl -0777 -p -i -e "s/(\n\s*)(proc ${i})(\*\([^}]*\): \w[^}]*})//sg" final.nim
+  perl -0777 -p -i -e "s/(\n\s*)(proc \`?${i}=?\`?)(\*\([^}]*\): \w[^}]*})//sg" final.nim
+  perl -0777 -p -i -e "s/(\n\s*)(proc \`?${i}=?\`?)(\*\([^}]*\) \{[^}]*})//sg" final.nim
+done
+
+sed -i 's/\bproc converter\b/proc `converter`/g' final.nim
+sed -i 's/\bproc enum\b/proc `enum`/g' final.nim
+sed -i 's/\bproc object\b/proc `object`/g' final.nim
+
+i='type
+  GApplicationFlags* {.size: sizeof(cint), pure.} = enum
+    NONE, G_APPLICATION_IS_SERVICE = (1 shl 0),
+    G_APPLICATION_IS_LAUNCHER = (1 shl 1), G_APPLICATION_HANDLES_OPEN = (1 shl 2),
+    G_APPLICATION_HANDLES_COMMAND_LINE = (1 shl 3),
+    G_APPLICATION_SEND_ENVIRONMENT = (1 shl 4), G_APPLICATION_NON_UNIQUE = (1 shl 5),
+    G_APPLICATION_CAN_OVERRIDE_APP_ID = (1 shl 6)
+'
+j='type
+  GApplicationFlags* {.size: sizeof(cint), pure.} = enum
+    NONE, IS_SERVICE = (1 shl 0),
+    IS_LAUNCHER = (1 shl 1), HANDLES_OPEN = (1 shl 2),
+    HANDLES_COMMAND_LINE = (1 shl 3),
+    SEND_ENVIRONMENT = (1 shl 4), NON_UNIQUE = (1 shl 5),
+    CAN_OVERRIDE_APP_ID = (1 shl 6)
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+sed -i 's/= (1 shl \([0-9]\)),/= 1 shl \1,/g' final.nim
+sed -i 's/= (1 shl \([0-9]\))$/= 1 shl \1/g' final.nim
+
+sed -i 's/dbusObjectManagerClientNew/dbusObjectManagerClientOOO/g' final.nim
+sed -i 's/proc dbusProxyNew/proc dbusProxyOOO/g' final.nim
+sed -i 's/proc dbusConnectionNew/proc dbusConnectionOOO/g' final.nim
+sed -i 's/\(proc \w\+New\)[A-Z]\w\+/\1/g' final.nim
+sed -i 's/proc \(\w\+\)New\*/proc new\u\1*/g' final.nim
+sed -i 's/proc dbusConnectionOOO/proc dbusConnectionNew/g' final.nim
+sed -i 's/proc dbusProxyOOO/proc dbusProxyNew/g' final.nim
+sed -i 's/dbusObjectManagerClientOOO/dbusObjectManagerClientNew/g' final.nim
+i='proc newInetAddress*(family: GSocketFamily): GInetAddress {.
+    importc: "g_inet_address_new_loopback", libgio.}
+proc newInetAddress*(family: GSocketFamily): GInetAddress {.
+    importc: "g_inet_address_new_any", libgio.}
+'
+j='proc newInetAddressLoopback*(family: GSocketFamily): GInetAddress {.
+    importc: "g_inet_address_new_loopback", libgio.}
+proc newInetAddressAny*(family: GSocketFamily): GInetAddress {.
+    importc: "g_inet_address_new_any", libgio.}
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+i='proc newSimpleAsyncResult*(sourceObject: GObject;
+                                callback: GAsyncReadyCallback; userData: Gpointer;
+                                domain: GQuark; code: cint; format: cstring): GSimpleAsyncResult {.
+    varargs, importc: "g_simple_async_result_new_error", libgio.}
+proc newSimpleAsyncResult*(sourceObject: GObject;
+                                    callback: GAsyncReadyCallback;
+                                    userData: Gpointer; error: GError): GSimpleAsyncResult {.
+    importc: "g_simple_async_result_new_from_error", libgio.}
+proc newSimpleAsyncResult*(sourceObject: GObject;
+                                    callback: GAsyncReadyCallback;
+                                    userData: Gpointer; error: GError): GSimpleAsyncResult {.
+    importc: "g_simple_async_result_new_take_error", libgio.}
+'
+j='proc newSimpleAsyncResultError*(sourceObject: GObject;
+                                callback: GAsyncReadyCallback; userData: Gpointer;
+                                domain: GQuark; code: cint; format: cstring): GSimpleAsyncResult {.
+    varargs, importc: "g_simple_async_result_new_error", libgio.}
+proc newSimpleAsyncResultFromError*(sourceObject: GObject;
+                                    callback: GAsyncReadyCallback;
+                                    userData: Gpointer; error: GError): GSimpleAsyncResult {.
+    importc: "g_simple_async_result_new_from_error", libgio.}
+proc newSimpleAsyncResultTakeError*(sourceObject: GObject;
+                                    callback: GAsyncReadyCallback;
+                                    userData: Gpointer; error: GError): GSimpleAsyncResult {.
+    importc: "g_simple_async_result_new_take_error", libgio.}
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+i='proc newThemedIcon*(iconname: cstring): GIcon {.
+    importc: "g_themed_icon_new_with_default_fallbacks", libgio.}
+'
+j='proc newThemedIconWithDefaultFallbacks*(iconname: cstring): GIcon {.
+    importc: "g_themed_icon_new_with_default_fallbacks", libgio.}
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+i='proc newFile*(path: cstring): GFile {.importc: "g_file_new_for_path",
+    libgio.}
+proc newFile*(uri: cstring): GFile {.importc: "g_file_new_for_uri",
+    libgio.}
+proc newFile*(arg: cstring): GFile {.
+    importc: "g_file_new_for_commandline_arg", libgio.}
+'
+j='proc newFileForPath*(path: cstring): GFile {.importc: "g_file_new_for_path",
+    libgio.}
+proc newFileForURI*(uri: cstring): GFile {.importc: "g_file_new_for_uri",
+    libgio.}
+proc newFileForCommandlineArg*(arg: cstring): GFile {.
+    importc: "g_file_new_for_commandline_arg", libgio.}
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+i='  GFile* =  ptr GFileObj
+  GFilePtr* = ptr GFileObj
+  GFileObj* = object
+'
+j='  GFile* =  ptr GFileObj
+  GFilePtr* = ptr GFileObj
+  GFileObj* = object
+
+  GFileArray* = ptr array[0 .. 255, GFile]
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+
+i='template gTypeApplication*(): untyped =
+  (applicationGetType())
+'
+j='template gTypeApplication*(): untyped =
+  gio.applicationGetType()
+'
+perl -0777 -p -i -e "s%\Q$i\E%$j%s" final.nim
+sed -i 's/ files: var GFile;/ files: GFileArray;/g' final.nim
+sed -i 's/proc (value: GValue; variant: GVariant;/proc (value: var GValueObj; variant: GVariant;/g' final.nim
+sed -i 's/ contents: cstringArray;/ contents: var cstring;/g' final.nim
+
+sed -i 's/\(: ptr \)\w\+PrivateObj/: pointer/g' final.nim
+sed -i '/  \w\+PrivateObj = object$/d' final.nim
+
+perl -0777 -p -i -e "s%\ntype\n{2,}%\ntype\n%sg" final.nim
+perl -0777 -p -i -e "s%\n(type\n){2,}%\ntype\n%sg" final.nim
+perl -0777 -p -i -e "s%\ntype\ntemplate%\ntemplate%sg" final.nim
+perl -0777 -p -i -e "s%\ntype\nproc%\nproc%sg" final.nim
+sed -i '/#type$/d' final.nim
+
+cat -s final.nim > gio.nim
+
+rm final.h list.txt final.nim
+rm -r gio
+
+exit
+

@@ -1,0 +1,227 @@
+s/\bptr ptr GtkSourceStyleSchemeChooserButtonClass\b/gtksourcevaaaaarStyleSchemeChooserButtonClass/g
+s/\bptr GtkSourceStyleSchemeChooserButtonClass\b/gtksourceptttttrStyleSchemeChooserButtonClass/g
+s/\bGtkSourceStyleSchemeChooserButtonClass\b/gtksource.StyleSchemeChooserButtonClassObj/g
+s/\bptr ptr GtkSourceStyleSchemeChooserWidgetClass\b/gtksourcevaaaaarStyleSchemeChooserWidgetClass/g
+s/\bptr GtkSourceStyleSchemeChooserWidgetClass\b/gtksourceptttttrStyleSchemeChooserWidgetClass/g
+s/\bGtkSourceStyleSchemeChooserWidgetClass\b/gtksource.StyleSchemeChooserWidgetClassObj/g
+s/\bptr ptr GtkSourceCompletionWordsProposalClass\b/gtksourcevaaaaarCompletionWordsProposalClass/g
+s/\bptr GtkSourceCompletionWordsProposalClass\b/gtksourceptttttrCompletionWordsProposalClass/g
+s/\bGtkSourceCompletionWordsProposalClass\b/gtksource.CompletionWordsProposalClassObj/g
+s/\bptr ptr GtkSourceCompletionWordsLibraryClass\b/gtksourcevaaaaarCompletionWordsLibraryClass/g
+s/\bptr GtkSourceCompletionWordsLibraryClass\b/gtksourceptttttrCompletionWordsLibraryClass/g
+s/\bGtkSourceCompletionWordsLibraryClass\b/gtksource.CompletionWordsLibraryClassObj/g
+s/\bptr ptr GtkSourceStyleSchemeChooserInterface\b/gtksourcevaaaaarStyleSchemeChooserInterface/g
+s/\bptr GtkSourceStyleSchemeChooserInterface\b/gtksourceptttttrStyleSchemeChooserInterface/g
+s/\bGtkSourceStyleSchemeChooserInterface\b/gtksource.StyleSchemeChooserInterfaceObj/g
+s/\bptr ptr GtkSourceCompletionWordsBufferClass\b/gtksourcevaaaaarCompletionWordsBufferClass/g
+s/\bptr GtkSourceCompletionWordsBufferClass\b/gtksourceptttttrCompletionWordsBufferClass/g
+s/\bGtkSourceCompletionWordsBufferClass\b/gtksource.CompletionWordsBufferClassObj/g
+s/\bptr ptr GtkSourceGutterRendererPixbufClass\b/gtksourcevaaaaarGutterRendererPixbufClass/g
+s/\bptr GtkSourceGutterRendererPixbufClass\b/gtksourceptttttrGutterRendererPixbufClass/g
+s/\bGtkSourceGutterRendererPixbufClass\b/gtksource.GutterRendererPixbufClassObj/g
+s/\bptr ptr GtkSourceStyleSchemeChooserWidget\b/gtksourcevaaaaarStyleSchemeChooserWidget/g
+s/\bptr GtkSourceStyleSchemeChooserWidget\b/gtksourceptttttrStyleSchemeChooserWidget/g
+s/\bGtkSourceStyleSchemeChooserWidget\b/gtksource.StyleSchemeChooserWidgetObj/g
+s/\bptr ptr GtkSourceStyleSchemeChooserButton\b/gtksourcevaaaaarStyleSchemeChooserButton/g
+s/\bptr GtkSourceStyleSchemeChooserButton\b/gtksourceptttttrStyleSchemeChooserButton/g
+s/\bGtkSourceStyleSchemeChooserButton\b/gtksource.StyleSchemeChooserButtonObj/g
+s/\bptr ptr GtkSourceStyleSchemeManagerClass\b/gtksourcevaaaaarStyleSchemeManagerClass/g
+s/\bptr GtkSourceStyleSchemeManagerClass\b/gtksourceptttttrStyleSchemeManagerClass/g
+s/\bGtkSourceStyleSchemeManagerClass\b/gtksource.StyleSchemeManagerClassObj/g
+s/\bptr ptr GtkSourceCompletionProviderIface\b/gtksourcevaaaaarCompletionProviderIface/g
+s/\bptr GtkSourceCompletionProviderIface\b/gtksourceptttttrCompletionProviderIface/g
+s/\bGtkSourceCompletionProviderIface\b/gtksource.CompletionProviderIfaceObj/g
+s/\bptr ptr GtkSourceCompletionProposalIface\b/gtksourcevaaaaarCompletionProposalIface/g
+s/\bptr GtkSourceCompletionProposalIface\b/gtksourceptttttrCompletionProposalIface/g
+s/\bGtkSourceCompletionProposalIface\b/gtksource.CompletionProposalIfaceObj/g
+s/\bptr ptr GtkSourceCompletionWordsProposal\b/gtksourcevaaaaarCompletionWordsProposal/g
+s/\bptr GtkSourceCompletionWordsProposal\b/gtksourceptttttrCompletionWordsProposal/g
+s/\bGtkSourceCompletionWordsProposal\b/gtksource.CompletionWordsProposalObj/g
+s/\bptr ptr GtkSourceGutterRendererTextClass\b/gtksourcevaaaaarGutterRendererTextClass/g
+s/\bptr GtkSourceGutterRendererTextClass\b/gtksourceptttttrGutterRendererTextClass/g
+s/\bGtkSourceGutterRendererTextClass\b/gtksource.GutterRendererTextClassObj/g
+s/\bptr ptr GtkSourceCompletionContextClass\b/gtksourcevaaaaarCompletionContextClass/g
+s/\bptr GtkSourceCompletionContextClass\b/gtksourceptttttrCompletionContextClass/g
+s/\bGtkSourceCompletionContextClass\b/gtksource.CompletionContextClassObj/g
+s/\bptr ptr GtkSourceCompletionWordsLibrary\b/gtksourcevaaaaarCompletionWordsLibrary/g
+s/\bptr GtkSourceCompletionWordsLibrary\b/gtksourceptttttrCompletionWordsLibrary/g
+s/\bGtkSourceCompletionWordsLibrary\b/gtksource.CompletionWordsLibraryObj/g
+s/\bptr ptr GtkSourceCompletionWordsBuffer\b/gtksourcevaaaaarCompletionWordsBuffer/g
+s/\bptr GtkSourceCompletionWordsBuffer\b/gtksourceptttttrCompletionWordsBuffer/g
+s/\bGtkSourceCompletionWordsBuffer\b/gtksource.CompletionWordsBufferObj/g
+s/\bptr ptr GtkSourceGutterRendererPixbuf\b/gtksourcevaaaaarGutterRendererPixbuf/g
+s/\bptr GtkSourceGutterRendererPixbuf\b/gtksourceptttttrGutterRendererPixbuf/g
+s/\bGtkSourceGutterRendererPixbuf\b/gtksource.GutterRendererPixbufObj/g
+s/\bptr ptr GtkSourceLanguageManagerClass\b/gtksourcevaaaaarLanguageManagerClass/g
+s/\bptr GtkSourceLanguageManagerClass\b/gtksourceptttttrLanguageManagerClass/g
+s/\bGtkSourceLanguageManagerClass\b/gtksource.LanguageManagerClassObj/g
+s/\bptr ptr GtkSourcePrintCompositorClass\b/gtksourcevaaaaarPrintCompositorClass/g
+s/\bptr GtkSourcePrintCompositorClass\b/gtksourceptttttrPrintCompositorClass/g
+s/\bGtkSourcePrintCompositorClass\b/gtksource.PrintCompositorClassObj/g
+s/\bptr ptr GtkSourceCompletionWordsClass\b/gtksourcevaaaaarCompletionWordsClass/g
+s/\bptr GtkSourceCompletionWordsClass\b/gtksourceptttttrCompletionWordsClass/g
+s/\bGtkSourceCompletionWordsClass\b/gtksource.CompletionWordsClassObj/g
+s/\bptr ptr GtkSourceCompletionItemClass\b/gtksourcevaaaaarCompletionItemClass/g
+s/\bptr GtkSourceCompletionItemClass\b/gtksourceptttttrCompletionItemClass/g
+s/\bGtkSourceCompletionItemClass\b/gtksource.CompletionItemClassObj/g
+s/\bptr ptr GtkSourceCompletionInfoClass\b/gtksourcevaaaaarCompletionInfoClass/g
+s/\bptr GtkSourceCompletionInfoClass\b/gtksourceptttttrCompletionInfoClass/g
+s/\bGtkSourceCompletionInfoClass\b/gtksource.CompletionInfoClassObj/g
+s/\bptr ptr GtkSourceMarkAttributesClass\b/gtksourcevaaaaarMarkAttributesClass/g
+s/\bptr GtkSourceMarkAttributesClass\b/gtksourceptttttrMarkAttributesClass/g
+s/\bGtkSourceMarkAttributesClass\b/gtksource.MarkAttributesClassObj/g
+s/\bptr ptr GtkSourceSearchSettingsClass\b/gtksourcevaaaaarSearchSettingsClass/g
+s/\bptr GtkSourceSearchSettingsClass\b/gtksourceptttttrSearchSettingsClass/g
+s/\bGtkSourceSearchSettingsClass\b/gtksource.SearchSettingsClassObj/g
+s/\bptr ptr GtkSourceGutterRendererClass\b/gtksourcevaaaaarGutterRendererClass/g
+s/\bptr GtkSourceGutterRendererClass\b/gtksourceptttttrGutterRendererClass/g
+s/\bGtkSourceGutterRendererClass\b/gtksource.GutterRendererClassObj/g
+s/\bptr ptr GtkSourceStyleSchemeManager\b/gtksourcevaaaaarStyleSchemeManager/g
+s/\bptr GtkSourceStyleSchemeManager\b/gtksourceptttttrStyleSchemeManager/g
+s/\bGtkSourceStyleSchemeManager\b/gtksource.StyleSchemeManagerObj/g
+s/\bptr ptr GtkSourceStyleSchemeChooser\b/gtksourcevaaaaarStyleSchemeChooser/g
+s/\bptr GtkSourceStyleSchemeChooser\b/gtksourceptttttrStyleSchemeChooser/g
+s/\bGtkSourceStyleSchemeChooser\b/gtksource.StyleSchemeChooserObj/g
+s/\bptr ptr GtkSourceCompletionProvider\b/gtksourcevaaaaarCompletionProvider/g
+s/\bptr GtkSourceCompletionProvider\b/gtksourceptttttrCompletionProvider/g
+s/\bGtkSourceCompletionProvider\b/gtksource.CompletionProviderObj/g
+s/\bptr ptr GtkSourceGutterRendererText\b/gtksourcevaaaaarGutterRendererText/g
+s/\bptr GtkSourceGutterRendererText\b/gtksourceptttttrGutterRendererText/g
+s/\bGtkSourceGutterRendererText\b/gtksource.GutterRendererTextObj/g
+s/\bptr ptr GtkSourceSearchContextClass\b/gtksourcevaaaaarSearchContextClass/g
+s/\bptr GtkSourceSearchContextClass\b/gtksourceptttttrSearchContextClass/g
+s/\bGtkSourceSearchContextClass\b/gtksource.SearchContextClassObj/g
+s/\bptr ptr GtkSourceCompletionProposal\b/gtksourcevaaaaarCompletionProposal/g
+s/\bptr GtkSourceCompletionProposal\b/gtksourceptttttrCompletionProposal/g
+s/\bGtkSourceCompletionProposal\b/gtksource.CompletionProposalObj/g
+s/\bptr ptr GtkSourceCompletionContext\b/gtksourcevaaaaarCompletionContext/g
+s/\bptr GtkSourceCompletionContext\b/gtksourceptttttrCompletionContext/g
+s/\bGtkSourceCompletionContext\b/gtksource.CompletionContextObj/g
+s/\bptr ptr GtkSourceUndoManagerIface\b/gtksourcevaaaaarUndoManagerIface/g
+s/\bptr GtkSourceUndoManagerIface\b/gtksourceptttttrUndoManagerIface/g
+s/\bGtkSourceUndoManagerIface\b/gtksource.UndoManagerIfaceObj/g
+s/\bptr ptr GtkSourceStyleSchemeClass\b/gtksourcevaaaaarStyleSchemeClass/g
+s/\bptr GtkSourceStyleSchemeClass\b/gtksourceptttttrStyleSchemeClass/g
+s/\bGtkSourceStyleSchemeClass\b/gtksource.StyleSchemeClassObj/g
+s/\bptr ptr GtkSourceSpaceDrawerClass\b/gtksourcevaaaaarSpaceDrawerClass/g
+s/\bptr GtkSourceSpaceDrawerClass\b/gtksourceptttttrSpaceDrawerClass/g
+s/\bGtkSourceSpaceDrawerClass\b/gtksource.SpaceDrawerClassObj/g
+s/\bptr ptr GtkSourceCompletionClass\b/gtksourcevaaaaarCompletionClass/g
+s/\bptr GtkSourceCompletionClass\b/gtksourceptttttrCompletionClass/g
+s/\bGtkSourceCompletionClass\b/gtksource.CompletionClassObj/g
+s/\bptr ptr GtkSourceCompletionWords\b/gtksourcevaaaaarCompletionWords/g
+s/\bptr GtkSourceCompletionWords\b/gtksourceptttttrCompletionWords/g
+s/\bGtkSourceCompletionWords\b/gtksource.CompletionWordsObj/g
+s/\bptr ptr GtkSourcePrintCompositor\b/gtksourcevaaaaarPrintCompositor/g
+s/\bptr GtkSourcePrintCompositor\b/gtksourceptttttrPrintCompositor/g
+s/\bGtkSourcePrintCompositor\b/gtksource.PrintCompositorObj/g
+s/\bptr ptr GtkSourceFileLoaderClass\b/gtksourcevaaaaarFileLoaderClass/g
+s/\bptr GtkSourceFileLoaderClass\b/gtksourceptttttrFileLoaderClass/g
+s/\bGtkSourceFileLoaderClass\b/gtksource.FileLoaderClassObj/g
+s/\bptr ptr GtkSourceLanguageManager\b/gtksourcevaaaaarLanguageManager/g
+s/\bptr GtkSourceLanguageManager\b/gtksourceptttttrLanguageManager/g
+s/\bGtkSourceLanguageManager\b/gtksource.LanguageManagerObj/g
+s/\bptr ptr GtkSourceCompletionItem\b/gtksourcevaaaaarCompletionItem/g
+s/\bptr GtkSourceCompletionItem\b/gtksourceptttttrCompletionItem/g
+s/\bGtkSourceCompletionItem\b/gtksource.CompletionItemObj/g
+s/\bptr ptr GtkSourceMarkAttributes\b/gtksourcevaaaaarMarkAttributes/g
+s/\bptr GtkSourceMarkAttributes\b/gtksourceptttttrMarkAttributes/g
+s/\bGtkSourceMarkAttributes\b/gtksource.MarkAttributesObj/g
+s/\bptr ptr GtkSourceCompletionInfo\b/gtksourcevaaaaarCompletionInfo/g
+s/\bptr GtkSourceCompletionInfo\b/gtksourceptttttrCompletionInfo/g
+s/\bGtkSourceCompletionInfo\b/gtksource.CompletionInfoObj/g
+s/\bptr ptr GtkSourceFileSaverClass\b/gtksourcevaaaaarFileSaverClass/g
+s/\bptr GtkSourceFileSaverClass\b/gtksourceptttttrFileSaverClass/g
+s/\bGtkSourceFileSaverClass\b/gtksource.FileSaverClassObj/g
+s/\bptr ptr GtkSourceSearchSettings\b/gtksourcevaaaaarSearchSettings/g
+s/\bptr GtkSourceSearchSettings\b/gtksourceptttttrSearchSettings/g
+s/\bGtkSourceSearchSettings\b/gtksource.SearchSettingsObj/g
+s/\bptr ptr GtkSourceGutterRenderer\b/gtksourcevaaaaarGutterRenderer/g
+s/\bptr GtkSourceGutterRenderer\b/gtksourceptttttrGutterRenderer/g
+s/\bGtkSourceGutterRenderer\b/gtksource.GutterRendererObj/g
+s/\bptr ptr GtkSourceSearchContext\b/gtksourcevaaaaarSearchContext/g
+s/\bptr GtkSourceSearchContext\b/gtksourceptttttrSearchContext/g
+s/\bGtkSourceSearchContext\b/gtksource.SearchContextObj/g
+s/\bptr ptr GtkSourceLanguageClass\b/gtksourcevaaaaarLanguageClass/g
+s/\bptr GtkSourceLanguageClass\b/gtksourceptttttrLanguageClass/g
+s/\bGtkSourceLanguageClass\b/gtksource.LanguageClassObj/g
+s/\bptr ptr GtkSourceGutterClass\b/gtksourcevaaaaarGutterClass/g
+s/\bptr GtkSourceGutterClass\b/gtksourceptttttrGutterClass/g
+s/\bGtkSourceGutterClass\b/gtksource.GutterClassObj/g
+s/\bptr ptr GtkSourceStyleScheme\b/gtksourcevaaaaarStyleScheme/g
+s/\bptr GtkSourceStyleScheme\b/gtksourceptttttrStyleScheme/g
+s/\bGtkSourceStyleScheme\b/gtksource.StyleSchemeObj/g
+s/\bptr ptr GtkSourceRegionClass\b/gtksourcevaaaaarRegionClass/g
+s/\bptr GtkSourceRegionClass\b/gtksourceptttttrRegionClass/g
+s/\bGtkSourceRegionClass\b/gtksource.RegionClassObj/g
+s/\bptr ptr GtkSourceUndoManager\b/gtksourcevaaaaarUndoManager/g
+s/\bptr GtkSourceUndoManager\b/gtksourceptttttrUndoManager/g
+s/\bGtkSourceUndoManager\b/gtksource.UndoManagerObj/g
+s/\bptr ptr GtkSourceSpaceDrawer\b/gtksourcevaaaaarSpaceDrawer/g
+s/\bptr GtkSourceSpaceDrawer\b/gtksourceptttttrSpaceDrawer/g
+s/\bGtkSourceSpaceDrawer\b/gtksource.SpaceDrawerObj/g
+s/\bptr ptr GtkSourceBufferClass\b/gtksourcevaaaaarBufferClass/g
+s/\bptr GtkSourceBufferClass\b/gtksourceptttttrBufferClass/g
+s/\bGtkSourceBufferClass\b/gtksource.BufferClassObj/g
+s/\bptr ptr GtkSourceCompletion\b/gtksourcevaaaaarCompletion/g
+s/\bptr GtkSourceCompletion\b/gtksourceptttttrCompletion/g
+s/\bGtkSourceCompletion\b/gtksource.CompletionObj/g
+s/\bptr ptr GtkSourceFileLoader\b/gtksourcevaaaaarFileLoader/g
+s/\bptr GtkSourceFileLoader\b/gtksourceptttttrFileLoader/g
+s/\bGtkSourceFileLoader\b/gtksource.FileLoaderObj/g
+s/\bptr ptr GtkSourceRegionIter\b/gtksourcevaaaaarRegionIter/g
+s/\bptr GtkSourceRegionIter\b/gtksourceptttttrRegionIter/g
+s/\bGtkSourceRegionIter\b/gtksource.RegionIterObj/g
+s/\bptr ptr GtkSourceViewClass\b/gtksourcevaaaaarViewClass/g
+s/\bptr GtkSourceViewClass\b/gtksourceptttttrViewClass/g
+s/\bGtkSourceViewClass\b/gtksource.ViewClassObj/g
+s/\bptr ptr GtkSourceFileClass\b/gtksourcevaaaaarFileClass/g
+s/\bptr GtkSourceFileClass\b/gtksourceptttttrFileClass/g
+s/\bGtkSourceFileClass\b/gtksource.FileClassObj/g
+s/\bptr ptr GtkSourceMarkClass\b/gtksourcevaaaaarMarkClass/g
+s/\bptr GtkSourceMarkClass\b/gtksourceptttttrMarkClass/g
+s/\bGtkSourceMarkClass\b/gtksource.MarkClassObj/g
+s/\bptr ptr GtkSourceFileSaver\b/gtksourcevaaaaarFileSaver/g
+s/\bptr GtkSourceFileSaver\b/gtksourceptttttrFileSaver/g
+s/\bGtkSourceFileSaver\b/gtksource.FileSaverObj/g
+s/\bptr ptr GtkSourceLanguage\b/gtksourcevaaaaarLanguage/g
+s/\bptr GtkSourceLanguage\b/gtksourceptttttrLanguage/g
+s/\bGtkSourceLanguage\b/gtksource.LanguageObj/g
+s/\bptr ptr GtkSourceTagClass\b/gtksourcevaaaaarTagClass/g
+s/\bptr GtkSourceTagClass\b/gtksourceptttttrTagClass/g
+s/\bGtkSourceTagClass\b/gtksource.TagClassObj/g
+s/\bptr ptr GtkSourceMapClass\b/gtksourcevaaaaarMapClass/g
+s/\bptr GtkSourceMapClass\b/gtksourceptttttrMapClass/g
+s/\bGtkSourceMapClass\b/gtksource.MapClassObj/g
+s/\bptr ptr GtkSourceEncoding\b/gtksourcevaaaaarEncoding/g
+s/\bptr GtkSourceEncoding\b/gtksourceptttttrEncoding/g
+s/\bGtkSourceEncoding\b/gtksource.EncodingObj/g
+s/\bptr ptr GtkSourceRegion\b/gtksourcevaaaaarRegion/g
+s/\bptr GtkSourceRegion\b/gtksourceptttttrRegion/g
+s/\bGtkSourceRegion\b/gtksource.RegionObj/g
+s/\bptr ptr GtkSourceBuffer\b/gtksourcevaaaaarBuffer/g
+s/\bptr GtkSourceBuffer\b/gtksourceptttttrBuffer/g
+s/\bGtkSourceBuffer\b/gtksource.BufferObj/g
+s/\bptr ptr GtkSourceGutter\b/gtksourcevaaaaarGutter/g
+s/\bptr GtkSourceGutter\b/gtksourceptttttrGutter/g
+s/\bGtkSourceGutter\b/gtksource.GutterObj/g
+s/\bptr ptr GtkSourceStyle\b/gtksourcevaaaaarStyle/g
+s/\bptr GtkSourceStyle\b/gtksourceptttttrStyle/g
+s/\bGtkSourceStyle\b/gtksource.StyleObj/g
+s/\bptr ptr GtkSourceMark\b/gtksourcevaaaaarMark/g
+s/\bptr GtkSourceMark\b/gtksourceptttttrMark/g
+s/\bGtkSourceMark\b/gtksource.MarkObj/g
+s/\bptr ptr GtkSourceFile\b/gtksourcevaaaaarFile/g
+s/\bptr GtkSourceFile\b/gtksourceptttttrFile/g
+s/\bGtkSourceFile\b/gtksource.FileObj/g
+s/\bptr ptr GtkSourceView\b/gtksourcevaaaaarView/g
+s/\bptr GtkSourceView\b/gtksourceptttttrView/g
+s/\bGtkSourceView\b/gtksource.ViewObj/g
+s/\bptr ptr GtkSourceMap\b/gtksourcevaaaaarMap/g
+s/\bptr GtkSourceMap\b/gtksourceptttttrMap/g
+s/\bGtkSourceMap\b/gtksource.MapObj/g
+s/\bptr ptr GtkSourceTag\b/gtksourcevaaaaarTag/g
+s/\bptr GtkSourceTag\b/gtksourceptttttrTag/g
+s/\bGtkSourceTag\b/gtksource.TagObj/g
+s/gtksourcevaaaaar/var gtksource./g
+s/gtksourceptttttr/gtksource./g

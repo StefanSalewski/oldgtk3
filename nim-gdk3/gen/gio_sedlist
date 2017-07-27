@@ -1,0 +1,821 @@
+s/\bptr ptr GPollableOutputStreamInterface\b/giovaaaaarGPollableOutputStreamInterface/g
+s/\bptr GPollableOutputStreamInterface\b/gioptttttrGPollableOutputStreamInterface/g
+s/\bGPollableOutputStreamInterface\b/gio.GPollableOutputStreamInterfaceObj/g
+s/\bptr ptr GDtlsServerConnectionInterface\b/giovaaaaarGDtlsServerConnectionInterface/g
+s/\bptr GDtlsServerConnectionInterface\b/gioptttttrGDtlsServerConnectionInterface/g
+s/\bGDtlsServerConnectionInterface\b/gio.GDtlsServerConnectionInterfaceObj/g
+s/\bptr ptr GDtlsClientConnectionInterface\b/giovaaaaarGDtlsClientConnectionInterface/g
+s/\bptr GDtlsClientConnectionInterface\b/gioptttttrGDtlsClientConnectionInterface/g
+s/\bGDtlsClientConnectionInterface\b/gio.GDtlsClientConnectionInterfaceObj/g
+s/\bptr ptr GDBusObjectManagerServerClass\b/giovaaaaarGDBusObjectManagerServerClass/g
+s/\bptr GDBusObjectManagerServerClass\b/gioptttttrGDBusObjectManagerServerClass/g
+s/\bGDBusObjectManagerServerClass\b/gio.GDBusObjectManagerServerClassObj/g
+s/\bptr ptr GDBusObjectManagerClientClass\b/giovaaaaarGDBusObjectManagerClientClass/g
+s/\bptr GDBusObjectManagerClientClass\b/gioptttttrGDBusObjectManagerClientClass/g
+s/\bGDBusObjectManagerClientClass\b/gio.GDBusObjectManagerClientClassObj/g
+s/\bptr ptr GTlsServerConnectionInterface\b/giovaaaaarGTlsServerConnectionInterface/g
+s/\bptr GTlsServerConnectionInterface\b/gioptttttrGTlsServerConnectionInterface/g
+s/\bGTlsServerConnectionInterface\b/gio.GTlsServerConnectionInterfaceObj/g
+s/\bptr ptr GPollableInputStreamInterface\b/giovaaaaarGPollableInputStreamInterface/g
+s/\bptr GPollableInputStreamInterface\b/gioptttttrGPollableInputStreamInterface/g
+s/\bGPollableInputStreamInterface\b/gio.GPollableInputStreamInterfaceObj/g
+s/\bptr ptr GSocketAddressEnumeratorClass\b/giovaaaaarGSocketAddressEnumeratorClass/g
+s/\bptr GSocketAddressEnumeratorClass\b/gioptttttrGSocketAddressEnumeratorClass/g
+s/\bGSocketAddressEnumeratorClass\b/gio.GSocketAddressEnumeratorClassObj/g
+s/\bptr ptr GTlsClientConnectionInterface\b/giovaaaaarGTlsClientConnectionInterface/g
+s/\bptr GTlsClientConnectionInterface\b/gioptttttrGTlsClientConnectionInterface/g
+s/\bGTlsClientConnectionInterface\b/gio.GTlsClientConnectionInterfaceObj/g
+s/\bptr ptr GProxyAddressEnumeratorClass\b/giovaaaaarGProxyAddressEnumeratorClass/g
+s/\bptr GProxyAddressEnumeratorClass\b/gioptttttrGProxyAddressEnumeratorClass/g
+s/\bGProxyAddressEnumeratorClass\b/gio.GProxyAddressEnumeratorClassObj/g
+s/\bptr ptr GApplicationCommandLineClass\b/giovaaaaarGApplicationCommandLineClass/g
+s/\bptr GApplicationCommandLineClass\b/gioptttttrGApplicationCommandLineClass/g
+s/\bGApplicationCommandLineClass\b/gio.GApplicationCommandLineClassObj/g
+s/\bptr ptr GRemoteActionGroupInterface\b/giovaaaaarGRemoteActionGroupInterface/g
+s/\bptr GRemoteActionGroupInterface\b/gioptttttrGRemoteActionGroupInterface/g
+s/\bGRemoteActionGroupInterface\b/gio.GRemoteActionGroupInterfaceObj/g
+s/\bptr ptr GDBusInterfaceSkeletonClass\b/giovaaaaarGDBusInterfaceSkeletonClass/g
+s/\bptr GDBusInterfaceSkeletonClass\b/gioptttttrGDBusInterfaceSkeletonClass/g
+s/\bGDBusInterfaceSkeletonClass\b/gio.GDBusInterfaceSkeletonClassObj/g
+s/\bptr ptr GThreadedSocketServiceClass\b/giovaaaaarGThreadedSocketServiceClass/g
+s/\bptr GThreadedSocketServiceClass\b/gioptttttrGThreadedSocketServiceClass/g
+s/\bGThreadedSocketServiceClass\b/gio.GThreadedSocketServiceClassObj/g
+s/\bptr ptr GConverterOutputStreamClass\b/giovaaaaarGConverterOutputStreamClass/g
+s/\bptr GConverterOutputStreamClass\b/gioptttttrGConverterOutputStreamClass/g
+s/\bGConverterOutputStreamClass\b/gio.GConverterOutputStreamClassObj/g
+s/\bptr ptr GConverterInputStreamClass\b/giovaaaaarGConverterInputStreamClass/g
+s/\bptr GConverterInputStreamClass\b/gioptttttrGConverterInputStreamClass/g
+s/\bGConverterInputStreamClass\b/gio.GConverterInputStreamClassObj/g
+s/\bptr ptr GSocketControlMessageClass\b/giovaaaaarGSocketControlMessageClass/g
+s/\bptr GSocketControlMessageClass\b/gioptttttrGSocketControlMessageClass/g
+s/\bGSocketControlMessageClass\b/gio.GSocketControlMessageClassObj/g
+s/\bptr ptr GBufferedOutputStreamClass\b/giovaaaaarGBufferedOutputStreamClass/g
+s/\bptr GBufferedOutputStreamClass\b/gioptttttrGBufferedOutputStreamClass/g
+s/\bGBufferedOutputStreamClass\b/gio.GBufferedOutputStreamClassObj/g
+s/\bptr ptr GTcpWrapperConnectionClass\b/giovaaaaarGTcpWrapperConnectionClass/g
+s/\bptr GTcpWrapperConnectionClass\b/gioptttttrGTcpWrapperConnectionClass/g
+s/\bGTcpWrapperConnectionClass\b/gio.GTcpWrapperConnectionClassObj/g
+s/\bptr ptr GNativeVolumeMonitorClass\b/giovaaaaarGNativeVolumeMonitorClass/g
+s/\bptr GNativeVolumeMonitorClass\b/gioptttttrGNativeVolumeMonitorClass/g
+s/\bGNativeVolumeMonitorClass\b/gio.GNativeVolumeMonitorClassObj/g
+s/\bptr ptr GTlsFileDatabaseInterface\b/giovaaaaarGTlsFileDatabaseInterface/g
+s/\bptr GTlsFileDatabaseInterface\b/gioptttttrGTlsFileDatabaseInterface/g
+s/\bGTlsFileDatabaseInterface\b/gio.GTlsFileDatabaseInterfaceObj/g
+s/\bptr ptr GSimpleProxyResolverClass\b/giovaaaaarGSimpleProxyResolverClass/g
+s/\bptr GSimpleProxyResolverClass\b/gioptttttrGSimpleProxyResolverClass/g
+s/\bGSimpleProxyResolverClass\b/gio.GSimpleProxyResolverClassObj/g
+s/\bptr ptr GBufferedInputStreamClass\b/giovaaaaarGBufferedInputStreamClass/g
+s/\bptr GBufferedInputStreamClass\b/gioptttttrGBufferedInputStreamClass/g
+s/\bGBufferedInputStreamClass\b/gio.GBufferedInputStreamClassObj/g
+s/\bptr ptr GFilterOutputStreamClass\b/giovaaaaarGFilterOutputStreamClass/g
+s/\bptr GFilterOutputStreamClass\b/gioptttttrGFilterOutputStreamClass/g
+s/\bGFilterOutputStreamClass\b/gio.GFilterOutputStreamClassObj/g
+s/\bptr ptr GMemoryOutputStreamClass\b/giovaaaaarGMemoryOutputStreamClass/g
+s/\bptr GMemoryOutputStreamClass\b/gioptttttrGMemoryOutputStreamClass/g
+s/\bGMemoryOutputStreamClass\b/gio.GMemoryOutputStreamClassObj/g
+s/\bptr ptr GDBusObjectManagerClient\b/giovaaaaarGDBusObjectManagerClient/g
+s/\bptr GDBusObjectManagerClient\b/gioptttttrGDBusObjectManagerClient/g
+s/\bGDBusObjectManagerClient\b/gio.GDBusObjectManagerClientObj/g
+s/\bptr ptr GDBusObjectManagerServer\b/giovaaaaarGDBusObjectManagerServer/g
+s/\bptr GDBusObjectManagerServer\b/gioptttttrGDBusObjectManagerServer/g
+s/\bGDBusObjectManagerServer\b/gio.GDBusObjectManagerServerObj/g
+s/\bptr ptr GDtlsConnectionInterface\b/giovaaaaarGDtlsConnectionInterface/g
+s/\bptr GDtlsConnectionInterface\b/gioptttttrGDtlsConnectionInterface/g
+s/\bGDtlsConnectionInterface\b/gio.GDtlsConnectionInterfaceObj/g
+s/\bptr ptr GSocketAddressEnumerator\b/giovaaaaarGSocketAddressEnumerator/g
+s/\bptr GSocketAddressEnumerator\b/gioptttttrGSocketAddressEnumerator/g
+s/\bGSocketAddressEnumerator\b/gio.GSocketAddressEnumeratorObj/g
+s/\bptr ptr GDBusObjectSkeletonClass\b/giovaaaaarGDBusObjectSkeletonClass/g
+s/\bptr GDBusObjectSkeletonClass\b/gioptttttrGDBusObjectSkeletonClass/g
+s/\bGDBusObjectSkeletonClass\b/gio.GDBusObjectSkeletonClassObj/g
+s/\bptr ptr GNetworkMonitorInterface\b/giovaaaaarGNetworkMonitorInterface/g
+s/\bptr GNetworkMonitorInterface\b/gioptttttrGNetworkMonitorInterface/g
+s/\bGNetworkMonitorInterface\b/gio.GNetworkMonitorInterfaceObj/g
+s/\bptr ptr GInetSocketAddressClass\b/giovaaaaarGInetSocketAddressClass/g
+s/\bptr GInetSocketAddressClass\b/gioptttttrGInetSocketAddressClass/g
+s/\bGInetSocketAddressClass\b/gio.GInetSocketAddressClassObj/g
+s/\bptr ptr GUnixCredentialsMessage\b/giovaaaaarGUnixCredentialsMessage/g
+s/\bptr GUnixCredentialsMessage\b/gioptttttrGUnixCredentialsMessage/g
+s/\bGUnixCredentialsMessage\b/gio.GUnixCredentialsMessageObj/g
+s/\bptr ptr GSimpleAsyncResultClass\b/giovaaaaarGSimpleAsyncResultClass/g
+s/\bptr GSimpleAsyncResultClass\b/gioptttttrGSimpleAsyncResultClass/g
+s/\bGSimpleAsyncResultClass\b/gio.GSimpleAsyncResultClassObj/g
+s/\bptr ptr GSocketConnectableIface\b/giovaaaaarGSocketConnectableIface/g
+s/\bptr GSocketConnectableIface\b/gioptttttrGSocketConnectableIface/g
+s/\bGSocketConnectableIface\b/gio.GSocketConnectableIfaceObj/g
+s/\bptr ptr GMemoryInputStreamClass\b/giovaaaaarGMemoryInputStreamClass/g
+s/\bptr GMemoryInputStreamClass\b/gioptttttrGMemoryInputStreamClass/g
+s/\bGMemoryInputStreamClass\b/gio.GMemoryInputStreamClassObj/g
+s/\bptr ptr GDBusObjectManagerIface\b/giovaaaaarGDBusObjectManagerIface/g
+s/\bptr GDBusObjectManagerIface\b/gioptttttrGDBusObjectManagerIface/g
+s/\bGDBusObjectManagerIface\b/gio.GDBusObjectManagerIfaceObj/g
+s/\bptr ptr GApplicationCommandLine\b/giovaaaaarGApplicationCommandLine/g
+s/\bptr GApplicationCommandLine\b/gioptttttrGApplicationCommandLine/g
+s/\bGApplicationCommandLine\b/gio.GApplicationCommandLineObj/g
+s/\bptr ptr GProxyResolverInterface\b/giovaaaaarGProxyResolverInterface/g
+s/\bptr GProxyResolverInterface\b/gioptttttrGProxyResolverInterface/g
+s/\bGProxyResolverInterface\b/gio.GProxyResolverInterfaceObj/g
+s/\bptr ptr GFilterInputStreamClass\b/giovaaaaarGFilterInputStreamClass/g
+s/\bptr GFilterInputStreamClass\b/gioptttttrGFilterInputStreamClass/g
+s/\bGFilterInputStreamClass\b/gio.GFilterInputStreamClassObj/g
+s/\bptr ptr GMenuAttributeIterClass\b/giovaaaaarGMenuAttributeIterClass/g
+s/\bptr GMenuAttributeIterClass\b/gioptttttrGMenuAttributeIterClass/g
+s/\bGMenuAttributeIterClass\b/gio.GMenuAttributeIterClassObj/g
+s/\bptr ptr GDatagramBasedInterface\b/giovaaaaarGDatagramBasedInterface/g
+s/\bptr GDatagramBasedInterface\b/gioptttttrGDatagramBasedInterface/g
+s/\bGDatagramBasedInterface\b/gio.GDatagramBasedInterfaceObj/g
+s/\bptr ptr GFilenameCompleterClass\b/giovaaaaarGFilenameCompleterClass/g
+s/\bptr GFilenameCompleterClass\b/gioptttttrGFilenameCompleterClass/g
+s/\bGFilenameCompleterClass\b/gio.GFilenameCompleterClassObj/g
+s/\bptr ptr GProxyAddressEnumerator\b/giovaaaaarGProxyAddressEnumerator/g
+s/\bptr GProxyAddressEnumerator\b/gioptttttrGProxyAddressEnumerator/g
+s/\bGProxyAddressEnumerator\b/gio.GProxyAddressEnumeratorObj/g
+s/\bptr ptr GSimpleActionGroupClass\b/giovaaaaarGSimpleActionGroupClass/g
+s/\bptr GSimpleActionGroupClass\b/gioptttttrGSimpleActionGroupClass/g
+s/\bGSimpleActionGroupClass\b/gio.GSimpleActionGroupClassObj/g
+s/\bptr ptr GFileOutputStreamClass\b/giovaaaaarGFileOutputStreamClass/g
+s/\bptr GFileOutputStreamClass\b/gioptttttrGFileOutputStreamClass/g
+s/\bGFileOutputStreamClass\b/gio.GFileOutputStreamClassObj/g
+s/\bptr ptr GSocketConnectionClass\b/giovaaaaarGSocketConnectionClass/g
+s/\bptr GSocketConnectionClass\b/gioptttttrGSocketConnectionClass/g
+s/\bGSocketConnectionClass\b/gio.GSocketConnectionClassObj/g
+s/\bptr ptr GCharsetConverterClass\b/giovaaaaarGCharsetConverterClass/g
+s/\bptr GCharsetConverterClass\b/gioptttttrGCharsetConverterClass/g
+s/\bGCharsetConverterClass\b/gio.GCharsetConverterClassObj/g
+s/\bptr ptr GAppLaunchContextClass\b/giovaaaaarGAppLaunchContextClass/g
+s/\bptr GAppLaunchContextClass\b/gioptttttrGAppLaunchContextClass/g
+s/\bGAppLaunchContextClass\b/gio.GAppLaunchContextClassObj/g
+s/\bptr ptr GZlibDecompressorClass\b/giovaaaaarGZlibDecompressorClass/g
+s/\bptr GZlibDecompressorClass\b/gioptttttrGZlibDecompressorClass/g
+s/\bGZlibDecompressorClass\b/gio.GZlibDecompressorClassObj/g
+s/\bptr ptr GFileAttributeInfoList\b/giovaaaaarGFileAttributeInfoList/g
+s/\bptr GFileAttributeInfoList\b/gioptttttrGFileAttributeInfoList/g
+s/\bGFileAttributeInfoList\b/gio.GFileAttributeInfoListObj/g
+s/\bptr ptr GDBusInterfaceSkeleton\b/giovaaaaarGDBusInterfaceSkeleton/g
+s/\bptr GDBusInterfaceSkeleton\b/gioptttttrGDBusInterfaceSkeleton/g
+s/\bGDBusInterfaceSkeleton\b/gio.GDBusInterfaceSkeletonObj/g
+s/\bptr ptr GThreadedSocketService\b/giovaaaaarGThreadedSocketService/g
+s/\bptr GThreadedSocketService\b/gioptttttrGThreadedSocketService/g
+s/\bGThreadedSocketService\b/gio.GThreadedSocketServiceObj/g
+s/\bptr ptr GDataOutputStreamClass\b/giovaaaaarGDataOutputStreamClass/g
+s/\bptr GDataOutputStreamClass\b/gioptttttrGDataOutputStreamClass/g
+s/\bGDataOutputStreamClass\b/gio.GDataOutputStreamClassObj/g
+s/\bptr ptr GConverterOutputStream\b/giovaaaaarGConverterOutputStream/g
+s/\bptr GConverterOutputStream\b/gioptttttrGConverterOutputStream/g
+s/\bGConverterOutputStream\b/gio.GConverterOutputStreamObj/g
+s/\bptr ptr GFileInputStreamClass\b/giovaaaaarGFileInputStreamClass/g
+s/\bptr GFileInputStreamClass\b/gioptttttrGFileInputStreamClass/g
+s/\bGFileInputStreamClass\b/gio.GFileInputStreamClassObj/g
+s/\bptr ptr GConverterInputStream\b/giovaaaaarGConverterInputStream/g
+s/\bptr GConverterInputStream\b/gioptttttrGConverterInputStream/g
+s/\bGConverterInputStream\b/gio.GConverterInputStreamObj/g
+s/\bptr ptr GPollableOutputStream\b/giovaaaaarGPollableOutputStream/g
+s/\bptr GPollableOutputStream\b/gioptttttrGPollableOutputStream/g
+s/\bGPollableOutputStream\b/gio.GPollableOutputStreamObj/g
+s/\bptr ptr GDBusObjectProxyClass\b/giovaaaaarGDBusObjectProxyClass/g
+s/\bptr GDBusObjectProxyClass\b/gioptttttrGDBusObjectProxyClass/g
+s/\bGDBusObjectProxyClass\b/gio.GDBusObjectProxyClassObj/g
+s/\bptr ptr GInetAddressMaskClass\b/giovaaaaarGInetAddressMaskClass/g
+s/\bptr GInetAddressMaskClass\b/gioptttttrGInetAddressMaskClass/g
+s/\bGInetAddressMaskClass\b/gio.GInetAddressMaskClassObj/g
+s/\bptr ptr GSocketControlMessage\b/giovaaaaarGSocketControlMessage/g
+s/\bptr GSocketControlMessage\b/gioptttttrGSocketControlMessage/g
+s/\bGSocketControlMessage\b/gio.GSocketControlMessageObj/g
+s/\bptr ptr GTcpWrapperConnection\b/giovaaaaarGTcpWrapperConnection/g
+s/\bptr GTcpWrapperConnection\b/gioptttttrGTcpWrapperConnection/g
+s/\bGTcpWrapperConnection\b/gio.GTcpWrapperConnectionObj/g
+s/\bptr ptr GFileAttributeMatcher\b/giovaaaaarGFileAttributeMatcher/g
+s/\bptr GFileAttributeMatcher\b/gioptttttrGFileAttributeMatcher/g
+s/\bGFileAttributeMatcher\b/gio.GFileAttributeMatcherObj/g
+s/\bptr ptr GSettingsSchemaSource\b/giovaaaaarGSettingsSchemaSource/g
+s/\bptr GSettingsSchemaSource\b/gioptttttrGSettingsSchemaSource/g
+s/\bGSettingsSchemaSource\b/gio.GSettingsSchemaSourceObj/g
+s/\bptr ptr GDBusMethodInvocation\b/giovaaaaarGDBusMethodInvocation/g
+s/\bptr GDBusMethodInvocation\b/gioptttttrGDBusMethodInvocation/g
+s/\bGDBusMethodInvocation\b/gio.GDBusMethodInvocationObj/g
+s/\bptr ptr GDtlsClientConnection\b/giovaaaaarGDtlsClientConnection/g
+s/\bptr GDtlsClientConnection\b/gioptttttrGDtlsClientConnection/g
+s/\bGDtlsClientConnection\b/gio.GDtlsClientConnectionObj/g
+s/\bptr ptr GBufferedOutputStream\b/giovaaaaarGBufferedOutputStream/g
+s/\bptr GBufferedOutputStream\b/gioptttttrGBufferedOutputStream/g
+s/\bGBufferedOutputStream\b/gio.GBufferedOutputStreamObj/g
+s/\bptr ptr GDataInputStreamClass\b/giovaaaaarGDataInputStreamClass/g
+s/\bptr GDataInputStreamClass\b/gioptttttrGDataInputStreamClass/g
+s/\bGDataInputStreamClass\b/gio.GDataInputStreamClassObj/g
+s/\bptr ptr GActionGroupInterface\b/giovaaaaarGActionGroupInterface/g
+s/\bptr GActionGroupInterface\b/gioptttttrGActionGroupInterface/g
+s/\bGActionGroupInterface\b/gio.GActionGroupInterfaceObj/g
+s/\bptr ptr GDBusInterfaceVTable\b/giovaaaaarGDBusInterfaceVTable/g
+s/\bptr GDBusInterfaceVTable\b/gioptttttrGDBusInterfaceVTable/g
+s/\bGDBusInterfaceVTable\b/gio.GDBusInterfaceVTableObj/g
+s/\bptr ptr GMountOperationClass\b/giovaaaaarGMountOperationClass/g
+s/\bptr GMountOperationClass\b/gioptttttrGMountOperationClass/g
+s/\bGMountOperationClass\b/gio.GMountOperationClassObj/g
+s/\bptr ptr GNetworkServiceClass\b/giovaaaaarGNetworkServiceClass/g
+s/\bptr GNetworkServiceClass\b/gioptttttrGNetworkServiceClass/g
+s/\bGNetworkServiceClass\b/gio.GNetworkServiceClassObj/g
+s/\bptr ptr GTlsCertificateClass\b/giovaaaaarGTlsCertificateClass/g
+s/\bptr GTlsCertificateClass\b/gioptttttrGTlsCertificateClass/g
+s/\bGTlsCertificateClass\b/gio.GTlsCertificateClassObj/g
+s/\bptr ptr GFileDescriptorBased\b/giovaaaaarGFileDescriptorBased/g
+s/\bptr GFileDescriptorBased\b/gioptttttrGFileDescriptorBased/g
+s/\bGFileDescriptorBased\b/gio.GFileDescriptorBasedObj/g
+s/\bptr ptr GBufferedInputStream\b/giovaaaaarGBufferedInputStream/g
+s/\bptr GBufferedInputStream\b/gioptttttrGBufferedInputStream/g
+s/\bGBufferedInputStream\b/gio.GBufferedInputStreamObj/g
+s/\bptr ptr GNetworkAddressClass\b/giovaaaaarGNetworkAddressClass/g
+s/\bptr GNetworkAddressClass\b/gioptttttrGNetworkAddressClass/g
+s/\bGNetworkAddressClass\b/gio.GNetworkAddressClassObj/g
+s/\bptr ptr GZlibCompressorClass\b/giovaaaaarGZlibCompressorClass/g
+s/\bptr GZlibCompressorClass\b/gioptttttrGZlibCompressorClass/g
+s/\bGZlibCompressorClass\b/gio.GZlibCompressorClassObj/g
+s/\bptr ptr GPollableInputStream\b/giovaaaaarGPollableInputStream/g
+s/\bptr GPollableInputStream\b/gioptttttrGPollableInputStream/g
+s/\bGPollableInputStream\b/gio.GPollableInputStreamObj/g
+s/\bptr ptr GNativeVolumeMonitor\b/giovaaaaarGNativeVolumeMonitor/g
+s/\bptr GNativeVolumeMonitor\b/gioptttttrGNativeVolumeMonitor/g
+s/\bGNativeVolumeMonitor\b/gio.GNativeVolumeMonitorObj/g
+s/\bptr ptr GTlsBackendInterface\b/giovaaaaarGTlsBackendInterface/g
+s/\bptr GTlsBackendInterface\b/gioptttttrGTlsBackendInterface/g
+s/\bGTlsBackendInterface\b/gio.GTlsBackendInterfaceObj/g
+s/\bptr ptr GSocketListenerClass\b/giovaaaaarGSocketListenerClass/g
+s/\bptr GSocketListenerClass\b/gioptttttrGSocketListenerClass/g
+s/\bGSocketListenerClass\b/gio.GSocketListenerClassObj/g
+s/\bptr ptr GTlsClientConnection\b/giovaaaaarGTlsClientConnection/g
+s/\bptr GTlsClientConnection\b/gioptttttrGTlsClientConnection/g
+s/\bGTlsClientConnection\b/gio.GTlsClientConnectionObj/g
+s/\bptr ptr GFileEnumeratorClass\b/giovaaaaarGFileEnumeratorClass/g
+s/\bptr GFileEnumeratorClass\b/gioptttttrGFileEnumeratorClass/g
+s/\bGFileEnumeratorClass\b/gio.GFileEnumeratorClassObj/g
+s/\bptr ptr GSimpleProxyResolver\b/giovaaaaarGSimpleProxyResolver/g
+s/\bptr GSimpleProxyResolver\b/gioptttttrGSimpleProxyResolver/g
+s/\bGSimpleProxyResolver\b/gio.GSimpleProxyResolverObj/g
+s/\bptr ptr GTlsServerConnection\b/giovaaaaarGTlsServerConnection/g
+s/\bptr GTlsServerConnection\b/gioptttttrGTlsServerConnection/g
+s/\bGTlsServerConnection\b/gio.GTlsServerConnectionObj/g
+s/\bptr ptr GTlsInteractionClass\b/giovaaaaarGTlsInteractionClass/g
+s/\bptr GTlsInteractionClass\b/gioptttttrGTlsInteractionClass/g
+s/\bGTlsInteractionClass\b/gio.GTlsInteractionClassObj/g
+s/\bptr ptr GSubprocessLauncher\b/giovaaaaarGSubprocessLauncher/g
+s/\bptr GSubprocessLauncher\b/gioptttttrGSubprocessLauncher/g
+s/\bGSubprocessLauncher\b/gio.GSubprocessLauncherObj/g
+s/\bptr ptr GTcpConnectionClass\b/giovaaaaarGTcpConnectionClass/g
+s/\bptr GTcpConnectionClass\b/gioptttttrGTcpConnectionClass/g
+s/\bGTcpConnectionClass\b/gio.GTcpConnectionClassObj/g
+s/\bptr ptr GActionMapInterface\b/giovaaaaarGActionMapInterface/g
+s/\bptr GActionMapInterface\b/gioptttttrGActionMapInterface/g
+s/\bGActionMapInterface\b/gio.GActionMapInterfaceObj/g
+s/\bptr ptr GSocketServiceClass\b/giovaaaaarGSocketServiceClass/g
+s/\bptr GSocketServiceClass\b/gioptttttrGSocketServiceClass/g
+s/\bGSocketServiceClass\b/gio.GSocketServiceClassObj/g
+s/\bptr ptr GListModelInterface\b/giovaaaaarGListModelInterface/g
+s/\bptr GListModelInterface\b/gioptttttrGListModelInterface/g
+s/\bGListModelInterface\b/gio.GListModelInterfaceObj/g
+s/\bptr ptr GTlsConnectionClass\b/giovaaaaarGTlsConnectionClass/g
+s/\bptr GTlsConnectionClass\b/gioptttttrGTlsConnectionClass/g
+s/\bGTlsConnectionClass\b/gio.GTlsConnectionClassObj/g
+s/\bptr ptr GDBusObjectSkeleton\b/giovaaaaarGDBusObjectSkeleton/g
+s/\bptr GDBusObjectSkeleton\b/gioptttttrGDBusObjectSkeleton/g
+s/\bGDBusObjectSkeleton\b/gio.GDBusObjectSkeletonObj/g
+s/\bptr ptr GFilterOutputStream\b/giovaaaaarGFilterOutputStream/g
+s/\bptr GFilterOutputStream\b/gioptttttrGFilterOutputStream/g
+s/\bGFilterOutputStream\b/gio.GFilterOutputStreamObj/g
+s/\bptr ptr GVolumeMonitorClass\b/giovaaaaarGVolumeMonitorClass/g
+s/\bptr GVolumeMonitorClass\b/gioptttttrGVolumeMonitorClass/g
+s/\bGVolumeMonitorClass\b/gio.GVolumeMonitorClassObj/g
+s/\bptr ptr GSocketAddressClass\b/giovaaaaarGSocketAddressClass/g
+s/\bptr GSocketAddressClass\b/gioptttttrGSocketAddressClass/g
+s/\bGSocketAddressClass\b/gio.GSocketAddressClassObj/g
+s/\bptr ptr GMemoryOutputStream\b/giovaaaaarGMemoryOutputStream/g
+s/\bptr GMemoryOutputStream\b/gioptttttrGMemoryOutputStream/g
+s/\bGMemoryOutputStream\b/gio.GMemoryOutputStreamObj/g
+s/\bptr ptr GDBusAnnotationInfo\b/giovaaaaarGDBusAnnotationInfo/g
+s/\bptr GDBusAnnotationInfo\b/gioptttttrGDBusAnnotationInfo/g
+s/\bGDBusAnnotationInfo\b/gio.GDBusAnnotationInfoObj/g
+s/\bptr ptr GAsyncInitableIface\b/giovaaaaarGAsyncInitableIface/g
+s/\bptr GAsyncInitableIface\b/gioptttttrGAsyncInitableIface/g
+s/\bGAsyncInitableIface\b/gio.GAsyncInitableIfaceObj/g
+s/\bptr ptr GDBusInterfaceIface\b/giovaaaaarGDBusInterfaceIface/g
+s/\bptr GDBusInterfaceIface\b/gioptttttrGDBusInterfaceIface/g
+s/\bGDBusInterfaceIface\b/gio.GDBusInterfaceIfaceObj/g
+s/\bptr ptr GProxyAddressClass\b/giovaaaaarGProxyAddressClass/g
+s/\bptr GProxyAddressClass\b/gioptttttrGProxyAddressClass/g
+s/\bGProxyAddressClass\b/gio.GProxyAddressClassObj/g
+s/\bptr ptr GDBusObjectManager\b/giovaaaaarGDBusObjectManager/g
+s/\bptr GDBusObjectManager\b/gioptttttrGDBusObjectManager/g
+s/\bGDBusObjectManager\b/gio.GDBusObjectManagerObj/g
+s/\bptr ptr GSocketClientClass\b/giovaaaaarGSocketClientClass/g
+s/\bptr GSocketClientClass\b/gioptttttrGSocketClientClass/g
+s/\bGSocketClientClass\b/gio.GSocketClientClassObj/g
+s/\bptr ptr GMemoryInputStream\b/giovaaaaarGMemoryInputStream/g
+s/\bptr GMemoryInputStream\b/gioptttttrGMemoryInputStream/g
+s/\bGMemoryInputStream\b/gio.GMemoryInputStreamObj/g
+s/\bptr ptr GFilenameCompleter\b/giovaaaaarGFilenameCompleter/g
+s/\bptr GFilenameCompleter\b/gioptttttrGFilenameCompleter/g
+s/\bGFilenameCompleter\b/gio.GFilenameCompleterObj/g
+s/\bptr ptr GEmblemedIconClass\b/giovaaaaarGEmblemedIconClass/g
+s/\bptr GEmblemedIconClass\b/gioptttttrGEmblemedIconClass/g
+s/\bGEmblemedIconClass\b/gio.GEmblemedIconClassObj/g
+s/\bptr ptr GDBusInterfaceInfo\b/giovaaaaarGDBusInterfaceInfo/g
+s/\bptr GDBusInterfaceInfo\b/gioptttttrGDBusInterfaceInfo/g
+s/\bGDBusInterfaceInfo\b/gio.GDBusInterfaceInfoObj/g
+s/\bptr ptr GFileIOStreamClass\b/giovaaaaarGFileIOStreamClass/g
+s/\bptr GFileIOStreamClass\b/gioptttttrGFileIOStreamClass/g
+s/\bGFileIOStreamClass\b/gio.GFileIOStreamClassObj/g
+s/\bptr ptr GOutputStreamClass\b/giovaaaaarGOutputStreamClass/g
+s/\bptr GOutputStreamClass\b/gioptttttrGOutputStreamClass/g
+s/\bGOutputStreamClass\b/gio.GOutputStreamClassObj/g
+s/\bptr ptr GSimpleAsyncResult\b/giovaaaaarGSimpleAsyncResult/g
+s/\bptr GSimpleAsyncResult\b/gioptttttrGSimpleAsyncResult/g
+s/\bGSimpleAsyncResult\b/gio.GSimpleAsyncResultObj/g
+s/\bptr ptr GSocketConnectable\b/giovaaaaarGSocketConnectable/g
+s/\bptr GSocketConnectable\b/gioptttttrGSocketConnectable/g
+s/\bGSocketConnectable\b/gio.GSocketConnectableObj/g
+s/\bptr ptr GLoadableIconIface\b/giovaaaaarGLoadableIconIface/g
+s/\bptr GLoadableIconIface\b/gioptttttrGLoadableIconIface/g
+s/\bGLoadableIconIface\b/gio.GLoadableIconIfaceObj/g
+s/\bptr ptr GMenuAttributeIter\b/giovaaaaarGMenuAttributeIter/g
+s/\bptr GMenuAttributeIter\b/gioptttttrGMenuAttributeIter/g
+s/\bGMenuAttributeIter\b/gio.GMenuAttributeIterObj/g
+s/\bptr ptr GInetSocketAddress\b/giovaaaaarGInetSocketAddress/g
+s/\bptr GInetSocketAddress\b/gioptttttrGInetSocketAddress/g
+s/\bGInetSocketAddress\b/gio.GInetSocketAddressObj/g
+s/\bptr ptr GRemoteActionGroup\b/giovaaaaarGRemoteActionGroup/g
+s/\bptr GRemoteActionGroup\b/gioptttttrGRemoteActionGroup/g
+s/\bGRemoteActionGroup\b/gio.GRemoteActionGroupObj/g
+s/\bptr ptr GDBusSubtreeVTable\b/giovaaaaarGDBusSubtreeVTable/g
+s/\bptr GDBusSubtreeVTable\b/gioptttttrGDBusSubtreeVTable/g
+s/\bGDBusSubtreeVTable\b/gio.GDBusSubtreeVTableObj/g
+s/\bptr ptr GMenuLinkIterClass\b/giovaaaaarGMenuLinkIterClass/g
+s/\bptr GMenuLinkIterClass\b/gioptttttrGMenuLinkIterClass/g
+s/\bGMenuLinkIterClass\b/gio.GMenuLinkIterClassObj/g
+s/\bptr ptr GSettingsSchemaKey\b/giovaaaaarGSettingsSchemaKey/g
+s/\bptr GSettingsSchemaKey\b/gioptttttrGSettingsSchemaKey/g
+s/\bGSettingsSchemaKey\b/gio.GSettingsSchemaKeyObj/g
+s/\bptr ptr GSimpleActionGroup\b/giovaaaaarGSimpleActionGroup/g
+s/\bptr GSimpleActionGroup\b/gioptttttrGSimpleActionGroup/g
+s/\bGSimpleActionGroup\b/gio.GSimpleActionGroupObj/g
+s/\bptr ptr GFileAttributeInfo\b/giovaaaaarGFileAttributeInfo/g
+s/\bptr GFileAttributeInfo\b/gioptttttrGFileAttributeInfo/g
+s/\bGFileAttributeInfo\b/gio.GFileAttributeInfoObj/g
+s/\bptr ptr GFilterInputStream\b/giovaaaaarGFilterInputStream/g
+s/\bptr GFilterInputStream\b/gioptttttrGFilterInputStream/g
+s/\bGFilterInputStream\b/gio.GFilterInputStreamObj/g
+s/\bptr ptr GCredentialsClass\b/giovaaaaarGCredentialsClass/g
+s/\bptr GCredentialsClass\b/gioptttttrGCredentialsClass/g
+s/\bGCredentialsClass\b/gio.GCredentialsClassObj/g
+s/\bptr ptr GTlsDatabaseClass\b/giovaaaaarGTlsDatabaseClass/g
+s/\bptr GTlsDatabaseClass\b/gioptttttrGTlsDatabaseClass/g
+s/\bGTlsDatabaseClass\b/gio.GTlsDatabaseClassObj/g
+s/\bptr ptr GDataOutputStream\b/giovaaaaarGDataOutputStream/g
+s/\bptr GDataOutputStream\b/gioptttttrGDataOutputStream/g
+s/\bGDataOutputStream\b/gio.GDataOutputStreamObj/g
+s/\bptr ptr GAsyncResultIface\b/giovaaaaarGAsyncResultIface/g
+s/\bptr GAsyncResultIface\b/gioptttttrGAsyncResultIface/g
+s/\bGAsyncResultIface\b/gio.GAsyncResultIfaceObj/g
+s/\bptr ptr GApplicationClass\b/giovaaaaarGApplicationClass/g
+s/\bptr GApplicationClass\b/gioptttttrGApplicationClass/g
+s/\bGApplicationClass\b/gio.GApplicationClassObj/g
+s/\bptr ptr GInputStreamClass\b/giovaaaaarGInputStreamClass/g
+s/\bptr GInputStreamClass\b/gioptttttrGInputStreamClass/g
+s/\bGInputStreamClass\b/gio.GInputStreamClassObj/g
+s/\bptr ptr GAppLaunchContext\b/giovaaaaarGAppLaunchContext/g
+s/\bptr GAppLaunchContext\b/gioptttttrGAppLaunchContext/g
+s/\bGAppLaunchContext\b/gio.GAppLaunchContextObj/g
+s/\bptr ptr GDBusAuthObserver\b/giovaaaaarGDBusAuthObserver/g
+s/\bptr GDBusAuthObserver\b/gioptttttrGDBusAuthObserver/g
+s/\bGDBusAuthObserver\b/gio.GDBusAuthObserverObj/g
+s/\bptr ptr GSocketConnection\b/giovaaaaarGSocketConnection/g
+s/\bptr GSocketConnection\b/gioptttttrGSocketConnection/g
+s/\bGSocketConnection\b/gio.GSocketConnectionObj/g
+s/\bptr ptr GTlsPasswordClass\b/giovaaaaarGTlsPasswordClass/g
+s/\bptr GTlsPasswordClass\b/gioptttttrGTlsPasswordClass/g
+s/\bGTlsPasswordClass\b/gio.GTlsPasswordClassObj/g
+s/\bptr ptr GCancellableClass\b/giovaaaaarGCancellableClass/g
+s/\bptr GCancellableClass\b/gioptttttrGCancellableClass/g
+s/\bGCancellableClass\b/gio.GCancellableClassObj/g
+s/\bptr ptr GFileOutputStream\b/giovaaaaarGFileOutputStream/g
+s/\bptr GFileOutputStream\b/gioptttttrGFileOutputStream/g
+s/\bGFileOutputStream\b/gio.GFileOutputStreamObj/g
+s/\bptr ptr GFileMonitorClass\b/giovaaaaarGFileMonitorClass/g
+s/\bptr GFileMonitorClass\b/gioptttttrGFileMonitorClass/g
+s/\bGFileMonitorClass\b/gio.GFileMonitorClassObj/g
+s/\bptr ptr GIOExtensionPoint\b/giovaaaaarGIOExtensionPoint/g
+s/\bptr GIOExtensionPoint\b/gioptttttrGIOExtensionPoint/g
+s/\bGIOExtensionPoint\b/gio.GIOExtensionPointObj/g
+s/\bptr ptr GZlibDecompressor\b/giovaaaaarGZlibDecompressor/g
+s/\bptr GZlibDecompressor\b/gioptttttrGZlibDecompressor/g
+s/\bGZlibDecompressor\b/gio.GZlibDecompressorObj/g
+s/\bptr ptr GSimplePermission\b/giovaaaaarGSimplePermission/g
+s/\bptr GSimplePermission\b/gioptttttrGSimplePermission/g
+s/\bGSimplePermission\b/gio.GSimplePermissionObj/g
+s/\bptr ptr GCharsetConverter\b/giovaaaaarGCharsetConverter/g
+s/\bptr GCharsetConverter\b/gioptttttrGCharsetConverter/g
+s/\bGCharsetConverter\b/gio.GCharsetConverterObj/g
+s/\bptr ptr GInetAddressClass\b/giovaaaaarGInetAddressClass/g
+s/\bptr GInetAddressClass\b/gioptttttrGInetAddressClass/g
+s/\bGInetAddressClass\b/gio.GInetAddressClassObj/g
+s/\bptr ptr GDBusPropertyInfo\b/giovaaaaarGDBusPropertyInfo/g
+s/\bptr GDBusPropertyInfo\b/gioptttttrGDBusPropertyInfo/g
+s/\bGDBusPropertyInfo\b/gio.GDBusPropertyInfoObj/g
+s/\bptr ptr GInetAddressMask\b/giovaaaaarGInetAddressMask/g
+s/\bptr GInetAddressMask\b/gioptttttrGInetAddressMask/g
+s/\bGInetAddressMask\b/gio.GInetAddressMaskObj/g
+s/\bptr ptr GDBusActionGroup\b/giovaaaaarGDBusActionGroup/g
+s/\bptr GDBusActionGroup\b/gioptttttrGDBusActionGroup/g
+s/\bGDBusActionGroup\b/gio.GDBusActionGroupObj/g
+s/\bptr ptr GSettingsBackend\b/giovaaaaarGSettingsBackend/g
+s/\bptr GSettingsBackend\b/gioptttttrGSettingsBackend/g
+s/\bGSettingsBackend\b/gio.GSettingsBackendObj/g
+s/\bptr ptr GDBusObjectIface\b/giovaaaaarGDBusObjectIface/g
+s/\bptr GDBusObjectIface\b/gioptttttrGDBusObjectIface/g
+s/\bGDBusObjectIface\b/gio.GDBusObjectIfaceObj/g
+s/\bptr ptr GIOStreamAdapter\b/giovaaaaarGIOStreamAdapter/g
+s/\bptr GIOStreamAdapter\b/gioptttttrGIOStreamAdapter/g
+s/\bGIOStreamAdapter\b/gio.GIOStreamAdapterObj/g
+s/\bptr ptr GThemedIconClass\b/giovaaaaarGThemedIconClass/g
+s/\bptr GThemedIconClass\b/gioptttttrGThemedIconClass/g
+s/\bGThemedIconClass\b/gio.GThemedIconClassObj/g
+s/\bptr ptr GFileInputStream\b/giovaaaaarGFileInputStream/g
+s/\bptr GFileInputStream\b/gioptttttrGFileInputStream/g
+s/\bGFileInputStream\b/gio.GFileInputStreamObj/g
+s/\bptr ptr GTlsFileDatabase\b/giovaaaaarGTlsFileDatabase/g
+s/\bptr GTlsFileDatabase\b/gioptttttrGTlsFileDatabase/g
+s/\bGTlsFileDatabase\b/gio.GTlsFileDatabaseObj/g
+s/\bptr ptr GPermissionClass\b/giovaaaaarGPermissionClass/g
+s/\bptr GPermissionClass\b/gioptttttrGPermissionClass/g
+s/\bGPermissionClass\b/gio.GPermissionClassObj/g
+s/\bptr ptr GDataInputStream\b/giovaaaaarGDataInputStream/g
+s/\bptr GDataInputStream\b/gioptttttrGDataInputStream/g
+s/\bGDataInputStream\b/gio.GDataInputStreamObj/g
+s/\bptr ptr GDBusObjectProxy\b/giovaaaaarGDBusObjectProxy/g
+s/\bptr GDBusObjectProxy\b/gioptttttrGDBusObjectProxy/g
+s/\bGDBusObjectProxy\b/gio.GDBusObjectProxyObj/g
+s/\bptr ptr GActionInterface\b/giovaaaaarGActionInterface/g
+s/\bptr GActionInterface\b/gioptttttrGActionInterface/g
+s/\bGActionInterface\b/gio.GActionInterfaceObj/g
+s/\bptr ptr GDBusConnection\b/giovaaaaarGDBusConnection/g
+s/\bptr GDBusConnection\b/gioptttttrGDBusConnection/g
+s/\bGDBusConnection\b/gio.GDBusConnectionObj/g
+s/\bptr ptr GProxyInterface\b/giovaaaaarGProxyInterface/g
+s/\bptr GProxyInterface\b/gioptttttrGProxyInterface/g
+s/\bGProxyInterface\b/gio.GProxyInterfaceObj/g
+s/\bptr ptr GConverterIface\b/giovaaaaarGConverterIface/g
+s/\bptr GConverterIface\b/gioptttttrGConverterIface/g
+s/\bGConverterIface\b/gio.GConverterIfaceObj/g
+s/\bptr ptr GDBusProxyClass\b/giovaaaaarGDBusProxyClass/g
+s/\bptr GDBusProxyClass\b/gioptttttrGDBusProxyClass/g
+s/\bGDBusProxyClass\b/gio.GDBusProxyClassObj/g
+s/\bptr ptr GStaticResource\b/giovaaaaarGStaticResource/g
+s/\bptr GStaticResource\b/gioptttttrGStaticResource/g
+s/\bGStaticResource\b/gio.GStaticResourceObj/g
+s/\bptr ptr GSettingsSchema\b/giovaaaaarGSettingsSchema/g
+s/\bptr GSettingsSchema\b/gioptttttrGSettingsSchema/g
+s/\bGSettingsSchema\b/gio.GSettingsSchemaObj/g
+s/\bptr ptr GAppInfoMonitor\b/giovaaaaarGAppInfoMonitor/g
+s/\bptr GAppInfoMonitor\b/gioptttttrGAppInfoMonitor/g
+s/\bGAppInfoMonitor\b/gio.GAppInfoMonitorObj/g
+s/\bptr ptr GSocketListener\b/giovaaaaarGSocketListener/g
+s/\bptr GSocketListener\b/gioptttttrGSocketListener/g
+s/\bGSocketListener\b/gio.GSocketListenerObj/g
+s/\bptr ptr GFileEnumerator\b/giovaaaaarGFileEnumerator/g
+s/\bptr GFileEnumerator\b/gioptttttrGFileEnumerator/g
+s/\bGFileEnumerator\b/gio.GFileEnumeratorObj/g
+s/\bptr ptr GTlsInteraction\b/giovaaaaarGTlsInteraction/g
+s/\bptr GTlsInteraction\b/gioptttttrGTlsInteraction/g
+s/\bGTlsInteraction\b/gio.GTlsInteractionObj/g
+s/\bptr ptr GDBusMethodInfo\b/giovaaaaarGDBusMethodInfo/g
+s/\bptr GDBusMethodInfo\b/gioptttttrGDBusMethodInfo/g
+s/\bGDBusMethodInfo\b/gio.GDBusMethodInfoObj/g
+s/\bptr ptr GDtlsConnection\b/giovaaaaarGDtlsConnection/g
+s/\bptr GDtlsConnection\b/gioptttttrGDtlsConnection/g
+s/\bGDtlsConnection\b/gio.GDtlsConnectionObj/g
+s/\bptr ptr GNetworkAddress\b/giovaaaaarGNetworkAddress/g
+s/\bptr GNetworkAddress\b/gioptttttrGNetworkAddress/g
+s/\bGNetworkAddress\b/gio.GNetworkAddressObj/g
+s/\bptr ptr GSimpleIOStream\b/giovaaaaarGSimpleIOStream/g
+s/\bptr GSimpleIOStream\b/gioptttttrGSimpleIOStream/g
+s/\bGSimpleIOStream\b/gio.GSimpleIOStreamObj/g
+s/\bptr ptr GNetworkMonitor\b/giovaaaaarGNetworkMonitor/g
+s/\bptr GNetworkMonitor\b/gioptttttrGNetworkMonitor/g
+s/\bGNetworkMonitor\b/gio.GNetworkMonitorObj/g
+s/\bptr ptr GDBusSignalInfo\b/giovaaaaarGDBusSignalInfo/g
+s/\bptr GDBusSignalInfo\b/gioptttttrGDBusSignalInfo/g
+s/\bGDBusSignalInfo\b/gio.GDBusSignalInfoObj/g
+s/\bptr ptr GIOSchedulerJob\b/giovaaaaarGIOSchedulerJob/g
+s/\bptr GIOSchedulerJob\b/gioptttttrGIOSchedulerJob/g
+s/\bGIOSchedulerJob\b/gio.GIOSchedulerJobObj/g
+s/\bptr ptr GNetworkService\b/giovaaaaarGNetworkService/g
+s/\bptr GNetworkService\b/gioptttttrGNetworkService/g
+s/\bGNetworkService\b/gio.GNetworkServiceObj/g
+s/\bptr ptr GTlsCertificate\b/giovaaaaarGTlsCertificate/g
+s/\bptr GTlsCertificate\b/gioptttttrGTlsCertificate/g
+s/\bGTlsCertificate\b/gio.GTlsCertificateObj/g
+s/\bptr ptr GPropertyAction\b/giovaaaaarGPropertyAction/g
+s/\bptr GPropertyAction\b/gioptttttrGPropertyAction/g
+s/\bGPropertyAction\b/gio.GPropertyActionObj/g
+s/\bptr ptr GMountOperation\b/giovaaaaarGMountOperation/g
+s/\bptr GMountOperation\b/gioptttttrGMountOperation/g
+s/\bGMountOperation\b/gio.GMountOperationObj/g
+s/\bptr ptr GZlibCompressor\b/giovaaaaarGZlibCompressor/g
+s/\bptr GZlibCompressor\b/gioptttttrGZlibCompressor/g
+s/\bGZlibCompressor\b/gio.GZlibCompressorObj/g
+s/\bptr ptr GMenuModelClass\b/giovaaaaarGMenuModelClass/g
+s/\bptr GMenuModelClass\b/gioptttttrGMenuModelClass/g
+s/\bGMenuModelClass\b/gio.GMenuModelClassObj/g
+s/\bptr ptr GListStoreClass\b/giovaaaaarGListStoreClass/g
+s/\bptr GListStoreClass\b/gioptttttrGListStoreClass/g
+s/\bGListStoreClass\b/gio.GListStoreClassObj/g
+s/\bptr ptr GDBusErrorEntry\b/giovaaaaarGDBusErrorEntry/g
+s/\bptr GDBusErrorEntry\b/gioptttttrGDBusErrorEntry/g
+s/\bGDBusErrorEntry\b/gio.GDBusErrorEntryObj/g
+s/\bptr ptr GResolverClass\b/giovaaaaarGResolverClass/g
+s/\bptr GResolverClass\b/gioptttttrGResolverClass/g
+s/\bGResolverClass\b/gio.GResolverClassObj/g
+s/\bptr ptr GFileInfoClass\b/giovaaaaarGFileInfoClass/g
+s/\bptr GFileInfoClass\b/gioptttttrGFileInfoClass/g
+s/\bGFileInfoClass\b/gio.GFileInfoClassObj/g
+s/\bptr ptr GFileIconClass\b/giovaaaaarGFileIconClass/g
+s/\bptr GFileIconClass\b/gioptttttrGFileIconClass/g
+s/\bGFileIconClass\b/gio.GFileIconClassObj/g
+s/\bptr ptr GIOModuleScope\b/giovaaaaarGIOModuleScope/g
+s/\bptr GIOModuleScope\b/gioptttttrGIOModuleScope/g
+s/\bGIOModuleScope\b/gio.GIOModuleScopeObj/g
+s/\bptr ptr GIOModuleClass\b/giovaaaaarGIOModuleClass/g
+s/\bptr GIOModuleClass\b/gioptttttrGIOModuleClass/g
+s/\bGIOModuleClass\b/gio.GIOModuleClassObj/g
+s/\bptr ptr GDBusMenuModel\b/giovaaaaarGDBusMenuModel/g
+s/\bptr GDBusMenuModel\b/gioptttttrGDBusMenuModel/g
+s/\bGDBusMenuModel\b/gio.GDBusMenuModelObj/g
+s/\bptr ptr GSeekableIface\b/giovaaaaarGSeekableIface/g
+s/\bptr GSeekableIface\b/gioptttttrGSeekableIface/g
+s/\bGSeekableIface\b/gio.GSeekableIfaceObj/g
+s/\bptr ptr GAsyncInitable\b/giovaaaaarGAsyncInitable/g
+s/\bptr GAsyncInitable\b/gioptttttrGAsyncInitable/g
+s/\bGAsyncInitable\b/gio.GAsyncInitableObj/g
+s/\bptr ptr GDBusInterface\b/giovaaaaarGDBusInterface/g
+s/\bptr GDBusInterface\b/gioptttttrGDBusInterface/g
+s/\bGDBusInterface\b/gio.GDBusInterfaceObj/g
+s/\bptr ptr GSettingsClass\b/giovaaaaarGSettingsClass/g
+s/\bptr GSettingsClass\b/gioptttttrGSettingsClass/g
+s/\bGSettingsClass\b/gio.GSettingsClassObj/g
+s/\bptr ptr GDatagramBased\b/giovaaaaarGDatagramBased/g
+s/\bptr GDatagramBased\b/gioptttttrGDatagramBased/g
+s/\bGDatagramBased\b/gio.GDatagramBasedObj/g
+s/\bptr ptr GVolumeMonitor\b/giovaaaaarGVolumeMonitor/g
+s/\bptr GVolumeMonitor\b/gioptttttrGVolumeMonitor/g
+s/\bGVolumeMonitor\b/gio.GVolumeMonitorObj/g
+s/\bptr ptr GOutputMessage\b/giovaaaaarGOutputMessage/g
+s/\bptr GOutputMessage\b/gioptttttrGOutputMessage/g
+s/\bGOutputMessage\b/gio.GOutputMessageObj/g
+s/\bptr ptr GInitableIface\b/giovaaaaarGInitableIface/g
+s/\bptr GInitableIface\b/gioptttttrGInitableIface/g
+s/\bGInitableIface\b/gio.GInitableIfaceObj/g
+s/\bptr ptr GIOStreamClass\b/giovaaaaarGIOStreamClass/g
+s/\bptr GIOStreamClass\b/gioptttttrGIOStreamClass/g
+s/\bGIOStreamClass\b/gio.GIOStreamClassObj/g
+s/\bptr ptr GProxyResolver\b/giovaaaaarGProxyResolver/g
+s/\bptr GProxyResolver\b/gioptttttrGProxyResolver/g
+s/\bGProxyResolver\b/gio.GProxyResolverObj/g
+s/\bptr ptr GSocketService\b/giovaaaaarGSocketService/g
+s/\bptr GSocketService\b/gioptttttrGSocketService/g
+s/\bGSocketService\b/gio.GSocketServiceObj/g
+s/\bptr ptr GTcpConnection\b/giovaaaaarGTcpConnection/g
+s/\bptr GTcpConnection\b/gioptttttrGTcpConnection/g
+s/\bGTcpConnection\b/gio.GTcpConnectionObj/g
+s/\bptr ptr GSocketAddress\b/giovaaaaarGSocketAddress/g
+s/\bptr GSocketAddress\b/gioptttttrGSocketAddress/g
+s/\bGSocketAddress\b/gio.GSocketAddressObj/g
+s/\bptr ptr GTlsConnection\b/giovaaaaarGTlsConnection/g
+s/\bptr GTlsConnection\b/gioptttttrGTlsConnection/g
+s/\bGTlsConnection\b/gio.GTlsConnectionObj/g
+s/\bptr ptr GDBusNodeInfo\b/giovaaaaarGDBusNodeInfo/g
+s/\bptr GDBusNodeInfo\b/gioptttttrGDBusNodeInfo/g
+s/\bGDBusNodeInfo\b/gio.GDBusNodeInfoObj/g
+s/\bptr ptr GLoadableIcon\b/giovaaaaarGLoadableIcon/g
+s/\bptr GLoadableIcon\b/gioptttttrGLoadableIcon/g
+s/\bGLoadableIcon\b/gio.GLoadableIconObj/g
+s/\bptr ptr GSocketClient\b/giovaaaaarGSocketClient/g
+s/\bptr GSocketClient\b/gioptttttrGSocketClient/g
+s/\bGSocketClient\b/gio.GSocketClientObj/g
+s/\bptr ptr GOutputStream\b/giovaaaaarGOutputStream/g
+s/\bptr GOutputStream\b/gioptttttrGOutputStream/g
+s/\bGOutputStream\b/gio.GOutputStreamObj/g
+s/\bptr ptr GInputMessage\b/giovaaaaarGInputMessage/g
+s/\bptr GInputMessage\b/gioptttttrGInputMessage/g
+s/\bGInputMessage\b/gio.GInputMessageObj/g
+s/\bptr ptr GNotification\b/giovaaaaarGNotification/g
+s/\bptr GNotification\b/gioptttttrGNotification/g
+s/\bGNotification\b/gio.GNotificationObj/g
+s/\bptr ptr GOutputVector\b/giovaaaaarGOutputVector/g
+s/\bptr GOutputVector\b/gioptttttrGOutputVector/g
+s/\bGOutputVector\b/gio.GOutputVectorObj/g
+s/\bptr ptr GSimpleAction\b/giovaaaaarGSimpleAction/g
+s/\bptr GSimpleAction\b/gioptttttrGSimpleAction/g
+s/\bGSimpleAction\b/gio.GSimpleActionObj/g
+s/\bptr ptr GAppInfoIface\b/giovaaaaarGAppInfoIface/g
+s/\bptr GAppInfoIface\b/gioptttttrGAppInfoIface/g
+s/\bGAppInfoIface\b/gio.GAppInfoIfaceObj/g
+s/\bptr ptr GMenuLinkIter\b/giovaaaaarGMenuLinkIter/g
+s/\bptr GMenuLinkIter\b/gioptttttrGMenuLinkIter/g
+s/\bGMenuLinkIter\b/gio.GMenuLinkIterObj/g
+s/\bptr ptr GEmblemedIcon\b/giovaaaaarGEmblemedIcon/g
+s/\bptr GEmblemedIcon\b/gioptttttrGEmblemedIcon/g
+s/\bGEmblemedIcon\b/gio.GEmblemedIconObj/g
+s/\bptr ptr GFileIOStream\b/giovaaaaarGFileIOStream/g
+s/\bptr GFileIOStream\b/gioptttttrGFileIOStream/g
+s/\bGFileIOStream\b/gio.GFileIOStreamObj/g
+s/\bptr ptr GProxyAddress\b/giovaaaaarGProxyAddress/g
+s/\bptr GProxyAddress\b/gioptttttrGProxyAddress/g
+s/\bGProxyAddress\b/gio.GProxyAddressObj/g
+s/\bptr ptr GInetAddress\b/giovaaaaarGInetAddress/g
+s/\bptr GInetAddress\b/gioptttttrGInetAddress/g
+s/\bGInetAddress\b/gio.GInetAddressObj/g
+s/\bptr ptr GActionGroup\b/giovaaaaarGActionGroup/g
+s/\bptr GActionGroup\b/gioptttttrGActionGroup/g
+s/\bGActionGroup\b/gio.GActionGroupObj/g
+s/\bptr ptr GEmblemClass\b/giovaaaaarGEmblemClass/g
+s/\bptr GEmblemClass\b/gioptttttrGEmblemClass/g
+s/\bGEmblemClass\b/gio.GEmblemClassObj/g
+s/\bptr ptr GIOExtension\b/giovaaaaarGIOExtension/g
+s/\bptr GIOExtension\b/gioptttttrGIOExtension/g
+s/\bGIOExtension\b/gio.GIOExtensionObj/g
+s/\bptr ptr GVolumeIface\b/giovaaaaarGVolumeIface/g
+s/\bptr GVolumeIface\b/gioptttttrGVolumeIface/g
+s/\bGVolumeIface\b/gio.GVolumeIfaceObj/g
+s/\bptr ptr GFileMonitor\b/giovaaaaarGFileMonitor/g
+s/\bptr GFileMonitor\b/gioptttttrGFileMonitor/g
+s/\bGFileMonitor\b/gio.GFileMonitorObj/g
+s/\bptr ptr GActionEntry\b/giovaaaaarGActionEntry/g
+s/\bptr GActionEntry\b/gioptttttrGActionEntry/g
+s/\bGActionEntry\b/gio.GActionEntryObj/g
+s/\bptr ptr GTlsDatabase\b/giovaaaaarGTlsDatabase/g
+s/\bptr GTlsDatabase\b/gioptttttrGTlsDatabase/g
+s/\bGTlsDatabase\b/gio.GTlsDatabaseObj/g
+s/\bptr ptr GDBusMessage\b/giovaaaaarGDBusMessage/g
+s/\bptr GDBusMessage\b/gioptttttrGDBusMessage/g
+s/\bGDBusMessage\b/gio.GDBusMessageObj/g
+s/\bptr ptr GCancellable\b/giovaaaaarGCancellable/g
+s/\bptr GCancellable\b/gioptttttrGCancellable/g
+s/\bGCancellable\b/gio.GCancellableObj/g
+s/\bptr ptr GCredentials\b/giovaaaaarGCredentials/g
+s/\bptr GCredentials\b/gioptttttrGCredentials/g
+s/\bGCredentials\b/gio.GCredentialsObj/g
+s/\bptr ptr GInputStream\b/giovaaaaarGInputStream/g
+s/\bptr GInputStream\b/gioptttttrGInputStream/g
+s/\bGInputStream\b/gio.GInputStreamObj/g
+s/\bptr ptr GApplication\b/giovaaaaarGApplication/g
+s/\bptr GApplication\b/gioptttttrGApplication/g
+s/\bGApplication\b/gio.GApplicationObj/g
+s/\bptr ptr GAsyncResult\b/giovaaaaarGAsyncResult/g
+s/\bptr GAsyncResult\b/gioptttttrGAsyncResult/g
+s/\bGAsyncResult\b/gio.GAsyncResultObj/g
+s/\bptr ptr GSocketClass\b/giovaaaaarGSocketClass/g
+s/\bptr GSocketClass\b/gioptttttrGSocketClass/g
+s/\bGSocketClass\b/gio.GSocketClassObj/g
+s/\bptr ptr GDBusArgInfo\b/giovaaaaarGDBusArgInfo/g
+s/\bptr GDBusArgInfo\b/gioptttttrGDBusArgInfo/g
+s/\bGDBusArgInfo\b/gio.GDBusArgInfoObj/g
+s/\bptr ptr GInputVector\b/giovaaaaarGInputVector/g
+s/\bptr GInputVector\b/gioptttttrGInputVector/g
+s/\bGInputVector\b/gio.GInputVectorObj/g
+s/\bptr ptr GTlsPassword\b/giovaaaaarGTlsPassword/g
+s/\bptr GTlsPassword\b/gioptttttrGTlsPassword/g
+s/\bGTlsPassword\b/gio.GTlsPasswordObj/g
+s/\bptr ptr GDBusObject\b/giovaaaaarGDBusObject/g
+s/\bptr GDBusObject\b/gioptttttrGDBusObject/g
+s/\bGDBusObject\b/gio.GDBusObjectObj/g
+s/\bptr ptr GPermission\b/giovaaaaarGPermission/g
+s/\bptr GPermission\b/gioptttttrGPermission/g
+s/\bGPermission\b/gio.GPermissionObj/g
+s/\bptr ptr GMountIface\b/giovaaaaarGMountIface/g
+s/\bptr GMountIface\b/gioptttttrGMountIface/g
+s/\bGMountIface\b/gio.GMountIfaceObj/g
+s/\bptr ptr GDBusServer\b/giovaaaaarGDBusServer/g
+s/\bptr GDBusServer\b/gioptttttrGDBusServer/g
+s/\bGDBusServer\b/gio.GDBusServerObj/g
+s/\bptr ptr GSubprocess\b/giovaaaaarGSubprocess/g
+s/\bptr GSubprocess\b/gioptttttrGSubprocess/g
+s/\bGSubprocess\b/gio.GSubprocessObj/g
+s/\bptr ptr GTlsBackend\b/giovaaaaarGTlsBackend/g
+s/\bptr GTlsBackend\b/gioptttttrGTlsBackend/g
+s/\bGTlsBackend\b/gio.GTlsBackendObj/g
+s/\bptr ptr GDriveIface\b/giovaaaaarGDriveIface/g
+s/\bptr GDriveIface\b/gioptttttrGDriveIface/g
+s/\bGDriveIface\b/gio.GDriveIfaceObj/g
+s/\bptr ptr GUnixFDList\b/giovaaaaarGUnixFDList/g
+s/\bptr GUnixFDList\b/gioptttttrGUnixFDList/g
+s/\bGUnixFDList\b/gio.GUnixFDListObj/g
+s/\bptr ptr GThemedIcon\b/giovaaaaarGThemedIcon/g
+s/\bptr GThemedIcon\b/gioptttttrGThemedIcon/g
+s/\bGThemedIcon\b/gio.GThemedIconObj/g
+s/\bptr ptr GFileIface\b/giovaaaaarGFileIface/g
+s/\bptr GFileIface\b/gioptttttrGFileIface/g
+s/\bGFileIface\b/gio.GFileIfaceObj/g
+s/\bptr ptr GSrvTarget\b/giovaaaaarGSrvTarget/g
+s/\bptr GSrvTarget\b/gioptttttrGSrvTarget/g
+s/\bGSrvTarget\b/gio.GSrvTargetObj/g
+s/\bptr ptr GIconIface\b/giovaaaaarGIconIface/g
+s/\bptr GIconIface\b/gioptttttrGIconIface/g
+s/\bGIconIface\b/gio.GIconIfaceObj/g
+s/\bptr ptr GListModel\b/giovaaaaarGListModel/g
+s/\bptr GListModel\b/gioptttttrGListModel/g
+s/\bGListModel\b/gio.GListModelObj/g
+s/\bptr ptr GMenuModel\b/giovaaaaarGMenuModel/g
+s/\bptr GMenuModel\b/gioptttttrGMenuModel/g
+s/\bGMenuModel\b/gio.GMenuModelObj/g
+s/\bptr ptr GConverter\b/giovaaaaarGConverter/g
+s/\bptr GConverter\b/gioptttttrGConverter/g
+s/\bGConverter\b/gio.GConverterObj/g
+s/\bptr ptr GBytesIcon\b/giovaaaaarGBytesIcon/g
+s/\bptr GBytesIcon\b/gioptttttrGBytesIcon/g
+s/\bGBytesIcon\b/gio.GBytesIconObj/g
+s/\bptr ptr GTaskClass\b/giovaaaaarGTaskClass/g
+s/\bptr GTaskClass\b/gioptttttrGTaskClass/g
+s/\bGTaskClass\b/gio.GTaskClassObj/g
+s/\bptr ptr GActionMap\b/giovaaaaarGActionMap/g
+s/\bptr GActionMap\b/gioptttttrGActionMap/g
+s/\bGActionMap\b/gio.GActionMapObj/g
+s/\bptr ptr GListStore\b/giovaaaaarGListStore/g
+s/\bptr GListStore\b/gioptttttrGListStore/g
+s/\bGListStore\b/gio.GListStoreObj/g
+s/\bptr ptr GDBusProxy\b/giovaaaaarGDBusProxy/g
+s/\bptr GDBusProxy\b/gioptttttrGDBusProxy/g
+s/\bGDBusProxy\b/gio.GDBusProxyObj/g
+s/\bptr ptr GVfsClass\b/giovaaaaarGVfsClass/g
+s/\bptr GVfsClass\b/gioptttttrGVfsClass/g
+s/\bGVfsClass\b/gio.GVfsClassObj/g
+s/\bptr ptr GIOModule\b/giovaaaaarGIOModule/g
+s/\bptr GIOModule\b/gioptttttrGIOModule/g
+s/\bGIOModule\b/gio.GIOModuleObj/g
+s/\bptr ptr GInitable\b/giovaaaaarGInitable/g
+s/\bptr GInitable\b/gioptttttrGInitable/g
+s/\bGInitable\b/gio.GInitableObj/g
+s/\bptr ptr GMenuItem\b/giovaaaaarGMenuItem/g
+s/\bptr GMenuItem\b/gioptttttrGMenuItem/g
+s/\bGMenuItem\b/gio.GMenuItemObj/g
+s/\bptr ptr GFileIcon\b/giovaaaaarGFileIcon/g
+s/\bptr GFileIcon\b/gioptttttrGFileIcon/g
+s/\bGFileIcon\b/gio.GFileIconObj/g
+s/\bptr ptr GFileInfo\b/giovaaaaarGFileInfo/g
+s/\bptr GFileInfo\b/gioptttttrGFileInfo/g
+s/\bGFileInfo\b/gio.GFileInfoObj/g
+s/\bptr ptr GTestDBus\b/giovaaaaarGTestDBus/g
+s/\bptr GTestDBus\b/gioptttttrGTestDBus/g
+s/\bGTestDBus\b/gio.GTestDBusObj/g
+s/\bptr ptr GResource\b/giovaaaaarGResource/g
+s/\bptr GResource\b/gioptttttrGResource/g
+s/\bGResource\b/gio.GResourceObj/g
+s/\bptr ptr GSeekable\b/giovaaaaarGSeekable/g
+s/\bptr GSeekable\b/gioptttttrGSeekable/g
+s/\bGSeekable\b/gio.GSeekableObj/g
+s/\bptr ptr GResolver\b/giovaaaaarGResolver/g
+s/\bptr GResolver\b/gioptttttrGResolver/g
+s/\bGResolver\b/gio.GResolverObj/g
+s/\bptr ptr GIOStream\b/giovaaaaarGIOStream/g
+s/\bptr GIOStream\b/gioptttttrGIOStream/g
+s/\bGIOStream\b/gio.GIOStreamObj/g
+s/\bptr ptr GSettings\b/giovaaaaarGSettings/g
+s/\bptr GSettings\b/gioptttttrGSettings/g
+s/\bGSettings\b/gio.GSettingsObj/g
+s/\bptr ptr GAppInfo\b/giovaaaaarGAppInfo/g
+s/\bptr GAppInfo\b/gioptttttrGAppInfo/g
+s/\bGAppInfo\b/gio.GAppInfoObj/g
+s/\bptr ptr GEmblem\b/giovaaaaarGEmblem/g
+s/\bptr GEmblem\b/gioptttttrGEmblem/g
+s/\bGEmblem\b/gio.GEmblemObj/g
+s/\bptr ptr GSocket\b/giovaaaaarGSocket/g
+s/\bptr GSocket\b/gioptttttrGSocket/g
+s/\bGSocket\b/gio.GSocketObj/g
+s/\bptr ptr GVolume\b/giovaaaaarGVolume/g
+s/\bptr GVolume\b/gioptttttrGVolume/g
+s/\bGVolume\b/gio.GVolumeObj/g
+s/\bptr ptr GAction\b/giovaaaaarGAction/g
+s/\bptr GAction\b/gioptttttrGAction/g
+s/\bGAction\b/gio.GActionObj/g
+s/\bptr ptr GProxy\b/giovaaaaarGProxy/g
+s/\bptr GProxy\b/gioptttttrGProxy/g
+s/\bGProxy\b/gio.GProxyObj/g
+s/\bptr ptr GMount\b/giovaaaaarGMount/g
+s/\bptr GMount\b/gioptttttrGMount/g
+s/\bGMount\b/gio.GMountObj/g
+s/\bptr ptr GDrive\b/giovaaaaarGDrive/g
+s/\bptr GDrive\b/gioptttttrGDrive/g
+s/\bGDrive\b/gio.GDriveObj/g
+s/\bptr ptr GTask\b/giovaaaaarGTask/g
+s/\bptr GTask\b/gioptttttrGTask/g
+s/\bGTask\b/gio.GTaskObj/g
+s/\bptr ptr GIcon\b/giovaaaaarGIcon/g
+s/\bptr GIcon\b/gioptttttrGIcon/g
+s/\bGIcon\b/gio.GIconObj/g
+s/\bptr ptr GFile\b/giovaaaaarGFile/g
+s/\bptr GFile\b/gioptttttrGFile/g
+s/\bGFile\b/gio.GFileObj/g
+s/\bptr ptr GMenu\b/giovaaaaarGMenu/g
+s/\bptr GMenu\b/gioptttttrGMenu/g
+s/\bGMenu\b/gio.GMenuObj/g
+s/\bptr ptr GVfs\b/giovaaaaarGVfs/g
+s/\bptr GVfs\b/gioptttttrGVfs/g
+s/\bGVfs\b/gio.GVfsObj/g
+s/giovaaaaar/var gio./g
+s/gioptttttr/gio./g

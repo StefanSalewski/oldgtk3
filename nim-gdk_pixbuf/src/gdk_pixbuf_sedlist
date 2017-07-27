@@ -1,0 +1,35 @@
+s/\bptr ptr GdkPixbufAnimationIterClass\b/gdk_pixbufvaaaaarAnimationIterClass/g
+s/\bptr GdkPixbufAnimationIterClass\b/gdk_pixbufptttttrAnimationIterClass/g
+s/\bGdkPixbufAnimationIterClass\b/gdk_pixbuf.AnimationIterClassObj/g
+s/\bptr ptr GdkPixbufAnimationClass\b/gdk_pixbufvaaaaarAnimationClass/g
+s/\bptr GdkPixbufAnimationClass\b/gdk_pixbufptttttrAnimationClass/g
+s/\bGdkPixbufAnimationClass\b/gdk_pixbuf.AnimationClassObj/g
+s/\bptr ptr GdkPixbufModulePattern\b/gdk_pixbufvaaaaarModulePattern/g
+s/\bptr GdkPixbufModulePattern\b/gdk_pixbufptttttrModulePattern/g
+s/\bGdkPixbufModulePattern\b/gdk_pixbuf.ModulePatternObj/g
+s/\bptr ptr GdkPixbufAnimationIter\b/gdk_pixbufvaaaaarAnimationIter/g
+s/\bptr GdkPixbufAnimationIter\b/gdk_pixbufptttttrAnimationIter/g
+s/\bGdkPixbufAnimationIter\b/gdk_pixbuf.AnimationIterObj/g
+s/\bptr ptr GdkPixbufLoaderClass\b/gdk_pixbufvaaaaarLoaderClass/g
+s/\bptr GdkPixbufLoaderClass\b/gdk_pixbufptttttrLoaderClass/g
+s/\bGdkPixbufLoaderClass\b/gdk_pixbuf.LoaderClassObj/g
+s/\bptr ptr GdkPixbufSimpleAnim\b/gdk_pixbufvaaaaarSimpleAnim/g
+s/\bptr GdkPixbufSimpleAnim\b/gdk_pixbufptttttrSimpleAnim/g
+s/\bGdkPixbufSimpleAnim\b/gdk_pixbuf.SimpleAnimObj/g
+s/\bptr ptr GdkPixbufAnimation\b/gdk_pixbufvaaaaarAnimation/g
+s/\bptr GdkPixbufAnimation\b/gdk_pixbufptttttrAnimation/g
+s/\bGdkPixbufAnimation\b/gdk_pixbuf.AnimationObj/g
+s/\bptr ptr GdkPixbufModule\b/gdk_pixbufvaaaaarModule/g
+s/\bptr GdkPixbufModule\b/gdk_pixbufptttttrModule/g
+s/\bGdkPixbufModule\b/gdk_pixbuf.ModuleObj/g
+s/\bptr ptr GdkPixbufLoader\b/gdk_pixbufvaaaaarLoader/g
+s/\bptr GdkPixbufLoader\b/gdk_pixbufptttttrLoader/g
+s/\bGdkPixbufLoader\b/gdk_pixbuf.LoaderObj/g
+s/\bptr ptr GdkPixbufFormat\b/gdk_pixbufvaaaaarFormat/g
+s/\bptr GdkPixbufFormat\b/gdk_pixbufptttttrFormat/g
+s/\bGdkPixbufFormat\b/gdk_pixbuf.FormatObj/g
+s/\bptr ptr GdkPixbuf\b/gdk_pixbufvaaaaarGdkPixbuf/g
+s/\bptr GdkPixbuf\b/gdk_pixbufptttttrGdkPixbuf/g
+s/\bGdkPixbuf\b/gdk_pixbuf.GdkPixbufObj/g
+s/gdk_pixbufvaaaaar/var gdk_pixbuf./g
+s/gdk_pixbufptttttr/gdk_pixbuf./g

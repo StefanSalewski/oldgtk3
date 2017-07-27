@@ -1,0 +1,200 @@
+s/\bptr ptr AtkGObjectAccessibleClass\b/atkvaaaaarGObjectAccessibleClass/g
+s/\bptr AtkGObjectAccessibleClass\b/atkptttttrGObjectAccessibleClass/g
+s/\bAtkGObjectAccessibleClass\b/atk.GObjectAccessibleClassObj/g
+s/\bptr ptr AtkNoOpObjectFactoryClass\b/atkvaaaaarNoOpObjectFactoryClass/g
+s/\bptr AtkNoOpObjectFactoryClass\b/atkptttttrNoOpObjectFactoryClass/g
+s/\bAtkNoOpObjectFactoryClass\b/atk.NoOpObjectFactoryClassObj/g
+s/\bptr ptr AtkStreamableContentIface\b/atkvaaaaarStreamableContentIface/g
+s/\bptr AtkStreamableContentIface\b/atkptttttrStreamableContentIface/g
+s/\bAtkStreamableContentIface\b/atk.StreamableContentIfaceObj/g
+s/\bptr ptr AtkHyperlinkImplIface\b/atkvaaaaarHyperlinkImplIface/g
+s/\bptr AtkHyperlinkImplIface\b/atkptttttrHyperlinkImplIface/g
+s/\bAtkHyperlinkImplIface\b/atk.HyperlinkImplIfaceObj/g
+s/\bptr ptr AtkObjectFactoryClass\b/atkvaaaaarObjectFactoryClass/g
+s/\bptr AtkObjectFactoryClass\b/atkptttttrObjectFactoryClass/g
+s/\bAtkObjectFactoryClass\b/atk.ObjectFactoryClassObj/g
+s/\bptr ptr AtkNoOpObjectFactory\b/atkvaaaaarNoOpObjectFactory/g
+s/\bptr AtkNoOpObjectFactory\b/atkptttttrNoOpObjectFactory/g
+s/\bAtkNoOpObjectFactory\b/atk.NoOpObjectFactoryObj/g
+s/\bptr ptr AtkStreamableContent\b/atkvaaaaarStreamableContent/g
+s/\bptr AtkStreamableContent\b/atkptttttrStreamableContent/g
+s/\bAtkStreamableContent\b/atk.StreamableContentObj/g
+s/\bptr ptr AtkGObjectAccessible\b/atkvaaaaarGObjectAccessible/g
+s/\bptr AtkGObjectAccessible\b/atkptttttrGObjectAccessible/g
+s/\bAtkGObjectAccessible\b/atk.GObjectAccessibleObj/g
+s/\bptr ptr AtkEditableTextIface\b/atkvaaaaarEditableTextIface/g
+s/\bptr AtkEditableTextIface\b/atkptttttrEditableTextIface/g
+s/\bAtkEditableTextIface\b/atk.EditableTextIfaceObj/g
+s/\bptr ptr AtkImplementorIface\b/atkvaaaaarImplementorIface/g
+s/\bptr AtkImplementorIface\b/atkptttttrImplementorIface/g
+s/\bAtkImplementorIface\b/atk.ImplementorIfaceObj/g
+s/\bptr ptr AtkRelationSetClass\b/atkvaaaaarRelationSetClass/g
+s/\bptr AtkRelationSetClass\b/atkptttttrRelationSetClass/g
+s/\bAtkRelationSetClass\b/atk.RelationSetClassObj/g
+s/\bptr ptr AtkNoOpObjectClass\b/atkvaaaaarNoOpObjectClass/g
+s/\bptr AtkNoOpObjectClass\b/atkptttttrNoOpObjectClass/g
+s/\bAtkNoOpObjectClass\b/atk.NoOpObjectClassObj/g
+s/\bptr ptr AtkHyperlinkClass\b/atkvaaaaarHyperlinkClass/g
+s/\bptr AtkHyperlinkClass\b/atkptttttrHyperlinkClass/g
+s/\bAtkHyperlinkClass\b/atk.HyperlinkClassObj/g
+s/\bptr ptr AtkSelectionIface\b/atkvaaaaarSelectionIface/g
+s/\bptr AtkSelectionIface\b/atkptttttrSelectionIface/g
+s/\bAtkSelectionIface\b/atk.SelectionIfaceObj/g
+s/\bptr ptr AtkKeyEventStruct\b/atkvaaaaarKeyEventStruct/g
+s/\bptr AtkKeyEventStruct\b/atkptttttrKeyEventStruct/g
+s/\bAtkKeyEventStruct\b/atk.KeyEventStructObj/g
+s/\bptr ptr AtkHypertextIface\b/atkvaaaaarHypertextIface/g
+s/\bptr AtkHypertextIface\b/atkptttttrHypertextIface/g
+s/\bAtkHypertextIface\b/atk.HypertextIfaceObj/g
+s/\bptr ptr AtkComponentIface\b/atkvaaaaarComponentIface/g
+s/\bptr AtkComponentIface\b/atkptttttrComponentIface/g
+s/\bAtkComponentIface\b/atk.ComponentIfaceObj/g
+s/\bptr ptr AtkTableCellIface\b/atkvaaaaarTableCellIface/g
+s/\bptr AtkTableCellIface\b/atkptttttrTableCellIface/g
+s/\bAtkTableCellIface\b/atk.TableCellIfaceObj/g
+s/\bptr ptr AtkPropertyValues\b/atkvaaaaarPropertyValues/g
+s/\bptr AtkPropertyValues\b/atkptttttrPropertyValues/g
+s/\bAtkPropertyValues\b/atk.PropertyValuesObj/g
+s/\bptr ptr AtkDocumentIface\b/atkvaaaaarDocumentIface/g
+s/\bptr AtkDocumentIface\b/atkptttttrDocumentIface/g
+s/\bAtkDocumentIface\b/atk.DocumentIfaceObj/g
+s/\bptr ptr AtkTextRectangle\b/atkvaaaaarTextRectangle/g
+s/\bptr AtkTextRectangle\b/atkptttttrTextRectangle/g
+s/\bAtkTextRectangle\b/atk.TextRectangleObj/g
+s/\bptr ptr AtkObjectFactory\b/atkvaaaaarObjectFactory/g
+s/\bptr AtkObjectFactory\b/atkptttttrObjectFactory/g
+s/\bAtkObjectFactory\b/atk.ObjectFactoryObj/g
+s/\bptr ptr AtkStateSetClass\b/atkvaaaaarStateSetClass/g
+s/\bptr AtkStateSetClass\b/atkptttttrStateSetClass/g
+s/\bAtkStateSetClass\b/atk.StateSetClassObj/g
+s/\bptr ptr AtkRelationClass\b/atkvaaaaarRelationClass/g
+s/\bptr AtkRelationClass\b/atkptttttrRelationClass/g
+s/\bAtkRelationClass\b/atk.RelationClassObj/g
+s/\bptr ptr AtkRegistryClass\b/atkvaaaaarRegistryClass/g
+s/\bptr AtkRegistryClass\b/atkptttttrRegistryClass/g
+s/\bAtkRegistryClass\b/atk.RegistryClassObj/g
+s/\bptr ptr AtkHyperlinkImpl\b/atkvaaaaarHyperlinkImpl/g
+s/\bptr AtkHyperlinkImpl\b/atkptttttrHyperlinkImpl/g
+s/\bAtkHyperlinkImpl\b/atk.HyperlinkImplObj/g
+s/\bptr ptr AtkEditableText\b/atkvaaaaarEditableText/g
+s/\bptr AtkEditableText\b/atkptttttrEditableText/g
+s/\bAtkEditableText\b/atk.EditableTextObj/g
+s/\bptr ptr AtkAttributeSet\b/atkvaaaaarAttributeSet/g
+s/\bptr AtkAttributeSet\b/atkptttttrAttributeSet/g
+s/\bAtkAttributeSet\b/atk.AttributeSetObj/g
+s/\bptr ptr AtkImplementor\b/atkvaaaaarImplementor/g
+s/\bptr AtkImplementor\b/atkptttttrImplementor/g
+s/\bAtkImplementor\b/atk.ImplementorObj/g
+s/\bptr ptr AtkObjectClass\b/atkvaaaaarObjectClass/g
+s/\bptr AtkObjectClass\b/atkptttttrObjectClass/g
+s/\bAtkObjectClass\b/atk.ObjectClassObj/g
+s/\bptr ptr AtkSocketClass\b/atkvaaaaarSocketClass/g
+s/\bptr AtkSocketClass\b/atkptttttrSocketClass/g
+s/\bAtkSocketClass\b/atk.SocketClassObj/g
+s/\bptr ptr AtkRelationSet\b/atkvaaaaarRelationSet/g
+s/\bptr AtkRelationSet\b/atkptttttrRelationSet/g
+s/\bAtkRelationSet\b/atk.RelationSetObj/g
+s/\bptr ptr AtkWindowIface\b/atkvaaaaarWindowIface/g
+s/\bptr AtkWindowIface\b/atkptttttrWindowIface/g
+s/\bAtkWindowIface\b/atk.WindowIfaceObj/g
+s/\bptr ptr AtkActionIface\b/atkvaaaaarActionIface/g
+s/\bptr AtkActionIface\b/atkptttttrActionIface/g
+s/\bAtkActionIface\b/atk.ActionIfaceObj/g
+s/\bptr ptr AtkImageIface\b/atkvaaaaarImageIface/g
+s/\bptr AtkImageIface\b/atkptttttrImageIface/g
+s/\bAtkImageIface\b/atk.ImageIfaceObj/g
+s/\bptr ptr AtkNoOpObject\b/atkvaaaaarNoOpObject/g
+s/\bptr AtkNoOpObject\b/atkptttttrNoOpObject/g
+s/\bAtkNoOpObject\b/atk.NoOpObjectObj/g
+s/\bptr ptr AtkValueIface\b/atkvaaaaarValueIface/g
+s/\bptr AtkValueIface\b/atkptttttrValueIface/g
+s/\bAtkValueIface\b/atk.ValueIfaceObj/g
+s/\bptr ptr AtkTableIface\b/atkvaaaaarTableIface/g
+s/\bptr AtkTableIface\b/atkptttttrTableIface/g
+s/\bAtkTableIface\b/atk.TableIfaceObj/g
+s/\bptr ptr AtkTextRange\b/atkvaaaaarTextRange/g
+s/\bptr AtkTextRange\b/atkptttttrTextRange/g
+s/\bAtkTextRange\b/atk.TextRangeObj/g
+s/\bptr ptr AtkTextIface\b/atkvaaaaarTextIface/g
+s/\bptr AtkTextIface\b/atkptttttrTextIface/g
+s/\bAtkTextIface\b/atk.TextIfaceObj/g
+s/\bptr ptr AtkHypertext\b/atkvaaaaarHypertext/g
+s/\bptr AtkHypertext\b/atkptttttrHypertext/g
+s/\bAtkHypertext\b/atk.HypertextObj/g
+s/\bptr ptr AtkAttribute\b/atkvaaaaarAttribute/g
+s/\bptr AtkAttribute\b/atkptttttrAttribute/g
+s/\bAtkAttribute\b/atk.AttributeObj/g
+s/\bptr ptr AtkPlugClass\b/atkvaaaaarPlugClass/g
+s/\bptr AtkPlugClass\b/atkptttttrPlugClass/g
+s/\bAtkPlugClass\b/atk.PlugClassObj/g
+s/\bptr ptr AtkTableCell\b/atkvaaaaarTableCell/g
+s/\bptr AtkTableCell\b/atkptttttrTableCell/g
+s/\bAtkTableCell\b/atk.TableCellObj/g
+s/\bptr ptr AtkMiscClass\b/atkvaaaaarMiscClass/g
+s/\bptr AtkMiscClass\b/atkptttttrMiscClass/g
+s/\bAtkMiscClass\b/atk.MiscClassObj/g
+s/\bptr ptr AtkComponent\b/atkvaaaaarComponent/g
+s/\bptr AtkComponent\b/atkptttttrComponent/g
+s/\bAtkComponent\b/atk.ComponentObj/g
+s/\bptr ptr AtkRectangle\b/atkvaaaaarRectangle/g
+s/\bptr AtkRectangle\b/atkptttttrRectangle/g
+s/\bAtkRectangle\b/atk.RectangleObj/g
+s/\bptr ptr AtkUtilClass\b/atkvaaaaarUtilClass/g
+s/\bptr AtkUtilClass\b/atkptttttrUtilClass/g
+s/\bAtkUtilClass\b/atk.UtilClassObj/g
+s/\bptr ptr AtkHyperlink\b/atkvaaaaarHyperlink/g
+s/\bptr AtkHyperlink\b/atkptttttrHyperlink/g
+s/\bAtkHyperlink\b/atk.HyperlinkObj/g
+s/\bptr ptr AtkSelection\b/atkvaaaaarSelection/g
+s/\bptr AtkSelection\b/atkptttttrSelection/g
+s/\bAtkSelection\b/atk.SelectionObj/g
+s/\bptr ptr AtkRelation\b/atkvaaaaarRelation/g
+s/\bptr AtkRelation\b/atkptttttrRelation/g
+s/\bAtkRelation\b/atk.RelationObj/g
+s/\bptr ptr AtkStateSet\b/atkvaaaaarStateSet/g
+s/\bptr AtkStateSet\b/atkptttttrStateSet/g
+s/\bAtkStateSet\b/atk.StateSetObj/g
+s/\bptr ptr AtkRegistry\b/atkvaaaaarRegistry/g
+s/\bptr AtkRegistry\b/atkptttttrRegistry/g
+s/\bAtkRegistry\b/atk.RegistryObj/g
+s/\bptr ptr AtkDocument\b/atkvaaaaarDocument/g
+s/\bptr AtkDocument\b/atkptttttrDocument/g
+s/\bAtkDocument\b/atk.DocumentObj/g
+s/\bptr ptr AtkWindow\b/atkvaaaaarWindow/g
+s/\bptr AtkWindow\b/atkptttttrWindow/g
+s/\bAtkWindow\b/atk.WindowObj/g
+s/\bptr ptr AtkSocket\b/atkvaaaaarSocket/g
+s/\bptr AtkSocket\b/atkptttttrSocket/g
+s/\bAtkSocket\b/atk.SocketObj/g
+s/\bptr ptr AtkObject\b/atkvaaaaarObject/g
+s/\bptr AtkObject\b/atkptttttrObject/g
+s/\bAtkObject\b/atk.ObjectObj/g
+s/\bptr ptr AtkAction\b/atkvaaaaarAction/g
+s/\bptr AtkAction\b/atkptttttrAction/g
+s/\bAtkAction\b/atk.ActionObj/g
+s/\bptr ptr AtkTable\b/atkvaaaaarTable/g
+s/\bptr AtkTable\b/atkptttttrTable/g
+s/\bAtkTable\b/atk.TableObj/g
+s/\bptr ptr AtkImage\b/atkvaaaaarImage/g
+s/\bptr AtkImage\b/atkptttttrImage/g
+s/\bAtkImage\b/atk.ImageObj/g
+s/\bptr ptr AtkValue\b/atkvaaaaarValue/g
+s/\bptr AtkValue\b/atkptttttrValue/g
+s/\bAtkValue\b/atk.ValueObj/g
+s/\bptr ptr AtkRange\b/atkvaaaaarRange/g
+s/\bptr AtkRange\b/atkptttttrRange/g
+s/\bAtkRange\b/atk.RangeObj/g
+s/\bptr ptr AtkMisc\b/atkvaaaaarMisc/g
+s/\bptr AtkMisc\b/atkptttttrMisc/g
+s/\bAtkMisc\b/atk.MiscObj/g
+s/\bptr ptr AtkUtil\b/atkvaaaaarUtil/g
+s/\bptr AtkUtil\b/atkptttttrUtil/g
+s/\bAtkUtil\b/atk.UtilObj/g
+s/\bptr ptr AtkText\b/atkvaaaaarText/g
+s/\bptr AtkText\b/atkptttttrText/g
+s/\bAtkText\b/atk.TextObj/g
+s/\bptr ptr AtkPlug\b/atkvaaaaarPlug/g
+s/\bptr AtkPlug\b/atkptttttrPlug/g
+s/\bAtkPlug\b/atk.PlugObj/g
+s/atkvaaaaar/var atk./g
+s/atkptttttr/atk./g

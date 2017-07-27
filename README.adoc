@@ -1,0 +1,43 @@
+= Low level GTK3 bindings for the Nim programming language
+(c) Stefan Salewski                                     
+//Version 0.1 2017     
+:experimental:
+:imagesdir: http://ssalewski.de/tmp
+:source-highlighter: pygments
+:pygments-style: monokai
+:icons: font
+
+:GIR: GObject-Introspection
+:MAC: MacOSX
+
+//(c) Stefan Salewski +
+//2017
+
+This repository contains bindings from the Nim programming language to the GTK3 _GUI_ (_Graphical User Interface_) library and related libraries.
+
+https://nim-lang.org/[Nim] is a modern universal programming language.
+
+https://www.gtk.org/[GTK], also known as the _Gimp Tool Kit_ and now sometimes also called _Gnome Tool Kit_, is a Graphical User Interface library.
+
+Basically this is an updated copy of the individual files from https://github.com/ngtk3 to form a single package which can be installed with
+Nim's package manager. The bindings are created with c2nim  v 0.9.13 from latest GTK 3.22 header files.
+
+----
+# install
+nimble install oldgtk3
+----
+
+After install, you can use this package in the same way as you have used the ngtk3 modules, but import has now the qualified form `import oldgtk3/[glib, gobject, gdk, gtk, cairo, pango]`.
+
+This package is only tested with 64 bit Linux currently.
+
+The name oldgtk3 is a bit misleading -- we need a unique toplevel name to avoid name conflicts with the legacy floating gtk2 related packages, and at the same time
+the name is a hint that with package *gintro* we now have even high level, gobject-introspection based bindings.
+
+Small test examples are available in the subdirectories called tests in this repository.
+
+Later I will extend this README file with some example programs and I will modify the *NEd* editor and the *nim-chess* game for using this package.
+Basically for that only the import lists have to be modified.
+
+
+

@@ -1,0 +1,233 @@
+s/\bptr ptr INNER_C_STRUCT_2791128003\b/glibvaaaaarINNER_C_STRUCT_2791128003/g
+s/\bptr INNER_C_STRUCT_2791128003\b/glibptttttrINNER_C_STRUCT_2791128003/g
+s/\bINNER_C_STRUCT_2791128003\b/glib.INNER_C_STRUCT_2791128003Obj/g
+s/\bptr ptr INNER_C_STRUCT_594656511\b/glibvaaaaarINNER_C_STRUCT_594656511/g
+s/\bptr INNER_C_STRUCT_594656511\b/glibptttttrINNER_C_STRUCT_594656511/g
+s/\bINNER_C_STRUCT_594656511\b/glib.INNER_C_STRUCT_594656511Obj/g
+s/\bptr ptr GSourceCallbackFuncs\b/glibvaaaaarGSourceCallbackFuncs/g
+s/\bptr GSourceCallbackFuncs\b/glibptttttrGSourceCallbackFuncs/g
+s/\bGSourceCallbackFuncs\b/glib.GSourceCallbackFuncsObj/g
+s/\bptr ptr GMarkupParseContext\b/glibvaaaaarGMarkupParseContext/g
+s/\bptr GMarkupParseContext\b/glibptttttrGMarkupParseContext/g
+s/\bGMarkupParseContext\b/glib.GMarkupParseContextObj/g
+s/\bptr ptr GVariantBuilder\b/glibvaaaaarGVariantBuilder/g
+s/\bptr GVariantBuilder\b/glibptttttrGVariantBuilder/g
+s/\bGVariantBuilder\b/glib.GVariantBuilderObj/g
+s/\bptr ptr GHashTableIter\b/glibvaaaaarGHashTableIter/g
+s/\bptr GHashTableIter\b/glibptttttrGHashTableIter/g
+s/\bGHashTableIter\b/glib.GHashTableIterObj/g
+s/\bptr ptr GScannerConfig\b/glibvaaaaarGScannerConfig/g
+s/\bptr GScannerConfig\b/glibptttttrGScannerConfig/g
+s/\bGScannerConfig\b/glib.GScannerConfigObj/g
+s/\bptr ptr GOptionContext\b/glibvaaaaarGOptionContext/g
+s/\bptr GOptionContext\b/glibptttttrGOptionContext/g
+s/\bGOptionContext\b/glib.GOptionContextObj/g
+s/\bptr ptr GTestLogBuffer\b/glibvaaaaarGTestLogBuffer/g
+s/\bptr GTestLogBuffer\b/glibptttttrGTestLogBuffer/g
+s/\bGTestLogBuffer\b/glib.GTestLogBufferObj/g
+s/\bptr ptr GBookmarkFile\b/glibvaaaaarGBookmarkFile/g
+s/\bptr GBookmarkFile\b/glibptttttrGBookmarkFile/g
+s/\bGBookmarkFile\b/glib.GBookmarkFileObj/g
+s/\bptr ptr GMarkupParser\b/glibvaaaaarGMarkupParser/g
+s/\bptr GMarkupParser\b/glibptttttrGMarkupParser/g
+s/\bGMarkupParser\b/glib.GMarkupParserObj/g
+s/\bptr ptr GSequenceIter\b/glibvaaaaarGSequenceIter/g
+s/\bptr GSequenceIter\b/glibptttttrGSequenceIter/g
+s/\bGSequenceIter\b/glib.GSequenceIterObj/g
+s/\bptr ptr GStringChunk\b/glibvaaaaarGStringChunk/g
+s/\bptr GStringChunk\b/glibptttttrGStringChunk/g
+s/\bGStringChunk\b/glib.GStringChunkObj/g
+s/\bptr ptr GVariantDict\b/glibvaaaaarGVariantDict/g
+s/\bptr GVariantDict\b/glibptttttrGVariantDict/g
+s/\bGVariantDict\b/glib.GVariantDictObj/g
+s/\bptr ptr GVariantIter\b/glibvaaaaarGVariantIter/g
+s/\bptr GVariantIter\b/glibptttttrGVariantIter/g
+s/\bGVariantIter\b/glib.GVariantIterObj/g
+s/\bptr ptr GMainContext\b/glibvaaaaarGMainContext/g
+s/\bptr GMainContext\b/glibptttttrGMainContext/g
+s/\bGMainContext\b/glib.GMainContextObj/g
+s/\bptr ptr GVariantType\b/glibvaaaaarGVariantType/g
+s/\bptr GVariantType\b/glibptttttrGVariantType/g
+s/\bGVariantType\b/glib.GVariantTypeObj/g
+s/\bptr ptr GOptionGroup\b/glibvaaaaarGOptionGroup/g
+s/\bptr GOptionGroup\b/glibptttttrGOptionGroup/g
+s/\bGOptionGroup\b/glib.GOptionGroupObj/g
+s/\bptr ptr GSourceFuncs\b/glibvaaaaarGSourceFuncs/g
+s/\bptr GSourceFuncs\b/glibptttttrGSourceFuncs/g
+s/\bGSourceFuncs\b/glib.GSourceFuncsObj/g
+s/\bptr ptr GOptionEntry\b/glibvaaaaarGOptionEntry/g
+s/\bptr GOptionEntry\b/glibptttttrGOptionEntry/g
+s/\bGOptionEntry\b/glib.GOptionEntryObj/g
+s/\bptr ptr GPatternSpec\b/glibvaaaaarGPatternSpec/g
+s/\bptr GPatternSpec\b/glibptttttrGPatternSpec/g
+s/\bGPatternSpec\b/glib.GPatternSpecObj/g
+s/\bptr ptr GTestConfig\b/glibvaaaaarGTestConfig/g
+s/\bptr GTestConfig\b/glibptttttrGTestConfig/g
+s/\bGTestConfig\b/glib.GTestConfigObj/g
+s/\bptr ptr GMappedFile\b/glibvaaaaarGMappedFile/g
+s/\bptr GMappedFile\b/glibptttttrGMappedFile/g
+s/\bGMappedFile\b/glib.GMappedFileObj/g
+s/\bptr ptr GTestLogMsg\b/glibvaaaaarGTestLogMsg/g
+s/\bptr GTestLogMsg\b/glibptttttrGTestLogMsg/g
+s/\bGTestLogMsg\b/glib.GTestLogMsgObj/g
+s/\bptr ptr GTokenValue\b/glibvaaaaarGTokenValue/g
+s/\bptr GTokenValue\b/glibptttttrGTokenValue/g
+s/\bGTokenValue\b/glib.GTokenValueObj/g
+s/\bptr ptr GTrashStack\b/glibvaaaaarGTrashStack/g
+s/\bptr GTrashStack\b/glibptttttrGTrashStack/g
+s/\bGTrashStack\b/glib.GTrashStackObj/g
+s/\bptr ptr GAsyncQueue\b/glibvaaaaarGAsyncQueue/g
+s/\bptr GAsyncQueue\b/glibptttttrGAsyncQueue/g
+s/\bGAsyncQueue\b/glib.GAsyncQueueObj/g
+s/\bptr ptr GThreadPool\b/glibvaaaaarGThreadPool/g
+s/\bptr GThreadPool\b/glibptttttrGThreadPool/g
+s/\bGThreadPool\b/glib.GThreadPoolObj/g
+s/\bptr ptr GHashTable\b/glibvaaaaarGHashTable/g
+s/\bptr GHashTable\b/glibptttttrGHashTable/g
+s/\bGHashTable\b/glib.GHashTableObj/g
+s/\bptr ptr GIOChannel\b/glibvaaaaarGIOChannel/g
+s/\bptr GIOChannel\b/glibptttttrGIOChannel/g
+s/\bGIOChannel\b/glib.GIOChannelObj/g
+s/\bptr ptr GByteArray\b/glibvaaaaarGByteArray/g
+s/\bptr GByteArray\b/glibptttttrGByteArray/g
+s/\bGByteArray\b/glib.GByteArrayObj/g
+s/\bptr ptr GMemVTable\b/glibvaaaaarGMemVTable/g
+s/\bptr GMemVTable\b/glibptttttrGMemVTable/g
+s/\bGMemVTable\b/glib.GMemVTableObj/g
+s/\bptr ptr GMatchInfo\b/glibvaaaaarGMatchInfo/g
+s/\bptr GMatchInfo\b/glibptttttrGMatchInfo/g
+s/\bGMatchInfo\b/glib.GMatchInfoObj/g
+s/\bptr ptr GTestSuite\b/glibvaaaaarGTestSuite/g
+s/\bptr GTestSuite\b/glibptttttrGTestSuite/g
+s/\bGTestSuite\b/glib.GTestSuiteObj/g
+s/\bptr ptr GTestCase\b/glibvaaaaarGTestCase/g
+s/\bptr GTestCase\b/glibptttttrGTestCase/g
+s/\bGTestCase\b/glib.GTestCaseObj/g
+s/\bptr ptr GMainLoop\b/glibvaaaaarGMainLoop/g
+s/\bptr GMainLoop\b/glibptttttrGMainLoop/g
+s/\bGMainLoop\b/glib.GMainLoopObj/g
+s/\bptr ptr GRecMutex\b/glibvaaaaarGRecMutex/g
+s/\bptr GRecMutex\b/glibptttttrGRecMutex/g
+s/\bGRecMutex\b/glib.GRecMutexObj/g
+s/\bptr ptr GDebugKey\b/glibvaaaaarGDebugKey/g
+s/\bptr GDebugKey\b/glibptttttrGDebugKey/g
+s/\bGDebugKey\b/glib.GDebugKeyObj/g
+s/\bptr ptr GPtrArray\b/glibvaaaaarGPtrArray/g
+s/\bptr GPtrArray\b/glibptttttrGPtrArray/g
+s/\bGPtrArray\b/glib.GPtrArrayObj/g
+s/\bptr ptr GLogField\b/glibvaaaaarGLogField/g
+s/\bptr GLogField\b/glibptttttrGLogField/g
+s/\bGLogField\b/glib.GLogFieldObj/g
+s/\bptr ptr GHookList\b/glibvaaaaarGHookList/g
+s/\bptr GHookList\b/glibptttttrGHookList/g
+s/\bGHookList\b/glib.GHookListObj/g
+s/\bptr ptr GChecksum\b/glibvaaaaarGChecksum/g
+s/\bptr GChecksum\b/glibptttttrGChecksum/g
+s/\bGChecksum\b/glib.GChecksumObj/g
+s/\bptr ptr GSequence\b/glibvaaaaarGSequence/g
+s/\bptr GSequence\b/glibptttttrGSequence/g
+s/\bGSequence\b/glib.GSequenceObj/g
+s/\bptr ptr GTimeZone\b/glibvaaaaarGTimeZone/g
+s/\bptr GTimeZone\b/glibptttttrGTimeZone/g
+s/\bGTimeZone\b/glib.GTimeZoneObj/g
+s/\bptr ptr GDateTime\b/glibvaaaaarGDateTime/g
+s/\bptr GDateTime\b/glibptttttrGDateTime/g
+s/\bGDateTime\b/glib.GDateTimeObj/g
+s/\bptr ptr GTimeVal\b/glibvaaaaarGTimeVal/g
+s/\bptr GTimeVal\b/glibptttttrGTimeVal/g
+s/\bGTimeVal\b/glib.GTimeValObj/g
+s/\bptr ptr GIOFuncs\b/glibvaaaaarGIOFuncs/g
+s/\bptr GIOFuncs\b/glibptttttrGIOFuncs/g
+s/\bGIOFuncs\b/glib.GIOFuncsObj/g
+s/\bptr ptr GVariant\b/glibvaaaaarGVariant/g
+s/\bptr GVariant\b/glibptttttrGVariant/g
+s/\bGVariant\b/glib.GVariantObj/g
+s/\bptr ptr GScanner\b/glibvaaaaarGScanner/g
+s/\bptr GScanner\b/glibptttttrGScanner/g
+s/\bGScanner\b/glib.GScannerObj/g
+s/\bptr ptr GPrivate\b/glibvaaaaarGPrivate/g
+s/\bptr GPrivate\b/glibptttttrGPrivate/g
+s/\bGPrivate\b/glib.GPrivateObj/g
+s/\bptr ptr GKeyFile\b/glibvaaaaarGKeyFile/g
+s/\bptr GKeyFile\b/glibptttttrGKeyFile/g
+s/\bGKeyFile\b/glib.GKeyFileObj/g
+s/\bptr ptr GThread\b/glibvaaaaarGThread/g
+s/\bptr GThread\b/glibptttttrGThread/g
+s/\bGThread\b/glib.GThreadObj/g
+s/\bptr ptr GPollFD\b/glibvaaaaarGPollFD/g
+s/\bptr GPollFD\b/glibptttttrGPollFD/g
+s/\bGPollFD\b/glib.GPollFDObj/g
+s/\bptr ptr GRWLock\b/glibvaaaaarGRWLock/g
+s/\bptr GRWLock\b/glibptttttrGRWLock/g
+s/\bGRWLock\b/glib.GRWLockObj/g
+s/\bptr ptr GSource\b/glibvaaaaarGSource/g
+s/\bptr GSource\b/glibptttttrGSource/g
+s/\bGSource\b/glib.GSourceObj/g
+s/\bptr ptr GString\b/glibvaaaaarGString/g
+s/\bptr GString\b/glibptttttrGString/g
+s/\bGString\b/glib.GStringObj/g
+s/\bptr ptr GPollFD\b/glibvaaaaarGPollFD/g
+s/\bptr GPollFD\b/glibptttttrGPollFD/g
+s/\bGPollFD\b/glib.GPollFDObj/g
+s/\bptr ptr GRegex\b/glibvaaaaarGRegex/g
+s/\bptr GRegex\b/glibptttttrGRegex/g
+s/\bGRegex\b/glib.GRegexObj/g
+s/\bptr ptr GQueue\b/glibvaaaaarGQueue/g
+s/\bptr GQueue\b/glibptttttrGQueue/g
+s/\bGQueue\b/glib.GQueueObj/g
+s/\bptr ptr GArray\b/glibvaaaaarGArray/g
+s/\bptr GArray\b/glibptttttrGArray/g
+s/\bGArray\b/glib.GArrayObj/g
+s/\bptr ptr GError\b/glibvaaaaarGError/g
+s/\bptr GError\b/glibptttttrGError/g
+s/\bGError\b/glib.GErrorObj/g
+s/\bptr ptr GBytes\b/glibvaaaaarGBytes/g
+s/\bptr GBytes\b/glibptttttrGBytes/g
+s/\bGBytes\b/glib.GBytesObj/g
+s/\bptr ptr GSList\b/glibvaaaaarGSList/g
+s/\bptr GSList\b/glibptttttrGSList/g
+s/\bGSList\b/glib.GSListObj/g
+s/\bptr ptr GMutex\b/glibvaaaaarGMutex/g
+s/\bptr GMutex\b/glibptttttrGMutex/g
+s/\bGMutex\b/glib.GMutexObj/g
+s/\bptr ptr GIConv\b/glibvaaaaarGIConv/g
+s/\bptr GIConv\b/glibptttttrGIConv/g
+s/\bGIConv\b/glib.GIConvObj/g
+s/\bptr ptr GTimer\b/glibvaaaaarGTimer/g
+s/\bptr GTimer\b/glibptttttrGTimer/g
+s/\bGTimer\b/glib.GTimerObj/g
+s/\bptr ptr GList\b/glibvaaaaarGList/g
+s/\bptr GList\b/glibptttttrGList/g
+s/\bGList\b/glib.GListObj/g
+s/\bptr ptr GHmac\b/glibvaaaaarGHmac/g
+s/\bptr GHmac\b/glibptttttrGHmac/g
+s/\bGHmac\b/glib.GHmacObj/g
+s/\bptr ptr GCond\b/glibvaaaaarGCond/g
+s/\bptr GCond\b/glibptttttrGCond/g
+s/\bGCond\b/glib.GCondObj/g
+s/\bptr ptr GHook\b/glibvaaaaarGHook/g
+s/\bptr GHook\b/glibptttttrGHook/g
+s/\bGHook\b/glib.GHookObj/g
+s/\bptr ptr GData\b/glibvaaaaarGData/g
+s/\bptr GData\b/glibptttttrGData/g
+s/\bGData\b/glib.GDataObj/g
+s/\bptr ptr GDate\b/glibvaaaaarGDate/g
+s/\bptr GDate\b/glibptttttrGDate/g
+s/\bGDate\b/glib.GDateObj/g
+s/\bptr ptr GNode\b/glibvaaaaarGNode/g
+s/\bptr GNode\b/glibptttttrGNode/g
+s/\bGNode\b/glib.GNodeObj/g
+s/\bptr ptr GRand\b/glibvaaaaarGRand/g
+s/\bptr GRand\b/glibptttttrGRand/g
+s/\bGRand\b/glib.GRandObj/g
+s/\bptr ptr GOnce\b/glibvaaaaarGOnce/g
+s/\bptr GOnce\b/glibptttttrGOnce/g
+s/\bGOnce\b/glib.GOnceObj/g
+s/\bptr ptr GTree\b/glibvaaaaarGTree/g
+s/\bptr GTree\b/glibptttttrGTree/g
+s/\bGTree\b/glib.GTreeObj/g
+s/\bptr ptr GDir\b/glibvaaaaarGDir/g
+s/\bptr GDir\b/glibptttttrGDir/g
+s/\bGDir\b/glib.GDirObj/g
+s/glibvaaaaar/var glib./g
+s/glibptttttr/glib./g

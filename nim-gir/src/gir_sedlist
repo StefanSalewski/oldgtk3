@@ -1,0 +1,23 @@
+s/\bptr ptr GIRepositoryClass\b/girvaaaaarGIRepositoryClass/g
+s/\bptr GIRepositoryClass\b/girptttttrGIRepositoryClass/g
+s/\bGIRepositoryClass\b/gir.GIRepositoryClassObj/g
+s/\bptr ptr GIAttributeIter\b/girvaaaaarGIAttributeIter/g
+s/\bptr GIAttributeIter\b/girptttttrGIAttributeIter/g
+s/\bGIAttributeIter\b/gir.GIAttributeIterObj/g
+s/\bptr ptr GIBaseInfoStub\b/girvaaaaarGIBaseInfoStub/g
+s/\bptr GIBaseInfoStub\b/girptttttrGIBaseInfoStub/g
+s/\bGIBaseInfoStub\b/gir.GIBaseInfoStubObj/g
+s/\bptr ptr GIRepository\b/girvaaaaarGIRepository/g
+s/\bptr GIRepository\b/girptttttrGIRepository/g
+s/\bGIRepository\b/gir.GIRepositoryObj/g
+s/\bptr ptr GIArgument\b/girvaaaaarGIArgument/g
+s/\bptr GIArgument\b/girptttttrGIArgument/g
+s/\bGIArgument\b/gir.GIArgumentObj/g
+s/\bptr ptr GITypelib\b/girvaaaaarGITypelib/g
+s/\bptr GITypelib\b/girptttttrGITypelib/g
+s/\bGITypelib\b/gir.GITypelibObj/g
+s/\bptr ptr GArgument\b/girvaaaaarGArgument/g
+s/\bptr GArgument\b/girptttttrGArgument/g
+s/\bGArgument\b/gir.GArgumentObj/g
+s/girvaaaaar/var gir./g
+s/girptttttr/gir./g
