@@ -4,7 +4,7 @@ from glib import Gpointer, Gboolean, GQuark, Gsize, GSsize
 from gobject import GObject, GType, GObjectObj, GObjectClassObj, GParamFlags, GSignalFlags
 
 when defined(windows):
-  const LIB_GIR = "libgirepository-1.0.dll"
+  const LIB_GIR = "libgirepository-1.0-1.dll"
 elif defined(macosx):
   const LIB_GIR = "libgirepository-1.0.dylib"
 else:
