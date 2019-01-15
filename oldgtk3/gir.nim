@@ -91,7 +91,7 @@ type
 type
   GIArgument* =  ptr GIArgumentObj
   GIArgumentPtr* = ptr GIArgumentObj
-  GIArgumentObj* = object {.union.}
+  GIArgumentObj* {.union.} = object
     vBoolean*: Gboolean
     vInt8*: int8
     vUint8*: uint8
