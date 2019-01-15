@@ -603,7 +603,7 @@ type
 type
   GMutex* =  ptr GMutexObj
   GMutexPtr* = ptr GMutexObj
-  GMutexObj* = object {.union.}
+  GMutexObj* {.union.} = object
     p*: Gpointer
     i*: array[2, cuint]
 
@@ -3999,7 +3999,7 @@ type
     `type`*: GVariantType
     y*: array[14, Gsize]
 
-  INNER_C_UNION_4109036607* = object {.union.}
+  INNER_C_UNION_4109036607* {.union.} = object
     s*: INNER_C_STRUCT_594656511Obj
     x*: array[16, Gsize]
 
@@ -4086,7 +4086,7 @@ type
     partialMagic*: Gsize
     y*: array[14, Gsize]
 
-  INNER_C_UNION_2010540800* = object {.union.}
+  INNER_C_UNION_2010540800* {.union.} = object
     s*: INNER_C_STRUCT_2791128003Obj
     x*: array[16, Gsize]
 
@@ -4822,7 +4822,7 @@ type
 type
   GTokenValue* =  ptr GTokenValueObj
   GTokenValuePtr* = ptr GTokenValueObj
-  GTokenValueObj* = object {.union.}
+  GTokenValueObj* {.union.} = object
     vSymbol*: Gpointer
     vIdentifier*: cstring
     vBinary*: culong

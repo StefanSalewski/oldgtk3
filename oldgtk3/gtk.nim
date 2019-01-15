@@ -4965,7 +4965,7 @@ template typeTextAttributes*(): untyped =
   (textAttributesGetType())
 
 type
-  INNER_C_UNION_1750769467* = object {.union.}
+  INNER_C_UNION_1750769467* {.union.} = object
     rgba*: array[2, gdk.RGBA]
     padding*: array[4, cuint]
 
@@ -4983,7 +4983,7 @@ type
     ano4159660721*: INNER_C_UNION_1750769467
 
 type
-  INNER_C_UNION_3015293952* = object {.union.}
+  INNER_C_UNION_3015293952* {.union.} = object
     fontFeatures*: cstring
     padding*: array[2, cuint]
 
@@ -7933,7 +7933,7 @@ type
     END, CENTER, EXPAND
 
 type
-  INNER_C_UNION_1260587046* = object {.union.}
+  INNER_C_UNION_1260587046* {.union.} = object
     longData*: clong
     doubleData*: cdouble
     stringData*: cstring

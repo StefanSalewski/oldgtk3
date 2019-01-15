@@ -782,7 +782,7 @@ type
     x*: cdouble
     y*: cdouble
 
-  CairoPathDataT* = object {.union.}
+  CairoPathDataT* {.union.} = object
     header*: INNER_C_STRUCT_3330700347
     point*: INNER_C_STRUCT_1651263489
 

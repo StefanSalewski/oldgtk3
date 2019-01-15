@@ -157,7 +157,7 @@ template gTypeHasValueTable*(`type`: untyped): untyped =
 type
   GTypeCValue* =  ptr GTypeCValueObj
   GTypeCValuePtr* = ptr GTypeCValueObj
-  GTypeCValueObj* = object {.union.}
+  GTypeCValueObj* {.union.} = object
  
   GTypePlugin* =  ptr GTypePluginObj
   GTypePluginPtr* = ptr GTypePluginObj
@@ -288,7 +288,7 @@ type
     ABSTRACT = 1 shl 4, VALUE_ABSTRACT = 1 shl 5
 
 type
-  INNER_C_UNION_81819396* = object {.union.}
+  INNER_C_UNION_81819396* {.union.} = object
     vInt*: cint
     vUint*: cuint
     vLong*: clong
@@ -1690,7 +1690,7 @@ template gSetObject*(objectPtr, newObject: untyped): untyped =
                             cast[GObject](newObject)))
 
 type
-  INNER_C_UNION_1468477625* = object {.union.}
+  INNER_C_UNION_1468477625* {.union.} = object
     p*: Gpointer
 
   GWeakRef* =  ptr GWeakRefObj

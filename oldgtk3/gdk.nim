@@ -3236,7 +3236,7 @@ type
 type
   Event* =  ptr EventObj
   EventPtr* = ptr EventObj
-  EventObj* = object {.union.}
+  EventObj* {.union.} = object
     `type`*: EventType
     any*: EventAnyObj
     expose*: EventExposeObj
