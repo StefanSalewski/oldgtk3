@@ -2448,7 +2448,7 @@ addInterfaceStatic(gDefineTypeId, \$1, addr(gImplementInterfaceInfo))
 # tp: The GType of the parent type.
 # f: GTypeFlags to pass to gTypeRegisterStatic()
 # c: Custom code that gets inserted in the *GetType() function.
-macro gDefineTypeExtended*(tn, t, tp, f, c: static[string]): typed =
+macro gDefineTypeExtended*(tn, t, tp, f, c: static[string]): void =
   var
     cc = indent("\n" & c, 4)
     s = """
@@ -2485,7 +2485,7 @@ proc $2GetType*(): GType {.cdecl.} =
   #echo s
   result = parseStmt(s)
 
-macro gDefineTypeExtendedNoPriv*(tn, t, tp, f: static[string]): typed =
+macro gDefineTypeExtendedNoPriv*(tn, t, tp, f: static[string]): void =
   var
     s = """
 

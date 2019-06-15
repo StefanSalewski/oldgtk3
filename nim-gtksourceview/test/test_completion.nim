@@ -6,7 +6,7 @@
 # Tested with GTK 3.14, Nim 0.10.3 and gcc 4.9.2
 # build: nim c -dRelease testCompletion.nim
 
-import oldgtk3/[gtk, glib, gobject, gtksource, gdk_Pixbuf, pango]
+import oldgtk3/[gtk, glib, gobject, gtksource, gdk_pixbuf, pango]
 from strutils import `%`
 
 type
