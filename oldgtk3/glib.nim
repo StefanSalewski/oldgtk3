@@ -65,8 +65,8 @@ const
   GLIB_SIZEOF_SIZE_T* = GLIB_SIZEOF_VOID_P
   GLIB_SIZEOF_LONG* = sizeof(clong)
 type
-  Gssize* = csize
-  Gsize* = csize # note: csize is signed in Nim!
+  Gssize* = int # csize # fix for Nim > 1.04 to avoid many depretaction warnings
+  Gsize* = uint # csize # note: csize is signed in Nim!
   Goffset* = int64
   GPid = cint
 
