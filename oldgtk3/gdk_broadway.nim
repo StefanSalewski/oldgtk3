@@ -286,7 +286,7 @@ type
 
   BroadwayInputMsg* =  ptr BroadwayInputMsgObj
   BroadwayInputMsgPtr* = ptr BroadwayInputMsgObj
-  BroadwayInputMsgObj* = object {.union.}
+  BroadwayInputMsgObj* {.union.} = object
     base*: BroadwayInputBaseMsgObj
     pointer*: BroadwayInputPointerMsgObj
     crossing*: BroadwayInputCrossingMsgObj
@@ -400,7 +400,7 @@ type
 
   BroadwayRequest* =  ptr BroadwayRequestObj
   BroadwayRequestPtr* = ptr BroadwayRequestObj
-  BroadwayRequestObj* = object {.union.}
+  BroadwayRequestObj* {.union.} = object
     base*: BroadwayRequestBaseObj
     newWindow*: BroadwayRequestNewWindowObj
     flush*: BroadwayRequestFlushObj
@@ -460,7 +460,7 @@ type
 
   BroadwayReply* =  ptr BroadwayReplyObj
   BroadwayReplyPtr* = ptr BroadwayReplyObj
-  BroadwayReplyObj* = object {.union.}
+  BroadwayReplyObj* {.union.} = object
     base*: BroadwayReplyBaseObj
     event*: BroadwayReplyEventObj
     queryMouse*: BroadwayReplyQueryMouseObj

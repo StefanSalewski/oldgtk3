@@ -24,7 +24,7 @@ proc entryClicked(self: Widget; data: GPointer) {.cdecl.} =
   var display: Display = displayGetDefault()
   var screen: gdk.Screen = getDefaultScreen(display)
   styleContextAddProviderForScreen(screen, styleProvider(provider), STYLE_PROVIDER_PRIORITY_APPLICATION.cuint);
-  discard loadFromData(provider, genCss(cast[int](data), text), GSize(-1), error)
+  discard loadFromData(provider, genCss(cast[int](data), text), GSSize(-1), error)
   objectUnref(provider);
 
 proc main =

@@ -3580,85 +3580,85 @@ type
   GVariantTypeObj* = object
 
 const
-  G_VARIANT_TYPE_BOOLEAN* = (cast[GVariantType]("b"))
+  G_VARIANT_TYPE_BOOLEAN* = (cast[GVariantType]("b".cstring))
 
 const
-  G_VARIANT_TYPE_BYTE* = (cast[GVariantType]("y"))
+  G_VARIANT_TYPE_BYTE* = (cast[GVariantType]("y".cstring))
 
 const
-  G_VARIANT_TYPE_INT16* = (cast[GVariantType]("n"))
+  G_VARIANT_TYPE_INT16* = (cast[GVariantType]("n".cstring))
 
 const
-  G_VARIANT_TYPE_UINT16* = (cast[GVariantType]("q"))
+  G_VARIANT_TYPE_UINT16* = (cast[GVariantType]("q".cstring))
 
 const
-  G_VARIANT_TYPE_INT32* = (cast[GVariantType]("i"))
+  G_VARIANT_TYPE_INT32* = (cast[GVariantType]("i".cstring))
 
 const
-  G_VARIANT_TYPE_UINT32* = (cast[GVariantType]("u"))
+  G_VARIANT_TYPE_UINT32* = (cast[GVariantType]("u".cstring))
 
 const
-  G_VARIANT_TYPE_INT64* = (cast[GVariantType]("x"))
+  G_VARIANT_TYPE_INT64* = (cast[GVariantType]("x".cstring))
 
 const
-  G_VARIANT_TYPE_UINT64* = (cast[GVariantType]("t"))
+  G_VARIANT_TYPE_UINT64* = (cast[GVariantType]("t".cstring))
 
 const
-  G_VARIANT_TYPE_DOUBLE* = (cast[GVariantType]("d"))
+  G_VARIANT_TYPE_DOUBLE* = (cast[GVariantType]("d".cstring))
 
 const
-  G_VARIANT_TYPE_STRING* = (cast[GVariantType]("s"))
+  G_VARIANT_TYPE_STRING* = (cast[GVariantType]("s".cstring))
 
 const
-  G_VARIANT_TYPE_OBJECT_PATH* = (cast[GVariantType]("o"))
+  G_VARIANT_TYPE_OBJECT_PATH* = (cast[GVariantType]("o".cstring))
 
 const
-  G_VARIANT_TYPE_SIGNATURE* = (cast[GVariantType]("g"))
+  G_VARIANT_TYPE_SIGNATURE* = (cast[GVariantType]("g".cstring))
 
 const
-  G_VARIANT_TYPE_VARIANT* = (cast[GVariantType]("v"))
+  G_VARIANT_TYPE_VARIANT* = (cast[GVariantType]("v".cstring))
 
 const
-  G_VARIANT_TYPE_HANDLE* = (cast[GVariantType]("h"))
+  G_VARIANT_TYPE_HANDLE* = (cast[GVariantType]("h".cstring))
 
 const
-  G_VARIANT_TYPE_UNIT* = (cast[GVariantType]("()"))
+  G_VARIANT_TYPE_UNIT* = (cast[GVariantType]("()".cstring))
 
 const
-  G_VARIANT_TYPE_ANY* = (cast[GVariantType]("*"))
+  G_VARIANT_TYPE_ANY* = (cast[GVariantType]("*".cstring))
 
 const
-  G_VARIANT_TYPE_BASIC* = (cast[GVariantType]("?"))
+  G_VARIANT_TYPE_BASIC* = (cast[GVariantType]("?".cstring))
 
 const
-  G_VARIANT_TYPE_MAYBE* = (cast[GVariantType]("m*"))
+  G_VARIANT_TYPE_MAYBE* = (cast[GVariantType]("m*".cstring))
 
 const
-  G_VARIANT_TYPE_ARRAY* = (cast[GVariantType]("a*"))
+  G_VARIANT_TYPE_ARRAY* = (cast[GVariantType]("a*".cstring))
 
 const
-  G_VARIANT_TYPE_TUPLE* = (cast[GVariantType]("r"))
+  G_VARIANT_TYPE_TUPLE* = (cast[GVariantType]("r".cstring))
 
 const
-  G_VARIANT_TYPE_DICT_ENTRY* = (cast[GVariantType]("{?*}"))
+  G_VARIANT_TYPE_DICT_ENTRY* = (cast[GVariantType]("{?*}".cstring))
 
 const
-  G_VARIANT_TYPE_DICTIONARY* = (cast[GVariantType]("a{?*}"))
+  G_VARIANT_TYPE_DICTIONARY* = (cast[GVariantType]("a{?*}".cstring))
 
 const
-  G_VARIANT_TYPE_STRING_ARRAY* = (cast[GVariantType]("as"))
+  G_VARIANT_TYPE_STRING_ARRAY* = (cast[GVariantType]("as".cstring))
 
 const
-  G_VARIANT_TYPE_OBJECT_PATH_ARRAY* = (cast[GVariantType]("ao"))
+  G_VARIANT_TYPE_OBJECT_PATH_ARRAY* = (cast[GVariantType]("ao".cstring))
 
 const
-  G_VARIANT_TYPE_BYTESTRING* = (cast[GVariantType]("ay"))
+  G_VARIANT_TYPE_BYTESTRING* = (cast[GVariantType]("ay".cstring))
 
 const
-  G_VARIANT_TYPE_BYTESTRING_ARRAY* = (cast[GVariantType]("aay"))
+  G_VARIANT_TYPE_BYTESTRING_ARRAY* = (cast[GVariantType]("aay".cstring))
 
 const
-  G_VARIANT_TYPE_VARDICT* = (cast[GVariantType]("a{sv}"))
+  G_VARIANT_TYPE_VARDICT* = (cast[GVariantType]("a{sv}".cstring))
 
 when not (G_DISABLE_CHECKS):
   template gVariantType*(typeString: untyped): untyped =
