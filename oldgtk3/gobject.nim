@@ -632,13 +632,26 @@ template gParamSpecValueType*(pspec: untyped): untyped =
 template gValueHoldsParam*(value: untyped): untyped =
   (gTypeCheckValueType(value, G_TYPE_PARAM))
 
+#type
+#  GParamFlags* {.size: sizeof(cint), pure.} = enum
+#    READABLE = 1 shl 0, WRITABLE = 1 shl 1,
+#    CONSTRUCT = 1 shl 2, CONSTRUCT_ONLY = 1 shl 3,
+#    LAX_VALIDATION = 1 shl 4, STATIC_NAME = 1 shl 5,
+#    STATIC_NICK = 1 shl 6, STATIC_BLURB = 1 shl 7,
+#    EXPLICIT_NOTIFY = 1 shl 30, DEPRECATED = 1 shl 31
+
+# see https://forum.nim-lang.org/t/7490#47510
+# see https://github.com/nim-lang/Nim/issues/16926
+# see https://github.com/StefanSalewski/oldgtk3/issues/2
 type
   GParamFlags* {.size: sizeof(cint), pure.} = enum
+    DEPRECATED = (1.cint shl 31)
     READABLE = 1 shl 0, WRITABLE = 1 shl 1,
     CONSTRUCT = 1 shl 2, CONSTRUCT_ONLY = 1 shl 3,
     LAX_VALIDATION = 1 shl 4, STATIC_NAME = 1 shl 5,
     STATIC_NICK = 1 shl 6, STATIC_BLURB = 1 shl 7,
-    EXPLICIT_NOTIFY = 1 shl 30, DEPRECATED = 1 shl 31
+    EXPLICIT_NOTIFY = 1 shl 30
+
 const
   G_PARAM_STATIC_STRINGS* = GParamFlags(
     GParamFlags.STATIC_NAME.ord or GParamFlags.STATIC_NICK.ord or GParamFlags.STATIC_BLURB.ord)
